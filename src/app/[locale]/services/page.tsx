@@ -40,10 +40,10 @@ const fadeUp = {
 };
 
 const tiers = [
-  { key: "spark", price: "€1,900", badge: null, highlighted: false, hasFrom: false },
-  { key: "pulse", price: "€4,500", badge: null, highlighted: false, hasFrom: false },
-  { key: "surge", price: "€9,500", badge: "popular", highlighted: true, hasFrom: false },
-  { key: "apex", price: "€18,000", badge: "enterprise", highlighted: false, hasFrom: true },
+  { key: "spark", badge: null, highlighted: false, hasFrom: false },
+  { key: "pulse", badge: null, highlighted: false, hasFrom: false },
+  { key: "surge", badge: "popular", highlighted: true, hasFrom: false },
+  { key: "apex", badge: "enterprise", highlighted: false, hasFrom: true },
 ] as const;
 
 const alaCarteServices = [
@@ -151,7 +151,7 @@ export default function ServicesPage() {
                           </span>
                         )}
                         <span className="text-3xl font-bold text-nb-gold">
-                          {tier.price}
+                          {t(`pricing.${tier.key}.price`)}
                         </span>
                         <span className="text-sm text-muted-foreground">
                           {t("pricing.monthly")}

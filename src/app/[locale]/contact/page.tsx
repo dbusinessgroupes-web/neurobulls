@@ -128,14 +128,15 @@ export default function ContactPage() {
     { value: "models", label: t("contact.form.serviceOptions.models") },
     { value: "social", label: t("contact.form.serviceOptions.social") },
     { value: "branding", label: t("contact.form.serviceOptions.branding") },
+    { value: "package", label: t("contact.form.serviceOptions.package") },
     { value: "other", label: t("contact.form.serviceOptions.other") },
   ];
 
   const budgetOptions = [
     { value: "", label: t("contact.form.budgetOptions.default") },
-    { value: "small", label: t("contact.form.budgetOptions.small") },
-    { value: "medium", label: t("contact.form.budgetOptions.medium") },
-    { value: "large", label: t("contact.form.budgetOptions.large") },
+    { value: "starter", label: t("contact.form.budgetOptions.starter") },
+    { value: "growth", label: t("contact.form.budgetOptions.growth") },
+    { value: "premium", label: t("contact.form.budgetOptions.premium") },
     { value: "enterprise", label: t("contact.form.budgetOptions.enterprise") },
   ];
 
@@ -320,7 +321,7 @@ export default function ContactPage() {
                           htmlFor="privacy"
                           className="text-sm text-muted-foreground leading-relaxed"
                         >
-                          {t("contact.form.privacyText")}{" "}
+                          {t("contact.form.privacy")}{" "}
                           <Link
                             href="/politica-privacidad"
                             className="text-nb-red underline hover:text-nb-red-hover"

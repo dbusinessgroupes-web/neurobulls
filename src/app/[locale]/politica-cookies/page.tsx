@@ -16,11 +16,11 @@ export default function PoliticaCookies() {
       <main className="min-h-screen bg-background pt-40 pb-20">
         <article className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-foreground mb-2">
-            {isES ? "Politica de Cookies" : "Cookie Policy"}
+            {isES ? "Política de Cookies" : "Cookie Policy"}
           </h1>
           <p className="text-sm text-muted-foreground mb-10">
             {isES
-              ? "Ultima actualizacion: 29 de marzo de 2026"
+              ? "Última actualización: 29 de marzo de 2026"
               : "Last updated: March 29, 2026"}
           </p>
 
@@ -28,16 +28,16 @@ export default function PoliticaCookies() {
             {/* 1. What Are Cookies */}
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
-                {isES ? "1. Que son las cookies" : "1. What Are Cookies"}
+                {isES ? "1. Qué son las cookies" : "1. What Are Cookies"}
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {isES
-                  ? "Las cookies son pequenos archivos de texto que los sitios web almacenan en el dispositivo del usuario (ordenador, tablet o telefono movil) cuando los visita. Permiten que el sitio web recuerde informacion sobre su visita, como sus preferencias de idioma y otras configuraciones, lo que puede facilitar su proxima visita y hacer que el sitio resulte mas util."
+                  ? "Las cookies son pequeños archivos de texto que los sitios web almacenan en el dispositivo del usuario (ordenador, tablet o teléfono móvil) cuando los visita. Permiten que el sitio web recuerde información sobre su visita, como sus preferencias de idioma y otras configuraciones, lo que puede facilitar su próxima visita y hacer que el sitio resulte más útil."
                   : "Cookies are small text files that websites store on the user's device (computer, tablet, or mobile phone) when they visit. They allow the website to remember information about your visit, such as your language preferences and other settings, which can make your next visit easier and the site more useful to you."}
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
                 {isES
-                  ? "De conformidad con el articulo 22.2 de la Ley 34/2002 de Servicios de la Sociedad de la Informacion y de Comercio Electronico (LSSI-CE), le informamos sobre las cookies utilizadas en este sitio web."
+                  ? "De conformidad con el artículo 22.2 de la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), le informamos sobre las cookies utilizadas en este sitio web."
                   : "In accordance with Article 22.2 of Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), we inform you about the cookies used on this website."}
               </p>
             </section>
@@ -57,7 +57,7 @@ export default function PoliticaCookies() {
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 {isES
-                  ? "Estas cookies son esenciales para el funcionamiento basico del sitio web. No requieren el consentimiento del usuario conforme a la normativa vigente."
+                  ? "Estas cookies son esenciales para el funcionamiento básico del sitio web. No requieren el consentimiento del usuario conforme a la normativa vigente."
                   : "These cookies are essential for the basic operation of the website. They do not require user consent under current regulations."}
               </p>
 
@@ -78,7 +78,7 @@ export default function PoliticaCookies() {
                         {isES ? "Tipo" : "Type"}
                       </th>
                       <th className="text-left p-3 font-medium text-foreground border-b border-border">
-                        {isES ? "Duracion" : "Duration"}
+                        {isES ? "Duración" : "Duration"}
                       </th>
                     </tr>
                   </thead>
@@ -105,7 +105,7 @@ export default function PoliticaCookies() {
                           : "Stores the user's language preference"}
                       </td>
                       <td className="p-3">Cookie</td>
-                      <td className="p-3">1 {isES ? "ano" : "year"}</td>
+                      <td className="p-3">1 {isES ? "año" : "year"}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -113,7 +113,7 @@ export default function PoliticaCookies() {
 
               <h3 className="text-xl font-medium text-foreground mt-8 mb-3">
                 {isES
-                  ? "2.2 Cookies de analitica (requieren consentimiento)"
+                  ? "2.2 Cookies de analítica (requieren consentimiento)"
                   : "2.2 Analytics Cookies (consent required)"}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -139,7 +139,7 @@ export default function PoliticaCookies() {
                         {isES ? "Tipo" : "Type"}
                       </th>
                       <th className="text-left p-3 font-medium text-foreground border-b border-border">
-                        {isES ? "Duracion" : "Duration"}
+                        {isES ? "Duración" : "Duration"}
                       </th>
                     </tr>
                   </thead>
@@ -149,12 +149,12 @@ export default function PoliticaCookies() {
                       <td className="p-3">Vercel Analytics</td>
                       <td className="p-3">
                         {isES
-                          ? "Recoge datos anonimos sobre el uso del sitio web, como paginas visitadas, duracion de la sesion y tipo de dispositivo"
+                          ? "Recoge datos anónimos sobre el uso del sitio web, como páginas visitadas, duración de la sesión y tipo de dispositivo"
                           : "Collects anonymous data about website usage, such as pages visited, session duration, and device type"}
                       </td>
                       <td className="p-3">Cookie</td>
                       <td className="p-3">
-                        {isES ? "Sesion" : "Session"}
+                        {isES ? "Sesión" : "Session"}
                       </td>
                     </tr>
                   </tbody>
@@ -166,12 +166,12 @@ export default function PoliticaCookies() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
                 {isES
-                  ? "3. Como gestionar las cookies"
+                  ? "3. Cómo gestionar las cookies"
                   : "3. How to Manage Cookies"}
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 {isES
-                  ? "Ademas del panel de configuracion de cookies de este sitio web, puede configurar su navegador para aceptar, rechazar o eliminar cookies. A continuacion se indican los enlaces a las instrucciones de los navegadores mas utilizados:"
+                  ? "Además del panel de configuración de cookies de este sitio web, puede configurar su navegador para aceptar, rechazar o eliminar cookies. A continuación se indican los enlaces a las instrucciones de los navegadores más utilizados:"
                   : "In addition to the cookie settings panel on this website, you can configure your browser to accept, reject, or delete cookies. Below are links to instructions for the most commonly used browsers:"}
               </p>
               <ul className="space-y-2 text-muted-foreground">
@@ -218,7 +218,7 @@ export default function PoliticaCookies() {
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
                 {isES
-                  ? "Tenga en cuenta que, si deshabilita las cookies necesarias, algunas funcionalidades del sitio web podrian no funcionar correctamente."
+                  ? "Tenga en cuenta que, si deshabilita las cookies necesarias, algunas funcionalidades del sitio web podrían no funcionar correctamente."
                   : "Please note that if you disable necessary cookies, some website features may not function properly."}
               </p>
             </section>
@@ -227,12 +227,12 @@ export default function PoliticaCookies() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
                 {isES
-                  ? "4. Como revocar el consentimiento"
+                  ? "4. Cómo revocar el consentimiento"
                   : "4. How to Revoke Consent"}
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {isES
-                  ? "Puede revocar su consentimiento en cualquier momento eliminando las cookies de su navegador o utilizando el panel de configuracion de cookies de este sitio web. Para acceder al panel de cookies, puede eliminar la clave \"cookie-consent\" del almacenamiento local de su navegador, lo que hara que el banner de cookies vuelva a aparecer en su proxima visita."
+                  ? "Puede revocar su consentimiento en cualquier momento eliminando las cookies de su navegador o utilizando el panel de configuración de cookies de este sitio web. Para acceder al panel de cookies, puede eliminar la clave \"cookie-consent\" del almacenamiento local de su navegador, lo que hará que el banner de cookies vuelva a aparecer en su próxima visita."
                   : "You can revoke your consent at any time by deleting cookies from your browser or using this website's cookie settings panel. To access the cookie panel, you can delete the \"cookie-consent\" key from your browser's local storage, which will cause the cookie banner to reappear on your next visit."}
               </p>
             </section>
@@ -241,18 +241,18 @@ export default function PoliticaCookies() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
                 {isES
-                  ? "5. Politica de privacidad"
+                  ? "5. Política de privacidad"
                   : "5. Privacy Policy"}
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {isES
-                  ? "Para mas informacion sobre como tratamos sus datos personales, consulte nuestra"
+                  ? "Para más información sobre cómo tratamos sus datos personales, consulte nuestra"
                   : "For more information about how we process your personal data, please refer to our"}{" "}
                 <Link
                   href="/politica-privacidad"
                   className="text-nb-red hover:underline"
                 >
-                  {isES ? "Politica de Privacidad" : "Privacy Policy"}
+                  {isES ? "Política de Privacidad" : "Privacy Policy"}
                 </Link>
                 .
               </p>
@@ -262,12 +262,12 @@ export default function PoliticaCookies() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
                 {isES
-                  ? "6. Actualizacion de esta politica"
+                  ? "6. Actualización de esta política"
                   : "6. Updates to This Policy"}
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {isES
-                  ? "NeuroBulls se reserva el derecho de modificar esta politica de cookies para adaptarla a novedades legislativas o cambios en las cookies utilizadas. Le recomendamos revisarla periodicamente. Cualquier cambio significativo sera comunicado a traves del banner de cookies del sitio web."
+                  ? "NeuroBulls se reserva el derecho de modificar esta política de cookies para adaptarla a novedades legislativas o cambios en las cookies utilizadas. Le recomendamos revisarla periódicamente. Cualquier cambio significativo será comunicado a través del banner de cookies del sitio web."
                   : "NeuroBulls reserves the right to modify this cookie policy to adapt it to legislative developments or changes in the cookies used. We recommend reviewing it periodically. Any significant changes will be communicated through the website's cookie banner."}
               </p>
             </section>

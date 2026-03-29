@@ -28,10 +28,10 @@ export function Footer() {
               {t("poweredBy")}
             </p>
             <div className="flex items-center gap-3">
-              <a href="https://instagram.com/neurobulls" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-nb-red transition-colors">
+              <a href="https://instagram.com/neurobulls" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-nb-red transition-colors">
                 <InstagramIcon className="h-5 w-5" />
               </a>
-              <a href="mailto:neurobulls@gmail.com" className="text-muted-foreground hover:text-nb-red transition-colors">
+              <a href="mailto:neurobulls@gmail.com" aria-label="Email" className="text-muted-foreground hover:text-nb-red transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -42,8 +42,8 @@ export function Footer() {
             <h4 className="text-sm font-semibold text-foreground">{t("company")}</h4>
             <nav className="flex flex-col gap-2">
               <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("aboutLink")}</Link>
-              <Link href="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("blog")}</Link>
-              <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{tc("info.email")}</Link>
+              <Link href="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("workLink")}</Link>
+              <a href="mailto:neurobulls@gmail.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{tc("info.email")}</a>
             </nav>
           </div>
 
@@ -51,10 +51,10 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-sm font-semibold text-foreground">{t("servicesTitle")}</h4>
             <nav className="flex flex-col gap-2">
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">AI Photography</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">AI Video</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">AI Strategy</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">AI Models</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("servicePhotography")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVideo")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceStrategy")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceModels")}</Link>
             </nav>
           </div>
 
@@ -76,7 +76,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-1 text-xs text-muted-foreground">
             <MapPin className="h-3 w-3" />
-            <span>Madrid, Spain</span>
+            <span>{tc("info.location")}</span>
           </div>
         </div>
       </div>

@@ -30,9 +30,9 @@ const advantageCards = [
 ];
 
 const pipelineSteps = [
-  { icon: ImageIcon, label: "Input" },
-  { icon: Cpu, label: "AI Processing" },
-  { icon: Sparkles, label: "Output" },
+  { icon: ImageIcon, key: "input" },
+  { icon: Cpu, key: "processing" },
+  { icon: Sparkles, key: "output" },
 ];
 
 export default function AboutPage() {
@@ -126,7 +126,7 @@ export default function AboutPage() {
             <ScrollReveal delay={0.15}>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-0">
                 {pipelineSteps.map((step, i) => (
-                  <div key={step.label} className="flex items-center">
+                  <div key={step.key} className="flex items-center">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ export default function AboutPage() {
                           i === 1 ? "text-nb-red" : "text-muted-foreground"
                         }`}
                       >
-                        {step.label}
+                        {t(`pipeline.${step.key}`)}
                       </span>
                     </motion.div>
 
@@ -222,17 +222,14 @@ export default function AboutPage() {
               <div className="rounded-xl border border-border bg-card p-8 sm:p-12 text-center">
                 <Building2 className="h-10 w-10 text-nb-gold mx-auto mb-6" />
                 <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-                  Founded by D Business Group ES
+                  {t("founder.title")}
                 </h2>
                 <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-6">
-                  We believe AI is not just the future of marketing — it is the present.
-                  Our mission is to make hyperrealistic AI content accessible to every brand,
-                  eliminating the barriers of traditional production while delivering results
-                  that are indistinguishable from reality.
+                  {t("founder.description")}
                 </p>
                 <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4" />
-                  <span>Madrid, Spain</span>
+                  <span>{t("founder.location")}</span>
                 </div>
               </div>
             </ScrollReveal>

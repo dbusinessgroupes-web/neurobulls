@@ -15,57 +15,39 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 const projects = [
   {
     id: "vanguard-fashion",
-    title: "Vanguard Fashion",
+    key: "vanguardFashion",
     category: "fashion",
-    description:
-      "Complete AI model campaign for Spring/Summer 2026 collection. 120 images, 8 videos, 3 AI models.",
     gradient: "from-red-900/40 via-black to-black",
-    stats: "120 images \u2022 8 videos \u2022 3 AI models",
   },
   {
     id: "lumiere-beauty",
-    title: "Lumi\u00e8re Beauty",
+    key: "lumiereBeauty",
     category: "beauty",
-    description:
-      "Luxury skincare launch campaign with hyperrealistic AI models in editorial settings.",
     gradient: "from-amber-900/40 via-black to-black",
-    stats: "80 images \u2022 4 videos \u2022 2 AI models",
   },
   {
     id: "techvision-pro",
-    title: "TechVision Pro",
+    key: "techvisionPro",
     category: "tech",
-    description:
-      "Product launch campaign featuring AI-generated tech ambassadors across digital platforms.",
     gradient: "from-blue-900/40 via-black to-black",
-    stats: "60 images \u2022 6 videos \u2022 4 AI models",
   },
   {
     id: "maison-elegance",
-    title: "Maison \u00c9l\u00e9gance",
+    key: "maisonElegance",
     category: "realestate",
-    description:
-      "Luxury real estate marketing with AI lifestyle models in architectural settings.",
     gradient: "from-emerald-900/40 via-black to-black",
-    stats: "90 images \u2022 3 videos \u2022 5 AI models",
   },
   {
     id: "glow-cosmetics",
-    title: "Glow Cosmetics",
+    key: "glowCosmetics",
     category: "beauty",
-    description:
-      "Social media content strategy with AI beauty influencer generating 30 posts/month.",
     gradient: "from-pink-900/40 via-black to-black",
-    stats: "150 images \u2022 12 reels \u2022 1 AI influencer",
   },
   {
     id: "urban-taste",
-    title: "Urban Taste",
+    key: "urbanTaste",
     category: "food",
-    description:
-      "Restaurant chain rebranding with AI food photography and lifestyle content.",
     gradient: "from-orange-900/40 via-black to-black",
-    stats: "200 images \u2022 5 videos \u2022 6 AI models",
   },
 ];
 
@@ -181,16 +163,16 @@ export default function WorkPage() {
                               </Badge>
 
                               <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
-                                {project.title}
+                                {t(`projects.${project.key}.title`)}
                               </h3>
 
                               <p className="text-sm text-white/60 mb-3 line-clamp-2 group-hover:text-white/80 transition-colors">
-                                {project.description}
+                                {t(`projects.${project.key}.description`)}
                               </p>
 
                               <div className="flex items-center justify-between">
                                 <span className="text-xs text-white/40 group-hover:text-nb-gold transition-colors">
-                                  {project.stats}
+                                  {t(`projects.${project.key}.stats`)}
                                 </span>
                                 <ExternalLink className="h-4 w-4 text-white/0 group-hover:text-white/60 transition-colors" />
                               </div>

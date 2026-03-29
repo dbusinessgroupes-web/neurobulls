@@ -18,25 +18,57 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "NeuroBulls — AI Marketing Agency",
-    template: "%s | NeuroBulls"
+const metadataByLocale: Record<string, { title: string; description: string }> = {
+  en: {
+    title: "NeuroBulls — AI Marketing Agency",
+    description: "The world's leading AI marketing agency. Hyperrealistic AI models, unlimited creativity, campaigns delivered in 48 hours.",
   },
-  description: "The world's leading AI marketing agency. Hyperrealistic AI models, unlimited creativity, campaigns delivered in 48 hours.",
-  metadataBase: new URL('https://neurobulls.com'),
-  openGraph: {
-    type: 'website',
-    siteName: 'NeuroBulls',
-    images: [{ url: '/og-image.png', width: 1200, height: 630 }]
+  es: {
+    title: "NeuroBulls — Agencia de Marketing con IA",
+    description: "La agencia de marketing con IA líder del mundo. Modelos de IA hiperrealistas, creatividad ilimitada, campañas entregadas en 48 horas.",
   },
-  twitter: {
-    card: 'summary_large_image'
+};
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const localeData = metadataByLocale[locale] ?? metadataByLocale.en;
+
+  return {
+    title: {
+      default: localeData.title,
+      template: "%s | NeuroBulls",
+    },
+    description: localeData.description,
+    metadataBase: new URL('https://neurobulls.com'),
+    openGraph: {
+      type: 'website',
+      siteName: 'NeuroBulls',
+    },
+    twitter: {
+      card: 'summary_large_image',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    themeColor: '#0A0A0A',
+  };
+}
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NeuroBulls",
+  "url": "https://neurobulls.com",
+  "logo": "https://neurobulls.com/favicon.svg",
+  "description": "AI Marketing Agency",
+  "email": "neurobulls@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Madrid",
+    "addressCountry": "ES",
   },
-  robots: {
-    index: true,
-    follow: true
-  }
+  "sameAs": ["https://instagram.com/neurobulls"],
 };
 
 export default async function LocaleLayout({
@@ -56,6 +88,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <NextIntlClientProvider messages={messages}>
           {children}

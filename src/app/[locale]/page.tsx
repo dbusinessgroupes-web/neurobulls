@@ -98,12 +98,7 @@ const portfolioItems = [
   },
 ];
 
-const comparisonRows = [
-  { key: "timeline", traditional: "4-8 weeks", neurobulls: "48 hours" },
-  { key: "cost", traditional: "$10,000+", neurobulls: "$1,500" },
-  { key: "variations", traditional: "3-5", neurobulls: "500+" },
-  { key: "availability", traditional: "Business hours", neurobulls: "24/7" },
-];
+const comparisonRowKeys = ["timeline", "cost", "variations", "availability"] as const;
 
 export default function Home() {
   const t = useTranslations();
@@ -320,10 +315,10 @@ export default function Home() {
                       <step.icon className="h-6 w-6 text-nb-gold" />
                     </div>
                     <h3 className="text-lg font-semibold mb-2">
-                      {t(`process.step${i + 1}.title`)}
+                      {t(`process.steps.${["brief", "creation", "review", "launch"][i]}.title`)}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      {t(`process.step${i + 1}.description`)}
+                      {t(`process.steps.${["brief", "creation", "review", "launch"][i]}.description`)}
                     </p>
                   </div>
                 </ScrollReveal>
@@ -349,18 +344,18 @@ export default function Home() {
                 <Card className="border-border bg-card/50 opacity-75">
                   <CardContent className="p-8">
                     <h3 className="text-xl font-semibold text-muted-foreground mb-8">
-                      {t("comparison.traditional")}
+                      {t("comparison.traditional.label")}
                     </h3>
                     <div className="space-y-6">
-                      {comparisonRows.map((row) => (
-                        <div key={row.key} className="flex items-center justify-between">
+                      {comparisonRowKeys.map((key) => (
+                        <div key={key} className="flex items-center justify-between">
                           <span className="text-sm text-muted-foreground">
-                            {t(`comparison.${row.key}`)}
+                            {t(`comparison.rows.${key}`)}
                           </span>
                           <div className="flex items-center gap-2">
                             <X className="h-4 w-4 text-muted-foreground/50" />
                             <span className="text-sm text-muted-foreground">
-                              {row.traditional}
+                              {t(`comparison.traditional.${key}`)}
                             </span>
                           </div>
                         </div>
@@ -372,17 +367,17 @@ export default function Home() {
                 {/* NeuroBulls */}
                 <Card className="border-nb-red bg-card">
                   <CardContent className="p-8">
-                    <h3 className="text-xl font-semibold mb-8">NeuroBulls</h3>
+                    <h3 className="text-xl font-semibold mb-8">{t("comparison.neurobulls.label")}</h3>
                     <div className="space-y-6">
-                      {comparisonRows.map((row) => (
-                        <div key={row.key} className="flex items-center justify-between">
+                      {comparisonRowKeys.map((key) => (
+                        <div key={key} className="flex items-center justify-between">
                           <span className="text-sm text-muted-foreground">
-                            {t(`comparison.${row.key}`)}
+                            {t(`comparison.rows.${key}`)}
                           </span>
                           <div className="flex items-center gap-2">
                             <Check className="h-4 w-4 text-nb-gold" />
                             <span className="text-sm font-semibold text-nb-gold">
-                              {row.neurobulls}
+                              {t(`comparison.neurobulls.${key}`)}
                             </span>
                           </div>
                         </div>
@@ -409,9 +404,6 @@ export default function Home() {
                 {t("cta.title")}{" "}
                 <span className="text-nb-red">{t("cta.titleHighlight")}</span>
               </h2>
-              <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-                {t("cta.subtitle")}
-              </p>
               <div className="mt-10">
                 <Button render={<a />} size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg">
                   <Link href="/contact">{t("cta.button")}</Link>

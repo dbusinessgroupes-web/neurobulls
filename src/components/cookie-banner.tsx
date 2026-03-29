@@ -48,7 +48,7 @@ export function CookieBanner() {
           <div className="mx-auto max-w-4xl rounded-xl border border-border bg-card p-6 shadow-2xl">
             <div className="flex items-start justify-between gap-4">
               <p className="text-sm text-muted-foreground">{t("message")}</p>
-              <button onClick={reject} className="text-muted-foreground hover:text-foreground shrink-0">
+              <button onClick={reject} aria-label="Close" className="text-muted-foreground hover:text-foreground shrink-0">
                 <X className="h-4 w-4" />
               </button>
             </div>

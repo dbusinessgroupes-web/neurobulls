@@ -49,11 +49,11 @@
     "individualTitle": "Servicios Individuales",
     "individualSubtitle": "¿Necesitas algo específico? Elige exactamente lo que necesitas.",
     "learnMore": "Saber Más",
-    "modelsPrice": "Desde €800",
-    "photographyPrice": "Desde €400",
-    "videoPrice": "Desde €300",
-    "socialPrice": "Desde €600/mes",
-    "brandingPrice": "Desde €1.500",
+    "modelsPrice": "Desde €900",
+    "photographyPrice": "Desde €350",
+    "videoPrice": "Desde €500",
+    "socialPrice": "Desde €800/mes",
+    "brandingPrice": "Desde €1.800",
     "strategyPrice": "Desde €1.500"
   },
   "pricing": {
@@ -66,23 +66,61 @@
     "contactUs": "Contactar",
     "spark": {
       "name": "Spark",
-      "description": "Perfecto para marcas emergentes que quieren probar el marketing con IA.",
-      "features": ["1 modelo IA exclusivo", "20 imágenes/mes", "1 vídeo corto/mes", "Dirección creativa básica", "2 rondas de revisión", "Entrega en 5-7 días"]
+      "description": "El punto de entrada perfecto. Prueba el poder del marketing con IA con resultados reales.",
+      "price": "€1.500",
+      "features": [
+        "1 modelo IA exclusivo",
+        "20 imágenes/mes",
+        "1 vídeo corto (15s)/mes",
+        "Dirección creativa básica",
+        "2 rondas de revisión",
+        "Entrega en 5-7 días"
+      ]
     },
     "pulse": {
       "name": "Pulse",
-      "description": "Para marcas en crecimiento listas para escalar su producción de contenido.",
-      "features": ["3 modelos IA exclusivos", "50 imágenes/mes", "4 vídeos cortos + 1 largo/mes", "Estrategia de campaña mensual", "2 canales de redes sociales", "15 publicaciones/mes", "3 rondas de revisión", "Entrega en 3-5 días"]
+      "description": "Escala tu producción de contenido. Más modelos, más formatos, presencia de marca consistente.",
+      "price": "€3.900",
+      "features": [
+        "3 modelos IA exclusivos",
+        "50 imágenes/mes",
+        "3 vídeos cortos + 1 largo/mes",
+        "Estrategia de campaña mensual",
+        "2 canales de redes sociales gestionados",
+        "15 publicaciones/mes",
+        "3 rondas de revisión",
+        "Entrega en 3-5 días"
+      ]
     },
     "surge": {
       "name": "Surge",
-      "description": "Para marcas consolidadas que exigen campañas IA premium.",
-      "features": ["6 modelos IA exclusivos", "120 imágenes/mes", "8 vídeos cortos + 3 largos/mes", "Estrategia completa con KPIs", "4 canales de redes sociales", "30 publicaciones/mes", "Revisiones ilimitadas", "Entrega prioritaria en 2-3 días"]
+      "description": "Marketing IA completo para marcas que exigen excelencia. Nuestro plan más popular.",
+      "price": "€8.500",
+      "features": [
+        "6 modelos IA exclusivos",
+        "150 imágenes/mes",
+        "8 vídeos cortos + 3 largos/mes",
+        "Estrategia completa con KPIs",
+        "4 canales de redes sociales gestionados",
+        "30 publicaciones/mes",
+        "Revisiones ilimitadas",
+        "Entrega prioritaria en 48h"
+      ]
     },
     "apex": {
       "name": "Apex",
-      "description": "Marketing IA de nivel enterprise con equipo dedicado.",
-      "features": ["Modelos IA ilimitados", "Imágenes ilimitadas con SLA", "Producción de vídeo ilimitada", "Estrategia 360°: branding + campañas + social + paid", "Director creativo dedicado", "SLA de entrega 24-48h", "Workshops de innovación trimestrales"]
+      "description": "Nivel enterprise. Equipo dedicado, producción ilimitada, SLAs personalizados.",
+      "price": "€15.000",
+      "features": [
+        "Modelos IA ilimitados",
+        "Imágenes ilimitadas con SLA",
+        "Producción de vídeo ilimitada",
+        "Estrategia 360°: branding + campañas + social + paid",
+        "Director creativo + estratega dedicados",
+        "Entrega garantizada en 24-48h",
+        "Workshops de innovación trimestrales",
+        "Integración personalizada con tu equipo"
+      ]
     },
     "enterprise": "Enterprise",
     "comparisonTitle": "Lo Que Ahorras Con NeuroBulls",
@@ -95,7 +133,7 @@
     "comparisonVideoNeurobulls": "Desde €300",
     "comparisonVideoLabel": "Producción de Vídeo",
     "comparisonCampaignTraditional": "€50.000+",
-    "comparisonCampaignNeurobulls": "Desde €1.900/mes",
+    "comparisonCampaignNeurobulls": "Desde €1.500/mes",
     "comparisonCampaignLabel": "Campaña Completa",
     "ctaTitle": "¿Listo para transformar tu marketing?",
     "ctaButton": "Contactar"
@@ -105,6 +143,38 @@
     "subtitle": "Campañas reales. Modelos IA. Resultados excepcionales.",
     "viewProject": "Ver Proyecto",
     "viewAll": "Ver Todo el Portfolio",
+    "projects": {
+      "vanguardFashion": {
+        "title": "Vanguard Fashion",
+        "description": "Campaña completa con modelos IA para la colección Primavera/Verano 2026. 120 imágenes, 8 vídeos, 3 modelos IA.",
+        "stats": "120 imágenes • 8 vídeos • 3 modelos IA"
+      },
+      "lumiereBeauty": {
+        "title": "Lumière Beauty",
+        "description": "Campaña de lanzamiento de skincare de lujo con modelos IA hiperrealistas en entornos editoriales.",
+        "stats": "80 imágenes • 4 vídeos • 2 modelos IA"
+      },
+      "techvisionPro": {
+        "title": "TechVision Pro",
+        "description": "Campaña de lanzamiento de producto con embajadores tech generados por IA en plataformas digitales.",
+        "stats": "60 imágenes • 6 vídeos • 4 modelos IA"
+      },
+      "maisonElegance": {
+        "title": "Maison Élégance",
+        "description": "Marketing inmobiliario de lujo con modelos IA lifestyle en entornos arquitectónicos.",
+        "stats": "90 imágenes • 3 vídeos • 5 modelos IA"
+      },
+      "glowCosmetics": {
+        "title": "Glow Cosmetics",
+        "description": "Estrategia de contenido en redes sociales con influencer IA de belleza generando 30 posts/mes.",
+        "stats": "150 imágenes • 12 reels • 1 influencer IA"
+      },
+      "urbanTaste": {
+        "title": "Urban Taste",
+        "description": "Rebranding de cadena de restaurantes con fotografía gastronómica IA y contenido lifestyle.",
+        "stats": "200 imágenes • 5 vídeos • 6 modelos IA"
+      }
+    },
     "filters": {
       "all": "Todo",
       "fashion": "Moda",
@@ -118,10 +188,22 @@
     "title": "Cómo Funciona",
     "subtitle": "Del briefing al lanzamiento en días, no semanas.",
     "steps": {
-      "brief": { "title": "Briefing", "description": "Comparte tu visión, público objetivo y objetivos de campaña." },
-      "creation": { "title": "Creación IA", "description": "Nuestra IA genera modelos hiperrealistas y contenido adaptado a tu marca." },
-      "review": { "title": "Revisión y Ajuste", "description": "Itera con variaciones ilimitadas hasta que cada detalle sea perfecto." },
-      "launch": { "title": "Entrega y Lanzamiento", "description": "Recibe assets listos para producción optimizados para cada plataforma." }
+      "brief": {
+        "title": "Briefing",
+        "description": "Comparte tu visión, público objetivo y objetivos de campaña."
+      },
+      "creation": {
+        "title": "Creación IA",
+        "description": "Nuestra IA genera modelos hiperrealistas y contenido adaptado a tu marca."
+      },
+      "review": {
+        "title": "Revisión y Ajuste",
+        "description": "Itera con variaciones ilimitadas hasta que cada detalle sea perfecto."
+      },
+      "launch": {
+        "title": "Entrega y Lanzamiento",
+        "description": "Recibe assets listos para producción optimizados para cada plataforma."
+      }
     }
   },
   "comparison": {
@@ -154,6 +236,16 @@
   },
   "about": {
     "title": "Sobre NeuroBulls",
+    "pipeline": {
+      "input": "Entrada",
+      "processing": "Procesado IA",
+      "output": "Resultado"
+    },
+    "founder": {
+      "title": "Fundada por D Business Group ES",
+      "description": "Creemos que la IA no es solo el futuro del marketing — es el presente. Nuestra misión es hacer que el contenido hiperrealista con IA sea accesible para cada marca, eliminando las barreras de la producción tradicional mientras entregamos resultados indistinguibles de la realidad.",
+      "location": "Madrid, España"
+    },
     "mission": {
       "title": "Nuestra Misión",
       "description": "Creemos que el futuro del marketing es nativo de IA. NeuroBulls existe para hacer ese futuro accesible a cada marca — entregando campañas con modelos IA hiperrealistas que son más rápidas, más asequibles e infinitamente más escalables que la producción tradicional."
@@ -164,10 +256,22 @@
     },
     "advantages": {
       "title": "¿Por Qué Marketing con IA?",
-      "cost": { "title": "60-85% Ahorro en Costes", "description": "Sin modelos, sin estudios, sin estilistas. Producción digital a una fracción del coste." },
-      "speed": { "title": "10x Más Rápido", "description": "Campañas completas en días, no semanas. Reacciona a tendencias en 24 horas." },
-      "consistency": { "title": "Consistencia Perfecta", "description": "Tu modelo IA no envejece, no cambia. La misma identidad en 1000 campañas." },
-      "scale": { "title": "Escalabilidad Infinita", "description": "Genera 100 variaciones para A/B testing al coste de una. Adáptate a cualquier mercado al instante." }
+      "cost": {
+        "title": "60-85% Ahorro en Costes",
+        "description": "Sin modelos, sin estudios, sin estilistas. Producción digital a una fracción del coste."
+      },
+      "speed": {
+        "title": "10x Más Rápido",
+        "description": "Campañas completas en días, no semanas. Reacciona a tendencias en 24 horas."
+      },
+      "consistency": {
+        "title": "Consistencia Perfecta",
+        "description": "Tu modelo IA no envejece, no cambia. La misma identidad en 1000 campañas."
+      },
+      "scale": {
+        "title": "Escalabilidad Infinita",
+        "description": "Genera 100 variaciones para A/B testing al coste de una. Adáptate a cualquier mercado al instante."
+      }
     }
   },
   "contact": {
@@ -179,6 +283,7 @@
       "company": "Empresa",
       "service": "Servicio de Interés",
       "serviceOptions": {
+        "default": "Selecciona un servicio",
         "photography": "Fotografía IA",
         "video": "Producción de Vídeo IA",
         "strategy": "Estrategia de Campaña IA",
@@ -190,12 +295,17 @@
       },
       "budget": "Rango de Presupuesto",
       "budgetOptions": {
+        "default": "Selecciona un rango de presupuesto",
         "starter": "€400 - €2.000",
         "growth": "€2.000 - €5.000",
         "premium": "€5.000 - €10.000",
         "enterprise": "€10.000+"
       },
+      "namePlaceholder": "Juan Pérez",
+      "emailPlaceholder": "juan@empresa.com",
+      "companyPlaceholder": "Nombre de tu empresa",
       "message": "Cuéntanos sobre tu proyecto",
+      "messagePlaceholder": "Describe tu proyecto, objetivos y plazos...",
       "privacy": "Acepto la",
       "privacyLink": "Política de Privacidad",
       "submit": "Enviar Mensaje",
@@ -208,14 +318,22 @@
       "instagram": "@neurobulls",
       "location": "Madrid, España",
       "hours": "Lun-Vie, 9:00-18:00 CET"
+    },
+    "cta": {
+      "text": "¿Prefieres email? Escríbenos directamente a"
     }
   },
   "footer": {
     "company": "Empresa",
     "aboutLink": "Nosotros",
+    "workLink": "Portfolio",
     "careers": "Empleo",
     "blog": "Blog",
     "servicesTitle": "Servicios",
+    "servicePhotography": "Fotografía IA",
+    "serviceVideo": "Vídeo IA",
+    "serviceStrategy": "Estrategia IA",
+    "serviceModels": "Modelos IA",
     "legal": "Legal",
     "legalNotice": "Aviso Legal",
     "privacy": "Política de Privacidad",

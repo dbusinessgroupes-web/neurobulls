@@ -66,7 +66,7 @@ export function Header() {
         <div className="md:hidden flex items-center gap-3">
           <LanguageSwitcher />
           <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger>
+            <SheetTrigger aria-label="Open menu">
               <Menu className="h-5 w-5" />
             </SheetTrigger>
             <SheetContent side="right" className="bg-background border-border w-72">
