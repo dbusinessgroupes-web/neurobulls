@@ -10,6 +10,7 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 const projects = [
@@ -17,37 +18,43 @@ const projects = [
     id: "vanguard-fashion",
     key: "vanguardFashion",
     category: "fashion",
-    gradient: "from-red-900/40 via-black to-black",
+    image: "/portfolio/vanguard-fashion.jpg",
+    alt: "Fashion editorial campaign with bold styling and dramatic lighting",
   },
   {
     id: "lumiere-beauty",
     key: "lumiereBeauty",
     category: "beauty",
-    gradient: "from-amber-900/40 via-black to-black",
+    image: "/portfolio/lumiere-beauty.jpg",
+    alt: "Luxury skincare product photography with soft natural tones",
   },
   {
     id: "techvision-pro",
     key: "techvisionPro",
     category: "tech",
-    gradient: "from-blue-900/40 via-black to-black",
+    image: "/portfolio/techvision-pro.jpg",
+    alt: "Futuristic tech product launch with sleek design elements",
   },
   {
     id: "maison-elegance",
     key: "maisonElegance",
     category: "realestate",
-    gradient: "from-emerald-900/40 via-black to-black",
+    image: "/portfolio/maison-elegance.jpg",
+    alt: "Elegant luxury real estate interior with refined architecture",
   },
   {
     id: "glow-cosmetics",
     key: "glowCosmetics",
     category: "beauty",
-    gradient: "from-pink-900/40 via-black to-black",
+    image: "/portfolio/glow-cosmetics.jpg",
+    alt: "Beauty influencer campaign with vibrant cosmetics and warm lighting",
   },
   {
     id: "urban-taste",
     key: "urbanTaste",
     category: "food",
-    gradient: "from-orange-900/40 via-black to-black",
+    image: "/portfolio/urban-taste.jpg",
+    alt: "Artisan restaurant food photography with rich textures and colors",
   },
 ];
 
@@ -141,18 +148,24 @@ export default function WorkPage() {
                     >
                       <Link href="/contact" className="block h-full group">
                         <div
-                          className={`relative h-full rounded-xl overflow-hidden bg-gradient-to-br ${project.gradient} border border-border/50`}
+                          className="relative h-full rounded-xl overflow-hidden border border-border/50"
                         >
-                          {/* Decorative pattern */}
-                          <div className="absolute inset-0 opacity-10">
-                            <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-white/20 blur-3xl" />
-                            <div className="absolute bottom-1/3 right-1/4 w-24 h-24 rounded-full bg-white/10 blur-2xl" />
-                          </div>
+                          {/* Background image */}
+                          <Image
+                            src={project.image}
+                            alt={project.alt}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          />
+
+                          {/* Dark overlay for text readability */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
 
                           {/* Content overlay */}
                           <div className="relative h-full flex flex-col justify-end p-6">
                             {/* Hover overlay */}
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
 
                             <div className="relative z-10">
                               <Badge

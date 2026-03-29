@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
@@ -75,25 +76,25 @@ const portfolioItems = [
   {
     name: "Vanguard Fashion",
     tag: "Fashion",
-    gradient: "from-red-900/40 via-rose-800/20 to-black",
+    image: "/portfolio/vanguard-fashion.jpg",
     className: "md:col-span-2 md:row-span-2",
   },
   {
     name: "Lumiere Beauty",
     tag: "Beauty",
-    gradient: "from-amber-900/40 via-yellow-800/20 to-black",
+    image: "/portfolio/lumiere-beauty.jpg",
     className: "",
   },
   {
     name: "TechVision",
     tag: "Technology",
-    gradient: "from-blue-900/40 via-cyan-800/20 to-black",
+    image: "/portfolio/techvision-pro.jpg",
     className: "",
   },
   {
     name: "Maison Elegance",
     tag: "Real Estate",
-    gradient: "from-emerald-900/40 via-teal-800/20 to-black",
+    image: "/portfolio/maison-elegance.jpg",
     className: "md:col-span-2",
   },
 ];
@@ -109,20 +110,24 @@ export default function Home() {
       <main className="overflow-hidden">
         {/* ─── Hero Section ─── */}
         <section className="relative min-h-screen flex items-center justify-center px-6">
-          {/* Animated grid background */}
-          <div
-            className="absolute inset-0 -z-10"
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)
-              `,
-              backgroundSize: "64px 64px",
-            }}
-          />
+          {/* Hero background image */}
+          <div className="absolute inset-0 -z-10">
+            <Image
+              src="/hero/hero-models.jpg"
+              alt="AI-generated fashion models in a dramatic editorial pose"
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-black/60" />
+            {/* Gradient fade to page background at bottom */}
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+          </div>
           {/* Gradient orbs */}
-          <div className="absolute top-1/4 left-1/4 -z-10 h-[500px] w-[500px] rounded-full bg-nb-red/5 blur-[128px]" />
-          <div className="absolute bottom-1/4 right-1/4 -z-10 h-[400px] w-[400px] rounded-full bg-nb-gold/5 blur-[128px]" />
+          <div className="absolute top-1/4 left-1/4 -z-10 h-[500px] w-[500px] rounded-full bg-nb-red/10 blur-[128px]" />
+          <div className="absolute bottom-1/4 right-1/4 -z-10 h-[400px] w-[400px] rounded-full bg-nb-gold/10 blur-[128px]" />
 
           <motion.div
             className="mx-auto max-w-5xl text-center"
@@ -252,9 +257,13 @@ export default function Home() {
                   <div
                     className={`group relative h-full min-h-[200px] rounded-xl overflow-hidden cursor-pointer ${item.className}`}
                   >
-                    {/* Gradient placeholder background */}
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-br ${item.gradient} transition-transform duration-500 group-hover:scale-105`}
+                    {/* Portfolio image */}
+                    <Image
+                      src={item.image}
+                      alt={`${item.name} — ${item.tag} campaign`}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes={item.className.includes("col-span-2") ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 100vw, 25vw"}
                     />
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:bg-black/30" />

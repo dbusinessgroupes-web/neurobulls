@@ -12,6 +12,7 @@ import {
   Check,
   ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -45,6 +46,12 @@ const tiers = [
   { key: "surge", badge: "popular", highlighted: true, hasFrom: false },
   { key: "apex", badge: "enterprise", highlighted: false, hasFrom: true },
 ] as const;
+
+const serviceImages: Record<string, string> = {
+  models: "/services/ai-models.jpg",
+  photography: "/services/ai-photography.jpg",
+  video: "/services/ai-video.jpg",
+};
 
 const alaCarteServices = [
   { icon: User, key: "models", priceKey: "modelsPrice" },
@@ -80,10 +87,24 @@ export default function ServicesPage() {
     <>
       <Header />
       <main className="overflow-hidden">
-        {/* ─── Hero ─── */}
-        <section className="py-32 pt-40 px-6">
+        {/* ─── Hero with Banner ─── */}
+        <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+          {/* Banner image */}
+          <div className="absolute inset-0 -z-10">
+            <Image
+              src="/services/ai-photography.jpg"
+              alt="AI photography studio"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background" />
+          </div>
+
           <motion.div
-            className="mx-auto max-w-4xl text-center"
+            className="mx-auto max-w-4xl text-center pt-8"
             variants={stagger}
             initial="hidden"
             animate="visible"
@@ -220,7 +241,19 @@ export default function ServicesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {alaCarteServices.map((service, i) => (
                 <ScrollReveal key={service.key} delay={i * 0.08}>
-                  <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 h-full">
+                  <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 h-full overflow-hidden">
+                    {serviceImages[service.key] && (
+                      <div className="relative w-full h-44 overflow-hidden">
+                        <Image
+                          src={serviceImages[service.key]}
+                          alt={t(`services.${service.key}.title`)}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                      </div>
+                    )}
                     <CardContent className="p-6 flex flex-col h-full">
                       <service.icon className="h-8 w-8 text-nb-gold mb-4" />
                       <h3 className="text-lg font-semibold mb-2">
