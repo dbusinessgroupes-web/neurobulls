@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "startProject": "Start a Project"
+  },
+  "hero": {
+    "title": "THE FUTURE OF MARKETING IS NOT HUMAN",
+    "subtitle": "AI-powered campaigns. Hyperrealistic models. Unlimited creativity.",
+    "cta": "Discover Our Work",
+    "ctaSecondary": "See Pricing"
+  },
+  "stats": {
+    "cost": "Cost Reduction vs Traditional Shoots",
+    "delivery": "Average Delivery Time",
+    "models": "AI Models Created",
+    "engagement": "Higher Engagement Rate"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Everything you need to launch AI-powered campaigns that outperform traditional production.",
+    "photography": {
+      "title": "AI Photography",
+      "description": "Hyperrealistic photo sessions with AI-generated models. Product, lifestyle, editorial — indistinguishable from reality."
+    },
+    "video": {
+      "title": "AI Video Production",
+      "description": "Advertising videos and social content with AI actors. From 15s reels to 90s brand films."
+    },
+    "strategy": {
+      "title": "AI Campaign Strategy",
+      "description": "Full campaign planning with AI-native creative direction. Concept, calendar, KPIs, execution."
+    },
+    "models": {
+      "title": "AI Model Creation",
+      "description": "Custom virtual personas with consistent identity. Your exclusive AI brand ambassador."
+    },
+    "social": {
+      "title": "AI Social Media",
+      "description": "Full social media management with 100% AI-generated content. Posts, stories, reels."
+    },
+    "branding": {
+      "title": "AI Brand Identity",
+      "description": "Complete visual identity powered by AI. Logo, palette, guidelines, brand model, templates."
+    },
+    "exploreAll": "Explore All Services",
+    "individualTitle": "Individual Services",
+    "individualSubtitle": "Need something specific? Choose exactly what you need.",
+    "learnMore": "Learn More",
+    "modelsPrice": "From €800",
+    "photographyPrice": "From €400",
+    "videoPrice": "From €300",
+    "socialPrice": "From €600/mo",
+    "brandingPrice": "From €1,500",
+    "strategyPrice": "From €1,500"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent pricing. No hidden fees. Premium results.",
+    "monthly": "/month",
+    "from": "From",
+    "popular": "Most Popular",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "spark": {
+      "name": "Spark",
+      "description": "Perfect for emerging brands testing AI marketing.",
+      "features": ["1 exclusive AI model", "20 images/month", "1 short video/month", "Basic creative direction", "2 revision rounds", "5-7 day delivery"]
+    },
+    "pulse": {
+      "name": "Pulse",
+      "description": "For growing brands ready to scale content production.",
+      "features": ["3 exclusive AI models", "50 images/month", "4 short + 1 long video/month", "Monthly campaign strategy", "2 social media channels", "15 posts/month", "3 revision rounds", "3-5 day delivery"]
+    },
+    "surge": {
+      "name": "Surge",
+      "description": "For established brands demanding premium AI campaigns.",
+      "features": ["6 exclusive AI models", "120 images/month", "8 short + 3 long videos/month", "Full campaign strategy with KPIs", "4 social media channels", "30 posts/month", "Unlimited revisions", "2-3 day priority delivery"]
+    },
+    "apex": {
+      "name": "Apex",
+      "description": "Enterprise-grade AI marketing with dedicated team.",
+      "features": ["Unlimited AI models", "Unlimited images with SLA", "Unlimited video production", "360° strategy: branding + campaigns + social + paid", "Dedicated creative director", "24-48h delivery SLA", "Quarterly innovation workshops"]
+    },
+    "enterprise": "Enterprise",
+    "comparisonTitle": "What You Save With NeuroBulls",
+    "comparisonTraditional": "Traditional Cost",
+    "comparisonNeurobulls": "NeuroBulls Cost",
+    "comparisonPhotoTraditional": "€8,000 - €15,000",
+    "comparisonPhotoNeurobulls": "From €400",
+    "comparisonPhotoLabel": "Photo Shoot",
+    "comparisonVideoTraditional": "€15,000 - €50,000",
+    "comparisonVideoNeurobulls": "From €300",
+    "comparisonVideoLabel": "Video Production",
+    "comparisonCampaignTraditional": "€50,000+",
+    "comparisonCampaignNeurobulls": "From €1,900/mo",
+    "comparisonCampaignLabel": "Full Campaign",
+    "ctaTitle": "Ready to transform your marketing?",
+    "ctaButton": "Get in Touch"
+  },
+  "work": {
+    "title": "Our Work",
+    "subtitle": "Real campaigns. AI models. Exceptional results.",
+    "viewProject": "View Project",
+    "viewAll": "View All Work",
+    "filters": {
+      "all": "All",
+      "fashion": "Fashion",
+      "beauty": "Beauty",
+      "tech": "Tech",
+      "realestate": "Real Estate",
+      "food": "Food & Beverage"
+    }
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "From brief to launch in days, not weeks.",
+    "steps": {
+      "brief": { "title": "Brief", "description": "Share your vision, target audience, and campaign goals." },
+      "creation": { "title": "AI Creation", "description": "Our AI generates hyperrealistic models and content tailored to your brand." },
+      "review": { "title": "Review & Refine", "description": "Iterate with unlimited variations until every detail is perfect." },
+      "launch": { "title": "Deliver & Launch", "description": "Receive production-ready assets optimized for every platform." }
+    }
+  },
+  "comparison": {
+    "title": "Traditional Agency vs NeuroBulls",
+    "traditional": {
+      "label": "Traditional Agency",
+      "timeline": "4-8 weeks",
+      "cost": "€15,000+",
+      "variations": "Limited by budget",
+      "availability": "Schedule dependent"
+    },
+    "neurobulls": {
+      "label": "NeuroBulls",
+      "timeline": "48 hours",
+      "cost": "From €400",
+      "variations": "Unlimited",
+      "availability": "24/7"
+    },
+    "rows": {
+      "timeline": "Timeline",
+      "cost": "Cost per campaign",
+      "variations": "Variations",
+      "availability": "Availability"
+    }
+  },
+  "cta": {
+    "title": "Your next campaign doesn't need a casting call.",
+    "titleHighlight": "It needs NeuroBulls.",
+    "button": "Start Your Project"
+  },
+  "about": {
+    "title": "About NeuroBulls",
+    "mission": {
+      "title": "Our Mission",
+      "description": "We believe the future of marketing is AI-native. NeuroBulls exists to make that future accessible to every brand — delivering campaigns with hyperrealistic AI models that are faster, more affordable, and infinitely more scalable than traditional production."
+    },
+    "technology": {
+      "title": "Our Technology",
+      "description": "We leverage cutting-edge generative AI to create photorealistic models that are indistinguishable from real people. Our proprietary pipeline ensures consistency across hundreds of images and videos — the same AI model, the same identity, infinite scenarios."
+    },
+    "advantages": {
+      "title": "Why AI Marketing?",
+      "cost": { "title": "60-85% Cost Savings", "description": "No models, no studios, no stylists. Digital production at a fraction of the cost." },
+      "speed": { "title": "10x Faster Delivery", "description": "Complete campaigns in days, not weeks. React to trends in 24 hours." },
+      "consistency": { "title": "Perfect Consistency", "description": "Your AI model never ages, never changes. Same identity across 1000 campaigns." },
+      "scale": { "title": "Infinite Scalability", "description": "Generate 100 variations for A/B testing at the cost of one. Adapt to any market instantly." }
+    }
+  },
+  "contact": {
+    "title": "Let's Create Together",
+    "subtitle": "Tell us about your project and we'll craft a tailored AI marketing solution.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company",
+      "service": "Service Interested In",
+      "serviceOptions": {
+        "photography": "AI Photography",
+        "video": "AI Video Production",
+        "strategy": "AI Campaign Strategy",
+        "models": "AI Model Creation",
+        "social": "AI Social Media",
+        "branding": "AI Brand Identity",
+        "package": "Monthly Package",
+        "other": "Other"
+      },
+      "budget": "Budget Range",
+      "budgetOptions": {
+        "starter": "€400 - €2,000",
+        "growth": "€2,000 - €5,000",
+        "premium": "€5,000 - €10,000",
+        "enterprise": "€10,000+"
+      },
+      "message": "Tell us about your project",
+      "privacy": "I accept the",
+      "privacyLink": "Privacy Policy",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again or email us directly."
+    },
+    "info": {
+      "email": "neurobulls@gmail.com",
+      "instagram": "@neurobulls",
+      "location": "Madrid, Spain",
+      "hours": "Mon-Fri, 9:00-18:00 CET"
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "aboutLink": "About",
+    "careers": "Careers",
+    "blog": "Blog",
+    "servicesTitle": "Services",
+    "legal": "Legal",
+    "legalNotice": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "terms": "Terms & Conditions",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved.",
+    "poweredBy": "Powered by AI"
+  },
+  "cookies": {
+    "message": "We use cookies to improve your experience. You can accept all cookies or customize your preferences.",
+    "accept": "Accept All",
+    "reject": "Reject All",
+    "customize": "Customize",
+    "save": "Save Preferences",
+    "necessary": "Necessary",
+    "necessaryDesc": "Essential for the website to function.",
+    "analytics": "Analytics",
+    "analyticsDesc": "Help us understand how visitors use our site.",
+    "marketing": "Marketing",
+    "marketingDesc": "Used to deliver relevant ads."
+  }
+}

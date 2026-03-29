@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "work": "Portfolio",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "startProject": "Iniciar Proyecto"
+  },
+  "hero": {
+    "title": "EL FUTURO DEL MARKETING NO ES HUMANO",
+    "subtitle": "Campañas impulsadas por IA. Modelos hiperrealistas. Creatividad ilimitada.",
+    "cta": "Descubre Nuestro Trabajo",
+    "ctaSecondary": "Ver Precios"
+  },
+  "stats": {
+    "cost": "Reducción de Costes vs Producción Tradicional",
+    "delivery": "Tiempo Medio de Entrega",
+    "models": "Modelos IA Creados",
+    "engagement": "Mayor Tasa de Engagement"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Todo lo que necesitas para lanzar campañas con IA que superan a la producción tradicional.",
+    "photography": {
+      "title": "Fotografía IA",
+      "description": "Sesiones fotográficas hiperrealistas con modelos generados por IA. Producto, lifestyle, editorial — indistinguible de la realidad."
+    },
+    "video": {
+      "title": "Producción de Vídeo IA",
+      "description": "Vídeos publicitarios y contenido social con actores IA. Desde reels de 15s hasta films de marca de 90s."
+    },
+    "strategy": {
+      "title": "Estrategia de Campaña IA",
+      "description": "Planificación completa de campañas con dirección creativa nativa de IA. Concepto, calendario, KPIs, ejecución."
+    },
+    "models": {
+      "title": "Creación de Modelos IA",
+      "description": "Personas virtuales personalizadas con identidad consistente. Tu embajador de marca IA exclusivo."
+    },
+    "social": {
+      "title": "Redes Sociales IA",
+      "description": "Gestión completa de redes sociales con contenido 100% generado por IA. Posts, stories, reels."
+    },
+    "branding": {
+      "title": "Identidad de Marca IA",
+      "description": "Identidad visual completa impulsada por IA. Logo, paleta, guidelines, modelo de marca, templates."
+    },
+    "exploreAll": "Explorar Todos los Servicios",
+    "individualTitle": "Servicios Individuales",
+    "individualSubtitle": "¿Necesitas algo específico? Elige exactamente lo que necesitas.",
+    "learnMore": "Saber Más",
+    "modelsPrice": "Desde €800",
+    "photographyPrice": "Desde €400",
+    "videoPrice": "Desde €300",
+    "socialPrice": "Desde €600/mes",
+    "brandingPrice": "Desde €1.500",
+    "strategyPrice": "Desde €1.500"
+  },
+  "pricing": {
+    "title": "Precios",
+    "subtitle": "Precios transparentes. Sin costes ocultos. Resultados premium.",
+    "monthly": "/mes",
+    "from": "Desde",
+    "popular": "Más Popular",
+    "getStarted": "Empezar",
+    "contactUs": "Contactar",
+    "spark": {
+      "name": "Spark",
+      "description": "Perfecto para marcas emergentes que quieren probar el marketing con IA.",
+      "features": ["1 modelo IA exclusivo", "20 imágenes/mes", "1 vídeo corto/mes", "Dirección creativa básica", "2 rondas de revisión", "Entrega en 5-7 días"]
+    },
+    "pulse": {
+      "name": "Pulse",
+      "description": "Para marcas en crecimiento listas para escalar su producción de contenido.",
+      "features": ["3 modelos IA exclusivos", "50 imágenes/mes", "4 vídeos cortos + 1 largo/mes", "Estrategia de campaña mensual", "2 canales de redes sociales", "15 publicaciones/mes", "3 rondas de revisión", "Entrega en 3-5 días"]
+    },
+    "surge": {
+      "name": "Surge",
+      "description": "Para marcas consolidadas que exigen campañas IA premium.",
+      "features": ["6 modelos IA exclusivos", "120 imágenes/mes", "8 vídeos cortos + 3 largos/mes", "Estrategia completa con KPIs", "4 canales de redes sociales", "30 publicaciones/mes", "Revisiones ilimitadas", "Entrega prioritaria en 2-3 días"]
+    },
+    "apex": {
+      "name": "Apex",
+      "description": "Marketing IA de nivel enterprise con equipo dedicado.",
+      "features": ["Modelos IA ilimitados", "Imágenes ilimitadas con SLA", "Producción de vídeo ilimitada", "Estrategia 360°: branding + campañas + social + paid", "Director creativo dedicado", "SLA de entrega 24-48h", "Workshops de innovación trimestrales"]
+    },
+    "enterprise": "Enterprise",
+    "comparisonTitle": "Lo Que Ahorras Con NeuroBulls",
+    "comparisonTraditional": "Coste Tradicional",
+    "comparisonNeurobulls": "Coste NeuroBulls",
+    "comparisonPhotoTraditional": "€8.000 - €15.000",
+    "comparisonPhotoNeurobulls": "Desde €400",
+    "comparisonPhotoLabel": "Sesión Fotográfica",
+    "comparisonVideoTraditional": "€15.000 - €50.000",
+    "comparisonVideoNeurobulls": "Desde €300",
+    "comparisonVideoLabel": "Producción de Vídeo",
+    "comparisonCampaignTraditional": "€50.000+",
+    "comparisonCampaignNeurobulls": "Desde €1.900/mes",
+    "comparisonCampaignLabel": "Campaña Completa",
+    "ctaTitle": "¿Listo para transformar tu marketing?",
+    "ctaButton": "Contactar"
+  },
+  "work": {
+    "title": "Nuestro Trabajo",
+    "subtitle": "Campañas reales. Modelos IA. Resultados excepcionales.",
+    "viewProject": "Ver Proyecto",
+    "viewAll": "Ver Todo el Portfolio",
+    "filters": {
+      "all": "Todo",
+      "fashion": "Moda",
+      "beauty": "Belleza",
+      "tech": "Tecnología",
+      "realestate": "Inmobiliaria",
+      "food": "Alimentación"
+    }
+  },
+  "process": {
+    "title": "Cómo Funciona",
+    "subtitle": "Del briefing al lanzamiento en días, no semanas.",
+    "steps": {
+      "brief": { "title": "Briefing", "description": "Comparte tu visión, público objetivo y objetivos de campaña." },
+      "creation": { "title": "Creación IA", "description": "Nuestra IA genera modelos hiperrealistas y contenido adaptado a tu marca." },
+      "review": { "title": "Revisión y Ajuste", "description": "Itera con variaciones ilimitadas hasta que cada detalle sea perfecto." },
+      "launch": { "title": "Entrega y Lanzamiento", "description": "Recibe assets listos para producción optimizados para cada plataforma." }
+    }
+  },
+  "comparison": {
+    "title": "Agencia Tradicional vs NeuroBulls",
+    "traditional": {
+      "label": "Agencia Tradicional",
+      "timeline": "4-8 semanas",
+      "cost": "€15.000+",
+      "variations": "Limitadas por presupuesto",
+      "availability": "Dependiente de agenda"
+    },
+    "neurobulls": {
+      "label": "NeuroBulls",
+      "timeline": "48 horas",
+      "cost": "Desde €400",
+      "variations": "Ilimitadas",
+      "availability": "24/7"
+    },
+    "rows": {
+      "timeline": "Plazo",
+      "cost": "Coste por campaña",
+      "variations": "Variaciones",
+      "availability": "Disponibilidad"
+    }
+  },
+  "cta": {
+    "title": "Tu próxima campaña no necesita un casting.",
+    "titleHighlight": "Necesita NeuroBulls.",
+    "button": "Iniciar Tu Proyecto"
+  },
+  "about": {
+    "title": "Sobre NeuroBulls",
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Creemos que el futuro del marketing es nativo de IA. NeuroBulls existe para hacer ese futuro accesible a cada marca — entregando campañas con modelos IA hiperrealistas que son más rápidas, más asequibles e infinitamente más escalables que la producción tradicional."
+    },
+    "technology": {
+      "title": "Nuestra Tecnología",
+      "description": "Aprovechamos la IA generativa de vanguardia para crear modelos fotorrealistas indistinguibles de personas reales. Nuestro pipeline propietario garantiza consistencia en cientos de imágenes y vídeos — el mismo modelo IA, la misma identidad, infinitos escenarios."
+    },
+    "advantages": {
+      "title": "¿Por Qué Marketing con IA?",
+      "cost": { "title": "60-85% Ahorro en Costes", "description": "Sin modelos, sin estudios, sin estilistas. Producción digital a una fracción del coste." },
+      "speed": { "title": "10x Más Rápido", "description": "Campañas completas en días, no semanas. Reacciona a tendencias en 24 horas." },
+      "consistency": { "title": "Consistencia Perfecta", "description": "Tu modelo IA no envejece, no cambia. La misma identidad en 1000 campañas." },
+      "scale": { "title": "Escalabilidad Infinita", "description": "Genera 100 variaciones para A/B testing al coste de una. Adáptate a cualquier mercado al instante." }
+    }
+  },
+  "contact": {
+    "title": "Creemos Juntos",
+    "subtitle": "Cuéntanos sobre tu proyecto y diseñaremos una solución de marketing IA a medida.",
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "company": "Empresa",
+      "service": "Servicio de Interés",
+      "serviceOptions": {
+        "photography": "Fotografía IA",
+        "video": "Producción de Vídeo IA",
+        "strategy": "Estrategia de Campaña IA",
+        "models": "Creación de Modelos IA",
+        "social": "Redes Sociales IA",
+        "branding": "Identidad de Marca IA",
+        "package": "Paquete Mensual",
+        "other": "Otro"
+      },
+      "budget": "Rango de Presupuesto",
+      "budgetOptions": {
+        "starter": "€400 - €2.000",
+        "growth": "€2.000 - €5.000",
+        "premium": "€5.000 - €10.000",
+        "enterprise": "€10.000+"
+      },
+      "message": "Cuéntanos sobre tu proyecto",
+      "privacy": "Acepto la",
+      "privacyLink": "Política de Privacidad",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Te responderemos en menos de 24 horas.",
+      "error": "Algo salió mal. Inténtalo de nuevo o escríbenos directamente."
+    },
+    "info": {
+      "email": "neurobulls@gmail.com",
+      "instagram": "@neurobulls",
+      "location": "Madrid, España",
+      "hours": "Lun-Vie, 9:00-18:00 CET"
+    }
+  },
+  "footer": {
+    "company": "Empresa",
+    "aboutLink": "Nosotros",
+    "careers": "Empleo",
+    "blog": "Blog",
+    "servicesTitle": "Servicios",
+    "legal": "Legal",
+    "legalNotice": "Aviso Legal",
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies",
+    "terms": "Términos y Condiciones",
+    "contactTitle": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "poweredBy": "Impulsado por IA"
+  },
+  "cookies": {
+    "message": "Utilizamos cookies para mejorar tu experiencia. Puedes aceptar todas las cookies o personalizar tus preferencias.",
+    "accept": "Aceptar Todas",
+    "reject": "Rechazar Todas",
+    "customize": "Personalizar",
+    "save": "Guardar Preferencias",
+    "necessary": "Necesarias",
+    "necessaryDesc": "Esenciales para el funcionamiento del sitio web.",
+    "analytics": "Analíticas",
+    "analyticsDesc": "Nos ayudan a entender cómo los visitantes usan nuestro sitio.",
+    "marketing": "Marketing",
+    "marketingDesc": "Se utilizan para mostrar anuncios relevantes."
+  }
+}
