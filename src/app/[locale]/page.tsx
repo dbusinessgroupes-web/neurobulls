@@ -114,7 +114,7 @@ export default function Home() {
           <div className="absolute inset-0 -z-10">
             <Image
               src="/hero/hero-models.jpg"
-              alt="AI-generated fashion models in a dramatic editorial pose"
+              alt="NeuroBulls — AI Marketing Agency visual"
               fill
               priority
               className="object-cover"
