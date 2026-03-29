@@ -43,7 +43,7 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] as [number, number, number, number] },
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
   },
 };
 
@@ -52,7 +52,7 @@ const scaleIn = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] as [number, number, number, number] },
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
   },
 };
 
@@ -151,12 +151,8 @@ export default function Home() {
               variants={fadeUp}
               className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Button render={<a />} size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-8">
-                <Link href="/work">{t("hero.cta")}</Link>
-              </Button>
-              <Button render={<a />} size="lg" variant="outline" className="border-nb-gold text-nb-gold hover:bg-nb-gold/10 px-8">
-                <Link href="/services">{t("hero.ctaSecondary")}</Link>
-              </Button>
+              <Link href="/work"><Button size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-8">{t("hero.cta")}</Button></Link>
+              <Link href="/services"><Button size="lg" variant="outline" className="border-nb-gold text-nb-gold hover:bg-nb-gold/10 px-8">{t("hero.ctaSecondary")}</Button></Link>
             </motion.div>
           </motion.div>
 
@@ -227,12 +223,10 @@ export default function Home() {
             </div>
 
             <div className="mt-12 text-center">
-              <Button render={<a />} variant="outline" className="group">
-                <Link href="/services">
+              <Link href="/services"><Button variant="outline" className="group">
                   {t("services.exploreAll")}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
+                </Button></Link>
             </div>
           </div>
         </section>
@@ -283,12 +277,10 @@ export default function Home() {
             </div>
 
             <div className="mt-12 text-center">
-              <Button render={<a />} variant="outline" className="group">
-                <Link href="/work">
+              <Link href="/work"><Button variant="outline" className="group">
                   {t("work.viewAll")}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
+                </Button></Link>
             </div>
           </div>
         </section>
@@ -414,9 +406,7 @@ export default function Home() {
                 <span className="text-nb-red">{t("cta.titleHighlight")}</span>
               </h2>
               <div className="mt-10">
-                <Button render={<a />} size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg">
-                  <Link href="/contact">{t("cta.button")}</Link>
-                </Button>
+                <Link href="/contact"><Button size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg">{t("cta.button")}</Button></Link>
               </div>
             </ScrollReveal>
           </div>

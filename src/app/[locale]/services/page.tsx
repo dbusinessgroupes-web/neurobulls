@@ -196,24 +196,20 @@ export default function ServicesPage() {
                       {/* CTA */}
                       <div className="mt-8">
                         {tier.key === "apex" ? (
-                          <Button
+                          <Link href="/contact"><Button
 
                             variant="outline"
                             className="w-full"
                           >
-                            <Link href="/contact">
                               {t("pricing.contactUs")}
-                            </Link>
-                          </Button>
+                            </Button></Link>
                         ) : (
-                          <Button
+                          <Link href="/contact"><Button
 
                             className="w-full bg-nb-red hover:bg-nb-red-hover text-white"
                           >
-                            <Link href="/contact">
                               {t("pricing.getStarted")}
-                            </Link>
-                          </Button>
+                            </Button></Link>
                         )}
                       </div>
                     </CardContent>
@@ -350,13 +346,11 @@ export default function ServicesPage() {
                 {t("pricing.ctaTitle")}
               </h2>
               <div className="mt-10">
-                <Button
+                <Link href="/contact"><Button
 
                   size="lg"
                   className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg"
-                >
-                  <Link href="/contact">{t("pricing.ctaButton")}</Link>
-                </Button>
+                >{t("pricing.ctaButton")}</Button></Link>
               </div>
             </ScrollReveal>
           </div>
