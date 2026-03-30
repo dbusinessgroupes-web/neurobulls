@@ -156,13 +156,13 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: t("contact.info.location"),
-      value: "Cartagena, Murcia, Spain",
+      value: t("contact.info.locationValue"),
       href: null,
     },
     {
       icon: Clock,
       title: t("contact.info.hours"),
-      value: "Mon-Fri, 9:00-18:00 CET",
+      value: t("contact.info.hoursValue"),
       href: null,
     },
   ];

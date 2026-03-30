@@ -270,8 +270,10 @@
     "info": {
       "email": "neurobulls@gmail.com",
       "instagram": "@neurobulls",
-      "location": "Cartagena, Murcia, Spain",
-      "hours": "Mon-Fri, 9:00-18:00 CET"
+      "location": "Location",
+      "locationValue": "Cartagena, Murcia, Spain",
+      "hours": "Hours",
+      "hoursValue": "Mon-Fri, 9:00-18:00 CET"
     },
     "cta": {
       "text": "Prefer email? Write us directly at"

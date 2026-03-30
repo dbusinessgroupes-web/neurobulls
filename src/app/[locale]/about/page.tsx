@@ -17,10 +17,8 @@ import {
   ArrowRight,
   Cpu,
   ImageIcon,
-  Video,
   Sparkles,
   MapPin,
-  Building2,
 } from "lucide-react";
 
 const advantageCards = [

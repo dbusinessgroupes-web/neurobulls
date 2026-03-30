@@ -50,54 +50,57 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
-    // Try Resend first if configured
-    if (process.env.RESEND_API_KEY) {
-      const { Resend } = await import('resend');
-      const resend = new Resend(process.env.RESEND_API_KEY);
-      const safeName = escapeHtml(name);
-      const safeEmail = escapeHtml(email);
-      const safeCompany = company ? escapeHtml(company) : '';
-      const safeService = service ? escapeHtml(String(service)) : '';
-      const safeBudget = budget ? escapeHtml(String(budget)) : '';
-      const safeMessage = escapeHtml(message);
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safeCompany = company ? escapeHtml(company) : '';
+    const safeService = service ? escapeHtml(String(service)) : '';
+    const safeBudget = budget ? escapeHtml(String(budget)) : '';
+    const safeMessage = escapeHtml(message);
 
-      const { error: resendError } = await resend.emails.send({
-        from: 'NeuroBulls <onboarding@resend.dev>',
-        to: 'neurobulls@gmail.com',
-        replyTo: email,
-        subject: `NeuroBulls — New inquiry from ${safeName}${safeCompany ? ` (${safeCompany})` : ''}`,
-        html: `
-          <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:20px;">
-            <div style="background:#E31837;padding:16px 24px;border-radius:8px 8px 0 0;">
-              <h2 style="color:white;margin:0;font-size:20px;">New Contact Form Submission</h2>
-            </div>
-            <div style="background:#141414;padding:24px;border-radius:0 0 8px 8px;color:#FAFAFA;">
-              <p><strong style="color:#C9A84C;">Name:</strong> ${safeName}</p>
-              <p><strong style="color:#C9A84C;">Email:</strong> ${safeEmail}</p>
-              ${safeCompany ? `<p><strong style="color:#C9A84C;">Company:</strong> ${safeCompany}</p>` : ''}
-              ${safeService ? `<p><strong style="color:#C9A84C;">Service:</strong> ${safeService}</p>` : ''}
-              ${safeBudget ? `<p><strong style="color:#C9A84C;">Budget:</strong> ${safeBudget}</p>` : ''}
-              <hr style="border:none;border-top:1px solid #333;margin:16px 0;">
-              <p><strong style="color:#C9A84C;">Message:</strong></p>
-              <p>${safeMessage.replace(/\n/g, '<br>')}</p>
-            </div>
-          </div>
-        `,
-      });
-
-      if (!resendError) {
-        return NextResponse.json({ success: true });
-      }
-      console.error('Resend error, falling back:', resendError);
-    }
-
-    // Fallback: store submission and notify via console (visible in Vercel logs)
+    // Log to Vercel (always works, visible in dashboard)
     console.log(JSON.stringify({
       level: 'info',
       type: 'contact_form',
       timestamp: new Date().toISOString(),
       name, email, company: company || '', service: service || '', budget: budget || '', message,
     }));
+
+    // Send via Resend to the account owner email (only verified recipient on free plan)
+    if (process.env.RESEND_API_KEY) {
+      try {
+        const { Resend } = await import('resend');
+        const resend = new Resend(process.env.RESEND_API_KEY);
+        await resend.emails.send({
+          from: 'NeuroBulls <onboarding@resend.dev>',
+          to: process.env.RESEND_TO_EMAIL || 'dbusinessgroup.es@gmail.com',
+          replyTo: email,
+          subject: `NeuroBulls — ${safeName}${safeCompany ? ` (${safeCompany})` : ''} — ${safeService || 'General'}`,
+          html: `
+            <div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;">
+              <div style="background:#E31837;padding:16px 24px;border-radius:12px 12px 0 0;">
+                <h2 style="color:white;margin:0;font-size:18px;">Nueva solicitud de contacto</h2>
+              </div>
+              <div style="background:#141414;padding:24px;border-radius:0 0 12px 12px;color:#FAFAFA;">
+                <table style="width:100%;border-collapse:collapse;">
+                  <tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;width:100px;">Nombre</td><td style="padding:8px 0;">${safeName}</td></tr>
+                  <tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Email</td><td style="padding:8px 0;"><a href="mailto:${safeEmail}" style="color:#E31837;">${safeEmail}</a></td></tr>
+                  ${safeCompany ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Empresa</td><td style="padding:8px 0;">${safeCompany}</td></tr>` : ''}
+                  ${safeService ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Servicio</td><td style="padding:8px 0;">${safeService}</td></tr>` : ''}
+                  ${safeBudget ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Presupuesto</td><td style="padding:8px 0;">${safeBudget}</td></tr>` : ''}
+                </table>
+                <hr style="border:none;border-top:1px solid #333;margin:16px 0;">
+                <p style="color:#C9A84C;font-weight:600;margin-bottom:8px;">Mensaje:</p>
+                <p style="line-height:1.6;">${safeMessage.replace(/\n/g, '<br>')}</p>
+                <hr style="border:none;border-top:1px solid #333;margin:16px 0;">
+                <p style="font-size:12px;color:#666;">Enviado desde neurobulls.com · Responder directamente a ${safeEmail}</p>
+              </div>
+            </div>
+          `,
+        });
+      } catch (resendError) {
+        console.error('Resend error:', resendError);
+      }
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {

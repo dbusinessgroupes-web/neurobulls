@@ -50,15 +50,6 @@ const fadeUp = {
   },
 };
 
-const scaleIn = {
-  hidden: { opacity: 0, scale: 0.92 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
-  },
-};
-
 const services = [
   { icon: Camera, key: "photography" },
   { icon: Video, key: "video" },
@@ -80,25 +71,21 @@ const portfolioItems = [
     name: "Vanguard Fashion",
     tag: "Fashion",
     image: "/portfolio/vanguard-fashion.jpg",
-    className: "md:col-span-2 md:row-span-2",
   },
   {
     name: "Lumiere Beauty",
     tag: "Beauty",
     image: "/portfolio/lumiere-beauty.jpg",
-    className: "",
   },
   {
-    name: "TechVision",
+    name: "TechVision Pro",
     tag: "Technology",
     image: "/portfolio/techvision-pro.jpg",
-    className: "",
   },
   {
     name: "Maison Elegance",
     tag: "Real Estate",
     image: "/portfolio/maison-elegance.jpg",
-    className: "md:col-span-2",
   },
 ];
 
