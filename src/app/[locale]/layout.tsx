@@ -21,11 +21,11 @@ const geistMono = Geist_Mono({
 const metadataByLocale: Record<string, { title: string; description: string }> = {
   en: {
     title: "NeuroBulls — AI Marketing Agency",
-    description: "The world's leading AI marketing agency. Hyperrealistic AI models, unlimited creativity, campaigns delivered in 48 hours.",
+    description: "AI marketing campaigns, hyperrealistic photography and video. Virtual models, social media content and branding. From €197. Results in 48h.",
   },
   es: {
     title: "NeuroBulls — Agencia de Marketing con IA",
-    description: "La agencia de marketing con IA líder del mundo. Modelos de IA hiperrealistas, creatividad ilimitada, campañas entregadas en 48 horas.",
+    description: "Campañas de marketing, fotografía y vídeo hiperrealista con IA. Modelos virtuales, contenido para redes sociales y branding. Desde €197. Resultados en 48h.",
   },
 };
 

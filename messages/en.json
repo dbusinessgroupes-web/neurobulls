@@ -23,38 +23,38 @@
     "subtitle": "Everything you need to launch AI-powered campaigns that outperform traditional production.",
     "photography": {
       "title": "AI Photography",
-      "description": "Hyperrealistic photo sessions with AI-generated models. Product, lifestyle, editorial — indistinguishable from reality."
+      "description": "Complete photo sessions without cameras or studios. Our AI models are indistinguishable from real people. We generate editorial images with the quality of Vogue, Harper's Bazaar or GQ."
     },
     "video": {
       "title": "AI Video Production",
-      "description": "Advertising videos and social content with AI actors. From 15s reels to 90s brand films."
+      "description": "Cinematic videos generated with cutting-edge AI. From 15-second reels to 2-minute ad spots. Professional editing: color grading, transitions, voiceover and music."
     },
     "strategy": {
       "title": "AI Campaign Strategy",
-      "description": "Full campaign planning with AI-native creative direction. Concept, calendar, KPIs, execution."
+      "description": "Complete AI-powered marketing campaigns. From creative concept to visual execution, including distribution strategy. Each campaign includes brief, creative concepts, art direction and content calendar."
     },
     "models": {
       "title": "AI Model Creation",
-      "description": "Custom virtual personas with consistent identity. Your exclusive AI brand ambassador."
+      "description": "Hyperrealistic virtual people you can use as brand ambassadors or virtual influencers. Each model is AI-trained for perfect consistency across any scenario, pose or outfit. Works 24/7, never ages."
     },
     "social": {
       "title": "AI Social Media",
-      "description": "Full social media management with 100% AI-generated content. Posts, stories, reels."
+      "description": "We automate your social media presence with AI-generated visual content. Each post includes hyperrealistic images created specifically for your brand, persuasive copy and hashtag strategy."
     },
     "branding": {
       "title": "AI Brand Identity",
-      "description": "Complete visual identity powered by AI. Logo, palette, guidelines, brand model, templates."
+      "description": "Complete brand identities powered by AI. From logo to packaging mockups, everything generated with premium aesthetics. Includes 20 brand images ready for web, social and print."
     },
     "exploreAll": "Explore All Services",
     "individualTitle": "Individual Services",
     "individualSubtitle": "Need something specific? Choose exactly what you need.",
     "learnMore": "Learn More",
-    "modelsPrice": "From €900",
-    "photographyPrice": "From €350",
-    "videoPrice": "From €500",
-    "socialPrice": "From €800/mo",
-    "brandingPrice": "From €1,800",
-    "strategyPrice": "From €1,500"
+    "modelsPrice": "From €497",
+    "photographyPrice": "From €197",
+    "videoPrice": "From €297",
+    "socialPrice": "From €497/mo",
+    "brandingPrice": "From €997",
+    "strategyPrice": "From €797"
   },
   "pricing": {
     "title": "Pricing",
@@ -64,45 +64,56 @@
     "popular": "Most Popular",
     "getStarted": "Get Started",
     "contactUs": "Contact Us",
-    "spark": {
-      "name": "Spark",
-      "description": "The perfect entry point. Test the power of AI marketing with real results before scaling.",
-      "price": "€1,500",
-      "features": ["1 exclusive AI model", "20 images/month", "1 short video (15s)/month", "Basic creative direction", "2 revision rounds", "5-7 day delivery"]
+    "starter": {
+      "name": "Starter",
+      "description": "The perfect starting point for small businesses and personal brands testing AI marketing.",
+      "price": "€497",
+      "features": ["1 custom AI model", "15 editorial images/month", "1 short video (15-30s)", "Basic creative direction", "2 revisions per delivery", "5-7 business day delivery"]
     },
-    "pulse": {
-      "name": "Pulse",
-      "description": "Scale your content production. More models, more formats, consistent brand presence.",
-      "price": "€3,900",
-      "features": ["3 exclusive AI models", "50 images/month", "3 short + 1 long video/month", "Monthly campaign strategy", "2 social media channels managed", "15 posts/month", "3 revision rounds", "3-5 day delivery"]
+    "growth": {
+      "name": "Growth",
+      "description": "For growing brands ready to scale their content production with AI.",
+      "price": "€997",
+      "features": ["3 custom AI models", "40 editorial images/month", "3 short + 1 long video (up to 2 min)", "Monthly content strategy", "2 social media channels managed", "12 posts/month with copy + hashtags", "3 revisions per delivery", "3-5 business day delivery"]
     },
-    "surge": {
-      "name": "Surge",
-      "description": "Full-service AI marketing for brands that demand excellence. Our most popular plan.",
-      "price": "€8,500",
-      "features": ["6 exclusive AI models", "150 images/month", "8 short + 3 long videos/month", "Full campaign strategy with KPIs", "4 social media channels managed", "30 posts/month", "Unlimited revisions", "48h priority delivery"]
+    "scale": {
+      "name": "Scale",
+      "description": "Full-service AI marketing for mid-size companies demanding excellence.",
+      "price": "€2,497",
+      "features": ["6 custom AI models", "100 editorial images/month", "6 short + 3 long videos (up to 5 min)", "Strategy with KPIs and monthly reporting", "4 social media channels managed", "25 posts/month with optimized copy", "Unlimited revisions", "48h delivery", "Dedicated account manager"]
     },
-    "apex": {
-      "name": "Apex",
+    "enterprise": {
+      "name": "Enterprise",
       "description": "Enterprise-grade. Dedicated team, unlimited production, custom SLAs.",
-      "price": "€15,000",
-      "features": ["Unlimited AI models", "Unlimited images with SLA", "Unlimited video production", "360° strategy: branding + campaigns + social + paid", "Dedicated creative director + strategist", "24-48h guaranteed delivery", "Quarterly innovation workshops", "Custom integrations with your team"]
+      "price": "€4,997",
+      "features": ["Unlimited AI models", "Unlimited production", "Unlimited video (up to 10 min)", "Omnichannel strategy with A/B testing", "Dedicated creative director", "24h response SLA", "Quarterly brand workshops", "Custom integrations"]
     },
-    "enterprise": "Enterprise",
+    "enterpriseBadge": "Enterprise",
     "comparisonTitle": "What You Save With NeuroBulls",
     "comparisonTraditional": "Traditional Cost",
     "comparisonNeurobulls": "NeuroBulls Cost",
-    "comparisonPhotoTraditional": "€8,000 - €15,000",
-    "comparisonPhotoNeurobulls": "From €400",
+    "comparisonPhotoTraditional": "€3,000 - €8,000",
+    "comparisonPhotoNeurobulls": "From €197",
     "comparisonPhotoLabel": "Photo Shoot",
-    "comparisonVideoTraditional": "€15,000 - €50,000",
-    "comparisonVideoNeurobulls": "From €300",
+    "comparisonVideoTraditional": "€5,000 - €15,000",
+    "comparisonVideoNeurobulls": "From €297",
     "comparisonVideoLabel": "Video Production",
-    "comparisonCampaignTraditional": "€50,000+",
-    "comparisonCampaignNeurobulls": "From €1,500/mo",
+    "comparisonCampaignTraditional": "€10,000+",
+    "comparisonCampaignNeurobulls": "From €497/mo",
     "comparisonCampaignLabel": "Full Campaign",
     "ctaTitle": "Ready to transform your marketing?",
     "ctaButton": "Get in Touch"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "Do the images look real?", "a": "Our images go through a 4-step refinement pipeline including pore-level skin texture, facial restoration, and professional upscaling. The result is indistinguishable from a real photograph. Our golden rule: if it looks AI, it doesn't leave our studio." },
+      { "q": "How long does delivery take?", "a": "Depending on the plan: 48h for Scale and Enterprise, 3-5 days for Growth, 5-7 days for Starter. Individual services are delivered in 3-5 business days." },
+      { "q": "Can I use the images commercially?", "a": "Yes, all images and videos we create are your exclusive property with full commercial license. Use them in advertising, social media, web, print and any other medium." },
+      { "q": "How does a custom AI model work?", "a": "We create a unique virtual person for your brand, AI-trained to always have exactly the same face, complexion and features in any scenario, pose or outfit. It's like having an exclusive model that works 24/7." },
+      { "q": "What if I don't like the result?", "a": "Each delivery includes revisions (2 to unlimited depending on the plan). Plus, every image goes through our automated quality control system that evaluates photorealism, anatomy, lighting and texture before sending it to you." },
+      { "q": "Can I cancel my monthly plan?", "a": "Yes, you can cancel at any time. No lock-in. Individual services are paid per project." }
+    ]
   },
   "work": {
     "title": "Our Work",
@@ -172,7 +183,7 @@
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48 hours",
-      "cost": "From \u20ac400",
+      "cost": "From \u20ac197",
       "variations": "Unlimited",
       "availability": "24/7"
     },
@@ -238,10 +249,10 @@
       "budget": "Budget Range",
       "budgetOptions": {
         "default": "Select a budget range",
-        "starter": "\u20ac400 - \u20ac2,000",
-        "growth": "\u20ac2,000 - \u20ac5,000",
-        "premium": "\u20ac5,000 - \u20ac10,000",
-        "enterprise": "\u20ac10,000+"
+        "starter": "\u20ac197 - \u20ac500",
+        "growth": "\u20ac500 - \u20ac1,000",
+        "premium": "\u20ac1,000 - \u20ac3,000",
+        "enterprise": "\u20ac3,000+"
       },
       "namePlaceholder": "John Doe",
       "emailPlaceholder": "john@company.com",

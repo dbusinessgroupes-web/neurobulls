@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Camera,
@@ -18,6 +18,9 @@ import {
   Check,
   X,
   ArrowRight,
+  DollarSign,
+  Clock,
+  Shield,
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -101,8 +104,30 @@ const portfolioItems = [
 
 const comparisonRowKeys = ["timeline", "cost", "variations", "availability"] as const;
 
+const socialProofCards = [
+  {
+    icon: DollarSign,
+    stat: "90%",
+    en: "Average savings in visual production",
+    es: "De ahorro medio en producción visual",
+  },
+  {
+    icon: Clock,
+    stat: "48h",
+    en: "Delivery on premium plans",
+    es: "Entrega en planes premium",
+  },
+  {
+    icon: Shield,
+    stat: "100%",
+    en: "Commercial license on all content",
+    es: "Licencia comercial en todo el contenido",
+  },
+];
+
 export default function Home() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <>
@@ -121,7 +146,7 @@ export default function Home() {
               sizes="100vw"
             />
             {/* Dark overlay for text readability */}
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-black/50" />
             {/* Gradient fade to page background at bottom */}
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
           </div>
@@ -187,6 +212,41 @@ export default function Home() {
                 ))}
               </CardContent>
             </Card>
+          </div>
+        </section>
+
+        {/* ─── Social Proof ─── */}
+        <section className="py-24 lg:py-32 px-6">
+          <div className="mx-auto max-w-6xl">
+            <ScrollReveal>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+                  {locale === "es"
+                    ? "Por Qué Las Marcas Eligen NeuroBulls"
+                    : "Why Brands Choose NeuroBulls"}
+                </h2>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {socialProofCards.map((card, i) => (
+                <ScrollReveal key={i} delay={i * 0.1}>
+                  <Card className="border-border bg-card text-center h-full">
+                    <CardContent className="p-8 flex flex-col items-center">
+                      <div className="w-14 h-14 rounded-2xl bg-nb-gold/10 flex items-center justify-center mb-6">
+                        <card.icon className="h-7 w-7 text-nb-gold" />
+                      </div>
+                      <span className="text-4xl font-bold text-nb-gold mb-3">
+                        {card.stat}
+                      </span>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {locale === "es" ? card.es : card.en}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </section>
 

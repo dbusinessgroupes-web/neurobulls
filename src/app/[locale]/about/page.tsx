@@ -1,6 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -35,9 +36,12 @@ const pipelineSteps = [
   { icon: Sparkles, key: "output" },
 ];
 
+const techTools = ["FLUX.2 Pro", "Kling AI", "ElevenLabs", "Topaz AI"];
+
 export default function AboutPage() {
   const t = useTranslations("about");
   const tCta = useTranslations("cta");
+  const locale = useLocale();
 
   return (
     <>
@@ -70,38 +74,16 @@ export default function AboutPage() {
                 </div>
               </ScrollReveal>
 
-              {/* Decorative grid */}
+              {/* Mission image */}
               <ScrollReveal delay={0.2} direction="right">
-                <div className="grid grid-cols-5 grid-rows-5 gap-2 aspect-square max-w-sm mx-auto lg:ml-auto">
-                  {Array.from({ length: 25 }).map((_, i) => {
-                    const isRed = [2, 6, 8, 12, 16, 18, 22].includes(i);
-                    const isGold = [4, 10, 14, 20, 24].includes(i);
-                    const isCircle = [6, 14, 18, 24].includes(i);
-                    const isEmpty = !isRed && !isGold;
-
-                    return (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{
-                          duration: 0.4,
-                          delay: i * 0.03,
-                          ease: "easeOut",
-                        }}
-                        className={`aspect-square ${
-                          isCircle ? "rounded-full" : "rounded-lg"
-                        } ${
-                          isRed
-                            ? "bg-nb-red/80"
-                            : isGold
-                            ? "bg-nb-gold/80"
-                            : "bg-muted/30"
-                        } ${isEmpty ? "opacity-30" : ""}`}
-                      />
-                    );
-                  })}
+                <div className="relative aspect-[4/5] max-w-sm mx-auto lg:ml-auto rounded-2xl overflow-hidden">
+                  <Image
+                    src="/portfolio/vanguard-fashion.jpg"
+                    alt="NeuroBulls AI visual production"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 400px"
+                  />
                 </div>
               </ScrollReveal>
             </div>
@@ -182,6 +164,32 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Our Technology — Tools */}
+        <section className="px-4 pb-24">
+          <div className="mx-auto max-w-7xl">
+            <ScrollReveal>
+              <div className="text-center mb-10">
+                <h2 className="text-2xl sm:text-3xl font-bold">
+                  {locale === "es" ? "Nuestra Tecnología" : "Our Technology"}
+                </h2>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.1}>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                {techTools.map((tool) => (
+                  <span
+                    key={tool}
+                    className="px-5 py-2.5 rounded-full border border-border bg-muted/30 text-sm font-medium text-muted-foreground"
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* Advantages */}
         <section className="px-4 pb-24">
           <div className="mx-auto max-w-7xl">
@@ -215,17 +223,23 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Founder / Team */}
+        {/* Founder */}
         <section className="px-4 pb-24">
           <div className="mx-auto max-w-4xl">
             <ScrollReveal>
               <div className="rounded-xl border border-border bg-card p-8 sm:p-12 text-center">
-                <Building2 className="h-10 w-10 text-nb-gold mx-auto mb-6" />
-                <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-                  {t("founder.title")}
+                {/* Initials avatar */}
+                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-nb-red">
+                  <span className="text-2xl font-bold text-white">DR</span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-1">
+                  Diego Rodríguez Molino
                 </h2>
+                <p className="text-sm font-medium text-nb-gold mb-4">CEO & Founder</p>
                 <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-6">
-                  {t("founder.description")}
+                  {locale === "es"
+                    ? "Emprendedor en la intersección de moda, tecnología e inteligencia artificial. Fundó NeuroBulls con la visión de democratizar la producción visual de alta calidad para marcas de todos los tamaños."
+                    : "Entrepreneur at the intersection of fashion, technology and artificial intelligence. Founded NeuroBulls with the vision of democratizing high-quality visual production for brands of all sizes."}
                 </p>
                 <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4" />

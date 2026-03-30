@@ -23,38 +23,38 @@
     "subtitle": "Todo lo que necesitas para lanzar campañas con IA que superan a la producción tradicional.",
     "photography": {
       "title": "Fotografía IA",
-      "description": "Sesiones fotográficas hiperrealistas con modelos generados por IA. Producto, lifestyle, editorial — indistinguible de la realidad."
+      "description": "Sesiones fotográficas completas sin cámaras ni estudios. Nuestros modelos IA son indistinguibles de personas reales. Generamos imágenes editoriales con la calidad de Vogue, Harper's Bazaar o GQ."
     },
     "video": {
       "title": "Producción de Vídeo IA",
-      "description": "Vídeos publicitarios y contenido social con actores IA. Desde reels de 15s hasta films de marca de 90s."
+      "description": "Vídeos cinematográficos generados con IA de última generación. Desde reels de 15 segundos hasta spots publicitarios de 2 minutos. Edición profesional: corrección de color, transiciones, voiceover y música."
     },
     "strategy": {
       "title": "Estrategia de Campaña IA",
-      "description": "Planificación completa de campañas con dirección creativa nativa de IA. Concepto, calendario, KPIs, ejecución."
+      "description": "Campañas de marketing completas impulsadas por IA. Desde el concepto creativo hasta la ejecución visual, incluyendo estrategia de distribución. Brief, conceptos creativos, dirección de arte y calendario."
     },
     "models": {
       "title": "Creación de Modelos IA",
-      "description": "Personas virtuales personalizadas con identidad consistente. Tu embajador de marca IA exclusivo."
+      "description": "Personas virtuales hiperrealistas que puedes usar como embajadores de marca o influencers virtuales. Cada modelo se entrena con IA para consistencia perfecta en cualquier escenario, pose o vestuario. Trabaja 24/7, no envejece."
     },
     "social": {
       "title": "Redes Sociales IA",
-      "description": "Gestión completa de redes sociales con contenido 100% generado por IA. Posts, stories, reels."
+      "description": "Automatizamos tu presencia en redes sociales con contenido visual generado por IA. Cada publicación incluye imágenes hiperrealistas creadas para tu marca, copy persuasivo y estrategia de hashtags."
     },
     "branding": {
       "title": "Identidad de Marca IA",
-      "description": "Identidad visual completa impulsada por IA. Logo, paleta, guidelines, modelo de marca, templates."
+      "description": "Identidades de marca completas potenciadas por IA. Desde el logo hasta mockups de packaging, todo con estética premium. Incluye 20 imágenes de marca listas para web, redes e impresión."
     },
     "exploreAll": "Explorar Todos los Servicios",
     "individualTitle": "Servicios Individuales",
     "individualSubtitle": "¿Necesitas algo específico? Elige exactamente lo que necesitas.",
     "learnMore": "Saber Más",
-    "modelsPrice": "Desde €900",
-    "photographyPrice": "Desde €350",
-    "videoPrice": "Desde €500",
-    "socialPrice": "Desde €800/mes",
-    "brandingPrice": "Desde €1.800",
-    "strategyPrice": "Desde €1.500"
+    "modelsPrice": "Desde €497",
+    "photographyPrice": "Desde €197",
+    "videoPrice": "Desde €297",
+    "socialPrice": "Desde €497/mes",
+    "brandingPrice": "Desde €997",
+    "strategyPrice": "Desde €797"
   },
   "pricing": {
     "title": "Precios",
@@ -64,79 +64,91 @@
     "popular": "Más Popular",
     "getStarted": "Empezar",
     "contactUs": "Contactar",
-    "spark": {
-      "name": "Spark",
-      "description": "El punto de entrada perfecto. Prueba el poder del marketing con IA con resultados reales.",
-      "price": "€1.500",
+    "starter": {
+      "name": "Starter",
+      "description": "El punto de partida perfecto para pequeños negocios y marcas personales que prueban el marketing con IA.",
+      "price": "€497",
       "features": [
-        "1 modelo IA exclusivo",
-        "20 imágenes/mes",
-        "1 vídeo corto (15s)/mes",
+        "1 modelo IA personalizado",
+        "15 imágenes editoriales/mes",
+        "1 vídeo corto (15-30s)",
         "Dirección creativa básica",
-        "2 rondas de revisión",
-        "Entrega en 5-7 días"
+        "2 revisiones por entrega",
+        "Entrega en 5-7 días laborables"
       ]
     },
-    "pulse": {
-      "name": "Pulse",
-      "description": "Escala tu producción de contenido. Más modelos, más formatos, presencia de marca consistente.",
-      "price": "€3.900",
+    "growth": {
+      "name": "Growth",
+      "description": "Para marcas en crecimiento listas para escalar su producción de contenido con IA.",
+      "price": "€997",
       "features": [
-        "3 modelos IA exclusivos",
-        "50 imágenes/mes",
-        "3 vídeos cortos + 1 largo/mes",
-        "Estrategia de campaña mensual",
-        "2 canales de redes sociales gestionados",
-        "15 publicaciones/mes",
-        "3 rondas de revisión",
-        "Entrega en 3-5 días"
+        "3 modelos IA personalizados",
+        "40 imágenes editoriales/mes",
+        "3 vídeos cortos + 1 largo (hasta 2 min)",
+        "Estrategia de contenido mensual",
+        "Gestión de 2 redes sociales",
+        "12 posts/mes con copy + hashtags",
+        "3 revisiones por entrega",
+        "Entrega en 3-5 días laborables"
       ]
     },
-    "surge": {
-      "name": "Surge",
-      "description": "Marketing IA completo para marcas que exigen excelencia. Nuestro plan más popular.",
-      "price": "€8.500",
+    "scale": {
+      "name": "Scale",
+      "description": "Marketing IA completo para empresas medianas que exigen excelencia.",
+      "price": "€2.497",
       "features": [
-        "6 modelos IA exclusivos",
-        "150 imágenes/mes",
-        "8 vídeos cortos + 3 largos/mes",
-        "Estrategia completa con KPIs",
-        "4 canales de redes sociales gestionados",
-        "30 publicaciones/mes",
+        "6 modelos IA personalizados",
+        "100 imágenes editoriales/mes",
+        "6 vídeos cortos + 3 largos (hasta 5 min)",
+        "Estrategia con KPIs y reporting mensual",
+        "Gestión de 4 redes sociales",
+        "25 posts/mes con copy optimizado",
         "Revisiones ilimitadas",
-        "Entrega prioritaria en 48h"
+        "Entrega en 48h",
+        "Manager de cuenta dedicado"
       ]
     },
-    "apex": {
-      "name": "Apex",
+    "enterprise": {
+      "name": "Enterprise",
       "description": "Nivel enterprise. Equipo dedicado, producción ilimitada, SLAs personalizados.",
-      "price": "€15.000",
+      "price": "€4.997",
       "features": [
         "Modelos IA ilimitados",
-        "Imágenes ilimitadas con SLA",
-        "Producción de vídeo ilimitada",
-        "Estrategia 360°: branding + campañas + social + paid",
-        "Director creativo + estratega dedicados",
-        "Entrega garantizada en 24-48h",
-        "Workshops de innovación trimestrales",
-        "Integración personalizada con tu equipo"
+        "Producción ilimitada",
+        "Vídeo ilimitado (hasta 10 min)",
+        "Estrategia omnicanal con A/B testing",
+        "Director creativo dedicado",
+        "SLA de respuesta 24h",
+        "Workshops trimestrales de marca",
+        "Integraciones personalizadas"
       ]
     },
-    "enterprise": "Enterprise",
+    "enterpriseBadge": "Enterprise",
     "comparisonTitle": "Lo Que Ahorras Con NeuroBulls",
     "comparisonTraditional": "Coste Tradicional",
     "comparisonNeurobulls": "Coste NeuroBulls",
-    "comparisonPhotoTraditional": "€8.000 - €15.000",
-    "comparisonPhotoNeurobulls": "Desde €400",
+    "comparisonPhotoTraditional": "€3.000 - €8.000",
+    "comparisonPhotoNeurobulls": "Desde €197",
     "comparisonPhotoLabel": "Sesión Fotográfica",
-    "comparisonVideoTraditional": "€15.000 - €50.000",
-    "comparisonVideoNeurobulls": "Desde €300",
+    "comparisonVideoTraditional": "€5.000 - €15.000",
+    "comparisonVideoNeurobulls": "Desde €297",
     "comparisonVideoLabel": "Producción de Vídeo",
-    "comparisonCampaignTraditional": "€50.000+",
-    "comparisonCampaignNeurobulls": "Desde €1.500/mes",
+    "comparisonCampaignTraditional": "€10.000+",
+    "comparisonCampaignNeurobulls": "Desde €497/mes",
     "comparisonCampaignLabel": "Campaña Completa",
     "ctaTitle": "¿Listo para transformar tu marketing?",
     "ctaButton": "Contactar"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "items": [
+      { "q": "¿Las imágenes parecen reales?", "a": "Nuestras imágenes pasan por un pipeline de refinamiento de 4 pasos que incluye textura de piel a nivel de poro, restauración facial y escalado profesional. El resultado es indistinguible de una fotografía real. Nuestra regla de oro: si parece IA, no sale de nuestro estudio." },
+      { "q": "¿Cuánto tarda la entrega?", "a": "Depende del plan: 48h para Scale y Enterprise, 3-5 días para Growth, 5-7 días para Starter. Los servicios individuales se entregan en 3-5 días laborables." },
+      { "q": "¿Puedo usar las imágenes comercialmente?", "a": "Sí, todas las imágenes y vídeos que creamos son de tu propiedad exclusiva con licencia comercial completa. Úsalos en publicidad, redes sociales, web, impresión y cualquier otro medio." },
+      { "q": "¿Cómo funciona un modelo IA personalizado?", "a": "Creamos una persona virtual única para tu marca, entrenada con IA para tener siempre exactamente la misma cara, complexión y rasgos en cualquier escenario, pose o vestuario. Es como tener un modelo exclusivo que trabaja 24/7." },
+      { "q": "¿Y si no me gusta el resultado?", "a": "Cada entrega incluye revisiones (de 2 a ilimitadas según el plan). Además, cada imagen pasa por nuestro sistema automatizado de control de calidad que evalúa fotorrealismo, anatomía, iluminación y textura antes de enviártela." },
+      { "q": "¿Puedo cancelar mi plan mensual?", "a": "Sí, puedes cancelar en cualquier momento. Sin permanencia. Los servicios individuales se pagan por proyecto." }
+    ]
   },
   "work": {
     "title": "Nuestro Trabajo",
@@ -218,7 +230,7 @@
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48 horas",
-      "cost": "Desde €400",
+      "cost": "Desde €197",
       "variations": "Ilimitadas",
       "availability": "24/7"
     },
@@ -296,10 +308,10 @@
       "budget": "Rango de Presupuesto",
       "budgetOptions": {
         "default": "Selecciona un rango de presupuesto",
-        "starter": "€400 - €2.000",
-        "growth": "€2.000 - €5.000",
-        "premium": "€5.000 - €10.000",
-        "enterprise": "€10.000+"
+        "starter": "€197 - €500",
+        "growth": "€500 - €1.000",
+        "premium": "€1.000 - €3.000",
+        "enterprise": "€3.000+"
       },
       "namePlaceholder": "Juan Pérez",
       "emailPlaceholder": "juan@empresa.com",
