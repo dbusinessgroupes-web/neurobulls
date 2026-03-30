@@ -117,7 +117,7 @@
   },
   "work": {
     "title": "Our Work",
-    "subtitle": "Real campaigns. AI models. Exceptional results.",
+    "subtitle": "Examples of what we create. Your next campaign starts here.",
     "viewProject": "View Project",
     "viewAll": "View All Work",
     "projects": {
@@ -264,6 +264,7 @@
       "submit": "Send Message",
       "sending": "Sending...",
       "success": "Message sent successfully! We'll get back to you within 24 hours.",
+      "successFallback": "You can also email us directly at",
       "error": "Something went wrong. Please try again or email us directly."
     },
     "info": {

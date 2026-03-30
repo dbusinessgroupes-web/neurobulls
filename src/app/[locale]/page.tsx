@@ -309,7 +309,7 @@ export default function Home() {
               {portfolioItems.map((item, i) => (
                 <ScrollReveal key={item.name} delay={i * 0.08}>
                   <Link href={`/work/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")}`}>
-                    <div className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer">
+                    <div className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-nb-red/5">
                       <Image
                         src={item.image}
                         alt={`${item.name} — ${item.tag} campaign by NeuroBulls`}

@@ -355,11 +355,22 @@ export default function ContactPage() {
                         <motion.div
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
-                          className="flex items-center gap-2 rounded-lg bg-green-500/10 p-4 text-green-500"
+                          className="rounded-lg bg-green-500/10 p-4 text-green-500 space-y-2"
                         >
-                          <CheckCircle className="h-5 w-5 shrink-0" />
-                          <p className="text-sm">
-                            {t("contact.form.success")}
+                          <div className="flex items-center gap-2">
+                            <CheckCircle className="h-5 w-5 shrink-0" />
+                            <p className="text-sm">
+                              {t("contact.form.success")}
+                            </p>
+                          </div>
+                          <p className="text-sm text-muted-foreground">
+                            {t("contact.form.successFallback")}{" "}
+                            <a
+                              href="mailto:neurobulls@gmail.com"
+                              className="font-medium text-nb-red hover:text-nb-red-hover underline"
+                            >
+                              neurobulls@gmail.com
+                            </a>
                           </p>
                         </motion.div>
                       )}

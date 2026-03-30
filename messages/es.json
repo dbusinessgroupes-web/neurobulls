@@ -151,7 +151,7 @@
   },
   "work": {
     "title": "Nuestro Trabajo",
-    "subtitle": "Campañas reales. Modelos IA. Resultados excepcionales.",
+    "subtitle": "Ejemplos de lo que creamos. Tu próxima campaña empieza aquí.",
     "viewProject": "Ver Proyecto",
     "viewAll": "Ver Todo el Portfolio",
     "projects": {
@@ -322,6 +322,7 @@
       "submit": "Enviar Mensaje",
       "sending": "Enviando...",
       "success": "¡Mensaje enviado con éxito! Te responderemos en menos de 24 horas.",
+      "successFallback": "También puedes escribirnos directamente a",
       "error": "Algo salió mal. Inténtalo de nuevo o escríbenos directamente."
     },
     "info": {

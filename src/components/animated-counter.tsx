@@ -15,6 +15,7 @@ export function AnimatedCounter({ target, suffix = "", prefix = "", duration = 2
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   const [count, setCount] = useState(0);
+  const [done, setDone] = useState(false);
 
   useEffect(() => {
     if (!inView) return;
@@ -24,6 +25,7 @@ export function AnimatedCounter({ target, suffix = "", prefix = "", duration = 2
       start += step;
       if (start >= target) {
         setCount(target);
+        setDone(true);
         clearInterval(timer);
       } else {
         setCount(Math.floor(start));
@@ -37,7 +39,14 @@ export function AnimatedCounter({ target, suffix = "", prefix = "", duration = 2
       ref={ref}
       className={className}
       initial={{ opacity: 0 }}
-      animate={inView ? { opacity: 1 } : {}}
+      animate={
+        done
+          ? { opacity: 1, textShadow: ["0 0 0px #C9A84C", "0 0 16px #C9A84C", "0 0 0px #C9A84C"] }
+          : inView
+            ? { opacity: 1 }
+            : {}
+      }
+      transition={done ? { duration: 0.8, ease: "easeInOut" } : undefined}
     >
       {prefix}{count}{suffix}
     </motion.span>
