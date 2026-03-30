@@ -305,11 +305,11 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 auto-rows-[200px]">
+            <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 auto-rows-[240px]">
               {portfolioItems.map((item, i) => (
                 <ScrollReveal key={item.name} delay={i * 0.1}>
                   <div
-                    className={`group relative h-full min-h-[200px] rounded-xl overflow-hidden cursor-pointer ${item.className}`}
+                    className={`group relative h-full min-h-[240px] rounded-xl overflow-hidden cursor-pointer ${item.className}`}
                   >
                     {/* Portfolio image */}
                     <Image
@@ -320,9 +320,9 @@ export default function Home() {
                       sizes={item.className.includes("col-span-2") ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 100vw, 25vw"}
                     />
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:bg-black/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10 transition-opacity duration-300 group-hover:from-black/60 group-hover:via-black/20" />
                     {/* Content */}
-                    <div className="relative z-10 flex h-full flex-col justify-end p-6">
+                    <div className="relative z-10 flex h-full flex-col justify-end p-6 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
                       <Badge
                         variant="secondary"
                         className="w-fit mb-2 bg-white/10 text-white border-0 backdrop-blur-sm"

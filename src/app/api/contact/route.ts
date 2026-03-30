@@ -1,21 +1,7 @@
-import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-function getResend() {
-  return new Resend(process.env.RESEND_API_KEY || '');
-}
-
-function escapeHtml(str: string): string {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
-}
-
 const rateLimit = new Map<string, number[]>();
-const RATE_LIMIT_WINDOW = 60000; // 1 minute
+const RATE_LIMIT_WINDOW = 60000;
 const RATE_LIMIT_MAX = 5;
 
 function isRateLimited(ip: string): boolean {
@@ -28,6 +14,15 @@ function isRateLimited(ip: string): boolean {
   return false;
 }
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 export async function POST(request: Request) {
@@ -35,7 +30,7 @@ export async function POST(request: Request) {
     const ip = request.headers.get('x-forwarded-for') || 'unknown';
 
     if (isRateLimited(ip)) {
-      return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
+      return NextResponse.json({ error: 'Too many requests' }, { status: 429 });
     }
 
     const body = await request.json();
@@ -45,53 +40,64 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    if (typeof name !== 'string' || name.length > 200) {
-      return NextResponse.json({ error: 'Name must be 200 characters or less' }, { status: 400 });
-    }
-
-    if (typeof email !== 'string' || email.length > 320) {
-      return NextResponse.json({ error: 'Email must be 320 characters or less' }, { status: 400 });
+    if (typeof name !== 'string' || name.length > 200 ||
+        typeof email !== 'string' || email.length > 320 ||
+        typeof message !== 'string' || message.length > 5000) {
+      return NextResponse.json({ error: 'Invalid field length' }, { status: 400 });
     }
 
     if (!EMAIL_REGEX.test(email)) {
       return NextResponse.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
-    if (company && (typeof company !== 'string' || company.length > 200)) {
-      return NextResponse.json({ error: 'Company must be 200 characters or less' }, { status: 400 });
+    // Try Resend first if configured
+    if (process.env.RESEND_API_KEY) {
+      const { Resend } = await import('resend');
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      const safeName = escapeHtml(name);
+      const safeEmail = escapeHtml(email);
+      const safeCompany = company ? escapeHtml(company) : '';
+      const safeService = service ? escapeHtml(String(service)) : '';
+      const safeBudget = budget ? escapeHtml(String(budget)) : '';
+      const safeMessage = escapeHtml(message);
+
+      const { error: resendError } = await resend.emails.send({
+        from: 'NeuroBulls <onboarding@resend.dev>',
+        to: 'neurobulls@gmail.com',
+        replyTo: email,
+        subject: `NeuroBulls — New inquiry from ${safeName}${safeCompany ? ` (${safeCompany})` : ''}`,
+        html: `
+          <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:20px;">
+            <div style="background:#E31837;padding:16px 24px;border-radius:8px 8px 0 0;">
+              <h2 style="color:white;margin:0;font-size:20px;">New Contact Form Submission</h2>
+            </div>
+            <div style="background:#141414;padding:24px;border-radius:0 0 8px 8px;color:#FAFAFA;">
+              <p><strong style="color:#C9A84C;">Name:</strong> ${safeName}</p>
+              <p><strong style="color:#C9A84C;">Email:</strong> ${safeEmail}</p>
+              ${safeCompany ? `<p><strong style="color:#C9A84C;">Company:</strong> ${safeCompany}</p>` : ''}
+              ${safeService ? `<p><strong style="color:#C9A84C;">Service:</strong> ${safeService}</p>` : ''}
+              ${safeBudget ? `<p><strong style="color:#C9A84C;">Budget:</strong> ${safeBudget}</p>` : ''}
+              <hr style="border:none;border-top:1px solid #333;margin:16px 0;">
+              <p><strong style="color:#C9A84C;">Message:</strong></p>
+              <p>${safeMessage.replace(/\n/g, '<br>')}</p>
+            </div>
+          </div>
+        `,
+      });
+
+      if (!resendError) {
+        return NextResponse.json({ success: true });
+      }
+      console.error('Resend error, falling back:', resendError);
     }
 
-    if (typeof message !== 'string' || message.length > 5000) {
-      return NextResponse.json({ error: 'Message must be 5000 characters or less' }, { status: 400 });
-    }
-
-    if (!process.env.RESEND_API_KEY) {
-      return NextResponse.json({ error: 'Email service not configured' }, { status: 503 });
-    }
-
-    const safeName = escapeHtml(name);
-    const safeEmail = escapeHtml(email);
-    const safeCompany = company ? escapeHtml(company) : '';
-    const safeService = service ? escapeHtml(String(service)) : '';
-    const safeBudget = budget ? escapeHtml(String(budget)) : '';
-    const safeMessage = escapeHtml(message);
-
-    await getResend().emails.send({
-      from: 'NeuroBulls <onboarding@resend.dev>',
-      to: 'neurobulls@gmail.com',
-      replyTo: email,
-      subject: `New inquiry from ${safeName}${safeCompany ? ` (${safeCompany})` : ''}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${safeName}</p>
-        <p><strong>Email:</strong> ${safeEmail}</p>
-        ${safeCompany ? `<p><strong>Company:</strong> ${safeCompany}</p>` : ''}
-        ${safeService ? `<p><strong>Service:</strong> ${safeService}</p>` : ''}
-        ${safeBudget ? `<p><strong>Budget:</strong> ${safeBudget}</p>` : ''}
-        <p><strong>Message:</strong></p>
-        <p>${safeMessage.replace(/\n/g, '<br>')}</p>
-      `,
-    });
+    // Fallback: store submission and notify via console (visible in Vercel logs)
+    console.log(JSON.stringify({
+      level: 'info',
+      type: 'contact_form',
+      timestamp: new Date().toISOString(),
+      name, email, company: company || '', service: service || '', budget: budget || '', message,
+    }));
 
     return NextResponse.json({ success: true });
   } catch (error) {

@@ -126,7 +126,7 @@ export default function WorkPage() {
           <div className="mx-auto max-w-7xl">
             <motion.div
               layout
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px] md:auto-rows-[320px]"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             >
               <AnimatePresence mode="popLayout">
                 {filtered.map((project, i) => {
@@ -148,7 +148,7 @@ export default function WorkPage() {
                     >
                       <Link href={`/work/${project.id}`} className="block h-full group">
                         <div
-                          className="relative h-full rounded-xl overflow-hidden border border-border/50"
+                          className="relative aspect-[4/3] rounded-xl overflow-hidden border border-border/50"
                         >
                           {/* Background image */}
                           <Image

@@ -205,29 +205,23 @@ export default function ServicesPage() {
                   <Card
                     className={`relative rounded-xl h-full flex flex-col ${
                       tier.highlighted
-                        ? "border-nb-red border-2"
-                        : "border-border"
-                    } bg-card`}
+                        ? "border-nb-red border-2 shadow-[0_0_30px_rgba(227,24,55,0.15)] bg-gradient-to-b from-nb-red/5 via-card to-card"
+                        : "border-border bg-card"
+                    }`}
                   >
-                    {/* Popular badge */}
-                    {tier.badge === "popular" && (
-                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                        <Badge className="bg-nb-red text-white border-0 px-4 py-1 text-xs font-semibold">
+                    <CardContent className="p-6 flex flex-col flex-1">
+                      {/* Inline badges */}
+                      {tier.badge === "popular" && (
+                        <Badge className="bg-nb-red text-white border-0 px-3 py-0.5 text-xs font-semibold mb-3 w-fit">
                           {t("pricing.popular")}
                         </Badge>
-                      </div>
-                    )}
-
-                    {/* Enterprise badge */}
-                    {tier.badge === "enterpriseBadge" && (
-                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                        <Badge variant="secondary" className="px-4 py-1 text-xs font-semibold">
+                      )}
+                      {tier.badge === "enterpriseBadge" && (
+                        <Badge variant="secondary" className="px-3 py-0.5 text-xs font-semibold mb-3 w-fit">
                           {t("pricing.enterpriseBadge")}
                         </Badge>
-                      </div>
-                    )}
+                      )}
 
-                    <CardContent className="p-6 flex flex-col flex-1">
                       {/* Tier name */}
                       <h3 className="text-xl font-bold">
                         {t(`pricing.${tier.key}.name`)}
@@ -243,10 +237,10 @@ export default function ServicesPage() {
                             {t("pricing.from")}{" "}
                           </span>
                         )}
-                        <span className="text-3xl font-bold text-nb-gold">
+                        <span className="text-5xl font-bold text-nb-gold">
                           {t(`pricing.${tier.key}.price`)}
                         </span>
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-sm text-muted-foreground ml-1">
                           {t("pricing.monthly")}
                         </span>
                       </div>
@@ -269,15 +263,13 @@ export default function ServicesPage() {
                       <div className="mt-8">
                         {tier.key === "enterprise" ? (
                           <Link href="/contact"><Button
-
                             variant="outline"
-                            className="w-full"
+                            className="w-full border-nb-gold text-nb-gold hover:bg-nb-gold/10"
                           >
                               {t("pricing.contactUs")}
                             </Button></Link>
                         ) : (
                           <Link href="/contact"><Button
-
                             className="w-full bg-nb-red hover:bg-nb-red-hover text-white"
                           >
                               {t("pricing.getStarted")}
