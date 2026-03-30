@@ -66,10 +66,10 @@ export default function AvisoLegal() {
                     {isES ? "Correo electrónico" : "Email"}:
                   </span>{" "}
                   <a
-                    href="mailto:neurobulls@gmail.com"
+                    href="mailto:info@neurobulls.com"
                     className="text-nb-red hover:underline"
                   >
-                    neurobulls@gmail.com
+                    info@neurobulls.com
                   </a>
                 </li>
                 <li>
@@ -188,10 +188,10 @@ export default function AvisoLegal() {
                   ? "Para cualquier consulta relacionada con este aviso legal, puede contactar con nosotros a través del correo electrónico"
                   : "For any inquiries related to this legal notice, you may contact us via email at"}{" "}
                 <a
-                  href="mailto:neurobulls@gmail.com"
+                  href="mailto:info@neurobulls.com"
                   className="text-nb-red hover:underline"
                 >
-                  neurobulls@gmail.com
+                  info@neurobulls.com
                 </a>
                 .
               </p>

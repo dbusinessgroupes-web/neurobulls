@@ -49,10 +49,10 @@
     "individualTitle": "Servicios Individuales",
     "individualSubtitle": "¿Necesitas algo específico? Elige exactamente lo que necesitas.",
     "learnMore": "Saber Más",
-    "modelsPrice": "Desde €497",
+    "modelsPrice": "Desde €697",
     "photographyPrice": "Desde €297",
     "videoPrice": "Desde €497",
-    "socialPrice": "Desde €497/mes",
+    "socialPrice": "Desde €697/mes",
     "brandingPrice": "Desde €1.497",
     "strategyPrice": "Desde €997"
   },
@@ -67,7 +67,7 @@
     "starter": {
       "name": "Starter",
       "description": "El punto de partida perfecto para pequeños negocios y marcas personales que prueban el marketing con IA.",
-      "price": "€497",
+      "price": "€797",
       "features": [
         "1 modelo IA personalizado",
         "15 imágenes editoriales/mes",
@@ -80,7 +80,7 @@
     "growth": {
       "name": "Growth",
       "description": "Para marcas en crecimiento listas para escalar su producción de contenido con IA.",
-      "price": "€1.297",
+      "price": "€1.497",
       "features": [
         "3 modelos IA personalizados",
         "40 imágenes editoriales/mes",
@@ -95,7 +95,7 @@
     "scale": {
       "name": "Scale",
       "description": "Marketing IA completo para empresas medianas que exigen excelencia.",
-      "price": "€2.497",
+      "price": "€2.997",
       "features": [
         "6 modelos IA personalizados",
         "100 imágenes editoriales/mes",
@@ -325,10 +325,10 @@
       "budget": "Rango de Presupuesto",
       "budgetOptions": {
         "default": "Selecciona un rango de presupuesto",
-        "starter": "€297 - €700",
-        "growth": "€700 - €1.500",
-        "premium": "€1.500 - €3.000",
-        "enterprise": "€3.000+"
+        "starter": "€297 - €800",
+        "growth": "€800 - €2.000",
+        "premium": "€2.000 - €5.000",
+        "enterprise": "€5.000+"
       },
       "namePlaceholder": "Juan Pérez",
       "emailPlaceholder": "juan@empresa.com",
@@ -344,7 +344,7 @@
       "error": "Algo salió mal. Inténtalo de nuevo o escríbenos directamente."
     },
     "info": {
-      "email": "neurobulls@gmail.com",
+      "email": "info@neurobulls.com",
       "instagram": "@neurobulls",
       "location": "Ubicación",
       "locationValue": "Cartagena, Murcia, España",
@@ -359,13 +359,13 @@
     "company": "Empresa",
     "aboutLink": "Nosotros",
     "workLink": "Portfolio",
-    "careers": "Empleo",
-    "blog": "Blog",
     "servicesTitle": "Servicios",
     "servicePhotography": "Fotografía IA",
     "serviceVideo": "Vídeo IA",
     "serviceStrategy": "Estrategia IA",
     "serviceModels": "Modelos IA",
+    "serviceSocial": "Redes Sociales IA",
+    "serviceBranding": "Identidad de Marca IA",
     "legal": "Legal",
     "legalNotice": "Aviso Legal",
     "privacy": "Política de Privacidad",

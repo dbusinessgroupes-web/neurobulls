@@ -184,7 +184,7 @@ export default function Home() {
             <Card className="border-border bg-card">
               <CardContent className="grid grid-cols-2 lg:grid-cols-4 gap-8 p-8 lg:p-12">
                 {[
-                  { value: 85, suffix: "%", label: t("stats.cost") },
+                  { value: 90, suffix: "%", label: t("stats.cost") },
                   { value: 48, suffix: "h", label: t("stats.delivery") },
                   { value: 500, suffix: "+", label: t("stats.models") },
                   { value: 3, suffix: "x", label: t("stats.engagement") },

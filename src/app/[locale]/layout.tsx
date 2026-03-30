@@ -62,7 +62,7 @@ const jsonLd = {
   "url": "https://neurobulls.com",
   "logo": "https://neurobulls.com/favicon.svg",
   "description": "AI Marketing Agency",
-  "email": "neurobulls@gmail.com",
+  "email": "info@neurobulls.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Cartagena, Murcia",

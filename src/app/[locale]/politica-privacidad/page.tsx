@@ -50,10 +50,10 @@ export default function PoliticaPrivacidad() {
                     {isES ? "Correo electrónico" : "Email"}:
                   </span>{" "}
                   <a
-                    href="mailto:neurobulls@gmail.com"
+                    href="mailto:info@neurobulls.com"
                     className="text-nb-red hover:underline"
                   >
-                    neurobulls@gmail.com
+                    info@neurobulls.com
                   </a>
                 </li>
                 <li>
@@ -314,10 +314,10 @@ export default function PoliticaPrivacidad() {
                   ? "Para ejercer cualquiera de estos derechos, puede enviar un correo electrónico a"
                   : "To exercise any of these rights, you may send an email to"}{" "}
                 <a
-                  href="mailto:neurobulls@gmail.com"
+                  href="mailto:info@neurobulls.com"
                   className="text-nb-red hover:underline"
                 >
-                  neurobulls@gmail.com
+                  info@neurobulls.com
                 </a>
                 {isES
                   ? ", indicando su solicitud y adjuntando copia de su documento de identidad para verificar su identidad."

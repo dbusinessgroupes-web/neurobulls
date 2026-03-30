@@ -31,7 +31,7 @@ export function Footer() {
               <a href="https://instagram.com/neurobulls" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-nb-red transition-colors">
                 <InstagramIcon className="h-5 w-5" />
               </a>
-              <a href="mailto:neurobulls@gmail.com" aria-label="Email" className="text-muted-foreground hover:text-nb-red transition-colors">
+              <a href="mailto:info@neurobulls.com" aria-label="Email" className="text-muted-foreground hover:text-nb-red transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -43,7 +43,7 @@ export function Footer() {
             <nav className="flex flex-col gap-2">
               <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("aboutLink")}</Link>
               <Link href="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("workLink")}</Link>
-              <a href="mailto:neurobulls@gmail.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{tc("info.email")}</a>
+              <a href="mailto:info@neurobulls.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{tc("info.email")}</a>
             </nav>
           </div>
 
@@ -55,6 +55,8 @@ export function Footer() {
               <Link href="/services/video-ia" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVideo")}</Link>
               <Link href="/services/estrategia-campana-ia" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceStrategy")}</Link>
               <Link href="/services/modelos-ia" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceModels")}</Link>
+              <Link href="/services/redes-sociales-ia" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceSocial")}</Link>
+              <Link href="/services/identidad-marca-ia" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceBranding")}</Link>
             </nav>
           </div>
 

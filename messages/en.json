@@ -49,10 +49,10 @@
     "individualTitle": "Individual Services",
     "individualSubtitle": "Need something specific? Choose exactly what you need.",
     "learnMore": "Learn More",
-    "modelsPrice": "From €497",
+    "modelsPrice": "From €697",
     "photographyPrice": "From €297",
     "videoPrice": "From €497",
-    "socialPrice": "From €497/mo",
+    "socialPrice": "From €697/mo",
     "brandingPrice": "From €1,497",
     "strategyPrice": "From €997"
   },
@@ -67,7 +67,7 @@
     "starter": {
       "name": "Starter",
       "description": "The perfect starting point for small businesses and personal brands testing AI marketing.",
-      "price": "€497",
+      "price": "€797",
       "features": [
         "1 custom AI model",
         "15 editorial images/month",
@@ -80,7 +80,7 @@
     "growth": {
       "name": "Growth",
       "description": "For growing brands ready to scale their content production with AI.",
-      "price": "€1,297",
+      "price": "€1,497",
       "features": [
         "3 custom AI models",
         "40 editorial images/month",
@@ -95,7 +95,7 @@
     "scale": {
       "name": "Scale",
       "description": "Full-service AI marketing for mid-size companies demanding excellence.",
-      "price": "€2,497",
+      "price": "€2,997",
       "features": [
         "6 custom AI models",
         "100 editorial images/month",
@@ -325,10 +325,10 @@
       "budget": "Budget Range",
       "budgetOptions": {
         "default": "Select a budget range",
-        "starter": "€297 - €700",
-        "growth": "€700 - €1,500",
-        "premium": "€1,500 - €3,000",
-        "enterprise": "€3,000+"
+        "starter": "€297 - €800",
+        "growth": "€800 - €2,000",
+        "premium": "€2,000 - €5,000",
+        "enterprise": "€5,000+"
       },
       "namePlaceholder": "John Doe",
       "emailPlaceholder": "john@company.com",
@@ -344,7 +344,7 @@
       "error": "Something went wrong. Please try again or email us directly."
     },
     "info": {
-      "email": "neurobulls@gmail.com",
+      "email": "info@neurobulls.com",
       "instagram": "@neurobulls",
       "location": "Location",
       "locationValue": "Cartagena, Murcia, Spain",
@@ -359,13 +359,13 @@
     "company": "Company",
     "aboutLink": "About",
     "workLink": "Work",
-    "careers": "Careers",
-    "blog": "Blog",
     "servicesTitle": "Services",
     "servicePhotography": "AI Photography",
     "serviceVideo": "AI Video",
     "serviceStrategy": "AI Strategy",
     "serviceModels": "AI Models",
+    "serviceSocial": "AI Social Media",
+    "serviceBranding": "AI Brand Identity",
     "legal": "Legal",
     "legalNotice": "Legal Notice",
     "privacy": "Privacy Policy",

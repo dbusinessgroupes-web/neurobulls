@@ -187,8 +187,8 @@ const services: Record<
   "modelos-ia": {
     titleEN: "AI Model Creation",
     titleES: "Creación de Modelos IA",
-    priceEN: "From €497",
-    priceES: "Desde €497",
+    priceEN: "From €697",
+    priceES: "Desde €697",
     image: "/services/ai-models.jpg",
     descriptionEN:
       "We create hyperrealistic virtual people you can use as brand ambassadors, virtual influencers or recurring models. Each model is AI-trained for perfect consistency \u2014 same face, complexion and features in any scenario, pose or outfit. Your model works 24/7, doesn\u2019t charge per session and never ages.",
@@ -258,8 +258,8 @@ const services: Record<
   "redes-sociales-ia": {
     titleEN: "AI Social Media Management",
     titleES: "Gestión de Redes Sociales IA",
-    priceEN: "From €497/mo",
-    priceES: "Desde €497/mes",
+    priceEN: "From €697/mo",
+    priceES: "Desde €697/mes",
     image: "/services/ai-social.jpg",
     descriptionEN:
       "We automate your social media presence with AI-generated visual content. Each post includes hyperrealistic images created specifically for your brand, persuasive copy and hashtag strategy. Your Instagram feed will look like a million-dollar brand, at a fraction of the cost.",
@@ -593,6 +593,34 @@ export default function ServiceDetailPage() {
             </ScrollReveal>
           </div>
         </section>
+
+        {/* Video Pricing Table */}
+        {slug === "video-ia" && (
+          <section className="px-6 -mt-8 pb-8">
+            <div className="mx-auto max-w-3xl">
+              <ScrollReveal>
+                <div className="mt-8 overflow-x-auto">
+                  <table className="w-full text-sm border border-border rounded-xl overflow-hidden">
+                    <thead>
+                      <tr className="bg-card">
+                        <th className="text-left p-4 font-medium text-foreground">{isEN ? "Format" : "Formato"}</th>
+                        <th className="text-left p-4 font-medium text-foreground">{isEN ? "Duration" : "Duración"}</th>
+                        <th className="text-left p-4 font-medium text-nb-gold">{isEN ? "Price" : "Precio"}</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-muted-foreground">
+                      <tr className="border-t border-border"><td className="p-4">Reel / TikTok</td><td className="p-4">15-30s</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €497" : "Desde €497"}</td></tr>
+                      <tr className="border-t border-border"><td className="p-4">{isEN ? "Ad Spot" : "Spot publicitario"}</td><td className="p-4">30-60s</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €797" : "Desde €797"}</td></tr>
+                      <tr className="border-t border-border"><td className="p-4">{isEN ? "Corporate Video" : "Vídeo corporativo"}</td><td className="p-4">1-2 min</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €1,297" : "Desde €1.297"}</td></tr>
+                      <tr className="border-t border-border"><td className="p-4">YouTube</td><td className="p-4">3-5 min</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €1,997" : "Desde €1.997"}</td></tr>
+                      <tr className="border-t border-border"><td className="p-4">YouTube Long</td><td className="p-4">5-10 min</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €2,997" : "Desde €2.997"}</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </ScrollReveal>
+            </div>
+          </section>
+        )}
 
         {/* What's Included */}
         <section className="py-16 px-6">
