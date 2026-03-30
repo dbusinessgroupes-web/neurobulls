@@ -368,23 +368,24 @@ export default function WorkDetailPage() {
         {/* Gallery */}
         {project.gallery.length > 1 && (
           <section className="py-16 px-6">
-            <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-6xl">
               <ScrollReveal>
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-10 text-center">
                   {isEN ? "Gallery" : "Galería"}
                 </h2>
               </ScrollReveal>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {project.gallery.map((img, i) => (
-                  <ScrollReveal key={i} delay={i * 0.1}>
-                    <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-border/50">
+                  <ScrollReveal key={i} delay={i * 0.08}>
+                    <div className="group relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/30 hover:border-nb-red/30 transition-colors duration-300">
                       <Image
                         src={img}
-                        alt={`${title} - ${i + 1}`}
+                        alt={`${title} — ${isEN ? "example" : "ejemplo"} ${i + 1}`}
                         fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                   </ScrollReveal>
                 ))}
