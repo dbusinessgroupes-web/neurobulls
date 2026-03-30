@@ -9,7 +9,7 @@ import {
   Target,
   User,
   Building2,
-  Palette,
+  Shirt,
   Gift,
   FileText,
   Sparkles,
@@ -57,7 +57,7 @@ const serviceCards = [
   { icon: Target, titleKey: "strategy", price: "2.497", traditional: "15.000-50.000" },
   { icon: User, titleKey: "models", price: "797", traditional: "2.000-10.000" },
   { icon: Building2, titleKey: "social", price: "697", traditional: "3.000-8.000" },
-  { icon: Palette, titleKey: "branding", price: "1.497", traditional: "5.000-15.000" },
+  { icon: Shirt, titleKey: "branding", price: "1.497", traditional: "5.000-15.000" },
 ];
 
 const processSteps = [
@@ -69,22 +69,22 @@ const processSteps = [
 
 const portfolioItems = [
   {
-    name: "Vanguard Fashion",
+    name: "Fashion Editorial",
     tag: "Fashion",
     image: "/portfolio/vanguard-fashion.jpg",
   },
   {
-    name: "Lumiere Beauty",
+    name: "Skincare Launch",
     tag: "Beauty",
     image: "/portfolio/lumiere-beauty.jpg",
   },
   {
-    name: "TechVision Pro",
+    name: "Tech Launch",
     tag: "Technology",
     image: "/portfolio/techvision-pro.jpg",
   },
   {
-    name: "Maison Elegance",
+    name: "Real Estate",
     tag: "Real Estate",
     image: "/portfolio/maison-elegance.jpg",
   },
@@ -165,8 +165,8 @@ export default function Home() {
               variants={fadeUp}
               className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Link href="/work"><Button size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-8">{t("hero.cta")}</Button></Link>
-              <Link href="/services"><Button size="lg" variant="outline" className="border-nb-gold text-nb-gold hover:bg-nb-gold/10 px-8">{t("hero.ctaSecondary")}</Button></Link>
+              <Link href="/contact"><Button size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-8">{t("hero.cta")}</Button></Link>
+              <Link href="/services"><Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8">{t("hero.ctaSecondary")}</Button></Link>
             </motion.div>
           </motion.div>
 
@@ -188,8 +188,8 @@ export default function Home() {
                 {[
                   { value: 90, suffix: "%", label: t("stats.cost") },
                   { value: 48, suffix: "h", label: t("stats.delivery") },
-                  { value: 500, suffix: "+", label: t("stats.models") },
-                  { value: 3, suffix: "x", label: t("stats.engagement") },
+                  { value: 100, suffix: "%", label: t("stats.rights") },
+                  { value: 0, suffix: "€", label: t("stats.risk") },
                 ].map((stat, i) => (
                   <div key={i} className="text-center">
                     <div className="text-4xl font-bold text-nb-gold">

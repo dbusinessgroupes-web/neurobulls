@@ -7,54 +7,54 @@
     "startProject": "Start a Project"
   },
   "hero": {
-    "title": "THE FUTURE OF MARKETING IS NOT HUMAN",
-    "subtitle": "AI-powered campaigns. Hyperrealistic models. Unlimited creativity.",
-    "cta": "Discover Our Work",
-    "ctaSecondary": "See Pricing"
+    "title": "PREMIUM VISUAL PRODUCTION WITH AI",
+    "subtitle": "Million-dollar agency quality, accessible to any brand.",
+    "cta": "Request free sample image",
+    "ctaSecondary": "View services"
   },
   "stats": {
-    "cost": "Cost Reduction vs Traditional Shoots",
-    "delivery": "Average Delivery Time",
-    "models": "AI Models Created",
-    "engagement": "Higher Engagement Rate"
+    "cost": "Savings vs traditional production",
+    "delivery": "Average delivery time",
+    "rights": "Commercial rights included",
+    "risk": "Risk — satisfaction guaranteed"
   },
   "services": {
     "title": "Our Services",
     "subtitle": "Everything you need to launch AI-powered campaigns that outperform traditional production.",
     "photography": {
-      "title": "AI Photography",
-      "description": "Complete photo sessions without cameras or studios. Our AI models are indistinguishable from real people. We generate editorial images with the quality of Vogue, Harper's Bazaar or GQ."
+      "title": "Photography Pack",
+      "description": "10 editorial 4K photos with hyperrealistic AI models. Indistinguishable from reality. Vogue, Harper's Bazaar or GQ quality."
     },
     "video": {
-      "title": "AI Video Production",
-      "description": "Cinematic videos generated with cutting-edge AI. From 15-second reels to 2-minute ad spots. Professional editing: color grading, transitions, voiceover and music."
+      "title": "Video Reel",
+      "description": "Cinematic 15-30s reel with AI actors, professional editing, color grading, music. Ready for social media."
     },
     "strategy": {
-      "title": "AI Campaign Strategy",
-      "description": "Complete AI-powered marketing campaigns. From creative concept to visual execution, including distribution strategy. Each campaign includes brief, creative concepts, art direction and content calendar."
+      "title": "Complete Campaign",
+      "description": "Photos + video + strategy + art direction. Everything your brand needs in one pack. From concept to launch."
     },
     "models": {
-      "title": "AI Model Creation",
-      "description": "Hyperrealistic virtual people you can use as brand ambassadors or virtual influencers. Each model is AI-trained for perfect consistency across any scenario, pose or outfit. Works 24/7, never ages."
+      "title": "Exclusive AI Model",
+      "description": "Unique virtual person for your brand. Trained for perfect consistency across any scenario, pose or outfit. Unlimited use, works 24/7."
     },
     "social": {
-      "title": "AI Social Media",
-      "description": "We automate your social media presence with AI-generated visual content. Each post includes hyperrealistic images created specifically for your brand, persuasive copy and hashtag strategy."
+      "title": "Real Estate Pack",
+      "description": "Virtual home staging, photos with people, virtual renovation, video tour and golden hour conversion. Everything your property needs."
     },
     "branding": {
-      "title": "AI Brand Identity",
-      "description": "Complete brand identities powered by AI. From logo to packaging mockups, everything generated with premium aesthetics. Includes 20 brand images ready for web, social and print."
+      "title": "Fashion Pack",
+      "description": "2 exclusive AI models, 20 lookbook photos, 3 reels and ecommerce + social formats. Your collection ready to sell."
     },
     "exploreAll": "Explore All Services",
     "individualTitle": "Individual Services",
     "individualSubtitle": "Need something specific? Choose exactly what you need.",
     "learnMore": "Learn More",
-    "modelsPrice": "From €697",
-    "photographyPrice": "From €297",
-    "videoPrice": "From €497",
-    "socialPrice": "From €697/mo",
-    "brandingPrice": "From €1,497",
-    "strategyPrice": "From €997"
+    "modelsPrice": "€797",
+    "photographyPrice": "€397",
+    "videoPrice": "€597",
+    "socialPrice": "€697",
+    "brandingPrice": "€1,497",
+    "strategyPrice": "€2,497"
   },
   "pricing": {
     "title": "Pricing",
@@ -64,19 +64,6 @@
     "popular": "Most Popular",
     "getStarted": "Get Started",
     "contactUs": "Contact Us",
-    "starter": {
-      "name": "Starter",
-      "description": "The perfect starting point for small businesses and personal brands testing AI marketing.",
-      "price": "€797",
-      "features": [
-        "1 custom AI model",
-        "15 editorial images/month",
-        "1 short video (15-30s)",
-        "Creative direction",
-        "2 revisions per delivery",
-        "5-7 business day delivery"
-      ]
-    },
     "growth": {
       "name": "Growth",
       "description": "For growing brands ready to scale their content production with AI.",
@@ -147,7 +134,7 @@
       },
       {
         "q": "How long does delivery take?",
-        "a": "Depending on the plan: 48h for Scale and Enterprise, 3-5 days for Growth, 5-7 days for Starter. Individual services are delivered in 3-5 business days."
+        "a": "Depending on the plan: 48h for Scale, 3-5 days for Growth. Individual services are delivered in 3-5 business days."
       },
       {
         "q": "Can I use the images commercially?",
@@ -169,37 +156,37 @@
   },
   "work": {
     "title": "Our Work",
-    "subtitle": "Examples of what we create. Your next campaign starts here.",
+    "subtitle": "Demonstrations of our capabilities. Your next campaign starts here.",
     "viewProject": "View Project",
     "viewAll": "View All Work",
     "projects": {
       "vanguardFashion": {
-        "title": "Vanguard Fashion",
-        "description": "Complete AI model campaign for Spring/Summer 2026 collection. 120 images, 8 videos, 3 AI models.",
+        "title": "Fashion editorial campaign",
+        "description": "Complete campaign with AI models for Spring/Summer collection. 120 images, 8 videos, 3 AI models.",
         "stats": "120 images • 8 videos • 3 AI models"
       },
       "lumiereBeauty": {
-        "title": "Lumière Beauty",
+        "title": "Luxury skincare launch",
         "description": "Luxury skincare launch campaign with hyperrealistic AI models in editorial settings.",
         "stats": "80 images • 4 videos • 2 AI models"
       },
       "techvisionPro": {
-        "title": "TechVision Pro",
+        "title": "Tech product launch",
         "description": "Product launch campaign featuring AI-generated tech ambassadors across digital platforms.",
         "stats": "60 images • 6 videos • 4 AI models"
       },
       "maisonElegance": {
-        "title": "Maison Élégance",
+        "title": "Luxury real estate marketing",
         "description": "Luxury real estate marketing with AI lifestyle models in architectural settings.",
         "stats": "90 images • 3 videos • 5 AI models"
       },
       "glowCosmetics": {
-        "title": "Glow Cosmetics",
+        "title": "Beauty social media strategy",
         "description": "Social media content strategy with AI beauty influencer generating 30 posts/month.",
         "stats": "150 images • 12 reels • 1 AI influencer"
       },
       "urbanTaste": {
-        "title": "Urban Taste",
+        "title": "Restaurant chain rebranding",
         "description": "Restaurant chain rebranding with AI food photography and lifestyle content.",
         "stats": "200 images • 5 videos • 6 AI models"
       }
@@ -273,7 +260,7 @@
     "founder": {
       "title": "Founded by D Business Group ES",
       "description": "We believe AI is not just the future of marketing — it is the present. Our mission is to make hyperrealistic AI content accessible to every brand, eliminating the barriers of traditional production while delivering results that are indistinguishable from reality.",
-      "location": "Cartagena, Murcia, Spain"
+      "location": "Spain"
     },
     "mission": {
       "title": "Our Mission",
@@ -355,7 +342,7 @@
       "email": "info@neurobulls.com",
       "instagram": "@neurobulls",
       "location": "Location",
-      "locationValue": "Cartagena, Murcia, Spain",
+      "locationValue": "Spain",
       "hours": "Hours",
       "hoursValue": "Mon-Fri, 9:00-18:00 CET"
     },
@@ -368,12 +355,12 @@
     "aboutLink": "About",
     "workLink": "Work",
     "servicesTitle": "Services",
-    "servicePhotography": "AI Photography",
-    "serviceVideo": "AI Video",
-    "serviceStrategy": "AI Strategy",
-    "serviceModels": "AI Models",
-    "serviceSocial": "AI Social Media",
-    "serviceBranding": "AI Brand Identity",
+    "servicePhotography": "Photography Pack",
+    "serviceVideo": "Video Reel / Spot",
+    "serviceStrategy": "Exclusive AI Model",
+    "serviceModels": "Complete Campaign",
+    "serviceSocial": "Sector Packs",
+    "serviceBranding": "Monthly Plans",
     "legal": "Legal",
     "legalNotice": "Legal Notice",
     "privacy": "Privacy Policy",

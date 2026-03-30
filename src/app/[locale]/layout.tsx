@@ -65,7 +65,6 @@ const jsonLd = {
   "email": "info@neurobulls.com",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Cartagena, Murcia",
     "addressCountry": "ES",
   },
   "sameAs": ["https://instagram.com/neurobulls"],

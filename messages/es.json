@@ -7,54 +7,54 @@
     "startProject": "Iniciar Proyecto"
   },
   "hero": {
-    "title": "EL FUTURO DEL MARKETING NO ES HUMANO",
-    "subtitle": "Campañas impulsadas por IA. Modelos hiperrealistas. Creatividad ilimitada.",
-    "cta": "Descubre Nuestro Trabajo",
-    "ctaSecondary": "Ver Precios"
+    "title": "PRODUCCIÓN VISUAL PREMIUM CON IA",
+    "subtitle": "La calidad de una agencia de millones, accesible para cualquier marca.",
+    "cta": "Solicitar imagen de prueba gratis",
+    "ctaSecondary": "Ver servicios"
   },
   "stats": {
-    "cost": "Reducción de Costes vs Producción Tradicional",
-    "delivery": "Tiempo Medio de Entrega",
-    "models": "Modelos IA Creados",
-    "engagement": "Mayor Tasa de Engagement"
+    "cost": "Ahorro vs producción tradicional",
+    "delivery": "Plazo medio de entrega",
+    "rights": "Derechos comerciales incluidos",
+    "risk": "Riesgo — satisfacción garantizada"
   },
   "services": {
     "title": "Nuestros Servicios",
     "subtitle": "Todo lo que necesitas para lanzar campañas con IA que superan a la producción tradicional.",
     "photography": {
-      "title": "Fotografía IA",
-      "description": "Sesiones fotográficas completas sin cámaras ni estudios. Nuestros modelos IA son indistinguibles de personas reales. Generamos imágenes editoriales con la calidad de Vogue, Harper's Bazaar o GQ."
+      "title": "Pack Fotografía",
+      "description": "10 fotos 4K editoriales con modelos IA hiperrealistas. Indistinguibles de la realidad. Calidad Vogue, Harper's Bazaar o GQ."
     },
     "video": {
-      "title": "Producción de Vídeo IA",
-      "description": "Vídeos cinematográficos generados con IA de última generación. Desde reels de 15 segundos hasta spots publicitarios de 2 minutos. Edición profesional: corrección de color, transiciones, voiceover y música."
+      "title": "Vídeo Reel",
+      "description": "Reel cinematográfico de 15-30s con actores IA, edición profesional, color grading, música. Listo para redes."
     },
     "strategy": {
-      "title": "Estrategia de Campaña IA",
-      "description": "Campañas de marketing completas impulsadas por IA. Desde el concepto creativo hasta la ejecución visual, incluyendo estrategia de distribución. Brief, conceptos creativos, dirección de arte y calendario."
+      "title": "Campaña Completa",
+      "description": "Fotos + vídeo + estrategia + dirección de arte. Todo lo que tu marca necesita en un pack. Del concepto al lanzamiento."
     },
     "models": {
-      "title": "Creación de Modelos IA",
-      "description": "Personas virtuales hiperrealistas que puedes usar como embajadores de marca o influencers virtuales. Cada modelo se entrena con IA para consistencia perfecta en cualquier escenario, pose o vestuario. Trabaja 24/7, no envejece."
+      "title": "Modelo IA Exclusivo",
+      "description": "Persona virtual única para tu marca. Entrenada para consistencia perfecta en cualquier escenario, pose o vestuario. Uso ilimitado, trabaja 24/7."
     },
     "social": {
-      "title": "Redes Sociales IA",
-      "description": "Automatizamos tu presencia en redes sociales con contenido visual generado por IA. Cada publicación incluye imágenes hiperrealistas creadas para tu marca, copy persuasivo y estrategia de hashtags."
+      "title": "Pack Inmobiliaria",
+      "description": "Home staging virtual, fotos con personas, reforma virtual, vídeo tour y conversión a golden hour. Todo lo que necesita tu propiedad."
     },
     "branding": {
-      "title": "Identidad de Marca IA",
-      "description": "Identidades de marca completas potenciadas por IA. Desde el logo hasta mockups de packaging, todo con estética premium. Incluye 20 imágenes de marca listas para web, redes e impresión."
+      "title": "Pack Moda",
+      "description": "2 modelos IA exclusivos, 20 fotos lookbook, 3 reels y formatos ecommerce + redes. Tu colección lista para vender."
     },
     "exploreAll": "Explorar Todos los Servicios",
     "individualTitle": "Servicios Individuales",
     "individualSubtitle": "¿Necesitas algo específico? Elige exactamente lo que necesitas.",
     "learnMore": "Saber Más",
-    "modelsPrice": "Desde €697",
-    "photographyPrice": "Desde €297",
-    "videoPrice": "Desde €497",
-    "socialPrice": "Desde €697/mes",
-    "brandingPrice": "Desde €1.497",
-    "strategyPrice": "Desde €997"
+    "modelsPrice": "€797",
+    "photographyPrice": "€397",
+    "videoPrice": "€597",
+    "socialPrice": "€697",
+    "brandingPrice": "€1.497",
+    "strategyPrice": "€2.497"
   },
   "pricing": {
     "title": "Precios",
@@ -64,19 +64,6 @@
     "popular": "Más Popular",
     "getStarted": "Empezar",
     "contactUs": "Contactar",
-    "starter": {
-      "name": "Starter",
-      "description": "El punto de partida perfecto para pequeños negocios y marcas personales que prueban el marketing con IA.",
-      "price": "€797",
-      "features": [
-        "1 modelo IA personalizado",
-        "15 imágenes editoriales/mes",
-        "1 vídeo corto (15-30s)",
-        "Dirección creativa",
-        "2 revisiones por entrega",
-        "Entrega en 5-7 días laborables"
-      ]
-    },
     "growth": {
       "name": "Growth",
       "description": "Para marcas en crecimiento listas para escalar su producción de contenido con IA.",
@@ -147,7 +134,7 @@
       },
       {
         "q": "¿Cuánto tarda la entrega?",
-        "a": "Depende del plan: 48h para Scale y Enterprise, 3-5 días para Growth, 5-7 días para Starter. Los servicios individuales se entregan en 3-5 días laborables."
+        "a": "Depende del plan: 48h para Scale, 3-5 días para Growth. Los servicios individuales se entregan en 3-5 días laborables."
       },
       {
         "q": "¿Puedo usar las imágenes comercialmente?",
@@ -169,37 +156,37 @@
   },
   "work": {
     "title": "Nuestro Trabajo",
-    "subtitle": "Ejemplos de lo que creamos. Tu próxima campaña empieza aquí.",
+    "subtitle": "Demostraciones de nuestras capacidades. Tu próxima campaña empieza aquí.",
     "viewProject": "Ver Proyecto",
     "viewAll": "Ver Todo el Portfolio",
     "projects": {
       "vanguardFashion": {
-        "title": "Vanguard Fashion",
-        "description": "Campaña completa con modelos IA para la colección Primavera/Verano 2026. 120 imágenes, 8 vídeos, 3 modelos IA.",
+        "title": "Campaña editorial de moda",
+        "description": "Campaña completa con modelos IA para colección Primavera/Verano. 120 imágenes, 8 vídeos, 3 modelos IA.",
         "stats": "120 imágenes • 8 vídeos • 3 modelos IA"
       },
       "lumiereBeauty": {
-        "title": "Lumière Beauty",
+        "title": "Lanzamiento skincare de lujo",
         "description": "Campaña de lanzamiento de skincare de lujo con modelos IA hiperrealistas en entornos editoriales.",
         "stats": "80 imágenes • 4 vídeos • 2 modelos IA"
       },
       "techvisionPro": {
-        "title": "TechVision Pro",
+        "title": "Lanzamiento producto tech",
         "description": "Campaña de lanzamiento de producto con embajadores tech generados por IA en plataformas digitales.",
         "stats": "60 imágenes • 6 vídeos • 4 modelos IA"
       },
       "maisonElegance": {
-        "title": "Maison Élégance",
+        "title": "Marketing inmobiliario de lujo",
         "description": "Marketing inmobiliario de lujo con modelos IA lifestyle en entornos arquitectónicos.",
         "stats": "90 imágenes • 3 vídeos • 5 modelos IA"
       },
       "glowCosmetics": {
-        "title": "Glow Cosmetics",
+        "title": "Estrategia RRSS belleza",
         "description": "Estrategia de contenido en redes sociales con influencer IA de belleza generando 30 posts/mes.",
         "stats": "150 imágenes • 12 reels • 1 influencer IA"
       },
       "urbanTaste": {
-        "title": "Urban Taste",
+        "title": "Rebranding cadena restaurantes",
         "description": "Rebranding de cadena de restaurantes con fotografía gastronómica IA y contenido lifestyle.",
         "stats": "200 imágenes • 5 vídeos • 6 modelos IA"
       }
@@ -273,7 +260,7 @@
     "founder": {
       "title": "Fundada por D Business Group ES",
       "description": "Creemos que la IA no es solo el futuro del marketing — es el presente. Nuestra misión es hacer que el contenido hiperrealista con IA sea accesible para cada marca, eliminando las barreras de la producción tradicional mientras entregamos resultados indistinguibles de la realidad.",
-      "location": "Cartagena, Murcia, España"
+      "location": "España"
     },
     "mission": {
       "title": "Nuestra Misión",
@@ -355,7 +342,7 @@
       "email": "info@neurobulls.com",
       "instagram": "@neurobulls",
       "location": "Ubicación",
-      "locationValue": "Cartagena, Murcia, España",
+      "locationValue": "España",
       "hours": "Horario",
       "hoursValue": "Lun-Vie, 9:00-18:00 CET"
     },
@@ -368,12 +355,12 @@
     "aboutLink": "Nosotros",
     "workLink": "Portfolio",
     "servicesTitle": "Servicios",
-    "servicePhotography": "Fotografía IA",
-    "serviceVideo": "Vídeo IA",
-    "serviceStrategy": "Estrategia IA",
-    "serviceModels": "Modelos IA",
-    "serviceSocial": "Redes Sociales IA",
-    "serviceBranding": "Identidad de Marca IA",
+    "servicePhotography": "Pack Fotografía",
+    "serviceVideo": "Vídeo Reel / Spot",
+    "serviceStrategy": "Modelo IA Exclusivo",
+    "serviceModels": "Campaña Completa",
+    "serviceSocial": "Packs Sectoriales",
+    "serviceBranding": "Planes Mensuales",
     "legal": "Legal",
     "legalNotice": "Aviso Legal",
     "privacy": "Política de Privacidad",

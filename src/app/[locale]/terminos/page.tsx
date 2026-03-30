@@ -31,8 +31,8 @@ export default function Terminos() {
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {isES
-                  ? "Los presentes términos y condiciones regulan la relación entre NeuroBulls, nombre comercial de D Business Group ES, con domicilio social en Cartagena, Murcia, España (en adelante, \"NeuroBulls\" o \"el Prestador\"), y cualquier persona física o jurídica que contrate los servicios ofrecidos a través del sitio web neurobulls.com (en adelante, \"el Cliente\")."
-                  : "These terms and conditions govern the relationship between NeuroBulls, a trade name of D Business Group ES, with registered office in Cartagena, Murcia, Spain (hereinafter, \"NeuroBulls\" or \"the Provider\"), and any natural or legal person who engages the services offered through the website neurobulls.com (hereinafter, \"the Client\")."}
+                  ? "Los presentes términos y condiciones regulan la relación entre NeuroBulls, nombre comercial de D Business Group ES, con domicilio social en España (en adelante, \"NeuroBulls\" o \"el Prestador\"), y cualquier persona física o jurídica que contrate los servicios ofrecidos a través del sitio web neurobulls.com (en adelante, \"el Cliente\")."
+                  : "These terms and conditions govern the relationship between NeuroBulls, a trade name of D Business Group ES, with registered office in Spain (hereinafter, \"NeuroBulls\" or \"the Provider\"), and any natural or legal person who engages the services offered through the website neurobulls.com (hereinafter, \"the Client\")."}
               </p>
             </section>
 
@@ -256,8 +256,8 @@ export default function Terminos() {
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {isES
-                  ? "Los presentes términos y condiciones se rigen por la legislación española. Para la resolución de cualquier controversia derivada de la interpretación o ejecución de estos términos, ambas partes se someten expresamente a la jurisdicción de los Juzgados y Tribunales de la ciudad de Cartagena, con renuncia a cualquier otro fuero que pudiera corresponderles."
-                  : "These terms and conditions are governed by Spanish law. For the resolution of any dispute arising from the interpretation or execution of these terms, both parties expressly submit to the jurisdiction of the Courts and Tribunals of the city of Cartagena, waiving any other jurisdiction that may apply."}
+                  ? "Los presentes términos y condiciones se rigen por la legislación española. Para la resolución de cualquier controversia derivada de la interpretación o ejecución de estos términos, ambas partes se someten expresamente a la jurisdicción de los Juzgados y Tribunales competentes en España, con renuncia a cualquier otro fuero que pudiera corresponderles."
+                  : "These terms and conditions are governed by Spanish law. For the resolution of any dispute arising from the interpretation or execution of these terms, both parties expressly submit to the competent Courts and Tribunals in Spain, waiving any other jurisdiction that may apply."}
               </p>
             </section>
 
