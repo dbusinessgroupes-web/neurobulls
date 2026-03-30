@@ -167,12 +167,6 @@ export default function ContactPage() {
       value: t("contact.info.locationValue"),
       href: null,
     },
-    {
-      icon: Clock,
-      title: t("contact.info.hours"),
-      value: t("contact.info.hoursValue"),
-      href: null,
-    },
   ];
 
   return (

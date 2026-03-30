@@ -342,9 +342,7 @@
       "email": "info@neurobulls.com",
       "instagram": "@neurobulls",
       "location": "Location",
-      "locationValue": "Spain",
-      "hours": "Hours",
-      "hoursValue": "Mon-Fri, 9:00-18:00 CET"
+      "locationValue": "Spain"
     },
     "cta": {
       "text": "Prefer email? Write us directly at"

@@ -496,10 +496,7 @@ export default function ServicesPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
                     </div>
                     <CardContent className="p-6 flex flex-col flex-1">
-                      <p className="text-sm line-through text-muted-foreground">
-                        {isES ? service.traditionalES : service.traditionalEN}
-                      </p>
-                      <p className="text-3xl font-bold text-nb-gold mt-1">
+                      <p className="text-3xl font-bold text-nb-gold">
                         {isES ? service.priceES : service.priceEN}
                       </p>
                       <h3 className="text-lg font-bold mt-3">
@@ -719,7 +716,7 @@ export default function ServicesPage() {
                     >
                       <div className="text-sm font-medium">{row.service}</div>
                       <div className="text-center">
-                        <span className="text-sm text-muted-foreground line-through">
+                        <span className="text-sm text-muted-foreground/60">
                           {row.traditional}
                         </span>
                       </div>

@@ -52,12 +52,12 @@ const fadeUp = {
 };
 
 const serviceCards = [
-  { icon: Camera, titleKey: "photography", price: "397", traditional: "3.000-8.000" },
-  { icon: Video, titleKey: "video", price: "597", traditional: "2.000-5.000" },
-  { icon: Target, titleKey: "strategy", price: "2.497", traditional: "15.000-50.000" },
-  { icon: User, titleKey: "models", price: "797", traditional: "2.000-10.000" },
-  { icon: Building2, titleKey: "social", price: "697", traditional: "3.000-8.000" },
-  { icon: Shirt, titleKey: "branding", price: "1.497", traditional: "5.000-15.000" },
+  { icon: Camera, titleKey: "photography", price: "397", savings: "90%" },
+  { icon: Video, titleKey: "video", price: "597", savings: "88%" },
+  { icon: Target, titleKey: "strategy", price: "2.497", savings: "95%" },
+  { icon: User, titleKey: "models", price: "797", savings: "92%" },
+  { icon: Building2, titleKey: "social", price: "697", savings: "91%" },
+  { icon: Shirt, titleKey: "branding", price: "1.497", savings: "90%" },
 ];
 
 const processSteps = [
@@ -262,12 +262,14 @@ export default function Home() {
                       <h3 className="text-lg font-semibold mb-2">
                         {t(`services.${service.titleKey}.title`)}
                       </h3>
-                      <p className="text-xl font-bold text-nb-gold">
-                        &euro;{service.price}
-                      </p>
-                      <p className="text-xs line-through text-muted-foreground/60">
-                        &euro;{service.traditional}
-                      </p>
+                      <div className="flex items-center gap-3 mb-1">
+                        <p className="text-xl font-bold text-nb-gold">
+                          &euro;{service.price}
+                        </p>
+                        <span className="text-[10px] font-semibold uppercase tracking-wider bg-nb-gold/10 text-nb-gold px-2 py-0.5 rounded-full">
+                          {locale === "es" ? `Ahorra ${service.savings}` : `Save ${service.savings}`}
+                        </span>
+                      </div>
                       <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                         {t(`services.${service.titleKey}.description`)}
                       </p>
