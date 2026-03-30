@@ -49,12 +49,12 @@
     "individualTitle": "Servicios Individuales",
     "individualSubtitle": "¿Necesitas algo específico? Elige exactamente lo que necesitas.",
     "learnMore": "Saber Más",
-    "modelsPrice": "Desde €497",
-    "photographyPrice": "Desde €197",
-    "videoPrice": "Desde €297",
-    "socialPrice": "Desde €497/mes",
-    "brandingPrice": "Desde €997",
-    "strategyPrice": "Desde €797"
+    "modelsPrice": "Desde €697",
+    "photographyPrice": "Desde €297",
+    "videoPrice": "Desde €497",
+    "socialPrice": "Desde €697/mes",
+    "brandingPrice": "Desde €1.497",
+    "strategyPrice": "Desde €997"
   },
   "pricing": {
     "title": "Precios",
@@ -67,12 +67,12 @@
     "starter": {
       "name": "Starter",
       "description": "El punto de partida perfecto para pequeños negocios y marcas personales que prueban el marketing con IA.",
-      "price": "€497",
+      "price": "€797",
       "features": [
         "1 modelo IA personalizado",
         "15 imágenes editoriales/mes",
         "1 vídeo corto (15-30s)",
-        "Dirección creativa básica",
+        "Dirección creativa",
         "2 revisiones por entrega",
         "Entrega en 5-7 días laborables"
       ]
@@ -80,14 +80,14 @@
     "growth": {
       "name": "Growth",
       "description": "Para marcas en crecimiento listas para escalar su producción de contenido con IA.",
-      "price": "€997",
+      "price": "€1.497",
       "features": [
         "3 modelos IA personalizados",
         "40 imágenes editoriales/mes",
         "3 vídeos cortos + 1 largo (hasta 2 min)",
         "Estrategia de contenido mensual",
-        "Gestión de 2 redes sociales",
-        "12 posts/mes con copy + hashtags",
+        "Gestión de 2 redes sociales (15 posts/mes)",
+        "Reporting mensual",
         "3 revisiones por entrega",
         "Entrega en 3-5 días laborables"
       ]
@@ -95,14 +95,13 @@
     "scale": {
       "name": "Scale",
       "description": "Marketing IA completo para empresas medianas que exigen excelencia.",
-      "price": "€2.497",
+      "price": "€2.997",
       "features": [
         "6 modelos IA personalizados",
         "100 imágenes editoriales/mes",
         "6 vídeos cortos + 3 largos (hasta 5 min)",
-        "Estrategia con KPIs y reporting mensual",
-        "Gestión de 4 redes sociales",
-        "25 posts/mes con copy optimizado",
+        "Estrategia con KPIs y reporting",
+        "Gestión de 4 redes sociales (30 posts/mes)",
         "Revisiones ilimitadas",
         "Entrega en 48h",
         "Manager de cuenta dedicado"
@@ -111,14 +110,14 @@
     "enterprise": {
       "name": "Enterprise",
       "description": "Nivel enterprise. Equipo dedicado, producción ilimitada, SLAs personalizados.",
-      "price": "€4.997",
+      "price": "€5.997",
       "features": [
         "Modelos IA ilimitados",
         "Producción ilimitada",
         "Vídeo ilimitado (hasta 10 min)",
         "Estrategia omnicanal con A/B testing",
         "Director creativo dedicado",
-        "SLA de respuesta 24h",
+        "SLA de respuesta 12h",
         "Workshops trimestrales de marca",
         "Integraciones personalizadas"
       ]
@@ -128,13 +127,13 @@
     "comparisonTraditional": "Coste Tradicional",
     "comparisonNeurobulls": "Coste NeuroBulls",
     "comparisonPhotoTraditional": "€3.000 - €8.000",
-    "comparisonPhotoNeurobulls": "Desde €197",
+    "comparisonPhotoNeurobulls": "Desde €297",
     "comparisonPhotoLabel": "Sesión Fotográfica",
-    "comparisonVideoTraditional": "€5.000 - €15.000",
-    "comparisonVideoNeurobulls": "Desde €297",
+    "comparisonVideoTraditional": "€5.000 - €20.000",
+    "comparisonVideoNeurobulls": "Desde €497",
     "comparisonVideoLabel": "Producción de Vídeo",
-    "comparisonCampaignTraditional": "€10.000+",
-    "comparisonCampaignNeurobulls": "Desde €497/mes",
+    "comparisonCampaignTraditional": "€15.000+",
+    "comparisonCampaignNeurobulls": "Desde €797/mes",
     "comparisonCampaignLabel": "Campaña Completa",
     "ctaTitle": "¿Listo para transformar tu marketing?",
     "ctaButton": "Contactar"
@@ -159,32 +158,32 @@
       "vanguardFashion": {
         "title": "Vanguard Fashion",
         "description": "Campaña completa con modelos IA para la colección Primavera/Verano 2026. 120 imágenes, 8 vídeos, 3 modelos IA.",
-        "stats": "120 imágenes • 8 vídeos • 3 modelos IA"
+        "stats": "120 imágenes \u2022 8 vídeos \u2022 3 modelos IA"
       },
       "lumiereBeauty": {
         "title": "Lumière Beauty",
         "description": "Campaña de lanzamiento de skincare de lujo con modelos IA hiperrealistas en entornos editoriales.",
-        "stats": "80 imágenes • 4 vídeos • 2 modelos IA"
+        "stats": "80 imágenes \u2022 4 vídeos \u2022 2 modelos IA"
       },
       "techvisionPro": {
         "title": "TechVision Pro",
         "description": "Campaña de lanzamiento de producto con embajadores tech generados por IA en plataformas digitales.",
-        "stats": "60 imágenes • 6 vídeos • 4 modelos IA"
+        "stats": "60 imágenes \u2022 6 vídeos \u2022 4 modelos IA"
       },
       "maisonElegance": {
         "title": "Maison Élégance",
         "description": "Marketing inmobiliario de lujo con modelos IA lifestyle en entornos arquitectónicos.",
-        "stats": "90 imágenes • 3 vídeos • 5 modelos IA"
+        "stats": "90 imágenes \u2022 3 vídeos \u2022 5 modelos IA"
       },
       "glowCosmetics": {
         "title": "Glow Cosmetics",
         "description": "Estrategia de contenido en redes sociales con influencer IA de belleza generando 30 posts/mes.",
-        "stats": "150 imágenes • 12 reels • 1 influencer IA"
+        "stats": "150 imágenes \u2022 12 reels \u2022 1 influencer IA"
       },
       "urbanTaste": {
         "title": "Urban Taste",
         "description": "Rebranding de cadena de restaurantes con fotografía gastronómica IA y contenido lifestyle.",
-        "stats": "200 imágenes • 5 vídeos • 6 modelos IA"
+        "stats": "200 imágenes \u2022 5 vídeos \u2022 6 modelos IA"
       }
     },
     "filters": {
@@ -230,7 +229,7 @@
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48 horas",
-      "cost": "Desde €197",
+      "cost": "Desde €297",
       "variations": "Ilimitadas",
       "availability": "24/7"
     },
@@ -308,9 +307,9 @@
       "budget": "Rango de Presupuesto",
       "budgetOptions": {
         "default": "Selecciona un rango de presupuesto",
-        "starter": "€197 - €500",
-        "growth": "€500 - €1.000",
-        "premium": "€1.000 - €3.000",
+        "starter": "€297 - €700",
+        "growth": "€700 - €1.500",
+        "premium": "€1.500 - €3.000",
         "enterprise": "€3.000+"
       },
       "namePlaceholder": "Juan Pérez",

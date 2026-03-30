@@ -44,27 +44,29 @@ const services: Record<
 > = {
   "fotografia-ia": {
     titleEN: "AI Editorial Photography",
-    titleES: "Fotografia IA Editorial",
-    priceEN: "From \u20ac197",
-    priceES: "Desde \u20ac197",
+    titleES: "Fotografía IA Editorial",
+    priceEN: "From €297",
+    priceES: "Desde €297",
     image: "/services/ai-photography.jpg",
     descriptionEN:
       "Complete photo sessions without cameras or studios. Our AI models are indistinguishable from real people. We generate editorial images with the quality of Vogue, Harper\u2019s Bazaar or GQ. Each image goes through our refinement pipeline: pore-level skin texture, cinematic lighting, professional color grading and 4K upscaling.",
     descriptionES:
-      "Sesiones fotogr\u00e1ficas completas sin c\u00e1maras ni estudios. Nuestros modelos IA son indistinguibles de personas reales. Generamos im\u00e1genes editoriales con la calidad de Vogue, Harper\u2019s Bazaar o GQ. Cada imagen pasa por nuestro pipeline de refinamiento: textura de piel a nivel de poro, iluminaci\u00f3n cinematogr\u00e1fica, color grading profesional y upscaling a 4K.",
+      "Sesiones fotográficas completas sin cámaras ni estudios. Nuestros modelos IA son indistinguibles de personas reales. Generamos imágenes editoriales con la calidad de Vogue, Harper\u2019s Bazaar o GQ. Cada imagen pasa por nuestro pipeline de refinamiento: textura de piel a nivel de poro, iluminación cinematográfica, color grading profesional y upscaling a 4K.",
     includesEN: [
-      "10 hyperrealistic images in 4K",
+      "10 editorial images in 4K",
       "Creative direction",
-      "2 revision rounds",
-      "Full commercial license",
-      "Delivery in 3-5 business days",
+      "3 creative concepts",
+      "Skin realism refinement",
+      "4K upscaling",
+      "2 revisions",
     ],
     includesES: [
-      "10 im\u00e1genes hiperrealistas en 4K",
-      "Direcci\u00f3n creativa",
-      "2 rondas de revisi\u00f3n",
-      "Licencia comercial completa",
-      "Entrega en 3-5 d\u00edas laborables",
+      "10 imágenes editoriales en 4K",
+      "Dirección creativa",
+      "3 conceptos",
+      "Refinamiento skin realism",
+      "Upscaling 4K",
+      "2 revisiones",
     ],
     useCasesEN: [
       "Fashion lookbooks",
@@ -74,14 +76,14 @@ const services: Record<
     ],
     useCasesES: [
       "Lookbooks de moda",
-      "Cat\u00e1logos de producto",
+      "Catálogos de producto",
       "Contenido editorial",
-      "Campa\u00f1as publicitarias",
+      "Campañas publicitarias",
     ],
-    traditionalCostEN: "\u20ac3,000 - \u20ac8,000",
-    traditionalCostES: "\u20ac3.000 - \u20ac8.000",
-    savingsEN: "93-97%",
-    savingsES: "93-97%",
+    traditionalCostEN: "€3,000 - €8,000",
+    traditionalCostES: "€3.000 - €8.000",
+    savingsEN: "90-96%",
+    savingsES: "90-96%",
     faqEN: [
       {
         q: "What resolution are the images?",
@@ -93,47 +95,49 @@ const services: Record<
       },
       {
         q: "How many revisions are included?",
-        a: "2 revisions are included. Additional revisions available at \u20ac50 per round.",
+        a: "2 revisions are included. Additional revisions available at €50 per round.",
       },
     ],
     faqES: [
       {
-        q: "\u00bfEn qu\u00e9 resoluci\u00f3n son las im\u00e1genes?",
-        a: "Todas las im\u00e1genes se entregan en resoluci\u00f3n 4K (3840x2160 o superior), aptas para impresi\u00f3n, web y redes sociales.",
+        q: "¿En qué resolución son las imágenes?",
+        a: "Todas las imágenes se entregan en resolución 4K (3840x2160 o superior), aptas para impresión, web y redes sociales.",
       },
       {
-        q: "\u00bfPuedo elegir la apariencia del modelo?",
-        a: "S\u00ed, creamos modelos IA personalizados seg\u00fan tu brief \u2014 edad, etnia, complexi\u00f3n, estilo.",
+        q: "¿Puedo elegir la apariencia del modelo?",
+        a: "Sí, creamos modelos IA personalizados según tu brief \u2014 edad, etnia, complexión, estilo.",
       },
       {
-        q: "\u00bfCu\u00e1ntas revisiones est\u00e1n incluidas?",
-        a: "Se incluyen 2 revisiones. Revisiones adicionales disponibles a \u20ac50 por ronda.",
+        q: "¿Cuántas revisiones están incluidas?",
+        a: "Se incluyen 2 revisiones. Revisiones adicionales disponibles a €50 por ronda.",
       },
     ],
   },
   "video-ia": {
     titleEN: "AI Video Production",
-    titleES: "Producci\u00f3n de V\u00eddeo IA",
-    priceEN: "From \u20ac297",
-    priceES: "Desde \u20ac297",
+    titleES: "Producción de Vídeo IA",
+    priceEN: "From €497",
+    priceES: "Desde €497",
     image: "/services/ai-video.jpg",
     descriptionEN:
       "Cinematic videos generated with cutting-edge AI. From 15-second reels to 2-minute ad spots. Each video includes professional editing: color correction, transitions, voiceover and music. Quality indistinguishable from traditional production, but in 48h and at a fraction of the cost.",
     descriptionES:
-      "V\u00eddeos cinematogr\u00e1ficos generados con IA de \u00faltima generaci\u00f3n. Desde reels de 15 segundos hasta spots publicitarios de 2 minutos. Cada v\u00eddeo incluye edici\u00f3n profesional: correcci\u00f3n de color, transiciones, voiceover y m\u00fasica. Calidad indistinguible de una producci\u00f3n tradicional, pero en 48h y a una fracci\u00f3n del coste.",
+      "Vídeos cinematográficos generados con IA de última generación. Desde reels de 15 segundos hasta spots publicitarios de 2 minutos. Cada vídeo incluye edición profesional: corrección de color, transiciones, voiceover y música. Calidad indistinguible de una producción tradicional, pero en 48h y a una fracción del coste.",
     includesEN: [
-      "1 professional video up to 30s",
-      "Script and art direction",
-      "Color grading and editing",
-      "Licensed music",
-      "2 revision rounds",
+      "1 professional video up to 60s",
+      "Script and storyboard",
+      "Art direction",
+      "Editing with color grading",
+      "Music",
+      "Optional voiceover",
     ],
     includesES: [
-      "1 v\u00eddeo profesional de hasta 30s",
-      "Gui\u00f3n y direcci\u00f3n de arte",
-      "Color grading y edici\u00f3n",
-      "M\u00fasica con licencia",
-      "2 rondas de revisi\u00f3n",
+      "1 vídeo profesional hasta 60s",
+      "Guión y storyboard",
+      "Dirección de arte",
+      "Edición con color grading",
+      "Música",
+      "Voiceover opcional",
     ],
     useCasesEN: [
       "Instagram/TikTok Reels",
@@ -144,13 +148,13 @@ const services: Record<
     useCasesES: [
       "Reels Instagram/TikTok",
       "Spots publicitarios",
-      "V\u00eddeos de producto",
+      "Vídeos de producto",
       "YouTube Shorts",
     ],
-    traditionalCostEN: "\u20ac5,000 - \u20ac15,000",
-    traditionalCostES: "\u20ac5.000 - \u20ac15.000",
-    savingsEN: "94-98%",
-    savingsES: "94-98%",
+    traditionalCostEN: "€5,000 - €20,000",
+    traditionalCostES: "€5.000 - €20.000",
+    savingsEN: "90-98%",
+    savingsES: "90-98%",
     faqEN: [
       {
         q: "What formats do you deliver?",
@@ -162,47 +166,49 @@ const services: Record<
       },
       {
         q: "What\u2019s the maximum video length?",
-        a: "Individual service: up to 30s. Monthly plans: up to 2-10 minutes depending on tier.",
+        a: "Individual service: up to 60s. Monthly plans: up to 2-10 minutes depending on tier.",
       },
     ],
     faqES: [
       {
-        q: "\u00bfEn qu\u00e9 formatos entreg\u00e1is?",
+        q: "¿En qué formatos entregáis?",
         a: "MP4 optimizado para cada plataforma: 9:16 para Reels/TikTok, 16:9 para YouTube, 1:1 para feed.",
       },
       {
-        q: "\u00bfPuedo a\u00f1adir voiceover?",
-        a: "S\u00ed, usamos s\u00edntesis de voz IA para voiceovers naturales en cualquier idioma.",
+        q: "¿Puedo añadir voiceover?",
+        a: "Sí, usamos síntesis de voz IA para voiceovers naturales en cualquier idioma.",
       },
       {
-        q: "\u00bfCu\u00e1l es la duraci\u00f3n m\u00e1xima?",
-        a: "Servicio individual: hasta 30s. Planes mensuales: hasta 2-10 minutos seg\u00fan el tier.",
+        q: "¿Cuál es la duración máxima?",
+        a: "Servicio individual: hasta 60s. Planes mensuales: hasta 2-10 minutos según el tier.",
       },
     ],
   },
   "modelos-ia": {
     titleEN: "AI Model Creation",
-    titleES: "Creaci\u00f3n de Modelos IA",
-    priceEN: "From \u20ac497",
-    priceES: "Desde \u20ac497",
+    titleES: "Creación de Modelos IA",
+    priceEN: "From €697",
+    priceES: "Desde €697",
     image: "/services/ai-models.jpg",
     descriptionEN:
       "We create hyperrealistic virtual people you can use as brand ambassadors, virtual influencers or recurring models. Each model is AI-trained for perfect consistency \u2014 same face, complexion and features in any scenario, pose or outfit. Your model works 24/7, doesn\u2019t charge per session and never ages.",
     descriptionES:
-      "Creamos personas virtuales hiperrealistas que puedes usar como embajadores de marca, influencers virtuales o modelos recurrentes. Cada modelo se entrena con IA para consistencia perfecta \u2014 misma cara, complexi\u00f3n y rasgos en cualquier escenario, pose o vestuario. Tu modelo trabaja 24/7, no cobra por sesi\u00f3n y nunca envejece.",
+      "Creamos personas virtuales hiperrealistas que puedes usar como embajadores de marca, influencers virtuales o modelos recurrentes. Cada modelo se entrena con IA para consistencia perfecta \u2014 misma cara, complexión y rasgos en cualquier escenario, pose o vestuario. Tu modelo trabaja 24/7, no cobra por sesión y nunca envejece.",
     includesEN: [
-      "1 custom AI model",
+      "1 unique AI model",
       "8 reference photos",
       "Trained LoRA for consistency",
       "Unlimited future use",
-      "Model identity card",
+      "5 sample images",
+      "Technical identity card",
     ],
     includesES: [
-      "1 modelo IA personalizado",
+      "1 modelo IA único",
       "8 fotos de referencia",
-      "LoRA entrenado para consistencia",
-      "Uso ilimitado en futuras producciones",
-      "Ficha de identidad del modelo",
+      "LoRA entrenado",
+      "Uso ilimitado",
+      "5 imágenes de muestra",
+      "Ficha técnica",
     ],
     useCasesEN: [
       "Virtual Instagram influencer",
@@ -212,14 +218,14 @@ const services: Record<
     ],
     useCasesES: [
       "Influencer virtual para Instagram",
-      "Modelo recurrente para campa\u00f1as",
+      "Modelo recurrente para campañas",
       "Avatar de marca",
       "Persona para canal de YouTube",
     ],
-    traditionalCostEN: "\u20ac2,000 - \u20ac10,000 per campaign",
-    traditionalCostES: "\u20ac2.000 - \u20ac10.000 por campa\u00f1a",
-    savingsEN: "75-95%",
-    savingsES: "75-95%",
+    traditionalCostEN: "€2,000 - €10,000 per campaign",
+    traditionalCostES: "€2.000 - €10.000 por campaña",
+    savingsEN: "65-93%",
+    savingsES: "65-93%",
     faqEN: [
       {
         q: "Will my model look the same every time?",
@@ -236,47 +242,49 @@ const services: Record<
     ],
     faqES: [
       {
-        q: "\u00bfMi modelo se ver\u00e1 igual siempre?",
-        a: "S\u00ed, entrenamos un LoRA espec\u00edfico para tu modelo, asegurando consistencia facial 100% en todas las im\u00e1genes.",
+        q: "¿Mi modelo se verá igual siempre?",
+        a: "Sí, entrenamos un LoRA específico para tu modelo, asegurando consistencia facial 100% en todas las imágenes.",
       },
       {
-        q: "\u00bfPuedo usar el modelo comercialmente?",
-        a: "S\u00ed, licencia comercial completa con uso ilimitado. Sin costes por sesi\u00f3n.",
+        q: "¿Puedo usar el modelo comercialmente?",
+        a: "Sí, licencia comercial completa con uso ilimitado. Sin costes por sesión.",
       },
       {
-        q: "\u00bfCu\u00e1nto tarda en crearse un modelo?",
-        a: "3-5 d\u00edas laborables para el modelo inicial con 8 im\u00e1genes de referencia.",
+        q: "¿Cuánto tarda en crearse un modelo?",
+        a: "3-5 días laborables para el modelo inicial con 8 imágenes de referencia.",
       },
     ],
   },
   "redes-sociales-ia": {
     titleEN: "AI Social Media Management",
-    titleES: "Gesti\u00f3n de Redes Sociales IA",
-    priceEN: "From \u20ac497/mo",
-    priceES: "Desde \u20ac497/mes",
+    titleES: "Gestión de Redes Sociales IA",
+    priceEN: "From €697/mo",
+    priceES: "Desde €697/mes",
     image: "/services/ai-social.jpg",
     descriptionEN:
       "We automate your social media presence with AI-generated visual content. Each post includes hyperrealistic images created specifically for your brand, persuasive copy and hashtag strategy. Your Instagram feed will look like a million-dollar brand, at a fraction of the cost.",
     descriptionES:
-      "Automatizamos tu presencia en redes sociales con contenido visual generado por IA. Cada publicaci\u00f3n incluye im\u00e1genes hiperrealistas creadas para tu marca, copy persuasivo y estrategia de hashtags. Tu feed de Instagram parecer\u00e1 el de una marca con presupuesto de millones, a una fracci\u00f3n del coste.",
+      "Automatizamos tu presencia en redes sociales con contenido visual generado por IA. Cada publicación incluye imágenes hiperrealistas creadas para tu marca, copy persuasivo y estrategia de hashtags. Tu feed de Instagram parecerá el de una marca con presupuesto de millones, a una fracción del coste.",
     includesEN: [
-      "12 posts/month with AI images",
+      "15 posts/month with AI images",
       "Optimized copy and hashtags",
+      "Content calendar",
       "Scheduling and publishing",
       "Monthly performance report",
     ],
     includesES: [
-      "12 posts/mes con im\u00e1genes IA",
+      "15 posts/mes con imágenes IA",
       "Copy optimizado y hashtags",
-      "Programaci\u00f3n y publicaci\u00f3n",
-      "Informe de rendimiento mensual",
+      "Calendario de contenido",
+      "Programación y publicación",
+      "Informe mensual",
     ],
     useCasesEN: ["Instagram", "TikTok", "LinkedIn", "Pinterest"],
     useCasesES: ["Instagram", "TikTok", "LinkedIn", "Pinterest"],
-    traditionalCostEN: "\u20ac1,500 - \u20ac4,000/mo",
-    traditionalCostES: "\u20ac1.500 - \u20ac4.000/mes",
-    savingsEN: "67-88%",
-    savingsES: "67-88%",
+    traditionalCostEN: "€1,500 - €4,000/mo",
+    traditionalCostES: "€1.500 - €4.000/mes",
+    savingsEN: "54-83%",
+    savingsES: "54-83%",
     faqEN: [
       {
         q: "Which platforms do you manage?",
@@ -293,42 +301,42 @@ const services: Record<
     ],
     faqES: [
       {
-        q: "\u00bfQu\u00e9 plataformas gestion\u00e1is?",
+        q: "¿Qué plataformas gestionáis?",
         a: "Instagram, TikTok, LinkedIn y Pinterest. Plataformas adicionales disponibles en planes Growth+.",
       },
       {
-        q: "\u00bfTambi\u00e9n cre\u00e1is el copy?",
-        a: "S\u00ed, cada publicaci\u00f3n incluye copy optimizado con IA, hashtags y estrategia de programaci\u00f3n.",
+        q: "¿También creáis el copy?",
+        a: "Sí, cada publicación incluye copy optimizado con IA, hashtags y estrategia de programación.",
       },
       {
-        q: "\u00bfPuedo aprobar los posts antes de publicar?",
-        a: "S\u00ed, enviamos un calendario de contenido mensual para tu aprobaci\u00f3n antes de publicar.",
+        q: "¿Puedo aprobar los posts antes de publicar?",
+        a: "Sí, enviamos un calendario de contenido mensual para tu aprobación antes de publicar.",
       },
     ],
   },
   "identidad-marca-ia": {
     titleEN: "AI Brand Identity",
     titleES: "Identidad de Marca IA",
-    priceEN: "From \u20ac997",
-    priceES: "Desde \u20ac997",
+    priceEN: "From €1,497",
+    priceES: "Desde €1.497",
     image: "/services/ai-branding.jpg",
     descriptionEN:
       "Complete brand identities powered by AI. From logo to packaging mockups, everything generated with premium aesthetics. Includes 20 brand images ready for web, social and print.",
     descriptionES:
-      "Identidades de marca completas potenciadas por IA. Desde el logo hasta mockups de packaging, todo con est\u00e9tica premium. Incluye 20 im\u00e1genes de marca listas para web, redes e impresi\u00f3n.",
+      "Identidades de marca completas potenciadas por IA. Desde el logo hasta mockups de packaging, todo con estética premium. Incluye 20 imágenes de marca listas para web, redes e impresión.",
     includesEN: [
-      "Logo design",
+      "Logo + variations",
       "Color palette and typography",
       "Stationery mockups",
       "Brand guidelines",
       "20 brand images",
     ],
     includesES: [
-      "Dise\u00f1o de logo",
-      "Paleta de colores y tipograf\u00eda",
-      "Mockups de papeler\u00eda",
-      "Gu\u00eda de marca",
-      "20 im\u00e1genes de marca",
+      "Logo + variaciones",
+      "Paleta colores y tipografía",
+      "Mockups papelería",
+      "Guía de marca",
+      "20 imágenes",
     ],
     useCasesEN: ["Startups", "Rebranding", "Product launches", "New brands"],
     useCasesES: [
@@ -337,10 +345,10 @@ const services: Record<
       "Lanzamientos de producto",
       "Nuevas marcas",
     ],
-    traditionalCostEN: "\u20ac5,000 - \u20ac15,000",
-    traditionalCostES: "\u20ac5.000 - \u20ac15.000",
-    savingsEN: "80-93%",
-    savingsES: "80-93%",
+    traditionalCostEN: "€5,000 - €15,000",
+    traditionalCostES: "€5.000 - €15.000",
+    savingsEN: "70-90%",
+    savingsES: "70-90%",
     faqEN: [
       {
         q: "What file formats do I receive?",
@@ -357,43 +365,45 @@ const services: Record<
     ],
     faqES: [
       {
-        q: "\u00bfEn qu\u00e9 formatos recibo los archivos?",
-        a: "SVG, PNG, PDF para el logo. Gu\u00eda de marca completa en PDF. Im\u00e1genes en JPG/PNG 4K.",
+        q: "¿En qué formatos recibo los archivos?",
+        a: "SVG, PNG, PDF para el logo. Guía de marca completa en PDF. Imágenes en JPG/PNG 4K.",
       },
       {
-        q: "\u00bfCu\u00e1ntas opciones de logo recibo?",
-        a: "3 conceptos iniciales, luego refinamos el elegido con 2 rondas de revisi\u00f3n.",
+        q: "¿Cuántas opciones de logo recibo?",
+        a: "3 conceptos iniciales, luego refinamos el elegido con 2 rondas de revisión.",
       },
       {
-        q: "\u00bfPuedo usar los assets para impresi\u00f3n?",
-        a: "S\u00ed, todos los assets se entregan en resoluci\u00f3n y formato listos para impresi\u00f3n.",
+        q: "¿Puedo usar los assets para impresión?",
+        a: "Sí, todos los assets se entregan en resolución y formato listos para impresión.",
       },
     ],
   },
   "estrategia-campana-ia": {
     titleEN: "AI Campaign Strategy",
-    titleES: "Estrategia de Campa\u00f1a IA",
-    priceEN: "From \u20ac797",
-    priceES: "Desde \u20ac797",
+    titleES: "Estrategia de Campaña IA",
+    priceEN: "From €997",
+    priceES: "Desde €997",
     image: "/services/ai-strategy.jpg",
     descriptionEN:
       "Complete AI-powered marketing campaigns. From creative concept to visual execution, including distribution strategy. Each campaign includes brief, creative concepts, art direction and content calendar optimized for conversion.",
     descriptionES:
-      "Campa\u00f1as de marketing completas impulsadas por IA. Desde el concepto creativo hasta la ejecuci\u00f3n visual, incluyendo estrategia de distribuci\u00f3n. Brief, conceptos creativos, direcci\u00f3n de arte y calendario de contenido optimizado para conversi\u00f3n.",
+      "Campañas de marketing completas impulsadas por IA. Desde el concepto creativo hasta la ejecución visual, incluyendo estrategia de distribución. Brief, conceptos creativos, dirección de arte y calendario de contenido optimizado para conversión.",
     includesEN: [
       "Creative brief",
-      "Campaign strategy",
-      "3 creative concepts",
+      "3 concepts with moodboards",
       "Art direction",
-      "Content calendar",
+      "20 images",
+      "2 short videos",
+      "1-month content calendar",
       "KPIs",
     ],
     includesES: [
       "Brief creativo",
-      "Estrategia de campa\u00f1a",
-      "3 conceptos creativos",
-      "Direcci\u00f3n de arte",
-      "Calendario de contenido",
+      "3 conceptos con moodboards",
+      "Dirección de arte",
+      "20 imágenes",
+      "2 vídeos cortos",
+      "Calendario 1 mes",
       "KPIs",
     ],
     useCasesEN: [
@@ -404,18 +414,18 @@ const services: Record<
     ],
     useCasesES: [
       "Lanzamientos de producto",
-      "Campa\u00f1as estacionales",
+      "Campañas estacionales",
       "Black Friday",
       "Rebajas y eventos",
     ],
-    traditionalCostEN: "\u20ac5,000 - \u20ac20,000",
-    traditionalCostES: "\u20ac5.000 - \u20ac20.000",
-    savingsEN: "84-96%",
-    savingsES: "84-96%",
+    traditionalCostEN: "€5,000 - €20,000",
+    traditionalCostES: "€5.000 - €20.000",
+    savingsEN: "80-95%",
+    savingsES: "80-95%",
     faqEN: [
       {
         q: "Does it include content production?",
-        a: "The strategy service includes the plan and creative direction. Production (photos/videos) is billed separately or included in monthly plans.",
+        a: "Yes, the strategy includes 20 images and 2 short videos. Additional production available separately.",
       },
       {
         q: "How detailed is the strategy?",
@@ -428,16 +438,16 @@ const services: Record<
     ],
     faqES: [
       {
-        q: "\u00bfIncluye la producci\u00f3n de contenido?",
-        a: "El servicio de estrategia incluye el plan y la direcci\u00f3n creativa. La producci\u00f3n (fotos/v\u00eddeos) se factura por separado o se incluye en planes mensuales.",
+        q: "¿Incluye la producción de contenido?",
+        a: "Sí, la estrategia incluye 20 imágenes y 2 vídeos cortos. Producción adicional disponible por separado.",
       },
       {
-        q: "\u00bfC\u00f3mo de detallada es la estrategia?",
-        a: "Completa: an\u00e1lisis de p\u00fablico objetivo, conceptos creativos con moodboards, calendario de contenido, gu\u00edas por plataforma y KPIs.",
+        q: "¿Cómo de detallada es la estrategia?",
+        a: "Completa: análisis de público objetivo, conceptos creativos con moodboards, calendario de contenido, guías por plataforma y KPIs.",
       },
       {
-        q: "\u00bfPod\u00e9is ejecutar la estrategia tambi\u00e9n?",
-        a: "S\u00ed, combina con nuestros servicios de producci\u00f3n o planes mensuales para ejecuci\u00f3n de principio a fin.",
+        q: "¿Podéis ejecutar la estrategia también?",
+        a: "Sí, combina con nuestros servicios de producción o planes mensuales para ejecución de principio a fin.",
       },
     ],
   },
@@ -458,12 +468,12 @@ const processStepsES = [
   },
   {
     icon: Sparkles,
-    label: "Creaci\u00f3n",
+    label: "Creación",
     description: "La IA genera el contenido",
   },
   {
     icon: RefreshCw,
-    label: "Revisi\u00f3n",
+    label: "Revisión",
     description: "Revisas y apruebas",
   },
   { icon: Rocket, label: "Entrega", description: "Archivos finales entregados" },
@@ -589,7 +599,7 @@ export default function ServiceDetailPage() {
           <div className="mx-auto max-w-3xl">
             <ScrollReveal>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-8">
-                {isEN ? "What\u2019s Included" : "Qu\u00e9 incluye"}
+                {isEN ? "What\u2019s Included" : "Qué incluye"}
               </h2>
               <ul className="space-y-4">
                 {includes.map((item, i) => (
@@ -722,7 +732,7 @@ export default function ServiceDetailPage() {
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8">
                 {isEN
                   ? "Ready to get started?"
-                  : "\u00bfListo para empezar?"}
+                  : "¿Listo para empezar?"}
               </h2>
               <Link href={`/contact?service=${slug}`}>
                 <Button

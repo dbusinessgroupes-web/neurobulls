@@ -146,7 +146,7 @@ export default function WorkPage() {
                         isFirst ? "md:col-span-2 md:row-span-2" : ""
                       } ${isTall ? "md:row-span-2" : ""}`}
                     >
-                      <Link href="/contact" className="block h-full group">
+                      <Link href={`/work/${project.id}`} className="block h-full group">
                         <div
                           className="relative h-full rounded-xl overflow-hidden border border-border/50"
                         >
