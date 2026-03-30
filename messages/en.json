@@ -247,7 +247,7 @@
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48 hours",
-      "cost": "From €297",
+      "cost": "From €397",
       "variations": "Unlimited",
       "availability": "24/7"
     },
@@ -313,22 +313,30 @@
       "service": "Service Interested In",
       "serviceOptions": {
         "default": "Select a service",
-        "photography": "AI Photography",
-        "video": "AI Video Production",
-        "strategy": "AI Campaign Strategy",
-        "models": "AI Model Creation",
-        "social": "AI Social Media",
-        "branding": "AI Brand Identity",
-        "package": "Monthly Package",
-        "other": "Other"
+        "photopack": "Photography Pack (€397)",
+        "videoreel": "Video Reel (€597)",
+        "videospot": "Video Spot (€997)",
+        "videolong": "Long Video (€1,997)",
+        "model": "Exclusive AI Model (€797)",
+        "campaign": "Complete Campaign (€2,497)",
+        "packRealestate": "Real Estate Pack (€697)",
+        "packFashion": "Fashion Pack (€1,497)",
+        "packBeauty": "Beauty Pack (€997)",
+        "packFood": "Restaurant Pack (€797)",
+        "packTech": "Tech Pack (€1,297)",
+        "monthlyGrowth": "Growth Plan (€1,497/mo)",
+        "monthlyScale": "Scale Plan (€2,997/mo)",
+        "freeSample": "Free sample image",
+        "other": "Other / Custom"
       },
       "budget": "Budget Range",
       "budgetOptions": {
         "default": "Select a budget range",
-        "starter": "€297 - €800",
-        "growth": "€800 - €2,000",
-        "premium": "€2,000 - €5,000",
-        "enterprise": "€5,000+"
+        "under500": "Under €500",
+        "500to1000": "€500 - €1,000",
+        "1000to2500": "€1,000 - €2,500",
+        "2500to5000": "€2,500 - €5,000",
+        "over5000": "More than €5,000"
       },
       "namePlaceholder": "John Doe",
       "emailPlaceholder": "john@company.com",

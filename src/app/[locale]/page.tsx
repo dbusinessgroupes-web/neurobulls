@@ -8,8 +8,9 @@ import {
   Video,
   Target,
   User,
-  Share2,
+  Building2,
   Palette,
+  Gift,
   FileText,
   Sparkles,
   RefreshCw,
@@ -50,13 +51,13 @@ const fadeUp = {
   },
 };
 
-const services = [
-  { icon: Camera, key: "photography" },
-  { icon: Video, key: "video" },
-  { icon: Target, key: "strategy" },
-  { icon: User, key: "models" },
-  { icon: Share2, key: "social" },
-  { icon: Palette, key: "branding" },
+const serviceCards = [
+  { icon: Camera, titleKey: "photography", price: "397", traditional: "3.000-8.000" },
+  { icon: Video, titleKey: "video", price: "597", traditional: "2.000-5.000" },
+  { icon: Target, titleKey: "strategy", price: "2.497", traditional: "15.000-50.000" },
+  { icon: User, titleKey: "models", price: "797", traditional: "2.000-10.000" },
+  { icon: Building2, titleKey: "social", price: "697", traditional: "3.000-8.000" },
+  { icon: Palette, titleKey: "branding", price: "1.497", traditional: "5.000-15.000" },
 ];
 
 const processSteps = [
@@ -253,16 +254,22 @@ export default function Home() {
             </ScrollReveal>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service, i) => (
-                <ScrollReveal key={service.key} delay={i * 0.08}>
+              {serviceCards.map((service, i) => (
+                <ScrollReveal key={service.titleKey} delay={i * 0.08}>
                   <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1">
                     <CardContent className="p-6">
                       <service.icon className="h-8 w-8 text-nb-gold mb-4" />
                       <h3 className="text-lg font-semibold mb-2">
-                        {t(`services.${service.key}.title`)}
+                        {t(`services.${service.titleKey}.title`)}
                       </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {t(`services.${service.key}.description`)}
+                      <p className="text-xl font-bold text-nb-gold">
+                        &euro;{service.price}
+                      </p>
+                      <p className="text-xs line-through text-muted-foreground/60">
+                        &euro;{service.traditional}
+                      </p>
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                        {t(`services.${service.titleKey}.description`)}
                       </p>
                     </CardContent>
                   </Card>
@@ -431,6 +438,30 @@ export default function Home() {
                     </div>
                   </CardContent>
                 </Card>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ─── Free Trial CTA ─── */}
+        <section className="py-24 lg:py-32 px-6">
+          <div className="mx-auto max-w-4xl text-center">
+            <ScrollReveal>
+              <div className="rounded-2xl border border-nb-gold/20 bg-gradient-to-b from-card to-background p-10 md:p-16">
+                <Gift className="h-12 w-12 text-nb-gold mx-auto mb-6" />
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                  {locale === "es" ? "Prueba nuestra calidad gratis" : "Try our quality for free"}
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+                  {locale === "es"
+                    ? "Solicita una imagen de prueba gratuita y sin compromiso. Verás con tus propios ojos la calidad de nuestro trabajo antes de contratar."
+                    : "Request a free sample image with no commitment. See our quality with your own eyes before hiring us."}
+                </p>
+                <Link href="/contact">
+                  <Button className="bg-nb-red hover:bg-nb-red-hover text-white px-8 py-3 text-lg">
+                    {locale === "es" ? "Solicitar Imagen Gratuita" : "Request Free Image"}
+                  </Button>
+                </Link>
               </div>
             </ScrollReveal>
           </div>

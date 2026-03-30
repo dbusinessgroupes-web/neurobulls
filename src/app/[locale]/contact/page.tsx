@@ -122,22 +122,30 @@ export default function ContactPage() {
 
   const serviceOptions = [
     { value: "", label: t("contact.form.serviceOptions.default") },
-    { value: "photography", label: t("contact.form.serviceOptions.photography") },
-    { value: "video", label: t("contact.form.serviceOptions.video") },
-    { value: "strategy", label: t("contact.form.serviceOptions.strategy") },
-    { value: "models", label: t("contact.form.serviceOptions.models") },
-    { value: "social", label: t("contact.form.serviceOptions.social") },
-    { value: "branding", label: t("contact.form.serviceOptions.branding") },
-    { value: "package", label: t("contact.form.serviceOptions.package") },
+    { value: "photopack", label: t("contact.form.serviceOptions.photopack") },
+    { value: "videoreel", label: t("contact.form.serviceOptions.videoreel") },
+    { value: "videospot", label: t("contact.form.serviceOptions.videospot") },
+    { value: "videolong", label: t("contact.form.serviceOptions.videolong") },
+    { value: "model", label: t("contact.form.serviceOptions.model") },
+    { value: "campaign", label: t("contact.form.serviceOptions.campaign") },
+    { value: "packRealestate", label: t("contact.form.serviceOptions.packRealestate") },
+    { value: "packFashion", label: t("contact.form.serviceOptions.packFashion") },
+    { value: "packBeauty", label: t("contact.form.serviceOptions.packBeauty") },
+    { value: "packFood", label: t("contact.form.serviceOptions.packFood") },
+    { value: "packTech", label: t("contact.form.serviceOptions.packTech") },
+    { value: "monthlyGrowth", label: t("contact.form.serviceOptions.monthlyGrowth") },
+    { value: "monthlyScale", label: t("contact.form.serviceOptions.monthlyScale") },
+    { value: "freeSample", label: t("contact.form.serviceOptions.freeSample") },
     { value: "other", label: t("contact.form.serviceOptions.other") },
   ];
 
   const budgetOptions = [
     { value: "", label: t("contact.form.budgetOptions.default") },
-    { value: "starter", label: t("contact.form.budgetOptions.starter") },
-    { value: "growth", label: t("contact.form.budgetOptions.growth") },
-    { value: "premium", label: t("contact.form.budgetOptions.premium") },
-    { value: "enterprise", label: t("contact.form.budgetOptions.enterprise") },
+    { value: "under500", label: t("contact.form.budgetOptions.under500") },
+    { value: "500to1000", label: t("contact.form.budgetOptions.500to1000") },
+    { value: "1000to2500", label: t("contact.form.budgetOptions.1000to2500") },
+    { value: "2500to5000", label: t("contact.form.budgetOptions.2500to5000") },
+    { value: "over5000", label: t("contact.form.budgetOptions.over5000") },
   ];
 
   const contactInfo = [

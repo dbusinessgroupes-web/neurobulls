@@ -247,7 +247,7 @@
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48 horas",
-      "cost": "Desde €297",
+      "cost": "Desde €397",
       "variations": "Ilimitadas",
       "availability": "24/7"
     },
@@ -313,22 +313,30 @@
       "service": "Servicio de Interés",
       "serviceOptions": {
         "default": "Selecciona un servicio",
-        "photography": "Fotografía IA",
-        "video": "Producción de Vídeo IA",
-        "strategy": "Estrategia de Campaña IA",
-        "models": "Creación de Modelos IA",
-        "social": "Redes Sociales IA",
-        "branding": "Identidad de Marca IA",
-        "package": "Paquete Mensual",
-        "other": "Otro"
+        "photopack": "Pack Fotografía (€397)",
+        "videoreel": "Vídeo Reel (€597)",
+        "videospot": "Vídeo Spot (€997)",
+        "videolong": "Vídeo Largo (€1.997)",
+        "model": "Modelo IA Exclusivo (€797)",
+        "campaign": "Campaña Completa (€2.497)",
+        "packRealestate": "Pack Inmobiliaria (€697)",
+        "packFashion": "Pack Moda (€1.497)",
+        "packBeauty": "Pack Belleza (€997)",
+        "packFood": "Pack Restaurante (€797)",
+        "packTech": "Pack Tech (€1.297)",
+        "monthlyGrowth": "Plan Growth (€1.497/mes)",
+        "monthlyScale": "Plan Scale (€2.997/mes)",
+        "freeSample": "Imagen de prueba gratuita",
+        "other": "Otro / Personalizado"
       },
       "budget": "Rango de Presupuesto",
       "budgetOptions": {
-        "default": "Selecciona un rango de presupuesto",
-        "starter": "€297 - €800",
-        "growth": "€800 - €2.000",
-        "premium": "€2.000 - €5.000",
-        "enterprise": "€5.000+"
+        "default": "Selecciona un rango",
+        "under500": "Menos de €500",
+        "500to1000": "€500 - €1.000",
+        "1000to2500": "€1.000 - €2.500",
+        "2500to5000": "€2.500 - €5.000",
+        "over5000": "Más de €5.000"
       },
       "namePlaceholder": "Juan Pérez",
       "emailPlaceholder": "juan@empresa.com",

@@ -1,18 +1,24 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Camera,
   Video,
   Target,
   User,
-  Share2,
-  Palette,
+  Building2,
+  Shirt,
+  Sparkles,
+  UtensilsCrossed,
+  Rocket,
   Check,
-  ArrowRight,
+  ShieldCheck,
+  Gift,
+  Unlock,
   ChevronDown,
+  ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/header";
@@ -42,57 +48,315 @@ const fadeUp = {
   },
 };
 
-const tiers = [
-  { key: "starter", badge: null, highlighted: false, hasFrom: false },
-  { key: "growth", badge: "popular", highlighted: true, hasFrom: false },
-  { key: "scale", badge: null, highlighted: false, hasFrom: false },
-  { key: "enterprise", badge: "enterpriseBadge", highlighted: false, hasFrom: true },
-] as const;
+const projectServices = [
+  {
+    key: "photography",
+    slug: "fotografia-ia",
+    icon: Camera,
+    image: "/services/ai-photography.jpg",
+    priceEN: "€397",
+    priceES: "€397",
+    traditionalEN: "€3,000-8,000",
+    traditionalES: "€3.000-8.000",
+    titleEN: "Photography Pack (10 photos 4K)",
+    titleES: "Pack Fotografía (10 fotos 4K)",
+    descEN: "Complete editorial photo session. Hyperrealistic AI models indistinguishable from reality.",
+    descES: "Sesión fotográfica editorial completa. Modelos IA hiperrealistas indistinguibles de la realidad.",
+  },
+  {
+    key: "reel",
+    slug: "video-ia",
+    icon: Video,
+    image: "/services/ai-video.jpg",
+    priceEN: "€597",
+    priceES: "€597",
+    traditionalEN: "€2,000-5,000",
+    traditionalES: "€2.000-5.000",
+    titleEN: "Video Reel (15-30s edited)",
+    titleES: "Vídeo Reel (15-30s editado)",
+    descEN: "Cinematic reel with AI actors, professional editing, color grading, music.",
+    descES: "Reel cinematográfico con actores IA, edición profesional, color grading, música.",
+  },
+  {
+    key: "spot",
+    slug: "video-ia",
+    icon: Video,
+    image: "/services/ai-video.jpg",
+    priceEN: "€997",
+    priceES: "€997",
+    traditionalEN: "€5,000-15,000",
+    traditionalES: "€5.000-15.000",
+    titleEN: "Video Spot (30-60s edited)",
+    titleES: "Vídeo Spot (30-60s editado)",
+    descEN: "Advertising spot with storyboard, multiple takes, voiceover and music.",
+    descES: "Spot publicitario con storyboard, múltiples tomas, voiceover y música.",
+  },
+  {
+    key: "model",
+    slug: "modelos-ia",
+    icon: User,
+    image: "/services/ai-models.jpg",
+    priceEN: "€797",
+    priceES: "€797",
+    traditionalEN: "€2,000-10,000/campaign",
+    traditionalES: "€2.000-10.000/campaña",
+    titleEN: "Exclusive AI Model",
+    titleES: "Modelo IA Exclusivo",
+    descEN: "Unique virtual person for your brand. Trained for perfect consistency. Unlimited use.",
+    descES: "Persona virtual única para tu marca. Entrenada para consistencia perfecta. Uso ilimitado.",
+  },
+  {
+    key: "campaign",
+    slug: "estrategia-campana-ia",
+    icon: Target,
+    image: "/services/ai-strategy.jpg",
+    priceEN: "€2,497",
+    priceES: "€2.497",
+    traditionalEN: "€15,000-50,000",
+    traditionalES: "€15.000-50.000",
+    titleEN: "Complete Campaign",
+    titleES: "Campaña Completa",
+    descEN: "Photos + video + strategy + art direction. Everything your brand needs in one package.",
+    descES: "Fotos + vídeo + estrategia + dirección de arte. Todo lo que tu marca necesita en un pack.",
+  },
+  {
+    key: "videoLong",
+    slug: "video-ia",
+    icon: Video,
+    image: "/services/ai-video.jpg",
+    priceEN: "€1,997",
+    priceES: "€1.997",
+    traditionalEN: "€10,000-30,000",
+    traditionalES: "€10.000-30.000",
+    titleEN: "Long Video (2-5 min)",
+    titleES: "Vídeo Largo (2-5 min)",
+    descEN: "Corporate video or YouTube content with multiple scenes, voiceover and editing.",
+    descES: "Vídeo corporativo o contenido YouTube con múltiples escenas, voiceover y edición.",
+  },
+];
 
-const serviceImages: Record<string, string> = {
-  models: "/services/ai-models.jpg",
-  photography: "/services/ai-photography.jpg",
-  video: "/services/ai-video.jpg",
-  social: "/services/ai-social.jpg",
-  branding: "/services/ai-branding.jpg",
-  strategy: "/services/ai-strategy.jpg",
+const sectorPacks = [
+  {
+    icon: Building2,
+    priceEN: "€697/property",
+    priceES: "€697/propiedad",
+    titleEN: "Real Estate Pack",
+    titleES: "Pack Inmobiliaria",
+    badgeEN: "Save 90% vs traditional staging",
+    badgeES: "Ahorra 90% vs staging tradicional",
+    featuresEN: [
+      "Virtual home staging (5 rooms)",
+      "10 photos with people",
+      "1 virtual renovation",
+      "30s video tour",
+      "Golden hour conversion",
+    ],
+    featuresES: [
+      "Home staging virtual (5 estancias)",
+      "10 fotos con personas",
+      "1 reforma virtual",
+      "Vídeo tour 30s",
+      "Cambio a golden hour",
+    ],
+  },
+  {
+    icon: Shirt,
+    priceEN: "€1,497/collection",
+    priceES: "€1.497/colección",
+    titleEN: "Fashion/Retail Pack",
+    titleES: "Pack Moda/Retail",
+    badgeEN: "Fashion shoot costs €5,000-15,000",
+    badgeES: "Una sesión de moda cuesta €5.000-15.000",
+    featuresEN: [
+      "2 exclusive AI models",
+      "20 lookbook photos",
+      "3 reels (15s)",
+      "E-commerce + social formats",
+    ],
+    featuresES: [
+      "2 modelos IA exclusivos",
+      "20 fotos lookbook",
+      "3 reels (15s)",
+      "Formatos ecommerce + redes",
+    ],
+  },
+  {
+    icon: Sparkles,
+    priceEN: "€997/launch",
+    priceES: "€997/lanzamiento",
+    titleEN: "Beauty/Cosmetics Pack",
+    titleES: "Pack Belleza/Cosmética",
+    badgeEN: "Hiring an influencer: €3,000-10,000",
+    badgeES: "Contratar influencer: €3.000-10.000",
+    featuresEN: [
+      "1 AI model (virtual influencer)",
+      "15 beauty shots with product",
+      "2 product reels",
+      "UGC-style content",
+    ],
+    featuresES: [
+      "1 modelo IA (influencer virtual)",
+      "15 beauty shots con producto",
+      "2 reels de producto",
+      "Contenido estilo UGC",
+    ],
+  },
+  {
+    icon: UtensilsCrossed,
+    priceEN: "€797",
+    priceES: "€797",
+    titleEN: "Restaurant/Food Pack",
+    titleES: "Pack Restaurante/Food",
+    badgeEN: "Food photography: €2,000-4,000",
+    badgeES: "Food photography: €2.000-4.000",
+    featuresEN: [
+      "15 premium food photos",
+      "Delivery app photos",
+      "Complete visual menu",
+      "1 reel (15s)",
+    ],
+    featuresES: [
+      "15 fotos food premium",
+      "Fotos para apps de delivery",
+      "Menú visual completo",
+      "1 reel (15s)",
+    ],
+  },
+  {
+    icon: Rocket,
+    priceEN: "€1,297",
+    priceES: "€1.297",
+    titleEN: "Tech/Startup Pack",
+    titleES: "Pack Tech/Startup",
+    badgeEN: "Launch production: €8,000-20,000",
+    badgeES: "Producción lanzamiento: €8.000-20.000",
+    featuresEN: [
+      "15 product + lifestyle photos",
+      "2 product videos (15-30s)",
+      "Corporate avatar",
+      "Visual branding",
+    ],
+    featuresES: [
+      "15 fotos producto + lifestyle",
+      "2 vídeos de producto (15-30s)",
+      "Avatar corporativo",
+      "Branding visual",
+    ],
+  },
+];
+
+const monthlyPlans = [
+  {
+    key: "growth",
+    badge: true,
+    priceEN: "€1,497",
+    priceES: "€1.497",
+    titleEN: "Growth",
+    titleES: "Growth",
+    featuresEN: [
+      "30 editorial images/month",
+      "4 reels/month",
+      "2 social channels (20 posts/month)",
+      "1 AI model included",
+      "Monthly content strategy",
+      "Monthly reporting",
+      "3 revisions per delivery",
+      "3-5 day delivery",
+    ],
+    featuresES: [
+      "30 imágenes editoriales/mes",
+      "4 reels/mes",
+      "Gestión de 2 redes (20 posts/mes)",
+      "1 modelo IA incluido",
+      "Estrategia de contenido mensual",
+      "Reporting mensual",
+      "3 revisiones por entrega",
+      "Entrega en 3-5 días",
+    ],
+  },
+  {
+    key: "scale",
+    badge: false,
+    priceEN: "€2,997",
+    priceES: "€2.997",
+    titleEN: "Scale",
+    titleES: "Scale",
+    featuresEN: [
+      "80 editorial images/month",
+      "8 reels + 2 long videos",
+      "4 social channels (40 posts/month)",
+      "3 AI models included",
+      "Strategy with KPIs",
+      "Unlimited revisions",
+      "48h delivery",
+      "Dedicated manager",
+    ],
+    featuresES: [
+      "80 imágenes editoriales/mes",
+      "8 reels + 2 vídeos largos",
+      "Gestión de 4 redes (40 posts/mes)",
+      "3 modelos IA incluidos",
+      "Estrategia con KPIs",
+      "Revisiones ilimitadas",
+      "Entrega en 48h",
+      "Manager dedicado",
+    ],
+  },
+];
+
+const comparisonData = {
+  en: [
+    { service: "Photo session (10 photos)", traditional: "€3,000-8,000", neurobulls: "€397", savings: "Up to 95%" },
+    { service: "Ad video (30-60s)", traditional: "€5,000-15,000", neurobulls: "€597-997", savings: "Up to 93%" },
+    { service: "Campaign model", traditional: "€2,000-10,000", neurobulls: "€797 (unlimited use)", savings: "Up to 92%" },
+    { service: "Real estate staging", traditional: "€3,000-8,000", neurobulls: "€697", savings: "Up to 91%" },
+    { service: "Complete campaign", traditional: "€15,000-50,000", neurobulls: "€2,497", savings: "Up to 95%" },
+  ],
+  es: [
+    { service: "Sesión fotográfica (10 fotos)", traditional: "€3.000-8.000", neurobulls: "€397", savings: "Hasta 95%" },
+    { service: "Vídeo publicitario (30-60s)", traditional: "€5.000-15.000", neurobulls: "€597-997", savings: "Hasta 93%" },
+    { service: "Modelo para campaña", traditional: "€2.000-10.000", neurobulls: "€797 (uso ilimitado)", savings: "Hasta 92%" },
+    { service: "Staging inmobiliario", traditional: "€3.000-8.000", neurobulls: "€697", savings: "Hasta 91%" },
+    { service: "Campaña completa", traditional: "€15.000-50.000", neurobulls: "€2.497", savings: "Hasta 95%" },
+  ],
 };
 
-const serviceSlugMap: Record<string, string> = {
-  models: "modelos-ia",
-  photography: "fotografia-ia",
-  video: "video-ia",
-  social: "redes-sociales-ia",
-  branding: "identidad-marca-ia",
-  strategy: "estrategia-campana-ia",
+const guarantees = {
+  en: [
+    {
+      icon: ShieldCheck,
+      title: "Satisfaction guaranteed",
+      desc: "Not happy? We redo it at no extra cost.",
+    },
+    {
+      icon: Gift,
+      title: "Try before you pay",
+      desc: "Request a free sample image to see our quality.",
+    },
+    {
+      icon: Unlock,
+      title: "No lock-in",
+      desc: "Project services: pay per project. Monthly plans: 3-month minimum.",
+    },
+  ],
+  es: [
+    {
+      icon: ShieldCheck,
+      title: "Satisfacción garantizada",
+      desc: "¿No estás satisfecho? Lo rehacemos sin coste adicional.",
+    },
+    {
+      icon: Gift,
+      title: "Prueba antes de pagar",
+      desc: "Solicita una imagen de prueba gratuita para ver nuestra calidad.",
+    },
+    {
+      icon: Unlock,
+      title: "Sin permanencia",
+      desc: "Servicios por proyecto: pago por proyecto. Planes mensuales: 3 meses mínimo.",
+    },
+  ],
 };
-
-const alaCarteServices = [
-  { icon: User, key: "models", priceKey: "modelsPrice" },
-  { icon: Camera, key: "photography", priceKey: "photographyPrice" },
-  { icon: Video, key: "video", priceKey: "videoPrice" },
-  { icon: Share2, key: "social", priceKey: "socialPrice" },
-  { icon: Palette, key: "branding", priceKey: "brandingPrice" },
-  { icon: Target, key: "strategy", priceKey: "strategyPrice" },
-] as const;
-
-const comparisonRows = [
-  {
-    labelKey: "comparisonPhotoLabel",
-    traditionalKey: "comparisonPhotoTraditional",
-    neurobullsKey: "comparisonPhotoNeurobulls",
-  },
-  {
-    labelKey: "comparisonVideoLabel",
-    traditionalKey: "comparisonVideoTraditional",
-    neurobullsKey: "comparisonVideoNeurobulls",
-  },
-  {
-    labelKey: "comparisonCampaignLabel",
-    traditionalKey: "comparisonCampaignTraditional",
-    neurobullsKey: "comparisonCampaignNeurobulls",
-  },
-] as const;
 
 const faqItems = {
   en: [
@@ -102,7 +366,7 @@ const faqItems = {
     },
     {
       q: "How long does delivery take?",
-      a: "48h for Scale and Enterprise plans, 3-5 days for Growth, 5-7 days for Starter. Individual services: 3-5 business days.",
+      a: "48h for Scale plans, 3-5 days for Growth. Individual services: 3-5 business days.",
     },
     {
       q: "Can I use the images commercially?",
@@ -114,11 +378,11 @@ const faqItems = {
     },
     {
       q: "What if I don't like the result?",
-      a: "Each delivery includes revisions (2 to unlimited depending on plan). Every image passes our automated quality control before delivery.",
+      a: "Each delivery includes revisions (3 to unlimited depending on plan). Every image passes our automated quality control before delivery.",
     },
     {
       q: "Can I cancel my plan?",
-      a: "Yes, cancel anytime. No lock-in. Individual services are per-project.",
+      a: "Monthly plans have a 3-month minimum commitment. After that, cancel anytime. Individual services are per-project with no commitment.",
     },
   ],
   es: [
@@ -128,7 +392,7 @@ const faqItems = {
     },
     {
       q: "¿Cuánto tarda la entrega?",
-      a: "48h para los planes Scale y Enterprise, 3-5 días para Growth, 5-7 días para Starter. Servicios individuales: 3-5 días laborables.",
+      a: "48h para el plan Scale, 3-5 días para Growth. Servicios individuales: 3-5 días laborables.",
     },
     {
       q: "¿Puedo usar las imágenes comercialmente?",
@@ -140,28 +404,29 @@ const faqItems = {
     },
     {
       q: "¿Y si no me gusta el resultado?",
-      a: "Cada entrega incluye revisiones (de 2 a ilimitadas según el plan). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega.",
+      a: "Cada entrega incluye revisiones (de 3 a ilimitadas según el plan). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega.",
     },
     {
       q: "¿Puedo cancelar mi plan?",
-      a: "Sí, cancela en cualquier momento. Sin permanencia. Los servicios individuales son por proyecto.",
+      a: "Los planes mensuales tienen un compromiso mínimo de 3 meses. Después, cancela cuando quieras. Los servicios individuales son por proyecto sin compromiso.",
     },
   ],
 };
 
 export default function ServicesPage() {
-  const t = useTranslations();
   const locale = useLocale();
+  const isES = locale === "es";
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const faqs = locale === "es" ? faqItems.es : faqItems.en;
+  const faqs = isES ? faqItems.es : faqItems.en;
+  const comparison = isES ? comparisonData.es : comparisonData.en;
+  const guarantee = isES ? guarantees.es : guarantees.en;
 
   return (
     <>
       <Header />
       <main className="overflow-hidden">
-        {/* ─── Hero with Banner ─── */}
+        {/* ─── Section 1: Hero ─── */}
         <section className="relative pt-32 pb-20 px-6 overflow-hidden">
-          {/* Banner image */}
           <div className="absolute inset-0 -z-10">
             <Image
               src="/services/ai-photography.jpg"
@@ -185,96 +450,70 @@ export default function ServicesPage() {
               variants={fadeUp}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
             >
-              {t("pricing.title")}
+              {isES
+                ? "Producción Visual Premium con IA"
+                : "Premium Visual Production with AI"}
             </motion.h1>
             <motion.p
               variants={fadeUp}
               className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
             >
-              {t("pricing.subtitle")}
+              {isES
+                ? "La calidad de una agencia de millones, accesible para cualquier marca."
+                : "The quality of a million-dollar agency, accessible for any brand."}
             </motion.p>
           </motion.div>
         </section>
 
-        {/* ─── Pricing Tiers ─── */}
-        <section className="py-16 lg:py-24 px-6">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-              {tiers.map((tier, i) => (
-                <ScrollReveal key={tier.key} delay={i * 0.1}>
-                  <Card
-                    className={`relative rounded-xl h-full flex flex-col ${
-                      tier.highlighted
-                        ? "border-nb-red border-2 shadow-[0_0_30px_rgba(227,24,55,0.15)] bg-gradient-to-b from-nb-red/5 via-card to-card"
-                        : "border-border bg-card"
-                    }`}
-                  >
+        {/* ─── Section 2: Individual Services (By Project) ─── */}
+        <section className="py-24 lg:py-32 px-6">
+          <div className="mx-auto max-w-6xl">
+            <ScrollReveal>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+                  {isES ? "Servicios por Proyecto" : "Services by Project"}
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                  {isES
+                    ? "Contrátanos para lo que necesites. Sin suscripciones. Sin compromisos."
+                    : "Hire us for what you need. No subscriptions. No commitments."}
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {projectServices.map((service, i) => (
+                <ScrollReveal key={service.key} delay={i * 0.08}>
+                  <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 h-full overflow-hidden flex flex-col">
+                    <div className="relative w-full aspect-[16/9] overflow-hidden">
+                      <Image
+                        src={service.image}
+                        alt={isES ? service.titleES : service.titleEN}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                    </div>
                     <CardContent className="p-6 flex flex-col flex-1">
-                      {/* Inline badges */}
-                      {tier.badge === "popular" && (
-                        <Badge className="bg-nb-red text-white border-0 px-3 py-0.5 text-xs font-semibold mb-3 w-fit">
-                          {t("pricing.popular")}
-                        </Badge>
-                      )}
-                      {tier.badge === "enterpriseBadge" && (
-                        <Badge variant="secondary" className="px-3 py-0.5 text-xs font-semibold mb-3 w-fit">
-                          {t("pricing.enterpriseBadge")}
-                        </Badge>
-                      )}
-
-                      {/* Tier name */}
-                      <h3 className="text-xl font-bold">
-                        {t(`pricing.${tier.key}.name`)}
-                      </h3>
-                      <p className="mt-2 text-sm text-muted-foreground">
-                        {t(`pricing.${tier.key}.description`)}
+                      <p className="text-sm line-through text-muted-foreground">
+                        {isES ? service.traditionalES : service.traditionalEN}
                       </p>
-
-                      {/* Price */}
-                      <div className="mt-6 mb-6">
-                        {tier.hasFrom && (
-                          <span className="text-sm text-muted-foreground">
-                            {t("pricing.from")}{" "}
-                          </span>
-                        )}
-                        <span className="text-5xl font-bold text-nb-gold">
-                          {t(`pricing.${tier.key}.price`)}
-                        </span>
-                        <span className="text-sm text-muted-foreground ml-1">
-                          {t("pricing.monthly")}
-                        </span>
-                      </div>
-
-                      {/* Features */}
-                      <ul className="space-y-3 flex-1">
-                        {(
-                          t.raw(`pricing.${tier.key}.features`) as string[]
-                        ).map((feature, j) => (
-                          <li key={j} className="flex items-start gap-3">
-                            <Check className="h-4 w-4 text-nb-gold shrink-0 mt-0.5" />
-                            <span className="text-sm text-muted-foreground">
-                              {feature}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      {/* CTA */}
-                      <div className="mt-8">
-                        {tier.key === "enterprise" ? (
-                          <Link href="/contact"><Button
-                            variant="outline"
-                            className="w-full border-nb-gold text-nb-gold hover:bg-nb-gold/10"
-                          >
-                              {t("pricing.contactUs")}
-                            </Button></Link>
-                        ) : (
-                          <Link href="/contact"><Button
-                            className="w-full bg-nb-red hover:bg-nb-red-hover text-white"
-                          >
-                              {t("pricing.getStarted")}
-                            </Button></Link>
-                        )}
+                      <p className="text-3xl font-bold text-nb-gold mt-1">
+                        {isES ? service.priceES : service.priceEN}
+                      </p>
+                      <h3 className="text-lg font-bold mt-3">
+                        {isES ? service.titleES : service.titleEN}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-2 flex-1">
+                        {isES ? service.descES : service.descEN}
+                      </p>
+                      <div className="mt-6">
+                        <Link href="/contact">
+                          <Button className="w-full bg-nb-red hover:bg-nb-red-hover text-white">
+                            {isES ? "Solicitar Presupuesto" : "Request Quote"}
+                          </Button>
+                        </Link>
                       </div>
                     </CardContent>
                   </Card>
@@ -284,70 +523,167 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* ─── A la carte Services ─── */}
-        <section className="py-24 lg:py-32 px-6">
+        {/* ─── Section 3: Sector Packs ─── */}
+        <section className="py-24 lg:py-32 px-6 bg-muted/30">
           <div className="mx-auto max-w-6xl">
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {t("services.individualTitle")}
+                  {isES
+                    ? "Soluciones a Medida para tu Sector"
+                    : "Solutions for Your Industry"}
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                  {t("services.individualSubtitle")}
+                  {isES
+                    ? "Packs diseñados específicamente para las necesidades de tu industria."
+                    : "Packs designed specifically for your industry's needs."}
                 </p>
               </div>
             </ScrollReveal>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {alaCarteServices.map((service, i) => (
-                <ScrollReveal key={service.key} delay={i * 0.08}>
-                  <Link href={`/services/${serviceSlugMap[service.key]}`} className="block h-full">
-                    <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 h-full overflow-hidden">
-                      {serviceImages[service.key] && (
-                        <div className="relative w-full h-44 overflow-hidden">
-                          <Image
-                            src={serviceImages[service.key]}
-                            alt={t(`services.${service.key}.title`)}
-                            fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
-                        </div>
-                      )}
-                      <CardContent className="p-6 flex flex-col h-full">
-                        <service.icon className="h-8 w-8 text-nb-gold mb-4" />
-                        <h3 className="text-lg font-semibold mb-2">
-                          {t(`services.${service.key}.title`)}
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-                          {t(`services.${service.key}.description`)}
-                        </p>
-                        <div className="mt-4 flex items-center justify-between">
-                          <span className="text-lg font-bold text-nb-gold">
-                            {t(`services.${service.priceKey}`)}
-                          </span>
-                          <span className="inline-flex items-center gap-1 text-sm text-nb-red font-medium">
-                            {t("services.learnMore")}
-                            <ArrowRight className="h-3 w-3" />
-                          </span>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
+              {sectorPacks.map((pack, i) => (
+                <ScrollReveal key={pack.titleEN} delay={i * 0.08}>
+                  <Card className="border-border bg-card h-full flex flex-col transition-all duration-300 hover:border-nb-red hover:-translate-y-1">
+                    <CardContent className="p-6 flex flex-col flex-1">
+                      <pack.icon className="h-10 w-10 text-nb-gold mb-4" />
+                      <h3 className="text-xl font-bold">
+                        {isES ? pack.titleES : pack.titleEN}
+                      </h3>
+                      <p className="text-3xl font-bold text-nb-gold mt-2">
+                        {isES ? pack.priceES : pack.priceEN}
+                      </p>
+                      <Badge
+                        variant="secondary"
+                        className="mt-3 w-fit text-xs"
+                      >
+                        {isES ? pack.badgeES : pack.badgeEN}
+                      </Badge>
+                      <ul className="space-y-2 mt-5 flex-1">
+                        {(isES ? pack.featuresES : pack.featuresEN).map(
+                          (feature, j) => (
+                            <li key={j} className="flex items-start gap-2">
+                              <Check className="h-4 w-4 text-nb-gold shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">
+                                {feature}
+                              </span>
+                            </li>
+                          )
+                        )}
+                      </ul>
+                      <div className="mt-6">
+                        <Link href="/contact">
+                          <Button className="w-full bg-nb-red hover:bg-nb-red-hover text-white">
+                            {isES ? "Contratar" : "Get Started"}
+                          </Button>
+                        </Link>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </ScrollReveal>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ─── Cost Comparison ─── */}
+        {/* ─── Section 4: Monthly Plans ─── */}
         <section className="py-24 lg:py-32 px-6">
           <div className="mx-auto max-w-4xl">
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {t("pricing.comparisonTitle")}
+                  {isES ? "Planes Mensuales" : "Monthly Plans"}
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                  {isES
+                    ? "Para marcas que necesitan contenido visual constante. Compromiso mínimo 3 meses."
+                    : "For brands that need constant visual content. Minimum 3 months."}
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {monthlyPlans.map((plan, i) => (
+                <ScrollReveal key={plan.key} delay={i * 0.1}>
+                  <Card
+                    className={`relative rounded-xl h-full flex flex-col ${
+                      plan.badge
+                        ? "border-nb-red border-2 shadow-[0_0_30px_rgba(227,24,55,0.15)] bg-gradient-to-b from-nb-red/5 via-card to-card"
+                        : "border-border bg-card"
+                    }`}
+                  >
+                    <CardContent className="p-6 flex flex-col flex-1">
+                      {plan.badge && (
+                        <Badge className="bg-nb-red text-white border-0 px-3 py-0.5 text-xs font-semibold mb-3 w-fit">
+                          {isES ? "Más Popular" : "Most Popular"}
+                        </Badge>
+                      )}
+                      <h3 className="text-xl font-bold">
+                        {isES ? plan.titleES : plan.titleEN}
+                      </h3>
+                      <div className="mt-4 mb-6">
+                        <span className="text-5xl font-bold text-nb-gold">
+                          {isES ? plan.priceES : plan.priceEN}
+                        </span>
+                        <span className="text-sm text-muted-foreground ml-1">
+                          /{isES ? "mes" : "month"}
+                        </span>
+                      </div>
+                      <ul className="space-y-3 flex-1">
+                        {(isES ? plan.featuresES : plan.featuresEN).map(
+                          (feature, j) => (
+                            <li key={j} className="flex items-start gap-3">
+                              <Check className="h-4 w-4 text-nb-gold shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">
+                                {feature}
+                              </span>
+                            </li>
+                          )
+                        )}
+                      </ul>
+                      <div className="mt-8">
+                        <Link href="/contact">
+                          <Button className="w-full bg-nb-red hover:bg-nb-red-hover text-white">
+                            {isES ? "Empezar" : "Get Started"}
+                          </Button>
+                        </Link>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
+
+            <ScrollReveal>
+              <div className="text-center mt-10">
+                <p className="text-muted-foreground mb-4">
+                  {isES
+                    ? "¿Necesitas más? Contacta con nosotros para un plan personalizado."
+                    : "Need more? Contact us for a custom plan."}
+                </p>
+                <Link href="/contact">
+                  <Button
+                    variant="outline"
+                    className="border-nb-gold text-nb-gold hover:bg-nb-gold/10"
+                  >
+                    {isES ? "Contactar" : "Contact Us"}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ─── Section 5: Savings Comparison Table ─── */}
+        <section className="py-24 lg:py-32 px-6 bg-muted/30">
+          <div className="mx-auto max-w-4xl">
+            <ScrollReveal>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+                  {isES
+                    ? "Cuánto Ahorras con NeuroBulls"
+                    : "How Much You Save with NeuroBulls"}
                 </h2>
               </div>
             </ScrollReveal>
@@ -356,37 +692,45 @@ export default function ServicesPage() {
               <Card className="border-border bg-card overflow-hidden">
                 <CardContent className="p-0">
                   {/* Table header */}
-                  <div className="grid grid-cols-3 gap-4 px-6 py-4 border-b border-border bg-muted/30">
-                    <div className="text-sm font-semibold text-muted-foreground" />
+                  <div className="grid grid-cols-4 gap-4 px-6 py-4 border-b border-border bg-muted/30">
+                    <div className="text-sm font-semibold text-muted-foreground">
+                      {isES ? "Servicio" : "Service"}
+                    </div>
                     <div className="text-sm font-semibold text-muted-foreground text-center">
-                      {t("pricing.comparisonTraditional")}
+                      {isES ? "Tradicional" : "Traditional"}
                     </div>
                     <div className="text-sm font-semibold text-nb-gold text-center">
                       NeuroBulls
                     </div>
+                    <div className="text-sm font-semibold text-muted-foreground text-center">
+                      {isES ? "Ahorro" : "Savings"}
+                    </div>
                   </div>
 
                   {/* Rows */}
-                  {comparisonRows.map((row, i) => (
+                  {comparison.map((row, i) => (
                     <div
-                      key={row.labelKey}
-                      className={`grid grid-cols-3 gap-4 px-6 py-5 items-center ${
-                        i < comparisonRows.length - 1
+                      key={i}
+                      className={`grid grid-cols-4 gap-4 px-6 py-5 items-center ${
+                        i < comparison.length - 1
                           ? "border-b border-border"
                           : ""
                       }`}
                     >
-                      <div className="text-sm font-medium">
-                        {t(`pricing.${row.labelKey}`)}
-                      </div>
+                      <div className="text-sm font-medium">{row.service}</div>
                       <div className="text-center">
                         <span className="text-sm text-muted-foreground line-through">
-                          {t(`pricing.${row.traditionalKey}`)}
+                          {row.traditional}
                         </span>
                       </div>
                       <div className="text-center">
                         <span className="text-sm font-bold text-nb-gold">
-                          {t(`pricing.${row.neurobullsKey}`)}
+                          {row.neurobulls}
+                        </span>
+                      </div>
+                      <div className="text-center">
+                        <span className="text-sm font-bold text-nb-gold">
+                          {row.savings}
                         </span>
                       </div>
                     </div>
@@ -397,13 +741,42 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* ─── FAQ ─── */}
+        {/* ─── Section 6: Trust / Guarantee ─── */}
         <section className="py-24 lg:py-32 px-6">
+          <div className="mx-auto max-w-5xl">
+            <ScrollReveal>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+                  {isES ? "Nuestra Garantía" : "Our Guarantee"}
+                </h2>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {guarantee.map((item, i) => (
+                <ScrollReveal key={i} delay={i * 0.1}>
+                  <Card className="border-border bg-card h-full">
+                    <CardContent className="p-6 text-center">
+                      <item.icon className="h-10 w-10 text-nb-gold mx-auto mb-4" />
+                      <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {item.desc}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ─── Section 7: FAQ ─── */}
+        <section className="py-24 lg:py-32 px-6 bg-muted/30">
           <div className="mx-auto max-w-3xl">
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {locale === "es" ? "Preguntas Frecuentes" : "Frequently Asked Questions"}
+                  {isES ? "Preguntas Frecuentes" : "Frequently Asked Questions"}
                 </h2>
               </div>
             </ScrollReveal>
@@ -418,7 +791,9 @@ export default function ServicesPage() {
                       onClick={() => setOpenFaq(openFaq === i ? null : i)}
                       aria-expanded={openFaq === i}
                     >
-                      <span className="text-sm sm:text-base font-semibold">{faq.q}</span>
+                      <span className="text-sm sm:text-base font-semibold">
+                        {faq.q}
+                      </span>
                       <ChevronDown
                         className={`h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200 ${
                           openFaq === i ? "rotate-180" : ""
@@ -439,7 +814,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* ─── Final CTA ─── */}
+        {/* ─── Section 8: CTA ─── */}
         <section className="relative py-32 lg:py-40 px-6">
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-nb-red/10 via-transparent to-transparent" />
           <div className="absolute bottom-0 left-1/3 -z-10 h-[600px] w-[600px] rounded-full bg-nb-red/5 blur-[160px]" />
@@ -448,14 +823,24 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-4xl text-center">
             <ScrollReveal>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
-                {t("pricing.ctaTitle")}
+                {isES
+                  ? "Prueba nuestra calidad gratis"
+                  : "Try our quality for free"}
               </h2>
+              <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+                {isES
+                  ? "Solicita una imagen de prueba gratuita y sin compromiso."
+                  : "Request a free sample image with no commitment."}
+              </p>
               <div className="mt-10">
-                <Link href="/contact"><Button
-
-                  size="lg"
-                  className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg"
-                >{t("pricing.ctaButton")}</Button></Link>
+                <Link href="/contact">
+                  <Button
+                    size="lg"
+                    className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg"
+                  >
+                    {isES ? "Solicitar Imagen Gratuita" : "Request Free Image"}
+                  </Button>
+                </Link>
               </div>
             </ScrollReveal>
           </div>
