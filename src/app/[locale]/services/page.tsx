@@ -51,6 +51,9 @@ const serviceImages: Record<string, string> = {
   models: "/services/ai-models.jpg",
   photography: "/services/ai-photography.jpg",
   video: "/services/ai-video.jpg",
+  social: "/services/ai-social.jpg",
+  branding: "/services/ai-branding.jpg",
+  strategy: "/services/ai-strategy.jpg",
 };
 
 const alaCarteServices = [
