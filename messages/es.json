@@ -49,10 +49,10 @@
     "individualTitle": "Servicios Individuales",
     "individualSubtitle": "¿Necesitas algo específico? Elige exactamente lo que necesitas.",
     "learnMore": "Saber Más",
-    "modelsPrice": "Desde €697",
+    "modelsPrice": "Desde €497",
     "photographyPrice": "Desde €297",
     "videoPrice": "Desde €497",
-    "socialPrice": "Desde €697/mes",
+    "socialPrice": "Desde €497/mes",
     "brandingPrice": "Desde €1.497",
     "strategyPrice": "Desde €997"
   },
@@ -67,7 +67,7 @@
     "starter": {
       "name": "Starter",
       "description": "El punto de partida perfecto para pequeños negocios y marcas personales que prueban el marketing con IA.",
-      "price": "€797",
+      "price": "€497",
       "features": [
         "1 modelo IA personalizado",
         "15 imágenes editoriales/mes",
@@ -80,7 +80,7 @@
     "growth": {
       "name": "Growth",
       "description": "Para marcas en crecimiento listas para escalar su producción de contenido con IA.",
-      "price": "€1.497",
+      "price": "€1.297",
       "features": [
         "3 modelos IA personalizados",
         "40 imágenes editoriales/mes",
@@ -95,7 +95,7 @@
     "scale": {
       "name": "Scale",
       "description": "Marketing IA completo para empresas medianas que exigen excelencia.",
-      "price": "€2.997",
+      "price": "€2.497",
       "features": [
         "6 modelos IA personalizados",
         "100 imágenes editoriales/mes",
@@ -110,7 +110,7 @@
     "enterprise": {
       "name": "Enterprise",
       "description": "Nivel enterprise. Equipo dedicado, producción ilimitada, SLAs personalizados.",
-      "price": "€5.997",
+      "price": "€4.997",
       "features": [
         "Modelos IA ilimitados",
         "Producción ilimitada",
@@ -141,12 +141,30 @@
   "faq": {
     "title": "Preguntas Frecuentes",
     "items": [
-      { "q": "¿Las imágenes parecen reales?", "a": "Nuestras imágenes pasan por un pipeline de refinamiento de 4 pasos que incluye textura de piel a nivel de poro, restauración facial y escalado profesional. El resultado es indistinguible de una fotografía real. Nuestra regla de oro: si parece IA, no sale de nuestro estudio." },
-      { "q": "¿Cuánto tarda la entrega?", "a": "Depende del plan: 48h para Scale y Enterprise, 3-5 días para Growth, 5-7 días para Starter. Los servicios individuales se entregan en 3-5 días laborables." },
-      { "q": "¿Puedo usar las imágenes comercialmente?", "a": "Sí, todas las imágenes y vídeos que creamos son de tu propiedad exclusiva con licencia comercial completa. Úsalos en publicidad, redes sociales, web, impresión y cualquier otro medio." },
-      { "q": "¿Cómo funciona un modelo IA personalizado?", "a": "Creamos una persona virtual única para tu marca, entrenada con IA para tener siempre exactamente la misma cara, complexión y rasgos en cualquier escenario, pose o vestuario. Es como tener un modelo exclusivo que trabaja 24/7." },
-      { "q": "¿Y si no me gusta el resultado?", "a": "Cada entrega incluye revisiones (de 2 a ilimitadas según el plan). Además, cada imagen pasa por nuestro sistema automatizado de control de calidad que evalúa fotorrealismo, anatomía, iluminación y textura antes de enviártela." },
-      { "q": "¿Puedo cancelar mi plan mensual?", "a": "Sí, puedes cancelar en cualquier momento. Sin permanencia. Los servicios individuales se pagan por proyecto." }
+      {
+        "q": "¿Las imágenes parecen reales?",
+        "a": "Nuestras imágenes pasan por un pipeline de refinamiento de 4 pasos que incluye textura de piel a nivel de poro, restauración facial y escalado profesional. El resultado es indistinguible de una fotografía real. Nuestra regla de oro: si parece IA, no sale de nuestro estudio."
+      },
+      {
+        "q": "¿Cuánto tarda la entrega?",
+        "a": "Depende del plan: 48h para Scale y Enterprise, 3-5 días para Growth, 5-7 días para Starter. Los servicios individuales se entregan en 3-5 días laborables."
+      },
+      {
+        "q": "¿Puedo usar las imágenes comercialmente?",
+        "a": "Sí, todas las imágenes y vídeos que creamos son de tu propiedad exclusiva con licencia comercial completa. Úsalos en publicidad, redes sociales, web, impresión y cualquier otro medio."
+      },
+      {
+        "q": "¿Cómo funciona un modelo IA personalizado?",
+        "a": "Creamos una persona virtual única para tu marca, entrenada con IA para tener siempre exactamente la misma cara, complexión y rasgos en cualquier escenario, pose o vestuario. Es como tener un modelo exclusivo que trabaja 24/7."
+      },
+      {
+        "q": "¿Y si no me gusta el resultado?",
+        "a": "Cada entrega incluye revisiones (de 2 a ilimitadas según el plan). Además, cada imagen pasa por nuestro sistema automatizado de control de calidad que evalúa fotorrealismo, anatomía, iluminación y textura antes de enviártela."
+      },
+      {
+        "q": "¿Puedo cancelar mi plan mensual?",
+        "a": "Sí, puedes cancelar en cualquier momento. Sin permanencia. Los servicios individuales se pagan por proyecto."
+      }
     ]
   },
   "work": {
@@ -158,32 +176,32 @@
       "vanguardFashion": {
         "title": "Vanguard Fashion",
         "description": "Campaña completa con modelos IA para la colección Primavera/Verano 2026. 120 imágenes, 8 vídeos, 3 modelos IA.",
-        "stats": "120 imágenes \u2022 8 vídeos \u2022 3 modelos IA"
+        "stats": "120 imágenes • 8 vídeos • 3 modelos IA"
       },
       "lumiereBeauty": {
         "title": "Lumière Beauty",
         "description": "Campaña de lanzamiento de skincare de lujo con modelos IA hiperrealistas en entornos editoriales.",
-        "stats": "80 imágenes \u2022 4 vídeos \u2022 2 modelos IA"
+        "stats": "80 imágenes • 4 vídeos • 2 modelos IA"
       },
       "techvisionPro": {
         "title": "TechVision Pro",
         "description": "Campaña de lanzamiento de producto con embajadores tech generados por IA en plataformas digitales.",
-        "stats": "60 imágenes \u2022 6 vídeos \u2022 4 modelos IA"
+        "stats": "60 imágenes • 6 vídeos • 4 modelos IA"
       },
       "maisonElegance": {
         "title": "Maison Élégance",
         "description": "Marketing inmobiliario de lujo con modelos IA lifestyle en entornos arquitectónicos.",
-        "stats": "90 imágenes \u2022 3 vídeos \u2022 5 modelos IA"
+        "stats": "90 imágenes • 3 vídeos • 5 modelos IA"
       },
       "glowCosmetics": {
         "title": "Glow Cosmetics",
         "description": "Estrategia de contenido en redes sociales con influencer IA de belleza generando 30 posts/mes.",
-        "stats": "150 imágenes \u2022 12 reels \u2022 1 influencer IA"
+        "stats": "150 imágenes • 12 reels • 1 influencer IA"
       },
       "urbanTaste": {
         "title": "Urban Taste",
         "description": "Rebranding de cadena de restaurantes con fotografía gastronómica IA y contenido lifestyle.",
-        "stats": "200 imágenes \u2022 5 vídeos \u2022 6 modelos IA"
+        "stats": "200 imágenes • 5 vídeos • 6 modelos IA"
       }
     },
     "filters": {

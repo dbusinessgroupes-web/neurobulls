@@ -149,13 +149,13 @@ export default function Home() {
           >
             <motion.h1
               variants={fadeUp}
-              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9]"
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] text-white drop-shadow-lg"
             >
               {t("hero.title")}
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="mx-auto mt-8 max-w-2xl text-lg sm:text-xl text-muted-foreground"
+              className="mx-auto mt-8 max-w-2xl text-lg sm:text-xl text-white/80"
             >
               {t("hero.subtitle")}
             </motion.p>
@@ -430,6 +430,39 @@ export default function Home() {
                     </div>
                   </CardContent>
                 </Card>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ─── Meet the Founder ─── */}
+        <section className="py-24 lg:py-32 px-6">
+          <div className="mx-auto max-w-4xl">
+            <ScrollReveal>
+              <div className="flex flex-col md:flex-row items-center gap-10 rounded-2xl border border-border bg-card p-8 md:p-12">
+                <div className="shrink-0">
+                  <Image
+                    src="/team/diego-ceo.jpg"
+                    alt="Diego Rodríguez Molino — CEO & Founder"
+                    width={180}
+                    height={180}
+                    className="rounded-2xl object-cover object-top ring-2 ring-nb-gold/30"
+                  />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-nb-gold mb-2">
+                    {locale === "es" ? "Nuestro Fundador" : "Our Founder"}
+                  </p>
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-1">
+                    Diego Rodríguez Molino
+                  </h2>
+                  <p className="text-sm text-muted-foreground mb-4">CEO & Founder</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {locale === "es"
+                      ? "Emprendedor y visionario en la intersección de marketing e inteligencia artificial. Fundé NeuroBulls con una misión clara: democratizar la producción visual de alta calidad para marcas de todos los tamaños. Nuestra tecnología genera contenido indistinguible de la realidad, a una fracción del coste y en una fracción del tiempo."
+                      : "Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production for brands of all sizes. Our technology generates content indistinguishable from reality, at a fraction of the cost and in a fraction of the time."}
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
           </div>

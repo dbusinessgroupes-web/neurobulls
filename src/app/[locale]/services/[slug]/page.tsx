@@ -187,8 +187,8 @@ const services: Record<
   "modelos-ia": {
     titleEN: "AI Model Creation",
     titleES: "Creación de Modelos IA",
-    priceEN: "From €697",
-    priceES: "Desde €697",
+    priceEN: "From €497",
+    priceES: "Desde €497",
     image: "/services/ai-models.jpg",
     descriptionEN:
       "We create hyperrealistic virtual people you can use as brand ambassadors, virtual influencers or recurring models. Each model is AI-trained for perfect consistency \u2014 same face, complexion and features in any scenario, pose or outfit. Your model works 24/7, doesn\u2019t charge per session and never ages.",
@@ -258,8 +258,8 @@ const services: Record<
   "redes-sociales-ia": {
     titleEN: "AI Social Media Management",
     titleES: "Gestión de Redes Sociales IA",
-    priceEN: "From €697/mo",
-    priceES: "Desde €697/mes",
+    priceEN: "From €497/mo",
+    priceES: "Desde €497/mes",
     image: "/services/ai-social.jpg",
     descriptionEN:
       "We automate your social media presence with AI-generated visual content. Each post includes hyperrealistic images created specifically for your brand, persuasive copy and hashtag strategy. Your Instagram feed will look like a million-dollar brand, at a fraction of the cost.",

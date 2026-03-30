@@ -49,10 +49,10 @@
     "individualTitle": "Individual Services",
     "individualSubtitle": "Need something specific? Choose exactly what you need.",
     "learnMore": "Learn More",
-    "modelsPrice": "From €697",
+    "modelsPrice": "From €497",
     "photographyPrice": "From €297",
     "videoPrice": "From €497",
-    "socialPrice": "From €697/mo",
+    "socialPrice": "From €497/mo",
     "brandingPrice": "From €1,497",
     "strategyPrice": "From €997"
   },
@@ -67,26 +67,60 @@
     "starter": {
       "name": "Starter",
       "description": "The perfect starting point for small businesses and personal brands testing AI marketing.",
-      "price": "€797",
-      "features": ["1 custom AI model", "15 editorial images/month", "1 short video (15-30s)", "Creative direction", "2 revisions per delivery", "5-7 business day delivery"]
+      "price": "€497",
+      "features": [
+        "1 custom AI model",
+        "15 editorial images/month",
+        "1 short video (15-30s)",
+        "Creative direction",
+        "2 revisions per delivery",
+        "5-7 business day delivery"
+      ]
     },
     "growth": {
       "name": "Growth",
       "description": "For growing brands ready to scale their content production with AI.",
-      "price": "€1,497",
-      "features": ["3 custom AI models", "40 editorial images/month", "3 short + 1 long video (up to 2 min)", "Monthly content strategy", "2 social media channels (15 posts/month)", "Monthly reporting", "3 revisions per delivery", "3-5 business day delivery"]
+      "price": "€1,297",
+      "features": [
+        "3 custom AI models",
+        "40 editorial images/month",
+        "3 short + 1 long video (up to 2 min)",
+        "Monthly content strategy",
+        "2 social media channels (15 posts/month)",
+        "Monthly reporting",
+        "3 revisions per delivery",
+        "3-5 business day delivery"
+      ]
     },
     "scale": {
       "name": "Scale",
       "description": "Full-service AI marketing for mid-size companies demanding excellence.",
-      "price": "€2,997",
-      "features": ["6 custom AI models", "100 editorial images/month", "6 short + 3 long videos (up to 5 min)", "Strategy with KPIs and reporting", "4 social media channels (30 posts/month)", "Unlimited revisions", "48h delivery", "Dedicated account manager"]
+      "price": "€2,497",
+      "features": [
+        "6 custom AI models",
+        "100 editorial images/month",
+        "6 short + 3 long videos (up to 5 min)",
+        "Strategy with KPIs and reporting",
+        "4 social media channels (30 posts/month)",
+        "Unlimited revisions",
+        "48h delivery",
+        "Dedicated account manager"
+      ]
     },
     "enterprise": {
       "name": "Enterprise",
       "description": "Enterprise-grade. Dedicated team, unlimited production, custom SLAs.",
-      "price": "€5,997",
-      "features": ["Unlimited AI models", "Unlimited production", "Unlimited video (up to 10 min)", "Omnichannel strategy with A/B testing", "Dedicated creative director", "12h response SLA", "Quarterly brand workshops", "Custom integrations"]
+      "price": "€4,997",
+      "features": [
+        "Unlimited AI models",
+        "Unlimited production",
+        "Unlimited video (up to 10 min)",
+        "Omnichannel strategy with A/B testing",
+        "Dedicated creative director",
+        "12h response SLA",
+        "Quarterly brand workshops",
+        "Custom integrations"
+      ]
     },
     "enterpriseBadge": "Enterprise",
     "comparisonTitle": "What You Save With NeuroBulls",
@@ -107,12 +141,30 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "items": [
-      { "q": "Do the images look real?", "a": "Our images go through a 4-step refinement pipeline including pore-level skin texture, facial restoration, and professional upscaling. The result is indistinguishable from a real photograph. Our golden rule: if it looks AI, it doesn't leave our studio." },
-      { "q": "How long does delivery take?", "a": "Depending on the plan: 48h for Scale and Enterprise, 3-5 days for Growth, 5-7 days for Starter. Individual services are delivered in 3-5 business days." },
-      { "q": "Can I use the images commercially?", "a": "Yes, all images and videos we create are your exclusive property with full commercial license. Use them in advertising, social media, web, print and any other medium." },
-      { "q": "How does a custom AI model work?", "a": "We create a unique virtual person for your brand, AI-trained to always have exactly the same face, complexion and features in any scenario, pose or outfit. It's like having an exclusive model that works 24/7." },
-      { "q": "What if I don't like the result?", "a": "Each delivery includes revisions (2 to unlimited depending on the plan). Plus, every image goes through our automated quality control system that evaluates photorealism, anatomy, lighting and texture before sending it to you." },
-      { "q": "Can I cancel my monthly plan?", "a": "Yes, you can cancel at any time. No lock-in. Individual services are paid per project." }
+      {
+        "q": "Do the images look real?",
+        "a": "Our images go through a 4-step refinement pipeline including pore-level skin texture, facial restoration, and professional upscaling. The result is indistinguishable from a real photograph. Our golden rule: if it looks AI, it doesn't leave our studio."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Depending on the plan: 48h for Scale and Enterprise, 3-5 days for Growth, 5-7 days for Starter. Individual services are delivered in 3-5 business days."
+      },
+      {
+        "q": "Can I use the images commercially?",
+        "a": "Yes, all images and videos we create are your exclusive property with full commercial license. Use them in advertising, social media, web, print and any other medium."
+      },
+      {
+        "q": "How does a custom AI model work?",
+        "a": "We create a unique virtual person for your brand, AI-trained to always have exactly the same face, complexion and features in any scenario, pose or outfit. It's like having an exclusive model that works 24/7."
+      },
+      {
+        "q": "What if I don't like the result?",
+        "a": "Each delivery includes revisions (2 to unlimited depending on the plan). Plus, every image goes through our automated quality control system that evaluates photorealism, anatomy, lighting and texture before sending it to you."
+      },
+      {
+        "q": "Can I cancel my monthly plan?",
+        "a": "Yes, you can cancel at any time. No lock-in. Individual services are paid per project."
+      }
     ]
   },
   "work": {
@@ -124,32 +176,32 @@
       "vanguardFashion": {
         "title": "Vanguard Fashion",
         "description": "Complete AI model campaign for Spring/Summer 2026 collection. 120 images, 8 videos, 3 AI models.",
-        "stats": "120 images \u2022 8 videos \u2022 3 AI models"
+        "stats": "120 images • 8 videos • 3 AI models"
       },
       "lumiereBeauty": {
-        "title": "Lumi\u00e8re Beauty",
+        "title": "Lumière Beauty",
         "description": "Luxury skincare launch campaign with hyperrealistic AI models in editorial settings.",
-        "stats": "80 images \u2022 4 videos \u2022 2 AI models"
+        "stats": "80 images • 4 videos • 2 AI models"
       },
       "techvisionPro": {
         "title": "TechVision Pro",
         "description": "Product launch campaign featuring AI-generated tech ambassadors across digital platforms.",
-        "stats": "60 images \u2022 6 videos \u2022 4 AI models"
+        "stats": "60 images • 6 videos • 4 AI models"
       },
       "maisonElegance": {
-        "title": "Maison \u00c9l\u00e9gance",
+        "title": "Maison Élégance",
         "description": "Luxury real estate marketing with AI lifestyle models in architectural settings.",
-        "stats": "90 images \u2022 3 videos \u2022 5 AI models"
+        "stats": "90 images • 3 videos • 5 AI models"
       },
       "glowCosmetics": {
         "title": "Glow Cosmetics",
         "description": "Social media content strategy with AI beauty influencer generating 30 posts/month.",
-        "stats": "150 images \u2022 12 reels \u2022 1 AI influencer"
+        "stats": "150 images • 12 reels • 1 AI influencer"
       },
       "urbanTaste": {
         "title": "Urban Taste",
         "description": "Restaurant chain rebranding with AI food photography and lifestyle content.",
-        "stats": "200 images \u2022 5 videos \u2022 6 AI models"
+        "stats": "200 images • 5 videos • 6 AI models"
       }
     },
     "filters": {
@@ -165,10 +217,22 @@
     "title": "How It Works",
     "subtitle": "From brief to launch in days, not weeks.",
     "steps": {
-      "brief": { "title": "Brief", "description": "Share your vision, target audience, and campaign goals." },
-      "creation": { "title": "AI Creation", "description": "Our AI generates hyperrealistic models and content tailored to your brand." },
-      "review": { "title": "Review & Refine", "description": "Iterate with unlimited variations until every detail is perfect." },
-      "launch": { "title": "Deliver & Launch", "description": "Receive production-ready assets optimized for every platform." }
+      "brief": {
+        "title": "Brief",
+        "description": "Share your vision, target audience, and campaign goals."
+      },
+      "creation": {
+        "title": "AI Creation",
+        "description": "Our AI generates hyperrealistic models and content tailored to your brand."
+      },
+      "review": {
+        "title": "Review & Refine",
+        "description": "Iterate with unlimited variations until every detail is perfect."
+      },
+      "launch": {
+        "title": "Deliver & Launch",
+        "description": "Receive production-ready assets optimized for every platform."
+      }
     }
   },
   "comparison": {
@@ -176,14 +240,14 @@
     "traditional": {
       "label": "Traditional Agency",
       "timeline": "4-8 weeks",
-      "cost": "\u20ac15,000+",
+      "cost": "€15,000+",
       "variations": "Limited by budget",
       "availability": "Schedule dependent"
     },
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48 hours",
-      "cost": "From \u20ac297",
+      "cost": "From €297",
       "variations": "Unlimited",
       "availability": "24/7"
     },
@@ -208,23 +272,35 @@
     },
     "founder": {
       "title": "Founded by D Business Group ES",
-      "description": "We believe AI is not just the future of marketing \u2014 it is the present. Our mission is to make hyperrealistic AI content accessible to every brand, eliminating the barriers of traditional production while delivering results that are indistinguishable from reality.",
+      "description": "We believe AI is not just the future of marketing — it is the present. Our mission is to make hyperrealistic AI content accessible to every brand, eliminating the barriers of traditional production while delivering results that are indistinguishable from reality.",
       "location": "Cartagena, Murcia, Spain"
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We believe the future of marketing is AI-native. NeuroBulls exists to make that future accessible to every brand \u2014 delivering campaigns with hyperrealistic AI models that are faster, more affordable, and infinitely more scalable than traditional production."
+      "description": "We believe the future of marketing is AI-native. NeuroBulls exists to make that future accessible to every brand — delivering campaigns with hyperrealistic AI models that are faster, more affordable, and infinitely more scalable than traditional production."
     },
     "technology": {
       "title": "Our Technology",
-      "description": "We leverage cutting-edge generative AI to create photorealistic models that are indistinguishable from real people. Our proprietary pipeline ensures consistency across hundreds of images and videos \u2014 the same AI model, the same identity, infinite scenarios."
+      "description": "We leverage cutting-edge generative AI to create photorealistic models that are indistinguishable from real people. Our proprietary pipeline ensures consistency across hundreds of images and videos — the same AI model, the same identity, infinite scenarios."
     },
     "advantages": {
       "title": "Why AI Marketing?",
-      "cost": { "title": "60-85% Cost Savings", "description": "No models, no studios, no stylists. Digital production at a fraction of the cost." },
-      "speed": { "title": "10x Faster Delivery", "description": "Complete campaigns in days, not weeks. React to trends in 24 hours." },
-      "consistency": { "title": "Perfect Consistency", "description": "Your AI model never ages, never changes. Same identity across 1000 campaigns." },
-      "scale": { "title": "Infinite Scalability", "description": "Generate 100 variations for A/B testing at the cost of one. Adapt to any market instantly." }
+      "cost": {
+        "title": "60-85% Cost Savings",
+        "description": "No models, no studios, no stylists. Digital production at a fraction of the cost."
+      },
+      "speed": {
+        "title": "10x Faster Delivery",
+        "description": "Complete campaigns in days, not weeks. React to trends in 24 hours."
+      },
+      "consistency": {
+        "title": "Perfect Consistency",
+        "description": "Your AI model never ages, never changes. Same identity across 1000 campaigns."
+      },
+      "scale": {
+        "title": "Infinite Scalability",
+        "description": "Generate 100 variations for A/B testing at the cost of one. Adapt to any market instantly."
+      }
     }
   },
   "contact": {
@@ -249,10 +325,10 @@
       "budget": "Budget Range",
       "budgetOptions": {
         "default": "Select a budget range",
-        "starter": "\u20ac297 - \u20ac700",
-        "growth": "\u20ac700 - \u20ac1,500",
-        "premium": "\u20ac1,500 - \u20ac3,000",
-        "enterprise": "\u20ac3,000+"
+        "starter": "€297 - €700",
+        "growth": "€700 - €1,500",
+        "premium": "€1,500 - €3,000",
+        "enterprise": "€3,000+"
       },
       "namePlaceholder": "John Doe",
       "emailPlaceholder": "john@company.com",
