@@ -68,8 +68,8 @@ export default function Terminos() {
                     {isES ? "Contacto inicial" : "Initial contact"}:
                   </span>{" "}
                   {isES
-                    ? "El Cliente envía una solicitud a través del formulario de contacto del sitio web o por correo electrónico a info@neurobulls.com."
-                    : "The Client submits an inquiry through the website's contact form or via email to info@neurobulls.com."}
+                    ? "El Cliente envía una solicitud a través del formulario de contacto del sitio web o por correo electrónico a neurobulls@gmail.com."
+                    : "The Client submits an inquiry through the website's contact form or via email to neurobulls@gmail.com."}
                 </li>
                 <li>
                   <span className="font-medium text-foreground">
@@ -288,10 +288,10 @@ export default function Terminos() {
                   ? "Nuestro correo electrónico de contacto para reclamaciones es"
                   : "Our contact email for complaints is"}{" "}
                 <a
-                  href="mailto:info@neurobulls.com"
+                  href="mailto:neurobulls@gmail.com"
                   className="text-nb-red hover:underline"
                 >
-                  info@neurobulls.com
+                  neurobulls@gmail.com
                 </a>
                 .
               </p>
@@ -307,10 +307,10 @@ export default function Terminos() {
                   ? "Para cualquier consulta relacionada con estos términos y condiciones, puede contactar con nosotros a través del correo electrónico"
                   : "For any inquiries related to these terms and conditions, you may contact us via email at"}{" "}
                 <a
-                  href="mailto:info@neurobulls.com"
+                  href="mailto:neurobulls@gmail.com"
                   className="text-nb-red hover:underline"
                 >
-                  info@neurobulls.com
+                  neurobulls@gmail.com
                 </a>
                 .
               </p>

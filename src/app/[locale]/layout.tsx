@@ -62,7 +62,7 @@ const jsonLd = {
   "url": "https://neurobulls.com",
   "logo": "https://neurobulls.com/favicon.svg",
   "description": "AI Marketing Agency",
-  "email": "info@neurobulls.com",
+  "email": "neurobulls@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "ES",

@@ -152,8 +152,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      value: "info@neurobulls.com",
-      href: "mailto:info@neurobulls.com",
+      value: "neurobulls@gmail.com",
+      href: "mailto:neurobulls@gmail.com",
     },
     {
       icon: InstagramIcon,
@@ -368,10 +368,10 @@ export default function ContactPage() {
                           <p className="text-sm text-muted-foreground">
                             {t("contact.form.successFallback")}{" "}
                             <a
-                              href="mailto:info@neurobulls.com"
+                              href="mailto:neurobulls@gmail.com"
                               className="font-medium text-nb-red hover:text-nb-red-hover underline"
                             >
-                              info@neurobulls.com
+                              neurobulls@gmail.com
                             </a>
                           </p>
                         </motion.div>
@@ -463,10 +463,10 @@ export default function ContactPage() {
                   <p className="text-muted-foreground">
                     {t("contact.cta.text")}{" "}
                     <a
-                      href="mailto:info@neurobulls.com"
+                      href="mailto:neurobulls@gmail.com"
                       className="font-medium text-nb-red hover:text-nb-red-hover underline"
                     >
-                      info@neurobulls.com
+                      neurobulls@gmail.com
                     </a>
                   </p>
                 </CardContent>
