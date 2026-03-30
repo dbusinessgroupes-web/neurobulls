@@ -227,15 +227,16 @@ export default function AboutPage() {
         <section className="px-4 pb-24">
           <div className="mx-auto max-w-4xl">
             <ScrollReveal>
-              <div className="rounded-xl border border-border bg-card p-8 sm:p-12 text-center">
+              <div className="rounded-2xl border border-border bg-card p-8 sm:p-12 text-center">
                 {/* Founder photo */}
-                <div className="mx-auto mb-6 h-28 w-28 rounded-full overflow-hidden border-2 border-nb-gold/50">
+                <div className="mx-auto mb-8 h-36 w-36 rounded-full overflow-hidden ring-2 ring-nb-gold/40 ring-offset-4 ring-offset-background">
                   <Image
-                    src="/team/diego.jpg"
+                    src="/team/diego-ceo.jpg"
                     alt="Diego Rodríguez Molino — CEO & Founder of NeuroBulls"
-                    width={112}
-                    height={112}
+                    width={144}
+                    height={144}
                     className="object-cover object-top w-full h-full"
+                    priority
                   />
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-1">
@@ -244,8 +245,8 @@ export default function AboutPage() {
                 <p className="text-sm font-medium text-nb-gold mb-4">CEO & Founder</p>
                 <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-6">
                   {locale === "es"
-                    ? "Emprendedor en la intersección de moda, tecnología e inteligencia artificial. Fundó NeuroBulls con la visión de democratizar la producción visual de alta calidad para marcas de todos los tamaños."
-                    : "Entrepreneur at the intersection of fashion, technology and artificial intelligence. Founded NeuroBulls with the vision of democratizing high-quality visual production for brands of all sizes."}
+                    ? "Emprendedor y visionario en la intersección de marketing e inteligencia artificial. Fundó NeuroBulls con la misión de revolucionar la producción visual para marcas de todos los tamaños mediante IA de última generación."
+                    : "Entrepreneur and visionary at the intersection of marketing and artificial intelligence. Founded NeuroBulls with the mission of revolutionizing visual production for brands of all sizes through cutting-edge AI."}
                 </p>
                 <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4" />
