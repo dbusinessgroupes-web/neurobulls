@@ -156,7 +156,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: t("contact.info.location"),
-      value: "Madrid, Spain",
+      value: "Cartagena, Murcia, Spain",
       href: null,
     },
     {

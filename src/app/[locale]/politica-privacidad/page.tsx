@@ -43,7 +43,7 @@ export default function PoliticaPrivacidad() {
                   <span className="font-medium text-foreground">
                     {isES ? "Domicilio" : "Address"}:
                   </span>{" "}
-                  Madrid, {isES ? "España" : "Spain"}
+                  Cartagena, Murcia, {isES ? "España" : "Spain"}
                 </li>
                 <li>
                   <span className="font-medium text-foreground">

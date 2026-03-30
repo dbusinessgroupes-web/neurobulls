@@ -228,9 +228,15 @@ export default function AboutPage() {
           <div className="mx-auto max-w-4xl">
             <ScrollReveal>
               <div className="rounded-xl border border-border bg-card p-8 sm:p-12 text-center">
-                {/* Initials avatar */}
-                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-nb-red">
-                  <span className="text-2xl font-bold text-white">DR</span>
+                {/* Founder photo */}
+                <div className="mx-auto mb-6 h-28 w-28 rounded-full overflow-hidden border-2 border-nb-gold/50">
+                  <Image
+                    src="/team/diego.jpg"
+                    alt="Diego Rodríguez Molino — CEO & Founder of NeuroBulls"
+                    width={112}
+                    height={112}
+                    className="object-cover object-top w-full h-full"
+                  />
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-bold mb-1">
                   Diego Rodríguez Molino

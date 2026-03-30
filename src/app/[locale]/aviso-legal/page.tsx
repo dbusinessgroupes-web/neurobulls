@@ -59,7 +59,7 @@ export default function AvisoLegal() {
                   <span className="font-medium text-foreground">
                     {isES ? "Domicilio social" : "Registered office"}:
                   </span>{" "}
-                  Madrid, {isES ? "España" : "Spain"}
+                  Cartagena, Murcia, {isES ? "España" : "Spain"}
                 </li>
                 <li>
                   <span className="font-medium text-foreground">
@@ -173,8 +173,8 @@ export default function AvisoLegal() {
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 {isES
-                  ? "El presente aviso legal se rige en todos y cada uno de sus extremos por la legislación española. Para la resolución de cualquier controversia que pudiera derivarse del acceso o uso del sitio web, NeuroBulls y el usuario acuerdan someterse expresamente a los Juzgados y Tribunales de la ciudad de Madrid, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, salvo que la legislación aplicable disponga imperativamente otro fuero distinto."
-                  : "This legal notice is governed in all respects by Spanish law. For the resolution of any dispute arising from access to or use of this website, NeuroBulls and the user expressly agree to submit to the Courts and Tribunals of the city of Madrid, with express waiver of any other jurisdiction that may apply, unless applicable legislation imperatively provides for a different jurisdiction."}
+                  ? "El presente aviso legal se rige en todos y cada uno de sus extremos por la legislación española. Para la resolución de cualquier controversia que pudiera derivarse del acceso o uso del sitio web, NeuroBulls y el usuario acuerdan someterse expresamente a los Juzgados y Tribunales de la ciudad de Cartagena, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, salvo que la legislación aplicable disponga imperativamente otro fuero distinto."
+                  : "This legal notice is governed in all respects by Spanish law. For the resolution of any dispute arising from access to or use of this website, NeuroBulls and the user expressly agree to submit to the Courts and Tribunals of the city of Cartagena, with express waiver of any other jurisdiction that may apply, unless applicable legislation imperatively provides for a different jurisdiction."}
               </p>
             </section>
 
