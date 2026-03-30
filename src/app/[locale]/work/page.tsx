@@ -130,10 +130,6 @@ export default function WorkPage() {
             >
               <AnimatePresence mode="popLayout">
                 {filtered.map((project, i) => {
-                  // First card spans 2 cols on lg, alternating tall cards
-                  const isFirst = i === 0;
-                  const isTall = i === 2 || i === 4;
-
                   return (
                     <motion.div
                       key={project.id}
@@ -142,9 +138,6 @@ export default function WorkPage() {
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.9 }}
                       transition={{ duration: 0.35, ease: "easeOut" }}
-                      className={`${
-                        isFirst ? "md:col-span-2 md:row-span-2" : ""
-                      } ${isTall ? "md:row-span-2" : ""}`}
                     >
                       <Link href={`/work/${project.id}`} className="block h-full group">
                         <div

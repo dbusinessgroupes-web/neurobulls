@@ -305,33 +305,30 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 auto-rows-[240px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {portfolioItems.map((item, i) => (
-                <ScrollReveal key={item.name} delay={i * 0.1}>
-                  <div
-                    className={`group relative h-full min-h-[240px] rounded-xl overflow-hidden cursor-pointer ${item.className}`}
-                  >
-                    {/* Portfolio image */}
-                    <Image
-                      src={item.image}
-                      alt={`${item.name} — ${item.tag} campaign`}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes={item.className.includes("col-span-2") ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 100vw, 25vw"}
-                    />
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10 transition-opacity duration-300 group-hover:from-black/60 group-hover:via-black/20" />
-                    {/* Content */}
-                    <div className="relative z-10 flex h-full flex-col justify-end p-6 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
-                      <Badge
-                        variant="secondary"
-                        className="w-fit mb-2 bg-white/10 text-white border-0 backdrop-blur-sm"
-                      >
-                        {item.tag}
-                      </Badge>
-                      <h3 className="text-xl font-semibold text-white">{item.name}</h3>
+                <ScrollReveal key={item.name} delay={i * 0.08}>
+                  <Link href={`/work/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")}`}>
+                    <div className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer">
+                      <Image
+                        src={item.image}
+                        alt={`${item.name} — ${item.tag} campaign by NeuroBulls`}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
+                      <div className="absolute inset-x-0 bottom-0 p-5 z-10">
+                        <Badge
+                          variant="secondary"
+                          className="mb-2 bg-nb-red/90 text-white border-0 text-xs backdrop-blur-sm"
+                        >
+                          {item.tag}
+                        </Badge>
+                        <h3 className="text-lg font-bold text-white leading-tight">{item.name}</h3>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </ScrollReveal>
               ))}
             </div>
