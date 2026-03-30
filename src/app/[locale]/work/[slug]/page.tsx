@@ -366,7 +366,7 @@ export default function WorkDetailPage() {
         </section>
 
         {/* Gallery */}
-        {project.gallery.length > 1 && (
+        {project.gallery.length > 0 && (
           <section className="py-16 px-6">
             <div className="mx-auto max-w-6xl">
               <ScrollReveal>
