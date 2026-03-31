@@ -55,12 +55,11 @@ const projects: Record<
       "/portfolio/moda-2.jpg",
       "/portfolio/moda-3.jpg",
       "/portfolio/moda-4.jpg",
-      "/portfolio/moda-5.jpg",
     ],
     briefEN:
-      "Vanguard contacted us to create a complete editorial campaign for their seasonal collection. We generated 3 exclusive AI models and produced 120 editorial images and 8 cinematic videos in 5 days. The result: Vogue-quality content without the need for photo shoots, studios or real models.",
+      "Example of a complete editorial campaign for a fashion collection. 3 exclusive AI models, 120 editorial images and 8 cinematic videos produced in 5 days. Vogue-quality content without photo shoots, studios or real models.",
     briefES:
-      "Vanguard nos contactó para crear una campaña editorial completa para su colección de temporada. Generamos 3 modelos IA exclusivos y produjimos 120 imágenes editoriales y 8 vídeos cinematográficos en 5 días. El resultado: contenido de calidad Vogue sin necesidad de sesiones fotográficas, estudios ni modelos reales.",
+      "Ejemplo de campaña editorial completa para una colección de moda. 3 modelos IA exclusivos, 120 imágenes editoriales y 8 vídeos cinematográficos producidos en 5 días. Contenido de calidad Vogue sin sesiones fotográficas, estudios ni modelos reales.",
     servicesEN: [
       "AI Photography",
       "AI Video",
@@ -97,9 +96,9 @@ const projects: Record<
       "/portfolio/belleza-3.jpg",
     ],
     briefEN:
-      "Lumière needed premium content for the launch of their new skincare line. We created 2 AI models that became the faces of the campaign, generated 80 product and beauty editorial images, and 4 30-second videos for Instagram. All delivered in 3 days.",
+      "Example of a premium skincare launch campaign. 2 AI models as the faces of the brand, 80 product and beauty editorial images, and 4 Instagram videos. All produced in 3 days.",
     briefES:
-      "Lumière necesitaba contenido premium para el lanzamiento de su nueva línea de skincare. Creamos 2 modelos IA que se convirtieron en las caras de la campaña, generamos 80 imágenes de producto y beauty editorial, y 4 vídeos de 30 segundos para Instagram. Todo en 3 días.",
+      "Ejemplo de campaña de lanzamiento de skincare premium. 2 modelos IA como imagen de marca, 80 imágenes de producto y beauty editorial, y 4 vídeos para Instagram. Todo producido en 3 días.",
     servicesEN: ["AI Photography", "AI Video", "AI Models"],
     servicesES: ["Fotografía IA", "Vídeo IA", "Modelos IA"],
     statsEN: [
@@ -126,9 +125,9 @@ const projects: Record<
       "/portfolio/tech-3.jpg",
     ],
     briefEN:
-      "TechVision commissioned the complete visual production for their new product launch. We generated 60 product images, 4 AI models for the ad campaign, and 6 short videos for social media. All content went through our quality pipeline with a minimum score of 8.0/10.",
+      "Example of complete visual production for a tech product launch. 60 product images, 4 AI models for the ad campaign, and 6 short social media videos. Every image scored 8.0+ on our quality pipeline.",
     briefES:
-      "TechVision nos encargó la producción visual completa para el lanzamiento de su nuevo producto. Generamos 60 imágenes de producto, 4 modelos IA para campaña publicitaria, y 6 vídeos cortos para redes. Todo el contenido pasó por nuestro pipeline de calidad con score mínimo 8.0/10.",
+      "Ejemplo de producción visual completa para lanzamiento de producto tech. 60 imágenes de producto, 4 modelos IA para campaña publicitaria, y 6 vídeos cortos para redes. Cada imagen con score mínimo 8.0/10 en nuestro pipeline de calidad.",
     servicesEN: [
       "AI Photography",
       "AI Video",
@@ -165,9 +164,9 @@ const projects: Record<
       "/portfolio/inmobiliaria-3.jpg",
     ],
     briefEN:
-      "For Maison Élégance we created a complete luxury real estate campaign: 5 AI models (agents and buyers), 90 property images with people interacting in spaces, and 3 virtual tour videos. The cost was 95% less than a traditional photo production.",
+      "Example of a luxury real estate campaign. 5 AI models (agents and buyers), 90 property images with people in spaces, and 3 virtual tour videos. 95% less cost than traditional photo production.",
     briefES:
-      "Para Maison Élégance creamos una campaña inmobiliaria de lujo completa: 5 modelos IA (agentes y compradores), 90 imágenes de propiedades con personas interactuando en espacios, y 3 vídeos tour virtual. El coste fue un 95% inferior a una producción fotográfica tradicional.",
+      "Ejemplo de campaña inmobiliaria de lujo. 5 modelos IA (agentes y compradores), 90 imágenes de propiedades con personas en espacios, y 3 vídeos tour virtual. 95% menos coste que una producción fotográfica tradicional.",
     servicesEN: ["AI Photography", "AI Video", "AI Models"],
     servicesES: ["Fotografía IA", "Vídeo IA", "Modelos IA"],
     statsEN: [
@@ -190,9 +189,9 @@ const projects: Record<
     image: "/portfolio/glow-cosmetics.jpg",
     gallery: ["/portfolio/glow-cosmetics.jpg", "/portfolio/glow-2.jpg", "/portfolio/glow-3.jpg"],
     briefEN:
-      "Glow Cosmetics needed a virtual beauty influencer for their social media strategy. We created an AI influencer with her own identity, generating 30 posts per month with beauty content indistinguishable from real photography.",
+      "Example of a virtual beauty influencer for social media. An AI influencer with her own identity, generating 30 posts per month with beauty content indistinguishable from real photography.",
     briefES:
-      "Glow Cosmetics necesitaba una influencer virtual de belleza para su estrategia en redes sociales. Creamos una influencer IA con identidad propia, generando 30 posts al mes con contenido beauty indistinguible de fotografía real.",
+      "Ejemplo de influencer virtual de belleza para redes sociales. Una influencer IA con identidad propia, generando 30 posts al mes con contenido beauty indistinguible de fotografía real.",
     servicesEN: ["AI Models", "AI Social Media", "AI Photography"],
     servicesES: ["Modelos IA", "Redes Sociales IA", "Fotografía IA"],
     statsEN: [
@@ -213,11 +212,11 @@ const projects: Record<
     titleES: "Urban Taste",
     category: "food",
     image: "/portfolio/urban-taste.jpg",
-    gallery: ["/portfolio/urban-taste.jpg", "/portfolio/urban-2.jpg"],
+    gallery: ["/portfolio/urban-taste.jpg"],
     briefEN:
-      "Restaurant chain Urban Taste needed a complete rebranding with AI food photography and lifestyle content. We produced 200 images and 5 videos showing their dishes and ambiance with AI-generated diners and staff.",
+      "Example of restaurant rebranding with AI food photography and lifestyle content. 200 images and 5 videos showing dishes and ambiance with AI-generated diners.",
     briefES:
-      "La cadena de restaurantes Urban Taste necesitaba un rebranding completo con fotografía gastronómica IA y contenido lifestyle. Produjimos 200 imágenes y 5 vídeos mostrando sus platos y ambiente con comensales y personal generados por IA.",
+      "Ejemplo de rebranding de restaurante con fotografía gastronómica IA y contenido lifestyle. 200 imágenes y 5 vídeos mostrando platos y ambiente con comensales generados por IA.",
     servicesEN: ["AI Photography", "AI Video", "AI Brand Identity"],
     servicesES: ["Fotografía IA", "Vídeo IA", "Identidad de Marca IA"],
     statsEN: [
