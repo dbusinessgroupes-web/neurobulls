@@ -25,11 +25,11 @@
     "from": "Desde",
     "viewMore": "Ver más",
     "visualStarter": {
-      "title": "Visual Starter",
+      "title": "Visual Esencial",
       "description": "5 fotos profesionales en 48h"
     },
     "visualPro": {
-      "title": "Visual Pro",
+      "title": "Visual Profesional",
       "description": "15 fotos + reel + modelo IA"
     },
     "visualPremium": {
@@ -127,7 +127,7 @@
       },
       {
         "q": "¿Cuánto tarda la entrega?",
-        "a": "Starter: 48 horas. Pro: 5 días laborables. Premium: 7 días laborables. Servicios de automatización: 5-7 días para el setup."
+        "a": "Esencial: 48 horas. Profesional: 5 días laborables. Premium: 7 días laborables. Servicios de automatización: 5-7 días para el setup."
       },
       {
         "q": "¿Puedo usar las imágenes comercialmente?",
@@ -139,7 +139,7 @@
       },
       {
         "q": "¿Y si no me gusta el resultado?",
-        "a": "Cada entrega incluye revisiones (1 en Starter, 3 en Pro, 5 en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega."
+        "a": "Cada entrega incluye revisiones (1 en Esencial, 3 en Profesional, 5 en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega."
       },
       {
         "q": "¿Puedo cancelar?",
@@ -159,7 +159,7 @@
       },
       {
         "q": "¿Puedo combinar servicios visuales con automatización?",
-        "a": "Sí. Nuestros packs combinados ofrecen un ahorro significativo sobre el precio individual. Es la forma más eficiente de digitalizar tu negocio completo."
+        "a": "Sí. Nuestros packs combinados son la forma más eficiente de digitalizar tu negocio completo. Contáctanos para un presupuesto a medida."
       }
     ]
   },
@@ -258,7 +258,7 @@
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48h - 7 días",
-      "cost": "Desde 350€",
+      "cost": "Presupuesto a medida",
       "quality": "Profesional",
       "availability": "24/7",
       "revisions": "Incluidas",
@@ -280,9 +280,9 @@
   "cta": {
     "title": "¿Listo para transformar tu negocio?",
     "titleHighlight": "Hablemos.",
-    "subtitle": "Empieza con una imagen de prueba gratuita o cuéntanos qué necesitas.",
-    "button": "Solicitar prueba gratis",
-    "buttonSecondary": "Ver portfolio"
+    "subtitle": "Cuéntanos qué necesitas y te preparamos un presupuesto a medida.",
+    "button": "Solicitar Presupuesto",
+    "buttonSecondary": "Ver Portfolio"
   },
   "about": {
     "title": "Sobre NeuroBulls",
@@ -334,25 +334,16 @@
       "service": "Servicio de Interés",
       "serviceOptions": {
         "default": "Selecciona un servicio",
-        "visualStarter": "Visual Starter (350€)",
-        "visualPro": "Visual Pro (950€)",
-        "visualPremium": "Visual Premium (1.900€)",
-        "voice": "Asistente de Voz IA (950€ + 149€/mes)",
-        "agent": "Agente IA con Memoria (1.500€ + 199€/mes)",
-        "automation": "Automatización de Procesos (desde 500€/workflow + 99€/mes)",
-        "packNegocio": "Pack Negocio (1.600€ + 149€/mes)",
-        "packTotal": "Pack Total (3.500€ + 299€/mes)",
-        "freeSample": "Imagen de prueba gratuita",
+        "visualStarter": "Visual Esencial",
+        "visualPro": "Visual Profesional",
+        "visualPremium": "Visual Premium",
+        "voice": "Asistente de Voz IA",
+        "agent": "Agente IA con Memoria",
+        "automation": "Automatización de Procesos",
+        "packNegocio": "Pack Negocio (Visual + Voz IA)",
+        "packTotal": "Pack Total (Visual + Voz + Agente IA)",
+        "freeSample": "Consulta general",
         "other": "Otro / Presupuesto personalizado"
-      },
-      "budget": "Rango de Presupuesto",
-      "budgetOptions": {
-        "default": "Selecciona un rango",
-        "under500": "Menos de 500€",
-        "500to1000": "500€ - 1.000€",
-        "1000to2000": "1.000€ - 2.000€",
-        "2000to5000": "2.000€ - 5.000€",
-        "over5000": "Más de 5.000€"
       },
       "namePlaceholder": "Juan Pérez",
       "emailPlaceholder": "juan@empresa.com",
@@ -382,8 +373,8 @@
     "aboutLink": "Nosotros",
     "workLink": "Portfolio",
     "servicesTitle": "Servicios",
-    "serviceVisualStarter": "Visual Starter",
-    "serviceVisualPro": "Visual Pro",
+    "serviceVisualStarter": "Visual Esencial",
+    "serviceVisualPro": "Visual Profesional",
     "serviceVisualPremium": "Visual Premium",
     "serviceVoice": "Voz IA",
     "serviceAgent": "Agente IA (RAG)",

@@ -25,11 +25,11 @@
     "from": "From",
     "viewMore": "Learn more",
     "visualStarter": {
-      "title": "Visual Starter",
+      "title": "Visual Essential",
       "description": "5 professional photos in 48h"
     },
     "visualPro": {
-      "title": "Visual Pro",
+      "title": "Visual Professional",
       "description": "15 photos + reel + AI model"
     },
     "visualPremium": {
@@ -127,7 +127,7 @@
       },
       {
         "q": "How long does delivery take?",
-        "a": "Starter: 48 hours. Pro: 5 business days. Premium: 7 business days. Automation services: 5-7 days for setup."
+        "a": "Essential: 48 hours. Professional: 5 business days. Premium: 7 business days. Automation services: 5-7 days for setup."
       },
       {
         "q": "Can I use the images commercially?",
@@ -139,7 +139,7 @@
       },
       {
         "q": "What if I don't like the result?",
-        "a": "Each delivery includes revisions (1 for Starter, 3 for Pro, 5 for Premium). Every image passes our automated quality control before delivery."
+        "a": "Each delivery includes revisions (1 for Essential, 3 for Professional, 5 for Premium). Every image passes our automated quality control before delivery."
       },
       {
         "q": "Can I cancel?",
@@ -159,7 +159,7 @@
       },
       {
         "q": "Can I combine visual and automation services?",
-        "a": "Yes. Our combined packs offer significant savings over individual prices. It's the most efficient way to fully digitize your business."
+        "a": "Yes. Our combined packs are the most efficient way to fully digitize your business. Contact us for a custom quote."
       }
     ]
   },
@@ -258,7 +258,7 @@
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48h - 7 days",
-      "cost": "From €350",
+      "cost": "Custom quote",
       "quality": "Professional",
       "availability": "24/7",
       "revisions": "Included",
@@ -280,9 +280,9 @@
   "cta": {
     "title": "Ready to transform your business?",
     "titleHighlight": "Let's talk.",
-    "subtitle": "Start with a free sample image or tell us what you need.",
-    "button": "Request free sample",
-    "buttonSecondary": "View portfolio"
+    "subtitle": "Tell us what you need and we'll prepare a custom quote.",
+    "button": "Request Quote",
+    "buttonSecondary": "View Portfolio"
   },
   "about": {
     "title": "About NeuroBulls",
@@ -334,25 +334,16 @@
       "service": "Service Interested In",
       "serviceOptions": {
         "default": "Select a service",
-        "visualStarter": "Visual Starter (€350)",
-        "visualPro": "Visual Pro (€950)",
-        "visualPremium": "Visual Premium (€1,900)",
-        "voice": "AI Voice Assistant (€950 + €149/mo)",
-        "agent": "AI Agent with Memory (€1,500 + €199/mo)",
-        "automation": "Process Automation (from €500/workflow + €99/mo)",
-        "packNegocio": "Business Pack (€1,600 + €149/mo)",
-        "packTotal": "Total Pack (€3,500 + €299/mo)",
-        "freeSample": "Free sample image",
-        "other": "Other / Custom budget"
-      },
-      "budget": "Budget Range",
-      "budgetOptions": {
-        "default": "Select a budget range",
-        "under500": "Under €500",
-        "500to1000": "€500 - €1,000",
-        "1000to2000": "€1,000 - €2,000",
-        "2000to5000": "€2,000 - €5,000",
-        "over5000": "More than €5,000"
+        "visualStarter": "Visual Essential",
+        "visualPro": "Visual Professional",
+        "visualPremium": "Visual Premium",
+        "voice": "AI Voice Assistant",
+        "agent": "AI Agent with Memory",
+        "automation": "Process Automation",
+        "packNegocio": "Business Pack (Visual + AI Voice)",
+        "packTotal": "Total Pack (Visual + Voice + AI Agent)",
+        "freeSample": "General inquiry",
+        "other": "Other / Custom quote"
       },
       "namePlaceholder": "John Doe",
       "emailPlaceholder": "john@company.com",
@@ -382,8 +373,8 @@
     "aboutLink": "About",
     "workLink": "Work",
     "servicesTitle": "Services",
-    "serviceVisualStarter": "Visual Starter",
-    "serviceVisualPro": "Visual Pro",
+    "serviceVisualStarter": "Visual Essential",
+    "serviceVisualPro": "Visual Professional",
     "serviceVisualPremium": "Visual Premium",
     "serviceVoice": "AI Voice",
     "serviceAgent": "AI Agent (RAG)",

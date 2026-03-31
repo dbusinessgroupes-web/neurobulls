@@ -60,7 +60,6 @@ export default function ContactPage() {
     phone: "",
     company: "",
     service: "",
-    budget: "",
     message: "",
     privacy: false,
   });
@@ -97,7 +96,6 @@ export default function ContactPage() {
           phone: formData.phone,
           company: formData.company,
           service: formData.service,
-          budget: formData.budget,
           message: formData.message,
         }),
       });
@@ -110,7 +108,6 @@ export default function ContactPage() {
           phone: "",
           company: "",
           service: "",
-          budget: "",
           message: "",
           privacy: false,
         });
@@ -136,15 +133,6 @@ export default function ContactPage() {
     { value: "packTotal", label: t("contact.form.serviceOptions.packTotal") },
     { value: "freeSample", label: t("contact.form.serviceOptions.freeSample") },
     { value: "other", label: t("contact.form.serviceOptions.other") },
-  ];
-
-  const budgetOptions = [
-    { value: "", label: t("contact.form.budgetOptions.default") },
-    { value: "under500", label: t("contact.form.budgetOptions.under500") },
-    { value: "500to1000", label: t("contact.form.budgetOptions.500to1000") },
-    { value: "1000to2000", label: t("contact.form.budgetOptions.1000to2000") },
-    { value: "2000to5000", label: t("contact.form.budgetOptions.2000to5000") },
-    { value: "over5000", label: t("contact.form.budgetOptions.over5000") },
   ];
 
   const contactInfo = [
@@ -280,26 +268,6 @@ export default function ContactPage() {
                           className="w-full rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground"
                         >
                           {serviceOptions.map((opt) => (
-                            <option key={opt.value} value={opt.value}>
-                              {opt.label}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-
-                      {/* Budget */}
-                      <div className="space-y-2">
-                        <Label htmlFor="budget">
-                          {t("contact.form.budget")}
-                        </Label>
-                        <select
-                          id="budget"
-                          name="budget"
-                          value={formData.budget}
-                          onChange={handleChange}
-                          className="w-full rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground"
-                        >
-                          {budgetOptions.map((opt) => (
                             <option key={opt.value} value={opt.value}>
                               {opt.label}
                             </option>

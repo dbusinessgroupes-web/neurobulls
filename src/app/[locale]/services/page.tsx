@@ -51,8 +51,6 @@ const visualTiers = [
   {
     key: "starter",
     icon: Camera,
-    priceES: "350",
-    priceEN: "350",
     badge: null,
     featuresES: [
       "5 fotos profesionales 4K",
@@ -72,16 +70,14 @@ const visualTiers = [
       "1 revision included",
       "Satisfaction guarantee",
     ],
-    titleES: "Starter",
-    titleEN: "Starter",
-    buttonES: "Contratar",
-    buttonEN: "Get Started",
+    titleES: "Esencial",
+    titleEN: "Essential",
+    buttonES: "Solicitar Presupuesto",
+    buttonEN: "Request Quote",
   },
   {
     key: "pro",
     icon: Target,
-    priceES: "950",
-    priceEN: "950",
     badge: { es: "Más Popular", en: "Most Popular" },
     featuresES: [
       "15 fotos profesionales 4K",
@@ -99,16 +95,14 @@ const visualTiers = [
       "All formats",
       "3 revisions included",
     ],
-    titleES: "Pro",
-    titleEN: "Pro",
-    buttonES: "Contratar",
-    buttonEN: "Get Started",
+    titleES: "Profesional",
+    titleEN: "Professional",
+    buttonES: "Solicitar Presupuesto",
+    buttonEN: "Request Quote",
   },
   {
     key: "premium",
     icon: Sparkles,
-    priceES: "1.900",
-    priceEN: "1,900",
     badge: null,
     featuresES: [
       "30 fotos profesionales 4K",
@@ -128,8 +122,8 @@ const visualTiers = [
     ],
     titleES: "Premium",
     titleEN: "Premium",
-    buttonES: "Contratar",
-    buttonEN: "Get Started",
+    buttonES: "Solicitar Presupuesto",
+    buttonEN: "Request Quote",
   },
 ];
 
@@ -138,8 +132,6 @@ const automationServices = [
   {
     key: "voice",
     icon: Phone,
-    priceES: "950€ configuración + 149€/mes",
-    priceEN: "€950 setup + €149/mo",
     featuresES: [
       "Atiende las llamadas de tu negocio 24/7",
       "Voz humana natural, indistinguible de una persona real",
@@ -162,14 +154,12 @@ const automationServices = [
     ],
     titleES: "Asistente de Voz IA",
     titleEN: "AI Voice Assistant",
-    buttonES: "Solicitar",
-    buttonEN: "Request",
+    buttonES: "Solicitar Presupuesto",
+    buttonEN: "Request Quote",
   },
   {
     key: "agent",
     icon: Brain,
-    priceES: "1.500€ configuración + 199€/mes",
-    priceEN: "€1,500 setup + €199/mo",
     featuresES: [
       "Agente de IA que conoce TODO sobre tu negocio",
       "Entrenado con tus documentos, catálogos, precios y políticas",
@@ -194,14 +184,12 @@ const automationServices = [
     ],
     titleES: "Agente IA con Memoria (RAG)",
     titleEN: "AI Agent with Memory (RAG)",
-    buttonES: "Solicitar",
-    buttonEN: "Request",
+    buttonES: "Solicitar Presupuesto",
+    buttonEN: "Request Quote",
   },
   {
     key: "automation",
     icon: Workflow,
-    priceES: "Desde 500€/workflow + 99€/mes",
-    priceEN: "From €500/workflow + €99/mo",
     featuresES: [
       "Automatiza cualquier proceso repetitivo de tu negocio",
       "Ejemplos: respuestas automáticas, generación de facturas, sincronización de datos, publicación en redes, envío de informes",
@@ -224,8 +212,8 @@ const automationServices = [
     ],
     titleES: "Automatización de Procesos",
     titleEN: "Process Automation",
-    buttonES: "Solicitar",
-    buttonEN: "Request",
+    buttonES: "Solicitar Presupuesto",
+    buttonEN: "Request Quote",
   },
 ];
 
@@ -233,37 +221,35 @@ const automationServices = [
 const combinedPacks = [
   {
     key: "negocio",
-    priceES: "1.600€ + 149€/mes",
-    priceEN: "€1,600 + €149/mo",
     badgeES: "Más Completo",
     badgeEN: "Most Complete",
     titleES: "Pack Negocio",
     titleEN: "Business Pack",
-    separatelyES: "Separado costaría 1.900€ + 149€/mes",
-    separatelyEN: "Separately would cost €1,900 + €149/mo",
+    descES: "Visual Profesional + Voz IA en un solo pack",
+    descEN: "Professional Visual + AI Voice in one pack",
     includesES: [
-      "Visual Pro (15 fotos + reel + modelo IA)",
+      "Visual Profesional (15 fotos + reel + modelo IA)",
       "Asistente de Voz IA 24/7",
       "Todo configurado en 10 días",
       "Mantenimiento y soporte incluidos",
     ],
     includesEN: [
-      "Visual Pro (15 photos + reel + AI model)",
+      "Professional Visual (15 photos + reel + AI model)",
       "AI Voice Assistant 24/7",
       "Everything set up in 10 days",
       "Maintenance and support included",
     ],
+    buttonES: "Solicitar Presupuesto",
+    buttonEN: "Request Quote",
   },
   {
     key: "total",
-    priceES: "3.500€ + 299€/mes",
-    priceEN: "€3,500 + €299/mo",
     badgeES: "Máximo Valor",
     badgeEN: "Best Value",
     titleES: "Pack Total",
     titleEN: "Total Pack",
-    separatelyES: "Separado costaría 4.900€ + 348€/mes",
-    separatelyEN: "Separately would cost €4,900 + €348/mo",
+    descES: "Visual Premium + Voz IA + Agente IA + Automatización",
+    descEN: "Visual Premium + AI Voice + AI Agent + Automation",
     includesES: [
       "Visual Premium (30 fotos + 3 reels + modelo IA + estrategia)",
       "Asistente de Voz IA 24/7",
@@ -280,6 +266,8 @@ const combinedPacks = [
       "Everything set up in 14 days",
       "Maintenance and support included",
     ],
+    buttonES: "Solicitar Presupuesto",
+    buttonEN: "Request Quote",
   },
 ];
 
@@ -310,7 +298,7 @@ const comparisonData = {
     },
     neurobulls: {
       timeline: "48h - 7 días",
-      cost: "Desde 350€",
+      cost: "Presupuesto a medida",
       quality: "Profesional",
       availability: "24/7",
       revisions: "Incluidas",
@@ -342,7 +330,7 @@ const comparisonData = {
     },
     neurobulls: {
       timeline: "48h - 7 days",
-      cost: "From €350",
+      cost: "Custom quote",
       quality: "Professional",
       availability: "24/7",
       revisions: "Included",
@@ -391,8 +379,8 @@ const guarantees = {
     },
     {
       icon: Unlock,
-      title: "Flexible commitment",
-      desc: "Minimum 3-month commitment for automation services. Visual services with no lock-in.",
+      title: "No commitment",
+      desc: "Request a quote with no obligation. No fine print.",
     },
   ],
   es: [
@@ -408,8 +396,8 @@ const guarantees = {
     },
     {
       icon: Unlock,
-      title: "Compromiso flexible",
-      desc: "Compromiso mínimo de 3 meses en servicios de automatización. Servicios visuales sin permanencia.",
+      title: "Sin compromiso",
+      desc: "Solicita un presupuesto sin compromiso. Sin letra pequeña.",
     },
   ],
 };
@@ -423,7 +411,7 @@ const faqItems = {
     },
     {
       q: "How long does delivery take?",
-      a: "Starter: 48 hours. Pro: 5 business days. Premium: 7 business days. Automation services: 3-10 days depending on complexity.",
+      a: "Essential: 48 hours. Professional: 5 business days. Premium: 7 business days. Automation services: 3-10 days depending on complexity.",
     },
     {
       q: "Can I use the images commercially?",
@@ -435,7 +423,7 @@ const faqItems = {
     },
     {
       q: "What if I don't like the result?",
-      a: "Each delivery includes revisions (1 for Starter, 3 for Pro, 5 for Premium). Every image passes our automated quality control before delivery.",
+      a: "Each delivery includes revisions (1 for Essential, 3 for Professional, 5 for Premium). Every image passes our automated quality control before delivery.",
     },
     {
       q: "Can I cancel my plan?",
@@ -455,7 +443,7 @@ const faqItems = {
     },
     {
       q: "Can I combine visual and automation services?",
-      a: "Yes. Our combined packs offer significant savings over individual prices. It's the most efficient way to fully digitize your business.",
+      a: "Yes. Our combined packs are the most efficient way to fully digitize your business. Contact us for a custom quote.",
     },
   ],
   es: [
@@ -465,7 +453,7 @@ const faqItems = {
     },
     {
       q: "¿Cuánto tarda la entrega?",
-      a: "Starter: 48 horas. Pro: 5 días laborables. Premium: 7 días laborables. Servicios de automatización: 3-10 días según complejidad.",
+      a: "Esencial: 48 horas. Profesional: 5 días laborables. Premium: 7 días laborables. Servicios de automatización: 3-10 días según complejidad.",
     },
     {
       q: "¿Puedo usar las imágenes comercialmente?",
@@ -477,7 +465,7 @@ const faqItems = {
     },
     {
       q: "¿Y si no me gusta el resultado?",
-      a: "Cada entrega incluye revisiones (1 en Starter, 3 en Pro, 5 en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega.",
+      a: "Cada entrega incluye revisiones (1 en Esencial, 3 en Profesional, 5 en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega.",
     },
     {
       q: "¿Puedo cancelar mi plan?",
@@ -497,7 +485,7 @@ const faqItems = {
     },
     {
       q: "¿Puedo combinar servicios visuales con automatización?",
-      a: "Sí. Nuestros packs combinados ofrecen un ahorro significativo sobre el precio individual. Es la forma más eficiente de digitalizar tu negocio completo.",
+      a: "Sí. Nuestros packs combinados son la forma más eficiente de digitalizar tu negocio completo. Contáctanos para un presupuesto a medida.",
     },
   ],
 };
@@ -591,11 +579,6 @@ export default function ServicesPage() {
                       <h3 className="text-xl font-bold">
                         {isES ? tier.titleES : tier.titleEN}
                       </h3>
-                      <div className="mt-3 mb-4">
-                        <span className="text-4xl font-bold text-nb-gold">
-                          &euro;{isES ? tier.priceES : tier.priceEN}
-                        </span>
-                      </div>
                       <ul className="space-y-2 flex-1">
                         {(isES ? tier.featuresES : tier.featuresEN).map(
                           (feature, j) => (
@@ -661,11 +644,6 @@ export default function ServicesPage() {
                       <h3 className="text-xl font-bold">
                         {isES ? service.titleES : service.titleEN}
                       </h3>
-                      <div className="mt-3 mb-4">
-                        <span className="text-lg font-bold text-nb-gold">
-                          {isES ? service.priceES : service.priceEN}
-                        </span>
-                      </div>
                       <ul className="space-y-2 flex-1">
                         {(isES ? service.featuresES : service.featuresEN).map(
                           (feature, j) => (
@@ -694,8 +672,8 @@ export default function ServicesPage() {
             <div className="mt-10 text-center">
               <p className="text-sm text-muted-foreground">
                 {isES
-                  ? "Cada automatización se diseña a medida para tu negocio. El precio del setup incluye la configuración completa y las primeras pruebas con tu equipo."
-                  : "Each automation is custom-designed for your business. Setup price includes full configuration and initial testing with your team."}
+                  ? "Cada automatización se diseña a medida para tu negocio. Solicita un presupuesto sin compromiso."
+                  : "Each automation is custom-designed for your business. Request a quote with no obligation."}
               </p>
             </div>
           </div>
@@ -729,13 +707,8 @@ export default function ServicesPage() {
                       <h3 className="text-xl font-bold">
                         {isES ? pack.titleES : pack.titleEN}
                       </h3>
-                      <div className="mt-3 mb-1">
-                        <span className="text-2xl font-bold text-nb-gold">
-                          {isES ? pack.priceES : pack.priceEN}
-                        </span>
-                      </div>
-                      <p className="text-xs text-muted-foreground/60 mb-4">
-                        {isES ? pack.separatelyES : pack.separatelyEN}
+                      <p className="text-sm text-muted-foreground mt-2 mb-4">
+                        {isES ? pack.descES : pack.descEN}
                       </p>
                       <ul className="space-y-2 flex-1">
                         {(isES ? pack.includesES : pack.includesEN).map(
@@ -752,7 +725,7 @@ export default function ServicesPage() {
                       <div className="mt-6">
                         <Link href="/contact">
                           <Button className="w-full bg-nb-red hover:bg-nb-red-hover text-white">
-                            {isES ? "Contratar" : "Get Started"}
+                            {isES ? pack.buttonES : pack.buttonEN}
                           </Button>
                         </Link>
                       </div>
@@ -910,8 +883,8 @@ export default function ServicesPage() {
               </h2>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
                 {isES
-                  ? "Empieza con una imagen de prueba gratuita o cuéntanos qué necesitas."
-                  : "Start with a free sample image or tell us what you need."}
+                  ? "Cuéntanos qué necesitas y te preparamos un presupuesto a medida."
+                  : "Tell us what you need and we'll prepare a custom quote."}
               </p>
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/contact">
@@ -919,7 +892,7 @@ export default function ServicesPage() {
                     size="lg"
                     className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg"
                   >
-                    {isES ? "Solicitar prueba gratis" : "Request free sample"}
+                    {isES ? "Solicitar Presupuesto" : "Request Quote"}
                   </Button>
                 </Link>
                 <Link href="/work">
@@ -928,7 +901,7 @@ export default function ServicesPage() {
                     variant="outline"
                     className="px-10 py-6 text-lg"
                   >
-                    {isES ? "Ver portfolio" : "View portfolio"}
+                    {isES ? "Ver Portfolio" : "View Portfolio"}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>

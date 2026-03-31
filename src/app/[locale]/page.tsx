@@ -47,12 +47,12 @@ const fadeUp = {
 };
 
 const serviceCards = [
-  { icon: Camera, titleKey: "visualStarter", price: "350" },
-  { icon: Target, titleKey: "visualPro", price: "950", popular: true },
-  { icon: Sparkles, titleKey: "visualPremium", price: "1.900" },
-  { icon: Phone, titleKey: "voice", price: "950" },
-  { icon: Brain, titleKey: "agent", price: "1.500" },
-  { icon: Workflow, titleKey: "automation", price: "500", from: true },
+  { icon: Camera, titleKey: "visualStarter" },
+  { icon: Target, titleKey: "visualPro", popular: true },
+  { icon: Sparkles, titleKey: "visualPremium" },
+  { icon: Phone, titleKey: "voice" },
+  { icon: Brain, titleKey: "agent" },
+  { icon: Workflow, titleKey: "automation" },
 ];
 
 const processSteps = [
@@ -224,10 +224,6 @@ export default function Home() {
                       <h3 className="text-lg font-semibold mb-2">
                         {t(`services.${service.titleKey}.title`)}
                       </h3>
-                      <p className="text-xl font-bold text-nb-gold mb-1">
-                        {(service as { from?: boolean }).from && <span className="text-sm font-normal text-muted-foreground mr-1">{t("services.from")}</span>}
-                        &euro;{service.price}
-                      </p>
                       <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                         {t(`services.${service.titleKey}.description`)}
                       </p>
@@ -247,9 +243,9 @@ export default function Home() {
 
             <div className="mt-12 text-center">
               <Link href="/services"><Button variant="outline" className="group">
-                  {t("services.exploreAll")}
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button></Link>
+                {t("services.exploreAll")}
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button></Link>
             </div>
           </div>
         </section>

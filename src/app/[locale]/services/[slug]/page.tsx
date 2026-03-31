@@ -25,8 +25,6 @@ const services: Record<
   {
     titleEN: string;
     titleES: string;
-    priceEN: string;
-    priceES: string;
     image: string;
     descriptionEN: string;
     descriptionES: string;
@@ -34,10 +32,6 @@ const services: Record<
     includesES: string[];
     useCasesEN: string[];
     useCasesES: string[];
-    traditionalCostEN: string;
-    traditionalCostES: string;
-    savingsEN: string;
-    savingsES: string;
     faqEN: { q: string; a: string }[];
     faqES: { q: string; a: string }[];
   }
@@ -45,8 +39,6 @@ const services: Record<
   "fotografia-ia": {
     titleEN: "AI Editorial Photography",
     titleES: "Fotografía IA Editorial",
-    priceEN: "From €297",
-    priceES: "Desde €297",
     image: "/services/ai-photography.jpg",
     descriptionEN:
       "Complete photo sessions without cameras or studios. Our AI models are indistinguishable from real people. We generate editorial images with the quality of Vogue, Harper\u2019s Bazaar or GQ. Each image goes through our refinement pipeline: pore-level skin texture, cinematic lighting, professional color grading and 4K upscaling.",
@@ -80,10 +72,6 @@ const services: Record<
       "Contenido editorial",
       "Campañas publicitarias",
     ],
-    traditionalCostEN: "€3,000 - €8,000",
-    traditionalCostES: "€3.000 - €8.000",
-    savingsEN: "90-96%",
-    savingsES: "90-96%",
     faqEN: [
       {
         q: "What resolution are the images?",
@@ -95,7 +83,7 @@ const services: Record<
       },
       {
         q: "How many revisions are included?",
-        a: "2 revisions are included. Additional revisions available at €50 per round.",
+        a: "2 revisions are included. Additional revisions available on request.",
       },
     ],
     faqES: [
@@ -109,15 +97,13 @@ const services: Record<
       },
       {
         q: "¿Cuántas revisiones están incluidas?",
-        a: "Se incluyen 2 revisiones. Revisiones adicionales disponibles a €50 por ronda.",
+        a: "Se incluyen 2 revisiones. Revisiones adicionales disponibles bajo petición.",
       },
     ],
   },
   "video-ia": {
     titleEN: "AI Video Production",
     titleES: "Producción de Vídeo IA",
-    priceEN: "From €497",
-    priceES: "Desde €497",
     image: "/services/ai-video.jpg",
     descriptionEN:
       "Cinematic videos generated with cutting-edge AI. From 15-second reels to 2-minute ad spots. Each video includes professional editing: color correction, transitions, voiceover and music. Quality indistinguishable from traditional production, but in 48h and at a fraction of the cost.",
@@ -151,10 +137,6 @@ const services: Record<
       "Vídeos de producto",
       "YouTube Shorts",
     ],
-    traditionalCostEN: "€5,000 - €20,000",
-    traditionalCostES: "€5.000 - €20.000",
-    savingsEN: "90-98%",
-    savingsES: "90-98%",
     faqEN: [
       {
         q: "What formats do you deliver?",
@@ -187,8 +169,6 @@ const services: Record<
   "modelos-ia": {
     titleEN: "AI Model Creation",
     titleES: "Creación de Modelos IA",
-    priceEN: "From €697",
-    priceES: "Desde €697",
     image: "/services/ai-models.jpg",
     descriptionEN:
       "We create hyperrealistic virtual people you can use as brand ambassadors, virtual influencers or recurring models. Each model is AI-trained for perfect consistency \u2014 same face, complexion and features in any scenario, pose or outfit. Your model works 24/7, doesn\u2019t charge per session and never ages.",
@@ -222,10 +202,6 @@ const services: Record<
       "Avatar de marca",
       "Persona para canal de YouTube",
     ],
-    traditionalCostEN: "€2,000 - €10,000 per campaign",
-    traditionalCostES: "€2.000 - €10.000 por campaña",
-    savingsEN: "65-93%",
-    savingsES: "65-93%",
     faqEN: [
       {
         q: "Will my model look the same every time?",
@@ -258,8 +234,6 @@ const services: Record<
   "redes-sociales-ia": {
     titleEN: "AI Social Media Management",
     titleES: "Gestión de Redes Sociales IA",
-    priceEN: "From €697/mo",
-    priceES: "Desde €697/mes",
     image: "/services/ai-social.jpg",
     descriptionEN:
       "We automate your social media presence with AI-generated visual content. Each post includes hyperrealistic images created specifically for your brand, persuasive copy and hashtag strategy. Your Instagram feed will look like a million-dollar brand, at a fraction of the cost.",
@@ -281,10 +255,6 @@ const services: Record<
     ],
     useCasesEN: ["Instagram", "TikTok", "LinkedIn", "Pinterest"],
     useCasesES: ["Instagram", "TikTok", "LinkedIn", "Pinterest"],
-    traditionalCostEN: "€1,500 - €4,000/mo",
-    traditionalCostES: "€1.500 - €4.000/mes",
-    savingsEN: "54-83%",
-    savingsES: "54-83%",
     faqEN: [
       {
         q: "Which platforms do you manage?",
@@ -317,8 +287,6 @@ const services: Record<
   "identidad-marca-ia": {
     titleEN: "AI Brand Identity",
     titleES: "Identidad de Marca IA",
-    priceEN: "From €1,497",
-    priceES: "Desde €1.497",
     image: "/services/ai-branding.jpg",
     descriptionEN:
       "Complete brand identities powered by AI. From logo to packaging mockups, everything generated with premium aesthetics. Includes 20 brand images ready for web, social and print.",
@@ -345,10 +313,6 @@ const services: Record<
       "Lanzamientos de producto",
       "Nuevas marcas",
     ],
-    traditionalCostEN: "€5,000 - €15,000",
-    traditionalCostES: "€5.000 - €15.000",
-    savingsEN: "70-90%",
-    savingsES: "70-90%",
     faqEN: [
       {
         q: "What file formats do I receive?",
@@ -381,8 +345,6 @@ const services: Record<
   "estrategia-campana-ia": {
     titleEN: "AI Campaign Strategy",
     titleES: "Estrategia de Campaña IA",
-    priceEN: "From €997",
-    priceES: "Desde €997",
     image: "/services/ai-strategy.jpg",
     descriptionEN:
       "Complete AI-powered marketing campaigns. From creative concept to visual execution, including distribution strategy. Each campaign includes brief, creative concepts, art direction and content calendar optimized for conversion.",
@@ -418,10 +380,6 @@ const services: Record<
       "Black Friday",
       "Rebajas y eventos",
     ],
-    traditionalCostEN: "€5,000 - €20,000",
-    traditionalCostES: "€5.000 - €20.000",
-    savingsEN: "80-95%",
-    savingsES: "80-95%",
     faqEN: [
       {
         q: "Does it include content production?",
@@ -529,14 +487,9 @@ export default function ServiceDetailPage() {
   }
 
   const title = isEN ? service.titleEN : service.titleES;
-  const price = isEN ? service.priceEN : service.priceES;
   const description = isEN ? service.descriptionEN : service.descriptionES;
   const includes = isEN ? service.includesEN : service.includesES;
   const useCases = isEN ? service.useCasesEN : service.useCasesES;
-  const traditionalCost = isEN
-    ? service.traditionalCostEN
-    : service.traditionalCostES;
-  const savings = isEN ? service.savingsEN : service.savingsES;
   const faq = isEN ? service.faqEN : service.faqES;
   const processSteps = isEN ? processStepsEN : processStepsES;
 
@@ -574,12 +527,6 @@ export default function ServiceDetailPage() {
             >
               {title}
             </motion.h1>
-            <motion.p
-              variants={fadeUp}
-              className="mt-4 text-2xl font-bold text-nb-gold"
-            >
-              {price}
-            </motion.p>
           </motion.div>
         </section>
 
@@ -593,34 +540,6 @@ export default function ServiceDetailPage() {
             </ScrollReveal>
           </div>
         </section>
-
-        {/* Video Pricing Table */}
-        {slug === "video-ia" && (
-          <section className="px-6 -mt-8 pb-8">
-            <div className="mx-auto max-w-3xl">
-              <ScrollReveal>
-                <div className="mt-8 overflow-x-auto">
-                  <table className="w-full text-sm border border-border rounded-xl overflow-hidden">
-                    <thead>
-                      <tr className="bg-card">
-                        <th className="text-left p-4 font-medium text-foreground">{isEN ? "Format" : "Formato"}</th>
-                        <th className="text-left p-4 font-medium text-foreground">{isEN ? "Duration" : "Duración"}</th>
-                        <th className="text-left p-4 font-medium text-nb-gold">{isEN ? "Price" : "Precio"}</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-muted-foreground">
-                      <tr className="border-t border-border"><td className="p-4">Reel / TikTok</td><td className="p-4">15-30s</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €497" : "Desde €497"}</td></tr>
-                      <tr className="border-t border-border"><td className="p-4">{isEN ? "Ad Spot" : "Spot publicitario"}</td><td className="p-4">30-60s</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €797" : "Desde €797"}</td></tr>
-                      <tr className="border-t border-border"><td className="p-4">{isEN ? "Corporate Video" : "Vídeo corporativo"}</td><td className="p-4">1-2 min</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €1,297" : "Desde €1.297"}</td></tr>
-                      <tr className="border-t border-border"><td className="p-4">YouTube</td><td className="p-4">3-5 min</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €1,997" : "Desde €1.997"}</td></tr>
-                      <tr className="border-t border-border"><td className="p-4">YouTube Long</td><td className="p-4">5-10 min</td><td className="p-4 text-nb-gold font-semibold">{isEN ? "From €2,997" : "Desde €2.997"}</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-              </ScrollReveal>
-            </div>
-          </section>
-        )}
 
         {/* What's Included */}
         <section className="py-16 px-6">
@@ -683,54 +602,6 @@ export default function ServiceDetailPage() {
                     {uc}
                   </span>
                 ))}
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-
-        {/* Comparison Table */}
-        <section className="py-16 px-6">
-          <div className="mx-auto max-w-3xl">
-            <ScrollReveal>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-8 text-center">
-                {isEN ? "Cost Comparison" : "Comparativa de costes"}
-              </h2>
-              <div className="rounded-xl border border-border bg-card overflow-hidden">
-                <div className="grid grid-cols-3 gap-4 px-6 py-4 border-b border-border bg-muted/30">
-                  <div />
-                  <div className="text-sm font-semibold text-muted-foreground text-center">
-                    {isEN ? "Traditional" : "Tradicional"}
-                  </div>
-                  <div className="text-sm font-semibold text-nb-gold text-center">
-                    NeuroBulls
-                  </div>
-                </div>
-                <div className="grid grid-cols-3 gap-4 px-6 py-5 items-center border-b border-border">
-                  <div className="text-sm font-medium">
-                    {isEN ? "Cost" : "Coste"}
-                  </div>
-                  <div className="text-center">
-                    <span className="text-sm text-muted-foreground line-through">
-                      {traditionalCost}
-                    </span>
-                  </div>
-                  <div className="text-center">
-                    <span className="text-sm font-bold text-nb-gold">
-                      {price}
-                    </span>
-                  </div>
-                </div>
-                <div className="grid grid-cols-3 gap-4 px-6 py-5 items-center">
-                  <div className="text-sm font-medium">
-                    {isEN ? "You save" : "Ahorras"}
-                  </div>
-                  <div />
-                  <div className="text-center">
-                    <span className="text-sm font-bold text-green-500">
-                      {savings}
-                    </span>
-                  </div>
-                </div>
               </div>
             </ScrollReveal>
           </div>
