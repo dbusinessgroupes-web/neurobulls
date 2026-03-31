@@ -189,7 +189,7 @@ export default function Home() {
                   { value: 90, suffix: "%", label: t("stats.cost") },
                   { value: 48, suffix: "h", label: t("stats.delivery") },
                   { value: 100, suffix: "%", label: t("stats.rights") },
-                  { value: 0, suffix: "€", label: t("stats.risk") },
+                  { value: 4, suffix: "K", label: t("stats.risk") },
                 ].map((stat, i) => (
                   <div key={i} className="text-center">
                     <div className="text-4xl font-bold text-nb-gold">
