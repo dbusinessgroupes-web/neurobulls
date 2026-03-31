@@ -168,7 +168,7 @@ export default function AboutPage() {
             <ScrollReveal>
               <div className="text-center mb-10">
                 <h2 className="text-2xl sm:text-3xl font-bold">
-                  {locale === "es" ? "Nuestra Tecnologia" : "Our Technology"}
+                  {locale === "es" ? "Nuestra Tecnología" : "Our Technology"}
                 </h2>
               </div>
             </ScrollReveal>
@@ -231,7 +231,7 @@ export default function AboutPage() {
                   <div className="relative aspect-[3/4] rounded-2xl overflow-hidden ring-2 ring-nb-gold/30 ring-offset-4 ring-offset-background">
                     <Image
                       src="/team/diego-ceo.jpg"
-                      alt="Diego Rodriguez Molino"
+                      alt="Diego Rodríguez Molino"
                       fill
                       className="object-cover object-top"
                       sizes="(max-width: 768px) 80vw, 320px"
@@ -246,12 +246,12 @@ export default function AboutPage() {
                     {locale === "es" ? "Nuestro Fundador" : "Our Founder"}
                   </p>
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-                    Diego Rodriguez Molino
+                    Diego Rodríguez Molino
                   </h2>
                   <p className="text-base font-medium text-nb-gold mb-6">CEO & Founder</p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                     {locale === "es"
-                      ? "Emprendedor y visionario en la interseccion de marketing e inteligencia artificial. Funde NeuroBulls con una mision clara: democratizar la produccion visual de alta calidad y la automatizacion inteligente para negocios de todos los tamanos. Nuestra tecnologia genera contenido indistinguible de la realidad y automatiza procesos para que tu negocio funcione 24/7."
+                      ? "Emprendedor y visionario en la intersección de marketing e inteligencia artificial. Fundé NeuroBulls con una misión clara: democratizar la producción visual de alta calidad y la automatización inteligente para negocios de todos los tamaños. Nuestra tecnología genera contenido indistinguible de la realidad y automatiza procesos para que tu negocio funcione 24/7."
                       : "Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production and intelligent automation for businesses of all sizes. Our technology generates content indistinguishable from reality and automates processes so your business runs 24/7."}
                   </p>
                   <blockquote className="text-lg italic text-foreground/80 border-l-2 border-nb-gold/40 pl-4 mb-6">

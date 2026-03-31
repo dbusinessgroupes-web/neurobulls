@@ -51,8 +51,8 @@ const visualTiers = [
   {
     key: "starter",
     icon: Camera,
-    priceES: "300",
-    priceEN: "300",
+    priceES: "350",
+    priceEN: "350",
     badge: null,
     featuresES: [
       "5 fotos profesionales 4K",
@@ -60,8 +60,8 @@ const visualTiers = [
       "Entrega en 48 horas",
       "Formatos web + redes + apps",
       "Derechos comerciales ilimitados",
-      "1 revision incluida",
-      "Garantia de satisfaccion",
+      "1 revisión incluida",
+      "Garantía de satisfacción",
     ],
     featuresEN: [
       "5 professional 4K photos",
@@ -80,14 +80,14 @@ const visualTiers = [
   {
     key: "pro",
     icon: Target,
-    priceES: "900",
-    priceEN: "900",
-    badge: { es: "Mas Popular", en: "Most Popular" },
+    priceES: "950",
+    priceEN: "950",
+    badge: { es: "Más Popular", en: "Most Popular" },
     featuresES: [
       "15 fotos profesionales 4K",
       "1 video reel de 15s editado",
       "Modelo IA exclusivo si se necesita",
-      "Entrega en 5 dias",
+      "Entrega en 5 días",
       "Todos los formatos",
       "3 revisiones incluidas",
     ],
@@ -107,15 +107,15 @@ const visualTiers = [
   {
     key: "premium",
     icon: Sparkles,
-    priceES: "1.800",
-    priceEN: "1,800",
+    priceES: "1.900",
+    priceEN: "1,900",
     badge: null,
     featuresES: [
       "30 fotos profesionales 4K",
       "3 videos reel editados",
       "Modelo IA exclusivo para tu marca",
-      "Direccion creativa y estrategia",
-      "Entrega en 7 dias",
+      "Dirección creativa y estrategia",
+      "Entrega en 7 días",
       "Revisiones ilimitadas",
       "Manager dedicado",
     ],
@@ -140,15 +140,15 @@ const automationServices = [
   {
     key: "whatsapp",
     icon: MessageSquare,
-    priceES: "500€ setup + 97€/mes",
-    priceEN: "€500 setup + €97/mo",
+    priceES: "500€ setup + 99€/mes",
+    priceEN: "€500 setup + €99/mo",
     featuresES: [
       "Chatbot inteligente para WhatsApp Business y tu web",
       "Responde preguntas, toma pedidos, gestiona reservas",
-      "Entrenado con la informacion de tu negocio",
+      "Entrenado con la información de tu negocio",
       "Respuestas naturales (no parece un bot)",
       "Disponible 24/7 en cualquier idioma",
-      "Integracion en 5 dias",
+      "Integración en 5 días",
       "Incluye 1.000 conversaciones/mes",
     ],
     featuresEN: [
@@ -168,15 +168,15 @@ const automationServices = [
   {
     key: "voice",
     icon: Phone,
-    priceES: "750€ setup + 147€/mes",
-    priceEN: "€750 setup + €147/mo",
+    priceES: "750€ setup + 149€/mes",
+    priceEN: "€750 setup + €149/mo",
     featuresES: [
-      "Atiende llamadas telefonicas automaticamente",
+      "Atiende llamadas telefónicas automáticamente",
       "Voz humana natural, indistinguible de una persona",
-      "Gestiona reservas, citas, consultas e informacion",
+      "Gestiona reservas, citas, consultas e información",
       "Transfiere a humano cuando es necesario",
-      "Disponible 24/7 en espanol, ingles y mas",
-      "Integracion en 7 dias",
+      "Disponible 24/7 en español, inglés y más",
+      "Integración en 7 días",
       "Incluye 500 llamadas/mes",
     ],
     featuresEN: [
@@ -196,15 +196,15 @@ const automationServices = [
   {
     key: "agent",
     icon: Bot,
-    priceES: "Desde 1.500€ setup + desde 197€/mes",
-    priceEN: "From €1,500 setup + from €197/mo",
+    priceES: "Desde 1.500€ setup + desde 199€/mes",
+    priceEN: "From €1,500 setup + from €199/mo",
     featuresES: [
-      "Agente de IA entrenado especificamente para tu negocio",
-      "Conectado a tus herramientas (CRM, email, calendario, facturacion)",
+      "Agente de IA entrenado específicamente para tu negocio",
+      "Conectado a tus herramientas (CRM, email, calendario, facturación)",
       "Automatiza tareas repetitivas que te roban horas",
-      "Genera informes, envia seguimientos, gestiona leads",
+      "Genera informes, envía seguimientos, gestiona leads",
       "Escala tu negocio sin contratar personal",
-      "Solucion 100% personalizada",
+      "Solución 100% personalizada",
       "Soporte y mantenimiento incluido",
     ],
     featuresEN: [
@@ -227,18 +227,18 @@ const automationServices = [
 const combinedPacks = [
   {
     key: "negocio",
-    priceES: "1.200€ + 97€/mes",
-    priceEN: "€1,200 + €97/mo",
+    priceES: "1.250€ + 99€/mes",
+    priceEN: "€1,250 + €99/mo",
     badgeES: "Ahorra 200€",
     badgeEN: "Save €200",
     titleES: "Pack Negocio",
     titleEN: "Business Pack",
-    separatelyES: "Separado costaria 1.400€",
-    separatelyEN: "Separately would cost €1,400",
+    separatelyES: "Separado costaría 1.450€",
+    separatelyEN: "Separately would cost €1,450",
     includesES: [
       "Visual Pro (15 fotos + reel + modelo IA)",
       "Asistente WhatsApp y Web 24/7",
-      "Todo configurado en 7 dias",
+      "Todo configurado en 7 días",
     ],
     includesEN: [
       "Visual Pro (15 photos + reel + AI model)",
@@ -248,19 +248,19 @@ const combinedPacks = [
   },
   {
     key: "total",
-    priceES: "2.500€ + 197€/mes",
-    priceEN: "€2,500 + €197/mo",
-    badgeES: "Maximo Valor",
+    priceES: "2.500€ + 199€/mes",
+    priceEN: "€2,500 + €199/mo",
+    badgeES: "Máximo Valor",
     badgeEN: "Best Value",
     titleES: "Pack Total",
     titleEN: "Total Pack",
-    separatelyES: "Separado costaria 3.050€",
-    separatelyEN: "Separately would cost €3,050",
+    separatelyES: "Separado costaría 3.150€",
+    separatelyEN: "Separately would cost €3,150",
     includesES: [
       "Visual Premium (30 fotos + 3 reels + modelo IA + estrategia)",
       "Asistente WhatsApp y Web 24/7",
       "Asistente de Voz IA",
-      "Todo configurado en 10 dias",
+      "Todo configurado en 10 días",
     ],
     includesEN: [
       "Visual Premium (30 photos + 3 reels + AI model + strategy)",
@@ -295,8 +295,8 @@ const comparisonData = {
       automation: "No",
     },
     neurobulls: {
-      timeline: "48h - 7 dias",
-      cost: "Desde 300€",
+      timeline: "48h - 7 días",
+      cost: "Desde 350€",
       quality: "Profesional",
       availability: "24/7",
       revisions: "Incluidas",
@@ -325,7 +325,7 @@ const comparisonData = {
     },
     neurobulls: {
       timeline: "48h - 7 days",
-      cost: "From €300",
+      cost: "From €350",
       quality: "Professional",
       availability: "24/7",
       revisions: "Included",
@@ -338,12 +338,12 @@ const comparisonData = {
 const comparisonRowLabels = {
   es: {
     timeline: "Plazo",
-    cost: "Inversion",
+    cost: "Inversión",
     quality: "Calidad",
     availability: "Disponibilidad",
     revisions: "Revisiones",
     scalability: "Escalabilidad",
-    automation: "Automatizacion",
+    automation: "Automatización",
   },
   en: {
     timeline: "Timeline",
@@ -378,8 +378,8 @@ const guarantees = {
   es: [
     {
       icon: ShieldCheck,
-      title: "Satisfaccion garantizada",
-      desc: "No estas satisfecho? Lo rehacemos sin coste adicional.",
+      title: "Satisfacción garantizada",
+      desc: "¿No estás satisfecho? Lo rehacemos sin coste adicional.",
     },
     {
       icon: Gift,
@@ -436,40 +436,40 @@ const faqItems = {
   ],
   es: [
     {
-      q: "Las imagenes parecen reales?",
-      a: "Nuestras imagenes pasan por un pipeline de refinamiento de 4 pasos que incluye textura de piel a nivel de poro, restauracion facial y escalado profesional. El resultado es indistinguible de una fotografia real. Nuestra regla de oro: si parece IA, no sale de nuestro estudio.",
+      q: "¿Las imágenes parecen reales?",
+      a: "Nuestras imágenes pasan por un pipeline de refinamiento de 4 pasos que incluye textura de piel a nivel de poro, restauración facial y escalado profesional. El resultado es indistinguible de una fotografía real. Nuestra regla de oro: si parece IA, no sale de nuestro estudio.",
     },
     {
-      q: "Cuanto tarda la entrega?",
-      a: "Starter: 48 horas. Pro: 5 dias laborables. Premium: 7 dias laborables. Servicios de automatizacion: 5-7 dias para el setup.",
+      q: "¿Cuánto tarda la entrega?",
+      a: "Starter: 48 horas. Pro: 5 días laborables. Premium: 7 días laborables. Servicios de automatización: 5-7 días para el setup.",
     },
     {
-      q: "Puedo usar las imagenes comercialmente?",
-      a: "Si, todo el contenido es de tu propiedad exclusiva con licencia comercial completa.",
+      q: "¿Puedo usar las imágenes comercialmente?",
+      a: "Sí, todo el contenido es de tu propiedad exclusiva con licencia comercial completa.",
     },
     {
-      q: "Como funciona un modelo de IA personalizado?",
-      a: "Creamos una persona virtual unica para tu marca, entrenada con IA para una consistencia perfecta. La misma cara en cualquier escenario, pose o atuendo. Como tener una modelo exclusiva que trabaja 24/7.",
+      q: "¿Cómo funciona un modelo de IA personalizado?",
+      a: "Creamos una persona virtual única para tu marca, entrenada con IA para una consistencia perfecta. La misma cara en cualquier escenario, pose o atuendo. Como tener una modelo exclusiva que trabaja 24/7.",
     },
     {
-      q: "Y si no me gusta el resultado?",
+      q: "¿Y si no me gusta el resultado?",
       a: "Cada entrega incluye revisiones (1 en Starter, 3 en Pro, ilimitadas en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega.",
     },
     {
-      q: "Puedo cancelar mi plan?",
-      a: "Si, puedes cancelar en cualquier momento. Sin permanencia. Los servicios individuales se pagan por proyecto.",
+      q: "¿Puedo cancelar mi plan?",
+      a: "Sí, puedes cancelar en cualquier momento. Sin permanencia. Los servicios individuales se pagan por proyecto.",
     },
     {
-      q: "Que puede hacer el asistente de WhatsApp?",
-      a: "Responde preguntas frecuentes, toma pedidos y reservas, envia informacion sobre tus servicios y productos, y gestiona consultas. Todo automaticamente, 24 horas al dia. Lo entrenamos con la informacion especifica de tu negocio.",
+      q: "¿Qué puede hacer el asistente de WhatsApp?",
+      a: "Responde preguntas frecuentes, toma pedidos y reservas, envía información sobre tus servicios y productos, y gestiona consultas. Todo automáticamente, 24 horas al día. Lo entrenamos con la información específica de tu negocio.",
     },
     {
-      q: "El asistente de voz suena real?",
-      a: "Si. Utilizamos tecnologia de voz de ultima generacion que produce un habla natural e indistinguible de una persona real. Tus clientes no notaran la diferencia.",
+      q: "¿El asistente de voz suena real?",
+      a: "Sí. Utilizamos tecnología de voz de última generación que produce un habla natural e indistinguible de una persona real. Tus clientes no notarán la diferencia.",
     },
     {
-      q: "Puedo combinar servicios visuales con automatizacion?",
-      a: "Si. Nuestros packs combinados ofrecen un ahorro significativo sobre el precio individual. Es la forma mas eficiente de digitalizar tu negocio completo.",
+      q: "¿Puedo combinar servicios visuales con automatización?",
+      a: "Sí. Nuestros packs combinados ofrecen un ahorro significativo sobre el precio individual. Es la forma más eficiente de digitalizar tu negocio completo.",
     },
   ],
 };
@@ -521,7 +521,7 @@ export default function ServicesPage() {
               className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
             >
               {isES
-                ? "Produccion visual premium y automatizacion inteligente. La tecnologia de las grandes empresas, accesible para ti."
+                ? "Producción visual premium y automatización inteligente. La tecnología de las grandes empresas, accesible para ti."
                 : "Premium visual production and intelligent automation. Enterprise technology, accessible to you."}
             </motion.p>
           </motion.div>
@@ -533,7 +533,7 @@ export default function ServicesPage() {
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {isES ? "Produccion Visual" : "Visual Production"}
+                  {isES ? "Producción Visual" : "Visual Production"}
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                   {isES
@@ -596,7 +596,7 @@ export default function ServicesPage() {
             <div className="mt-10 text-center">
               <p className="text-sm text-muted-foreground">
                 {isES
-                  ? "Necesitas videos largos, campanas especiales o volumen mensual?"
+                  ? "¿Necesitas videos largos, campañas especiales o volumen mensual?"
                   : "Need long videos, special campaigns or monthly volume?"}{" "}
                 <Link href="/contact" className="text-nb-gold hover:underline">
                   {isES ? "Contacta para presupuesto a medida." : "Contact us for a custom quote."}
@@ -613,12 +613,12 @@ export default function ServicesPage() {
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
                   {isES
-                    ? "Automatizacion e Inteligencia Artificial"
+                    ? "Automatización e Inteligencia Artificial"
                     : "Automation & Artificial Intelligence"}
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                   {isES
-                    ? "Tu negocio funcionando solo. 24 horas, 7 dias, sin contratar personal."
+                    ? "Tu negocio funcionando solo. 24 horas, 7 días, sin contratar personal."
                     : "Your business running itself. 24/7, without hiring staff."}
                 </p>
               </div>
@@ -666,7 +666,7 @@ export default function ServicesPage() {
             <div className="mt-10 text-center">
               <p className="text-sm text-muted-foreground">
                 {isES
-                  ? "Cada automatizacion se disena a medida para tu negocio. El precio del setup incluye la configuracion completa y las primeras pruebas con tu equipo."
+                  ? "Cada automatización se diseña a medida para tu negocio. El precio del setup incluye la configuración completa y las primeras pruebas con tu equipo."
                   : "Each automation is custom-designed for your business. Setup price includes full configuration and initial testing with your team."}
               </p>
             </div>
@@ -683,7 +683,7 @@ export default function ServicesPage() {
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                   {isES
-                    ? "Visual + Automatizacion. El combo que transforma tu negocio."
+                    ? "Visual + Automatización. El combo que transforma tu negocio."
                     : "Visual + Automation. The combo that transforms your business."}
                 </p>
               </div>
@@ -742,7 +742,7 @@ export default function ServicesPage() {
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {isES ? "Por que NeuroBulls?" : "Why NeuroBulls?"}
+                  {isES ? "¿Por qué NeuroBulls?" : "Why NeuroBulls?"}
                 </h2>
               </div>
             </ScrollReveal>
@@ -754,7 +754,7 @@ export default function ServicesPage() {
                   <div className="grid grid-cols-4 gap-4 px-6 py-4 border-b border-border bg-muted/30">
                     <div className="text-sm font-semibold text-muted-foreground" />
                     <div className="text-sm font-semibold text-muted-foreground text-center">
-                      {isES ? "Hacerlo tu" : "Do it yourself"}
+                      {isES ? "Hacerlo tú" : "Do it yourself"}
                     </div>
                     <div className="text-sm font-semibold text-muted-foreground text-center">
                       {isES ? "Agencia tradicional" : "Traditional agency"}
@@ -800,7 +800,7 @@ export default function ServicesPage() {
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {isES ? "Nuestra Garantia" : "Our Guarantee"}
+                  {isES ? "Nuestra Garantía" : "Our Guarantee"}
                 </h2>
               </div>
             </ScrollReveal>
@@ -877,12 +877,12 @@ export default function ServicesPage() {
             <ScrollReveal>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
                 {isES
-                  ? "Listo para transformar tu negocio?"
+                  ? "¿Listo para transformar tu negocio?"
                   : "Ready to transform your business?"}
               </h2>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
                 {isES
-                  ? "Empieza con una imagen de prueba gratuita o cuentanos que necesitas."
+                  ? "Empieza con una imagen de prueba gratuita o cuéntanos qué necesitas."
                   : "Start with a free sample image or tell us what you need."}
               </p>
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

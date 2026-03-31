@@ -47,9 +47,9 @@ const fadeUp = {
 };
 
 const serviceCards = [
-  { icon: Camera, titleKey: "visualStarter", price: "300" },
-  { icon: Target, titleKey: "visualPro", price: "900", popular: true },
-  { icon: Sparkles, titleKey: "visualPremium", price: "1.800" },
+  { icon: Camera, titleKey: "visualStarter", price: "350" },
+  { icon: Target, titleKey: "visualPro", price: "950", popular: true },
+  { icon: Sparkles, titleKey: "visualPremium", price: "1.900" },
   { icon: MessageSquare, titleKey: "whatsapp", price: "500" },
   { icon: Phone, titleKey: "voice", price: "750" },
   { icon: Bot, titleKey: "agent", price: "1.500", from: true },
@@ -139,8 +139,8 @@ export default function Home() {
               variants={fadeUp}
               className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Link href="/contact"><Button size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-8">{t("hero.cta")}</Button></Link>
-              <Link href="/services"><Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8">{t("hero.ctaSecondary")}</Button></Link>
+              <Link href="/services"><Button size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-8">{t("hero.cta")}</Button></Link>
+              <Link href="/work"><Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8">{t("hero.ctaSecondary")}</Button></Link>
             </motion.div>
           </motion.div>
 
@@ -162,14 +162,14 @@ export default function Home() {
                 {/* Stat 1: 85% */}
                 <div className="text-center">
                   <div className="text-4xl font-bold text-nb-gold">
-                    <AnimatedCounter target={85} />%
+                    <AnimatedCounter target={85} suffix="%" />
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{t("stats.cost")}</p>
                 </div>
                 {/* Stat 2: 48h */}
                 <div className="text-center">
                   <div className="text-4xl font-bold text-nb-gold">
-                    <AnimatedCounter target={48} />h
+                    <AnimatedCounter target={48} suffix="h" />
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{t("stats.delivery")}</p>
                 </div>
@@ -180,12 +180,12 @@ export default function Home() {
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{t("stats.availability")}</p>
                 </div>
-                {/* Stat 4: 0€ */}
+                {/* Stat 4: 100% */}
                 <div className="text-center">
                   <div className="text-4xl font-bold text-nb-gold">
-                    <AnimatedCounter target={0} />&euro;
+                    <AnimatedCounter target={100} suffix="%" />
                   </div>
-                  <p className="mt-2 text-sm text-muted-foreground">{t("stats.risk")}</p>
+                  <p className="mt-2 text-sm text-muted-foreground">{t("stats.satisfaction")}</p>
                 </div>
               </CardContent>
             </Card>

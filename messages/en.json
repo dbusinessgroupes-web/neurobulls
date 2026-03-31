@@ -9,14 +9,14 @@
   "hero": {
     "title": "YOUR BUSINESS, POWERED BY AI",
     "subtitle": "Elite visual production and intelligent automation. Everything you need to scale your business, in one place.",
-    "cta": "Request free sample image",
-    "ctaSecondary": "View services"
+    "cta": "Discover Services",
+    "ctaSecondary": "View Portfolio"
   },
   "stats": {
-    "cost": "Average savings vs traditional methods",
+    "cost": "Average savings vs traditional production",
     "delivery": "Minimum delivery time",
     "availability": "Availability of our automations",
-    "risk": "Risk — satisfaction guarantee"
+    "satisfaction": "Satisfaction guaranteed"
   },
   "services": {
     "title": "Our Services",
@@ -253,7 +253,7 @@
     "neurobulls": {
       "label": "NeuroBulls",
       "timeline": "48h - 7 days",
-      "cost": "From €300",
+      "cost": "From €350",
       "quality": "Professional",
       "availability": "24/7",
       "revisions": "Included",
@@ -326,14 +326,14 @@
       "service": "Service Interested In",
       "serviceOptions": {
         "default": "Select a service",
-        "visualStarter": "Visual Starter (€300)",
-        "visualPro": "Visual Pro (€900)",
-        "visualPremium": "Visual Premium (€1,800)",
-        "whatsapp": "WhatsApp Assistant (€500 + €97/mo)",
-        "voice": "Voice Assistant (€750 + €147/mo)",
+        "visualStarter": "Visual Starter (€350)",
+        "visualPro": "Visual Pro (€950)",
+        "visualPremium": "Visual Premium (€1,900)",
+        "whatsapp": "WhatsApp Assistant (€500 + €99/mo)",
+        "voice": "Voice Assistant (€750 + €149/mo)",
         "agent": "Custom AI Agent (from €1,500)",
-        "packNegocio": "Business Pack (€1,200 + €97/mo)",
-        "packTotal": "Total Pack (€2,500 + €197/mo)",
+        "packNegocio": "Business Pack (€1,250 + €99/mo)",
+        "packTotal": "Total Pack (€2,500 + €199/mo)",
         "freeSample": "Free sample image",
         "other": "Other / Custom budget"
       },
