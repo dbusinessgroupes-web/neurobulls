@@ -55,6 +55,7 @@ const projects: Record<
       "/portfolio/moda-2.jpg",
       "/portfolio/moda-3.jpg",
       "/portfolio/moda-4.jpg",
+      "/portfolio/moda-5.jpg",
     ],
     briefEN:
       "Vanguard contacted us to create a complete editorial campaign for their seasonal collection. We generated 3 exclusive AI models and produced 120 editorial images and 8 cinematic videos in 5 days. The result: Vogue-quality content without the need for photo shoots, studios or real models.",
@@ -187,7 +188,7 @@ const projects: Record<
     titleES: "Glow Cosmetics",
     category: "beauty",
     image: "/portfolio/glow-cosmetics.jpg",
-    gallery: ["/portfolio/glow-cosmetics.jpg", "/portfolio/glow-2.jpg", "/portfolio/glow-3.jpg", "/portfolio/glow-4.jpg"],
+    gallery: ["/portfolio/glow-cosmetics.jpg", "/portfolio/glow-2.jpg", "/portfolio/glow-3.jpg"],
     briefEN:
       "Glow Cosmetics needed a virtual beauty influencer for their social media strategy. We created an AI influencer with her own identity, generating 30 posts per month with beauty content indistinguishable from real photography.",
     briefES:
