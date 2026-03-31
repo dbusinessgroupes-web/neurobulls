@@ -72,7 +72,7 @@ export async function POST(request: Request) {
         const resend = new Resend(process.env.RESEND_API_KEY);
         await resend.emails.send({
           from: 'NeuroBulls <info@neurobulls.com>',
-          to: 'neurobulls@gmail.com',
+          to: ['neurobulls@gmail.com', 'dbusinessgroup.es@gmail.com'],
           replyTo: email,
           subject: `NeuroBulls — ${safeName}${safeCompany ? ` (${safeCompany})` : ''} — ${safeService || 'General'}`,
           html: `
