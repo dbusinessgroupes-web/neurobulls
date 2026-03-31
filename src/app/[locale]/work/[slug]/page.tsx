@@ -187,7 +187,7 @@ const projects: Record<
     titleES: "Glow Cosmetics",
     category: "beauty",
     image: "/portfolio/glow-cosmetics.jpg",
-    gallery: ["/portfolio/glow-cosmetics.jpg"],
+    gallery: ["/portfolio/glow-cosmetics.jpg", "/portfolio/glow-2.jpg", "/portfolio/glow-3.jpg", "/portfolio/glow-4.jpg"],
     briefEN:
       "Glow Cosmetics needed a virtual beauty influencer for their social media strategy. We created an AI influencer with her own identity, generating 30 posts per month with beauty content indistinguishable from real photography.",
     briefES:
@@ -212,7 +212,7 @@ const projects: Record<
     titleES: "Urban Taste",
     category: "food",
     image: "/portfolio/urban-taste.jpg",
-    gallery: ["/portfolio/urban-taste.jpg"],
+    gallery: ["/portfolio/urban-taste.jpg", "/portfolio/urban-2.jpg"],
     briefEN:
       "Restaurant chain Urban Taste needed a complete rebranding with AI food photography and lifestyle content. We produced 200 images and 5 videos showing their dishes and ambiance with AI-generated diners and staff.",
     briefES:

@@ -65,21 +65,25 @@ const processSteps = [
 const portfolioItems = [
   {
     name: "Fashion Editorial",
+    slug: "vanguard-fashion",
     tag: "Fashion",
     image: "/portfolio/vanguard-fashion.jpg",
   },
   {
     name: "Skincare Launch",
+    slug: "lumiere-beauty",
     tag: "Beauty",
     image: "/portfolio/lumiere-beauty.jpg",
   },
   {
     name: "Tech Launch",
+    slug: "techvision-pro",
     tag: "Technology",
     image: "/portfolio/techvision-pro.jpg",
   },
   {
     name: "Real Estate",
+    slug: "maison-elegance",
     tag: "Real Estate",
     image: "/portfolio/maison-elegance.jpg",
   },
@@ -267,7 +271,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {portfolioItems.map((item, i) => (
                 <ScrollReveal key={item.name} delay={i * 0.08}>
-                  <Link href={`/work/${item.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")}`}>
+                  <Link href={`/work/${item.slug}`}>
                     <div className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-nb-red/5">
                       <Image
                         src={item.image}
