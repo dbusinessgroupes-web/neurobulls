@@ -36,17 +36,17 @@
       "title": "Visual Premium",
       "description": "Complete campaign with strategy"
     },
-    "whatsapp": {
-      "title": "24/7 Assistant",
-      "description": "Chatbot for WhatsApp and web"
-    },
     "voice": {
       "title": "AI Voice",
-      "description": "Answers calls like a real person"
+      "description": "Answers your calls like a real person"
     },
     "agent": {
       "title": "AI Agent",
-      "description": "Your custom digital employee"
+      "description": "Your digital employee that knows your entire business"
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "Your processes on autopilot"
     },
     "exploreAll": "Explore All Services"
   },
@@ -147,12 +147,16 @@
         "a": "Yes, you can cancel at any time. No lock-in. Individual services are paid per project."
       },
       {
-        "q": "What can the WhatsApp assistant do?",
-        "a": "It answers frequently asked questions, takes orders and reservations, sends information about your services and products, and manages inquiries. All automatically, 24 hours a day. We train it with your specific business information."
+        "q": "What is an AI agent with memory (RAG)?",
+        "a": "It's an artificial intelligence assistant specifically trained with your business information: catalogs, prices, policies, FAQs. When a client contacts you, the agent responds with accurate and up-to-date information, just like your best employee would. RAG means the agent queries your real documents with every response — it doesn't make things up."
       },
       {
-        "q": "Does the voice assistant sound real?",
-        "a": "Yes. We use cutting-edge voice technology that produces natural speech indistinguishable from a real person. Your clients won't notice the difference."
+        "q": "Does the voice assistant really sound human?",
+        "a": "Yes. We use cutting-edge voice technology that produces natural speech indistinguishable from a real person. Your clients won't notice the difference. Plus, the assistant can transfer the call to a human at any time if the situation requires it."
+      },
+      {
+        "q": "Who pays for hosting and APIs?",
+        "a": "We do. The monthly fee includes everything: server hosting, AI APIs, maintenance, updates and technical support. You pay a fixed monthly fee and forget about infrastructure."
       },
       {
         "q": "Can I combine visual and automation services?",
@@ -238,7 +242,8 @@
       "availability": "Your schedule",
       "revisions": "—",
       "scalability": "Impossible",
-      "automation": "No"
+      "automation": "No",
+      "agents": "No"
     },
     "traditional": {
       "label": "Traditional agency",
@@ -248,7 +253,8 @@
       "availability": "Their schedule",
       "revisions": "Limited & expensive",
       "scalability": "Slow & expensive",
-      "automation": "No"
+      "automation": "No",
+      "agents": "No"
     },
     "neurobulls": {
       "label": "NeuroBulls",
@@ -258,7 +264,8 @@
       "availability": "24/7",
       "revisions": "Included",
       "scalability": "Instant",
-      "automation": "Included"
+      "automation": "Included",
+      "agents": "With memory (RAG)"
     },
     "rows": {
       "timeline": "Timeline",
@@ -267,7 +274,8 @@
       "availability": "Availability",
       "revisions": "Revisions",
       "scalability": "Scalability",
-      "automation": "Automation"
+      "automation": "Automation",
+      "agents": "AI Agents"
     }
   },
   "cta": {
@@ -329,11 +337,11 @@
         "visualStarter": "Visual Starter (€350)",
         "visualPro": "Visual Pro (€950)",
         "visualPremium": "Visual Premium (€1,900)",
-        "whatsapp": "WhatsApp Assistant (€500 + €99/mo)",
-        "voice": "Voice Assistant (€750 + €149/mo)",
-        "agent": "Custom AI Agent (from €1,500)",
-        "packNegocio": "Business Pack (€1,250 + €99/mo)",
-        "packTotal": "Total Pack (€2,500 + €199/mo)",
+        "voice": "AI Voice Assistant (€750 + €149/mo)",
+        "agent": "AI Agent with Memory (€1,200 + €199/mo)",
+        "automation": "Process Automation (from €500/workflow)",
+        "packNegocio": "Business Pack (€1,500 + €149/mo)",
+        "packTotal": "Total Pack (€3,000 + €249/mo)",
         "freeSample": "Free sample image",
         "other": "Other / Custom budget"
       },
@@ -377,9 +385,9 @@
     "serviceVisualStarter": "Visual Starter",
     "serviceVisualPro": "Visual Pro",
     "serviceVisualPremium": "Visual Premium",
-    "serviceWhatsapp": "WhatsApp Assistant",
-    "serviceVoice": "Voice Assistant",
-    "serviceAgent": "AI Agent",
+    "serviceVoice": "AI Voice",
+    "serviceAgent": "AI Agent (RAG)",
+    "serviceAutomation": "Automation",
     "legal": "Legal",
     "legalNotice": "Legal Notice",
     "privacy": "Privacy Policy",

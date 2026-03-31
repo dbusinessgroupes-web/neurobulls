@@ -14,9 +14,9 @@ import {
   ChevronDown,
   Check,
   ArrowRight,
-  MessageSquare,
   Phone,
-  Bot,
+  Brain,
+  Workflow,
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -50,9 +50,9 @@ const serviceCards = [
   { icon: Camera, titleKey: "visualStarter", price: "350" },
   { icon: Target, titleKey: "visualPro", price: "950", popular: true },
   { icon: Sparkles, titleKey: "visualPremium", price: "1.900" },
-  { icon: MessageSquare, titleKey: "whatsapp", price: "500" },
   { icon: Phone, titleKey: "voice", price: "750" },
-  { icon: Bot, titleKey: "agent", price: "1.500", from: true },
+  { icon: Brain, titleKey: "agent", price: "1.200" },
+  { icon: Workflow, titleKey: "automation", price: "500", from: true },
 ];
 
 const processSteps = [
@@ -85,7 +85,7 @@ const portfolioItems = [
   },
 ];
 
-const comparisonRowKeys = ["timeline", "cost", "quality", "availability", "revisions", "scalability", "automation"] as const;
+const comparisonRowKeys = ["timeline", "cost", "quality", "availability", "revisions", "scalability", "automation", "agents"] as const;
 
 export default function Home() {
   const t = useTranslations();

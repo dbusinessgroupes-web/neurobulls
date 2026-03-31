@@ -54,9 +54,9 @@ export function Footer() {
               <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualStarter")}</Link>
               <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualPro")}</Link>
               <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualPremium")}</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceWhatsapp")}</Link>
               <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVoice")}</Link>
               <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceAgent")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceAutomation")}</Link>
             </nav>
           </div>
 
