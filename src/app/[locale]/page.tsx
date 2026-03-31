@@ -50,8 +50,8 @@ const serviceCards = [
   { icon: Camera, titleKey: "visualStarter", price: "350" },
   { icon: Target, titleKey: "visualPro", price: "950", popular: true },
   { icon: Sparkles, titleKey: "visualPremium", price: "1.900" },
-  { icon: Phone, titleKey: "voice", price: "750" },
-  { icon: Brain, titleKey: "agent", price: "1.200" },
+  { icon: Phone, titleKey: "voice", price: "950" },
+  { icon: Brain, titleKey: "agent", price: "1.500" },
   { icon: Workflow, titleKey: "automation", price: "500", from: true },
 ];
 

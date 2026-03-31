@@ -83,21 +83,20 @@
         "6 videos cortos + 3 largos (hasta 5 min)",
         "Estrategia con KPIs y reporting",
         "Gestión de 4 redes sociales (30 posts/mes)",
-        "Revisiones ilimitadas",
-        "Entrega en 48h",
-        "Manager de cuenta dedicado"
+        "5 revisiones incluidas",
+        "Entrega en 48h"
       ]
     },
     "enterprise": {
       "name": "Enterprise",
-      "description": "Nivel enterprise. Equipo dedicado, producción ilimitada, SLAs personalizados.",
+      "description": "Nivel enterprise. Producción ilimitada, SLAs personalizados, soporte prioritario.",
       "price": "€4.997",
       "features": [
         "Modelos IA ilimitados",
         "Producción ilimitada",
         "Video ilimitado (hasta 10 min)",
         "Estrategia omnicanal con A/B testing",
-        "Director creativo dedicado",
+        "Dirección creativa personalizada",
         "SLA de respuesta 12h",
         "Workshops trimestrales de marca",
         "Integraciones personalizadas"
@@ -140,11 +139,11 @@
       },
       {
         "q": "¿Y si no me gusta el resultado?",
-        "a": "Cada entrega incluye revisiones (1 en Starter, 3 en Pro, ilimitadas en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega."
+        "a": "Cada entrega incluye revisiones (1 en Starter, 3 en Pro, 5 en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega."
       },
       {
         "q": "¿Puedo cancelar?",
-        "a": "Sí, puedes cancelar en cualquier momento. Sin permanencia. Los servicios individuales se pagan por proyecto."
+        "a": "Los servicios visuales se pagan por proyecto, sin permanencia. Los servicios de automatización tienen un compromiso mínimo de 3 meses para garantizar una configuración y optimización adecuadas."
       },
       {
         "q": "¿Qué es un agente IA con memoria (RAG)?",
@@ -155,8 +154,8 @@
         "a": "Sí. Utilizamos tecnología de voz de última generación que produce un habla natural e indistinguible de una persona real. Tus clientes no notarán la diferencia. Además, el asistente puede transferir la llamada a un humano en cualquier momento si la situación lo requiere."
       },
       {
-        "q": "¿Quién paga el hosting y las APIs?",
-        "a": "Nosotros. La cuota mensual incluye todo: hosting del servidor, APIs de inteligencia artificial, mantenimiento, actualizaciones y soporte técnico. Tú pagas una cuota fija mensual y te olvidas de la infraestructura."
+        "q": "¿Qué costes adicionales hay?",
+        "a": "La configuración y el mantenimiento mensual incluyen todo nuestro trabajo: diseño, programación, entrenamiento del agente, soporte técnico y optimización continua. Los costes de APIs externas (como OpenAI o ElevenLabs) van a cargo del cliente, conectados a su propia cuenta. Esto suele ser entre 15€ y 50€ al mes dependiendo del volumen de uso. Te ayudamos a configurarlo todo."
       },
       {
         "q": "¿Puedo combinar servicios visuales con automatización?",
@@ -224,7 +223,7 @@
       },
       "review": {
         "title": "Revisión y Ajuste",
-        "description": "Itera con variaciones ilimitadas hasta que cada detalle sea perfecto."
+        "description": "Itera con variaciones hasta que cada detalle sea perfecto."
       },
       "launch": {
         "title": "Entrega y Lanzamiento",
@@ -337,11 +336,11 @@
         "visualStarter": "Visual Starter (350€)",
         "visualPro": "Visual Pro (950€)",
         "visualPremium": "Visual Premium (1.900€)",
-        "voice": "Asistente de Voz IA (750€ + 149€/mes)",
-        "agent": "Agente IA con Memoria (1.200€ + 199€/mes)",
-        "automation": "Automatización de Procesos (desde 500€/workflow)",
-        "packNegocio": "Pack Negocio (1.500€ + 149€/mes)",
-        "packTotal": "Pack Total (3.000€ + 249€/mes)",
+        "voice": "Asistente de Voz IA (950€ + 149€/mes)",
+        "agent": "Agente IA con Memoria (1.500€ + 199€/mes)",
+        "automation": "Automatización de Procesos (desde 500€/workflow + 99€/mes)",
+        "packNegocio": "Pack Negocio (1.600€ + 149€/mes)",
+        "packTotal": "Pack Total (3.500€ + 299€/mes)",
         "freeSample": "Imagen de prueba gratuita",
         "other": "Otro / Presupuesto personalizado"
       },

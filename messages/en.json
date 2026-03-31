@@ -83,21 +83,20 @@
         "6 short + 3 long videos (up to 5 min)",
         "Strategy with KPIs and reporting",
         "4 social media channels (30 posts/month)",
-        "Unlimited revisions",
-        "48h delivery",
-        "Dedicated account manager"
+        "5 revisions included",
+        "48h delivery"
       ]
     },
     "enterprise": {
       "name": "Enterprise",
-      "description": "Enterprise-grade. Dedicated team, unlimited production, custom SLAs.",
+      "description": "Enterprise-grade. Unlimited production, custom SLAs, priority support.",
       "price": "€4,997",
       "features": [
         "Unlimited AI models",
         "Unlimited production",
         "Unlimited video (up to 10 min)",
         "Omnichannel strategy with A/B testing",
-        "Dedicated creative director",
+        "Personalized creative direction",
         "12h response SLA",
         "Quarterly brand workshops",
         "Custom integrations"
@@ -140,11 +139,11 @@
       },
       {
         "q": "What if I don't like the result?",
-        "a": "Each delivery includes revisions (1 for Starter, 3 for Pro, unlimited for Premium). Every image passes our automated quality control before delivery."
+        "a": "Each delivery includes revisions (1 for Starter, 3 for Pro, 5 for Premium). Every image passes our automated quality control before delivery."
       },
       {
         "q": "Can I cancel?",
-        "a": "Yes, you can cancel at any time. No lock-in. Individual services are paid per project."
+        "a": "Visual services are paid per project with no lock-in. Automation services have a minimum 3-month commitment to ensure proper setup and optimization."
       },
       {
         "q": "What is an AI agent with memory (RAG)?",
@@ -155,8 +154,8 @@
         "a": "Yes. We use cutting-edge voice technology that produces natural speech indistinguishable from a real person. Your clients won't notice the difference. Plus, the assistant can transfer the call to a human at any time if the situation requires it."
       },
       {
-        "q": "Who pays for hosting and APIs?",
-        "a": "We do. The monthly fee includes everything: server hosting, AI APIs, maintenance, updates and technical support. You pay a fixed monthly fee and forget about infrastructure."
+        "q": "What additional costs are there?",
+        "a": "Setup and monthly maintenance include all our work: design, programming, agent training, technical support and ongoing optimization. External API costs (like OpenAI or ElevenLabs) are on the client's own account. This is typically €15-50/month depending on usage volume. We help you set everything up."
       },
       {
         "q": "Can I combine visual and automation services?",
@@ -224,7 +223,7 @@
       },
       "review": {
         "title": "Review & Refine",
-        "description": "Iterate with unlimited variations until every detail is perfect."
+        "description": "Iterate with variations until every detail is perfect."
       },
       "launch": {
         "title": "Deliver & Launch",
@@ -337,11 +336,11 @@
         "visualStarter": "Visual Starter (€350)",
         "visualPro": "Visual Pro (€950)",
         "visualPremium": "Visual Premium (€1,900)",
-        "voice": "AI Voice Assistant (€750 + €149/mo)",
-        "agent": "AI Agent with Memory (€1,200 + €199/mo)",
-        "automation": "Process Automation (from €500/workflow)",
-        "packNegocio": "Business Pack (€1,500 + €149/mo)",
-        "packTotal": "Total Pack (€3,000 + €249/mo)",
+        "voice": "AI Voice Assistant (€950 + €149/mo)",
+        "agent": "AI Agent with Memory (€1,500 + €199/mo)",
+        "automation": "Process Automation (from €500/workflow + €99/mo)",
+        "packNegocio": "Business Pack (€1,600 + €149/mo)",
+        "packTotal": "Total Pack (€3,500 + €299/mo)",
         "freeSample": "Free sample image",
         "other": "Other / Custom budget"
       },
