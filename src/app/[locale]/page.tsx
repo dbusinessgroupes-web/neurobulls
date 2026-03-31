@@ -13,11 +13,7 @@ import {
   Rocket,
   ChevronDown,
   Check,
-  X,
   ArrowRight,
-  DollarSign,
-  Clock,
-  Shield,
   MessageSquare,
   Phone,
   Bot,
@@ -89,28 +85,7 @@ const portfolioItems = [
   },
 ];
 
-const comparisonRowKeys = ["timeline", "cost", "variations", "availability"] as const;
-
-const socialProofCards = [
-  {
-    icon: DollarSign,
-    stat: "90%",
-    en: "Average savings in visual production",
-    es: "De ahorro medio en producción visual",
-  },
-  {
-    icon: Clock,
-    stat: "48h",
-    en: "Delivery on premium plans",
-    es: "Entrega en planes premium",
-  },
-  {
-    icon: Shield,
-    stat: "100%",
-    en: "Commercial license on all content",
-    es: "Licencia comercial en todo el contenido",
-  },
-];
+const comparisonRowKeys = ["timeline", "cost", "quality", "availability", "revisions", "scalability", "automation"] as const;
 
 export default function Home() {
   const t = useTranslations();
@@ -184,57 +159,36 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-6">
             <Card className="border-border bg-card">
               <CardContent className="grid grid-cols-2 lg:grid-cols-4 gap-8 p-8 lg:p-12">
-                {[
-                  { value: 90, suffix: "%", label: t("stats.cost") },
-                  { value: 48, suffix: "h", label: t("stats.delivery") },
-                  { value: 100, suffix: "%", label: t("stats.rights") },
-                  { value: 4, suffix: "K", label: t("stats.risk") },
-                ].map((stat, i) => (
-                  <div key={i} className="text-center">
-                    <div className="text-4xl font-bold text-nb-gold">
-                      <AnimatedCounter target={stat.value} />
-                      {stat.suffix}
-                    </div>
-                    <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
+                {/* Stat 1: 85% */}
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-nb-gold">
+                    <AnimatedCounter target={85} />%
                   </div>
-                ))}
+                  <p className="mt-2 text-sm text-muted-foreground">{t("stats.cost")}</p>
+                </div>
+                {/* Stat 2: 48h */}
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-nb-gold">
+                    <AnimatedCounter target={48} />h
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">{t("stats.delivery")}</p>
+                </div>
+                {/* Stat 3: 24/7 — plain text, not AnimatedCounter */}
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-nb-gold">
+                    <span>24/7</span>
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">{t("stats.availability")}</p>
+                </div>
+                {/* Stat 4: 0€ */}
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-nb-gold">
+                    <AnimatedCounter target={0} />&euro;
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">{t("stats.risk")}</p>
+                </div>
               </CardContent>
             </Card>
-          </div>
-        </section>
-
-        {/* ─── Social Proof ─── */}
-        <section className="py-24 lg:py-32 px-6">
-          <div className="mx-auto max-w-6xl">
-            <ScrollReveal>
-              <div className="text-center mb-16">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {locale === "es"
-                    ? "Por Qué Las Marcas Eligen NeuroBulls"
-                    : "Why Brands Choose NeuroBulls"}
-                </h2>
-              </div>
-            </ScrollReveal>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {socialProofCards.map((card, i) => (
-                <ScrollReveal key={i} delay={i * 0.1}>
-                  <Card className="border-border bg-card text-center h-full">
-                    <CardContent className="p-8 flex flex-col items-center">
-                      <div className="w-14 h-14 rounded-2xl bg-nb-gold/10 flex items-center justify-center mb-6">
-                        <card.icon className="h-7 w-7 text-nb-gold" />
-                      </div>
-                      <span className="text-4xl font-bold text-nb-gold mb-3">
-                        {card.stat}
-                      </span>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {locale === "es" ? card.es : card.en}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </ScrollReveal>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -270,12 +224,17 @@ export default function Home() {
                         {(service as { from?: boolean }).from && <span className="text-sm font-normal text-muted-foreground mr-1">{t("services.from")}</span>}
                         &euro;{service.price}
                       </p>
-                      <p className="text-xs text-muted-foreground/60 line-through mb-1">
-                        {t(`services.${service.titleKey}.traditional`)}
-                      </p>
                       <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                         {t(`services.${service.titleKey}.description`)}
                       </p>
+                      <div className="mt-4">
+                        <Link href="/services">
+                          <Button variant="outline" size="sm" className="group/btn">
+                            {t("services.viewMore")}
+                            <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
+                          </Button>
+                        </Link>
+                      </div>
                     </CardContent>
                   </Card>
                 </ScrollReveal>
@@ -385,9 +344,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ─── Comparison Table ─── */}
+        {/* ─── Comparison Table — "Why NeuroBulls?" ─── */}
         <section className="py-24 lg:py-32 px-6">
-          <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-5xl">
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
@@ -397,53 +356,48 @@ export default function Home() {
             </ScrollReveal>
 
             <ScrollReveal>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Traditional Agency */}
-                <Card className="border-border bg-card/50 opacity-75">
-                  <CardContent className="p-8">
-                    <h3 className="text-xl font-semibold text-muted-foreground mb-8">
+              <Card className="border-border bg-card overflow-hidden">
+                <CardContent className="p-0">
+                  {/* Table header */}
+                  <div className="grid grid-cols-4 gap-4 px-6 py-4 border-b border-border bg-muted/30">
+                    <div className="text-sm font-semibold text-muted-foreground" />
+                    <div className="text-sm font-semibold text-muted-foreground text-center">
+                      {t("comparison.diy.label")}
+                    </div>
+                    <div className="text-sm font-semibold text-muted-foreground text-center">
                       {t("comparison.traditional.label")}
-                    </h3>
-                    <div className="space-y-6">
-                      {comparisonRowKeys.map((key) => (
-                        <div key={key} className="flex items-center justify-between">
-                          <span className="text-sm text-muted-foreground">
-                            {t(`comparison.rows.${key}`)}
-                          </span>
-                          <div className="flex items-center gap-2">
-                            <X className="h-4 w-4 text-muted-foreground/50" />
-                            <span className="text-sm text-muted-foreground">
-                              {t(`comparison.traditional.${key}`)}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
                     </div>
-                  </CardContent>
-                </Card>
+                    <div className="text-sm font-semibold text-nb-gold text-center">
+                      NeuroBulls
+                    </div>
+                  </div>
 
-                {/* NeuroBulls */}
-                <Card className="border-nb-red bg-card">
-                  <CardContent className="p-8">
-                    <h3 className="text-xl font-semibold mb-8">{t("comparison.neurobulls.label")}</h3>
-                    <div className="space-y-6">
-                      {comparisonRowKeys.map((key) => (
-                        <div key={key} className="flex items-center justify-between">
-                          <span className="text-sm text-muted-foreground">
-                            {t(`comparison.rows.${key}`)}
-                          </span>
-                          <div className="flex items-center gap-2">
-                            <Check className="h-4 w-4 text-nb-gold" />
-                            <span className="text-sm font-semibold text-nb-gold">
-                              {t(`comparison.neurobulls.${key}`)}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
+                  {/* Rows */}
+                  {comparisonRowKeys.map((key, i) => (
+                    <div
+                      key={key}
+                      className={`grid grid-cols-4 gap-4 px-6 py-4 items-center ${
+                        i < comparisonRowKeys.length - 1 ? "border-b border-border" : ""
+                      }`}
+                    >
+                      <div className="text-sm font-medium">
+                        {t(`comparison.rows.${key}`)}
+                      </div>
+                      <div className="text-center text-sm text-muted-foreground/60">
+                        {t(`comparison.diy.${key}`)}
+                      </div>
+                      <div className="text-center text-sm text-muted-foreground/60">
+                        {t(`comparison.traditional.${key}`)}
+                      </div>
+                      <div className="text-center">
+                        <span className="text-sm font-semibold text-nb-gold">
+                          {t(`comparison.neurobulls.${key}`)}
+                        </span>
+                      </div>
                     </div>
-                  </CardContent>
-                </Card>
-              </div>
+                  ))}
+                </CardContent>
+              </Card>
             </ScrollReveal>
           </div>
         </section>
@@ -496,8 +450,8 @@ export default function Home() {
                   <p className="text-sm text-muted-foreground mb-4">CEO & Founder</p>
                   <p className="text-muted-foreground leading-relaxed">
                     {locale === "es"
-                      ? "Emprendedor y visionario en la intersección de marketing e inteligencia artificial. Fundé NeuroBulls con una misión clara: democratizar la producción visual de alta calidad para marcas de todos los tamaños. Nuestra tecnología genera contenido indistinguible de la realidad, a una fracción del coste y en una fracción del tiempo."
-                      : "Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production for brands of all sizes. Our technology generates content indistinguishable from reality, at a fraction of the cost and in a fraction of the time."}
+                      ? "Emprendedor y visionario en la intersección de marketing e inteligencia artificial. Fundé NeuroBulls con una misión clara: democratizar la producción visual de alta calidad y la automatización inteligente para negocios de todos los tamaños. Nuestra tecnología genera contenido indistinguible de la realidad y automatiza procesos para que tu negocio funcione 24/7."
+                      : "Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production and intelligent automation for businesses of all sizes. Our technology generates content indistinguishable from reality and automates processes so your business runs 24/7."}
                   </p>
                 </div>
               </div>
@@ -516,11 +470,14 @@ export default function Home() {
           <div className="mx-auto max-w-4xl text-center">
             <ScrollReveal>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
-                {t("cta.title")}{" "}
-                <span className="text-nb-red">{t("cta.titleHighlight")}</span>
+                {t("cta.title")}
               </h2>
-              <div className="mt-10">
+              <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                {t("cta.subtitle")}
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/contact"><Button size="lg" className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg">{t("cta.button")}</Button></Link>
+                <Link href="/work"><Button size="lg" variant="outline" className="px-10 py-6 text-lg">{t("cta.buttonSecondary")}</Button></Link>
               </div>
             </ScrollReveal>
           </div>

@@ -7,51 +7,46 @@
     "startProject": "Start a Project"
   },
   "hero": {
-    "title": "PREMIUM VISUAL PRODUCTION WITH AI",
-    "subtitle": "Million-dollar agency quality, accessible to any brand.",
+    "title": "YOUR BUSINESS, POWERED BY AI",
+    "subtitle": "Elite visual production and intelligent automation. Everything you need to scale your business, in one place.",
     "cta": "Request free sample image",
     "ctaSecondary": "View services"
   },
   "stats": {
-    "cost": "Savings vs traditional production",
-    "delivery": "Average delivery time",
-    "rights": "Commercial rights included",
-    "risk": "Resolution on all deliverables"
+    "cost": "Average savings vs traditional methods",
+    "delivery": "Minimum delivery time",
+    "availability": "Availability of our automations",
+    "risk": "Risk — satisfaction guarantee"
   },
   "services": {
     "title": "Our Services",
     "subtitle": "Everything your business needs. Visual production and intelligent automation.",
     "popular": "Most Popular",
     "from": "From",
+    "viewMore": "Learn more",
     "visualStarter": {
       "title": "Visual Starter",
-      "description": "5 professional photos with editorial quality indistinguishable from real photography.",
-      "traditional": "€800-2,000"
+      "description": "5 professional photos in 48h"
     },
     "visualPro": {
       "title": "Visual Pro",
-      "description": "15 professional photos + 1 edited reel. Everything you need for your social media.",
-      "traditional": "€2,000-5,000"
+      "description": "15 photos + reel + AI model"
     },
     "visualPremium": {
       "title": "Visual Premium",
-      "description": "30 photos + 3 reels + exclusive AI model + personalized content strategy.",
-      "traditional": "€5,000-15,000"
+      "description": "Complete campaign with strategy"
     },
     "whatsapp": {
-      "title": "WhatsApp Assistant",
-      "description": "Chatbot that responds to your clients 24/7, takes orders and manages reservations.",
-      "traditional": "€3,000-8,000"
+      "title": "24/7 Assistant",
+      "description": "Chatbot for WhatsApp and web"
     },
     "voice": {
-      "title": "Voice Assistant",
-      "description": "Answers calls automatically with natural voice indistinguishable from a real person.",
-      "traditional": "€5,000-15,000"
+      "title": "AI Voice",
+      "description": "Answers calls like a real person"
     },
     "agent": {
       "title": "AI Agent",
-      "description": "AI agent trained for your business, connected to your tools.",
-      "traditional": "€10,000-30,000"
+      "description": "Your custom digital employee"
     },
     "exploreAll": "Explore All Services"
   },
@@ -145,7 +140,7 @@
       },
       {
         "q": "What if I don't like the result?",
-        "a": "Each delivery includes revisions (3 for Pro, unlimited for Premium). Every image passes our automated quality control before delivery."
+        "a": "Each delivery includes revisions (1 for Starter, 3 for Pro, unlimited for Premium). Every image passes our automated quality control before delivery."
       },
       {
         "q": "Can I cancel?",
@@ -161,7 +156,7 @@
       },
       {
         "q": "Can I combine visual and automation services?",
-        "a": "Yes. In fact, our combined packs offer a 20% discount over individual prices. It's the most efficient way to fully digitize your business."
+        "a": "Yes. Our combined packs offer significant savings over individual prices. It's the most efficient way to fully digitize your business."
       }
     ]
   },
@@ -174,32 +169,32 @@
       "vanguardFashion": {
         "title": "Fashion editorial campaign",
         "description": "Complete campaign with AI models for Spring/Summer collection. 120 images, 8 videos, 3 AI models.",
-        "stats": "120 images • 8 videos • 3 AI models"
+        "stats": "120 images - 8 videos - 3 AI models"
       },
       "lumiereBeauty": {
         "title": "Luxury skincare launch",
         "description": "Luxury skincare launch campaign with hyperrealistic AI models in editorial settings.",
-        "stats": "80 images • 4 videos • 2 AI models"
+        "stats": "80 images - 4 videos - 2 AI models"
       },
       "techvisionPro": {
         "title": "Tech product launch",
         "description": "Product launch campaign featuring AI-generated tech ambassadors across digital platforms.",
-        "stats": "60 images • 6 videos • 4 AI models"
+        "stats": "60 images - 6 videos - 4 AI models"
       },
       "maisonElegance": {
         "title": "Luxury real estate marketing",
         "description": "Luxury real estate marketing with AI lifestyle models in architectural settings.",
-        "stats": "90 images • 3 videos • 5 AI models"
+        "stats": "90 images - 3 videos - 5 AI models"
       },
       "glowCosmetics": {
         "title": "Beauty social media strategy",
         "description": "Social media content strategy with AI beauty influencer generating 30 posts/month.",
-        "stats": "150 images • 12 reels • 1 AI influencer"
+        "stats": "150 images - 12 reels - 1 AI influencer"
       },
       "urbanTaste": {
         "title": "Restaurant chain rebranding",
         "description": "Restaurant chain rebranding with AI food photography and lifestyle content.",
-        "stats": "200 images • 5 videos • 6 AI models"
+        "stats": "200 images - 5 videos - 6 AI models"
       }
     },
     "filters": {
@@ -234,32 +229,52 @@
     }
   },
   "comparison": {
-    "title": "Traditional Agency vs NeuroBulls",
+    "title": "Why NeuroBulls?",
+    "diy": {
+      "label": "Do it yourself",
+      "timeline": "Weeks",
+      "cost": "Your time",
+      "quality": "Amateur",
+      "availability": "Your schedule",
+      "revisions": "—",
+      "scalability": "Impossible",
+      "automation": "No"
+    },
     "traditional": {
-      "label": "Traditional Agency",
-      "timeline": "4-8 weeks",
-      "cost": "€15,000+",
-      "variations": "Limited by budget",
-      "availability": "Schedule dependent"
+      "label": "Traditional agency",
+      "timeline": "2-4 weeks",
+      "cost": "Thousands of €",
+      "quality": "Professional",
+      "availability": "Their schedule",
+      "revisions": "Limited & expensive",
+      "scalability": "Slow & expensive",
+      "automation": "No"
     },
     "neurobulls": {
       "label": "NeuroBulls",
-      "timeline": "48 hours",
-      "cost": "From €397",
-      "variations": "Unlimited",
-      "availability": "24/7"
+      "timeline": "48h - 7 days",
+      "cost": "From €300",
+      "quality": "Professional",
+      "availability": "24/7",
+      "revisions": "Included",
+      "scalability": "Instant",
+      "automation": "Included"
     },
     "rows": {
       "timeline": "Timeline",
-      "cost": "Cost per campaign",
-      "variations": "Variations",
-      "availability": "Availability"
+      "cost": "Investment",
+      "quality": "Quality",
+      "availability": "Availability",
+      "revisions": "Revisions",
+      "scalability": "Scalability",
+      "automation": "Automation"
     }
   },
   "cta": {
-    "title": "Your next campaign doesn't need a casting call.",
-    "titleHighlight": "It needs NeuroBulls.",
-    "button": "Start Your Project"
+    "title": "Ready to transform your business?",
+    "subtitle": "Start with a free sample image or tell us what you need.",
+    "button": "Request free sample",
+    "buttonSecondary": "View portfolio"
   },
   "about": {
     "title": "About NeuroBulls",
@@ -270,40 +285,40 @@
     },
     "founder": {
       "title": "Founded by D Business Group ES",
-      "description": "We believe AI is not just the future of marketing — it is the present. Our mission is to make hyperrealistic AI content accessible to every brand, eliminating the barriers of traditional production while delivering results that are indistinguishable from reality.",
+      "description": "We believe AI is not just the future of marketing — it is the present. Our mission is to make hyperrealistic AI content and intelligent automation accessible to every business, eliminating the barriers of traditional production and operations.",
       "location": "Spain"
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We believe the future of marketing is AI-native. NeuroBulls exists to make that future accessible to every brand — delivering campaigns with hyperrealistic AI models that are faster, more affordable, and infinitely more scalable than traditional production."
+      "description": "We believe the future of business is AI-native. NeuroBulls exists to make that future accessible to every brand — delivering elite visual production and intelligent automation that are faster, more affordable, and infinitely more scalable than traditional methods."
     },
     "technology": {
       "title": "Our Technology",
-      "description": "We leverage cutting-edge generative AI to create photorealistic models that are indistinguishable from real people. Our proprietary pipeline ensures consistency across hundreds of images and videos — the same AI model, the same identity, infinite scenarios."
+      "description": "We leverage cutting-edge generative AI to create photorealistic content indistinguishable from reality and automations that run 24/7. Our proprietary pipeline ensures consistency across hundreds of images and videos, and our AI agents integrate directly with your business tools."
     },
     "advantages": {
-      "title": "Why AI Marketing?",
+      "title": "Why AI?",
       "cost": {
         "title": "60-85% Cost Savings",
-        "description": "No models, no studios, no stylists. Digital production at a fraction of the cost."
+        "description": "No models, no studios, no extra staff. Digital production and automation at a fraction of the cost."
       },
       "speed": {
         "title": "10x Faster Delivery",
-        "description": "Complete campaigns in days, not weeks. React to trends in 24 hours."
+        "description": "Complete campaigns in days, not weeks. Automations running in 5-7 days."
       },
       "consistency": {
         "title": "Perfect Consistency",
-        "description": "Your AI model never ages, never changes. Same identity across 1000 campaigns."
+        "description": "Your AI model never ages, never changes. Your automations never get tired, never fail."
       },
       "scale": {
         "title": "Infinite Scalability",
-        "description": "Generate 100 variations for A/B testing at the cost of one. Adapt to any market instantly."
+        "description": "Generate 100 variations at the cost of one. Serve 1000 customers a day without hiring staff."
       }
     }
   },
   "contact": {
     "title": "Let's Create Together",
-    "subtitle": "Tell us about your project and we'll craft a tailored AI marketing solution.",
+    "subtitle": "Tell us about your project and we'll craft a tailored solution.",
     "form": {
       "name": "Full Name",
       "email": "Email Address",
@@ -314,11 +329,11 @@
         "visualStarter": "Visual Starter (€300)",
         "visualPro": "Visual Pro (€900)",
         "visualPremium": "Visual Premium (€1,800)",
-        "whatsapp": "WhatsApp Assistant (€500 + €100/mo)",
-        "voice": "Voice Assistant (€750 + €150/mo)",
+        "whatsapp": "WhatsApp Assistant (€500 + €97/mo)",
+        "voice": "Voice Assistant (€750 + €147/mo)",
         "agent": "Custom AI Agent (from €1,500)",
-        "packNegocio": "Business Pack (€1,200 + €100/mo)",
-        "packTotal": "Total Pack (€2,500 + €200/mo)",
+        "packNegocio": "Business Pack (€1,200 + €97/mo)",
+        "packTotal": "Total Pack (€2,500 + €197/mo)",
         "freeSample": "Free sample image",
         "other": "Other / Custom budget"
       },

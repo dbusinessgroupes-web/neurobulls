@@ -7,51 +7,46 @@
     "startProject": "Iniciar Proyecto"
   },
   "hero": {
-    "title": "PRODUCCIÓN VISUAL PREMIUM CON IA",
-    "subtitle": "La calidad de una agencia de millones, accesible para cualquier marca.",
+    "title": "TU NEGOCIO, POTENCIADO CON IA",
+    "subtitle": "Produccion visual de elite y automatizacion inteligente. Todo lo que necesitas para escalar tu negocio, en un solo sitio.",
     "cta": "Solicitar imagen de prueba gratis",
     "ctaSecondary": "Ver servicios"
   },
   "stats": {
-    "cost": "Ahorro vs producción tradicional",
-    "delivery": "Plazo medio de entrega",
-    "rights": "Derechos comerciales incluidos",
-    "risk": "Resolución en todos los entregables"
+    "cost": "Ahorro medio vs metodos tradicionales",
+    "delivery": "Plazo minimo de entrega",
+    "availability": "Disponibilidad de nuestras automatizaciones",
+    "risk": "Riesgo — garantia de satisfaccion"
   },
   "services": {
     "title": "Nuestros Servicios",
     "subtitle": "Todo lo que tu negocio necesita. Produccion visual y automatizacion inteligente.",
     "popular": "Mas Popular",
     "from": "Desde",
+    "viewMore": "Ver mas",
     "visualStarter": {
       "title": "Visual Starter",
-      "description": "5 fotos profesionales con calidad editorial indistinguible de fotografia real.",
-      "traditional": "800-2.000€"
+      "description": "5 fotos profesionales en 48h"
     },
     "visualPro": {
       "title": "Visual Pro",
-      "description": "15 fotos profesionales + 1 reel editado. Todo lo que necesitas para tus redes.",
-      "traditional": "2.000-5.000€"
+      "description": "15 fotos + reel + modelo IA"
     },
     "visualPremium": {
       "title": "Visual Premium",
-      "description": "30 fotos + 3 reels + modelo IA exclusivo + estrategia de contenido personalizada.",
-      "traditional": "5.000-15.000€"
+      "description": "Campana completa con estrategia"
     },
     "whatsapp": {
-      "title": "Asistente WhatsApp",
-      "description": "Chatbot que responde a tus clientes 24/7, toma pedidos y gestiona reservas.",
-      "traditional": "3.000-8.000€"
+      "title": "Asistente 24/7",
+      "description": "Chatbot para WhatsApp y web"
     },
     "voice": {
-      "title": "Asistente de Voz",
-      "description": "Atiende llamadas automaticamente con voz natural indistinguible de una persona.",
-      "traditional": "5.000-15.000€"
+      "title": "Voz IA",
+      "description": "Atiende llamadas como una persona"
     },
     "agent": {
       "title": "Agente IA",
-      "description": "Agente de IA entrenado para tu negocio, conectado a tus herramientas.",
-      "traditional": "10.000-30.000€"
+      "description": "Tu empleado digital personalizado"
     },
     "exploreAll": "Explorar Todos los Servicios"
   },
@@ -60,22 +55,22 @@
     "subtitle": "Precios transparentes. Sin costes ocultos. Resultados premium.",
     "monthly": "/mes",
     "from": "Desde",
-    "popular": "Más Popular",
+    "popular": "Mas Popular",
     "getStarted": "Empezar",
     "contactUs": "Contactar",
     "growth": {
       "name": "Growth",
-      "description": "Para marcas en crecimiento listas para escalar su producción de contenido con IA.",
+      "description": "Para marcas en crecimiento listas para escalar su produccion de contenido con IA.",
       "price": "€1.497",
       "features": [
         "3 modelos IA personalizados",
-        "40 imágenes editoriales/mes",
-        "3 vídeos cortos + 1 largo (hasta 2 min)",
+        "40 imagenes editoriales/mes",
+        "3 videos cortos + 1 largo (hasta 2 min)",
         "Estrategia de contenido mensual",
-        "Gestión de 2 redes sociales (15 posts/mes)",
+        "Gestion de 2 redes sociales (15 posts/mes)",
         "Reporting mensual",
         "3 revisiones por entrega",
-        "Entrega en 3-5 días laborables"
+        "Entrega en 3-5 dias laborables"
       ]
     },
     "scale": {
@@ -84,10 +79,10 @@
       "price": "€2.997",
       "features": [
         "6 modelos IA personalizados",
-        "100 imágenes editoriales/mes",
-        "6 vídeos cortos + 3 largos (hasta 5 min)",
+        "100 imagenes editoriales/mes",
+        "6 videos cortos + 3 largos (hasta 5 min)",
         "Estrategia con KPIs y reporting",
-        "Gestión de 4 redes sociales (30 posts/mes)",
+        "Gestion de 4 redes sociales (30 posts/mes)",
         "Revisiones ilimitadas",
         "Entrega en 48h",
         "Manager de cuenta dedicado"
@@ -95,12 +90,12 @@
     },
     "enterprise": {
       "name": "Enterprise",
-      "description": "Nivel enterprise. Equipo dedicado, producción ilimitada, SLAs personalizados.",
+      "description": "Nivel enterprise. Equipo dedicado, produccion ilimitada, SLAs personalizados.",
       "price": "€4.997",
       "features": [
         "Modelos IA ilimitados",
-        "Producción ilimitada",
-        "Vídeo ilimitado (hasta 10 min)",
+        "Produccion ilimitada",
+        "Video ilimitado (hasta 10 min)",
         "Estrategia omnicanal con A/B testing",
         "Director creativo dedicado",
         "SLA de respuesta 12h",
@@ -114,14 +109,14 @@
     "comparisonNeurobulls": "Coste NeuroBulls",
     "comparisonPhotoTraditional": "€3.000 - €8.000",
     "comparisonPhotoNeurobulls": "Desde €297",
-    "comparisonPhotoLabel": "Sesión Fotográfica",
+    "comparisonPhotoLabel": "Sesion Fotografica",
     "comparisonVideoTraditional": "€5.000 - €20.000",
     "comparisonVideoNeurobulls": "Desde €497",
-    "comparisonVideoLabel": "Producción de Vídeo",
+    "comparisonVideoLabel": "Produccion de Video",
     "comparisonCampaignTraditional": "€15.000+",
     "comparisonCampaignNeurobulls": "Desde €797/mes",
-    "comparisonCampaignLabel": "Campaña Completa",
-    "ctaTitle": "¿Listo para transformar tu marketing?",
+    "comparisonCampaignLabel": "Campana Completa",
+    "ctaTitle": "Listo para transformar tu marketing?",
     "ctaButton": "Contactar"
   },
   "faq": {
@@ -145,7 +140,7 @@
       },
       {
         "q": "Y si no me gusta el resultado?",
-        "a": "Cada entrega incluye revisiones (3 en Pro, ilimitadas en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega."
+        "a": "Cada entrega incluye revisiones (1 en Starter, 3 en Pro, ilimitadas en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega."
       },
       {
         "q": "Puedo cancelar?",
@@ -161,105 +156,125 @@
       },
       {
         "q": "Puedo combinar servicios visuales con automatizacion?",
-        "a": "Si. De hecho, nuestros packs combinados ofrecen un 20% de descuento sobre el precio individual. Es la forma mas eficiente de digitalizar tu negocio completo."
+        "a": "Si. Nuestros packs combinados ofrecen un ahorro significativo sobre el precio individual. Es la forma mas eficiente de digitalizar tu negocio completo."
       }
     ]
   },
   "work": {
     "title": "Nuestro Trabajo",
-    "subtitle": "Demostraciones de nuestras capacidades. Tu próxima campaña empieza aquí.",
+    "subtitle": "Demostraciones de nuestras capacidades. Tu proxima campana empieza aqui.",
     "viewProject": "Ver Proyecto",
     "viewAll": "Ver Todo el Portfolio",
     "projects": {
       "vanguardFashion": {
-        "title": "Campaña editorial de moda",
-        "description": "Campaña completa con modelos IA para colección Primavera/Verano. 120 imágenes, 8 vídeos, 3 modelos IA.",
-        "stats": "120 imágenes • 8 vídeos • 3 modelos IA"
+        "title": "Campana editorial de moda",
+        "description": "Campana completa con modelos IA para coleccion Primavera/Verano. 120 imagenes, 8 videos, 3 modelos IA.",
+        "stats": "120 imagenes - 8 videos - 3 modelos IA"
       },
       "lumiereBeauty": {
         "title": "Lanzamiento skincare de lujo",
-        "description": "Campaña de lanzamiento de skincare de lujo con modelos IA hiperrealistas en entornos editoriales.",
-        "stats": "80 imágenes • 4 vídeos • 2 modelos IA"
+        "description": "Campana de lanzamiento de skincare de lujo con modelos IA hiperrealistas en entornos editoriales.",
+        "stats": "80 imagenes - 4 videos - 2 modelos IA"
       },
       "techvisionPro": {
         "title": "Lanzamiento producto tech",
-        "description": "Campaña de lanzamiento de producto con embajadores tech generados por IA en plataformas digitales.",
-        "stats": "60 imágenes • 6 vídeos • 4 modelos IA"
+        "description": "Campana de lanzamiento de producto con embajadores tech generados por IA en plataformas digitales.",
+        "stats": "60 imagenes - 6 videos - 4 modelos IA"
       },
       "maisonElegance": {
         "title": "Marketing inmobiliario de lujo",
-        "description": "Marketing inmobiliario de lujo con modelos IA lifestyle en entornos arquitectónicos.",
-        "stats": "90 imágenes • 3 vídeos • 5 modelos IA"
+        "description": "Marketing inmobiliario de lujo con modelos IA lifestyle en entornos arquitectonicos.",
+        "stats": "90 imagenes - 3 videos - 5 modelos IA"
       },
       "glowCosmetics": {
         "title": "Estrategia RRSS belleza",
         "description": "Estrategia de contenido en redes sociales con influencer IA de belleza generando 30 posts/mes.",
-        "stats": "150 imágenes • 12 reels • 1 influencer IA"
+        "stats": "150 imagenes - 12 reels - 1 influencer IA"
       },
       "urbanTaste": {
         "title": "Rebranding cadena restaurantes",
-        "description": "Rebranding de cadena de restaurantes con fotografía gastronómica IA y contenido lifestyle.",
-        "stats": "200 imágenes • 5 vídeos • 6 modelos IA"
+        "description": "Rebranding de cadena de restaurantes con fotografia gastronomica IA y contenido lifestyle.",
+        "stats": "200 imagenes - 5 videos - 6 modelos IA"
       }
     },
     "filters": {
       "all": "Todo",
       "fashion": "Moda",
       "beauty": "Belleza",
-      "tech": "Tecnología",
+      "tech": "Tecnologia",
       "realestate": "Inmobiliaria",
-      "food": "Alimentación"
+      "food": "Alimentacion"
     }
   },
   "process": {
-    "title": "Cómo Funciona",
-    "subtitle": "Del briefing al lanzamiento en días, no semanas.",
+    "title": "Como Funciona",
+    "subtitle": "Del briefing al lanzamiento en dias, no semanas.",
     "steps": {
       "brief": {
         "title": "Briefing",
-        "description": "Comparte tu visión, público objetivo y objetivos de campaña."
+        "description": "Comparte tu vision, publico objetivo y objetivos de campana."
       },
       "creation": {
-        "title": "Creación IA",
+        "title": "Creacion IA",
         "description": "Nuestra IA genera modelos hiperrealistas y contenido adaptado a tu marca."
       },
       "review": {
-        "title": "Revisión y Ajuste",
+        "title": "Revision y Ajuste",
         "description": "Itera con variaciones ilimitadas hasta que cada detalle sea perfecto."
       },
       "launch": {
         "title": "Entrega y Lanzamiento",
-        "description": "Recibe assets listos para producción optimizados para cada plataforma."
+        "description": "Recibe assets listos para produccion optimizados para cada plataforma."
       }
     }
   },
   "comparison": {
-    "title": "Agencia Tradicional vs NeuroBulls",
+    "title": "Por que NeuroBulls?",
+    "diy": {
+      "label": "Hacerlo tu",
+      "timeline": "Semanas",
+      "cost": "Tu tiempo",
+      "quality": "Amateur",
+      "availability": "Tu horario",
+      "revisions": "—",
+      "scalability": "Imposible",
+      "automation": "No"
+    },
     "traditional": {
-      "label": "Agencia Tradicional",
-      "timeline": "4-8 semanas",
-      "cost": "€15.000+",
-      "variations": "Limitadas por presupuesto",
-      "availability": "Dependiente de agenda"
+      "label": "Agencia tradicional",
+      "timeline": "2-4 semanas",
+      "cost": "Miles de €",
+      "quality": "Profesional",
+      "availability": "Su agenda",
+      "revisions": "Limitadas y caras",
+      "scalability": "Lenta y cara",
+      "automation": "No"
     },
     "neurobulls": {
       "label": "NeuroBulls",
-      "timeline": "48 horas",
-      "cost": "Desde €397",
-      "variations": "Ilimitadas",
-      "availability": "24/7"
+      "timeline": "48h - 7 dias",
+      "cost": "Desde 300€",
+      "quality": "Profesional",
+      "availability": "24/7",
+      "revisions": "Incluidas",
+      "scalability": "Inmediata",
+      "automation": "Incluida"
     },
     "rows": {
       "timeline": "Plazo",
-      "cost": "Coste por campaña",
-      "variations": "Variaciones",
-      "availability": "Disponibilidad"
+      "cost": "Inversion",
+      "quality": "Calidad",
+      "availability": "Disponibilidad",
+      "revisions": "Revisiones",
+      "scalability": "Escalabilidad",
+      "automation": "Automatizacion"
     }
   },
   "cta": {
-    "title": "Tu próxima campaña no necesita un casting.",
-    "titleHighlight": "Necesita NeuroBulls.",
-    "button": "Iniciar Tu Proyecto"
+    "title": "Listo para transformar tu negocio?",
+    "subtitle": "Empieza con una imagen de prueba gratuita o cuentanos que necesitas.",
+    "button": "Solicitar prueba gratis",
+    "buttonSecondary": "Ver portfolio"
   },
   "about": {
     "title": "Sobre NeuroBulls",
@@ -270,55 +285,55 @@
     },
     "founder": {
       "title": "Fundada por D Business Group ES",
-      "description": "Creemos que la IA no es solo el futuro del marketing — es el presente. Nuestra misión es hacer que el contenido hiperrealista con IA sea accesible para cada marca, eliminando las barreras de la producción tradicional mientras entregamos resultados indistinguibles de la realidad.",
-      "location": "España"
+      "description": "Creemos que la IA no es solo el futuro del marketing — es el presente. Nuestra mision es hacer que el contenido hiperrealista con IA y la automatizacion inteligente sean accesibles para cada negocio, eliminando las barreras de la produccion y operacion tradicional.",
+      "location": "Espana"
     },
     "mission": {
-      "title": "Nuestra Misión",
-      "description": "Creemos que el futuro del marketing es nativo de IA. NeuroBulls existe para hacer ese futuro accesible a cada marca — entregando campañas con modelos IA hiperrealistas que son más rápidas, más asequibles e infinitamente más escalables que la producción tradicional."
+      "title": "Nuestra Mision",
+      "description": "Creemos que el futuro de los negocios es nativo de IA. NeuroBulls existe para hacer ese futuro accesible a cada marca — entregando produccion visual de elite y automatizacion inteligente que son mas rapidas, mas asequibles e infinitamente mas escalables que los metodos tradicionales."
     },
     "technology": {
-      "title": "Nuestra Tecnología",
-      "description": "Aprovechamos la IA generativa de vanguardia para crear modelos fotorrealistas indistinguibles de personas reales. Nuestro pipeline propietario garantiza consistencia en cientos de imágenes y vídeos — el mismo modelo IA, la misma identidad, infinitos escenarios."
+      "title": "Nuestra Tecnologia",
+      "description": "Aprovechamos la IA generativa de vanguardia para crear contenido fotorrealista indistinguible de la realidad y automatizaciones que funcionan 24/7. Nuestro pipeline propietario garantiza consistencia en cientos de imagenes y videos, y nuestros agentes IA se integran directamente con tus herramientas de negocio."
     },
     "advantages": {
-      "title": "¿Por Qué Marketing con IA?",
+      "title": "Por Que IA?",
       "cost": {
         "title": "60-85% Ahorro en Costes",
-        "description": "Sin modelos, sin estudios, sin estilistas. Producción digital a una fracción del coste."
+        "description": "Sin modelos, sin estudios, sin personal extra. Produccion y automatizacion digital a una fraccion del coste."
       },
       "speed": {
-        "title": "10x Más Rápido",
-        "description": "Campañas completas en días, no semanas. Reacciona a tendencias en 24 horas."
+        "title": "10x Mas Rapido",
+        "description": "Campanas completas en dias, no semanas. Automatizaciones en funcionamiento en 5-7 dias."
       },
       "consistency": {
         "title": "Consistencia Perfecta",
-        "description": "Tu modelo IA no envejece, no cambia. La misma identidad en 1000 campañas."
+        "description": "Tu modelo IA no envejece, no cambia. Tus automatizaciones no se cansan, no fallan."
       },
       "scale": {
         "title": "Escalabilidad Infinita",
-        "description": "Genera 100 variaciones para A/B testing al coste de una. Adáptate a cualquier mercado al instante."
+        "description": "Genera 100 variaciones al coste de una. Atiende 1000 clientes al dia sin contratar personal."
       }
     }
   },
   "contact": {
     "title": "Creemos Juntos",
-    "subtitle": "Cuéntanos sobre tu proyecto y diseñaremos una solución de marketing IA a medida.",
+    "subtitle": "Cuentanos sobre tu proyecto y disenaremos una solucion a medida.",
     "form": {
       "name": "Nombre Completo",
-      "email": "Correo Electrónico",
+      "email": "Correo Electronico",
       "company": "Empresa",
-      "service": "Servicio de Interés",
+      "service": "Servicio de Interes",
       "serviceOptions": {
         "default": "Selecciona un servicio",
         "visualStarter": "Visual Starter (300€)",
         "visualPro": "Visual Pro (900€)",
         "visualPremium": "Visual Premium (1.800€)",
-        "whatsapp": "Asistente WhatsApp (500€ + 100€/mes)",
-        "voice": "Asistente de Voz (750€ + 150€/mes)",
+        "whatsapp": "Asistente WhatsApp (500€ + 97€/mes)",
+        "voice": "Asistente de Voz (750€ + 147€/mes)",
         "agent": "Agente IA Personalizado (desde 1.500€)",
-        "packNegocio": "Pack Negocio (1.200€ + 100€/mes)",
-        "packTotal": "Pack Total (2.500€ + 200€/mes)",
+        "packNegocio": "Pack Negocio (1.200€ + 97€/mes)",
+        "packTotal": "Pack Total (2.500€ + 197€/mes)",
         "freeSample": "Imagen de prueba gratuita",
         "other": "Otro / Presupuesto personalizado"
       },
@@ -331,27 +346,27 @@
         "2000to5000": "2.000€ - 5.000€",
         "over5000": "Mas de 5.000€"
       },
-      "namePlaceholder": "Juan Pérez",
+      "namePlaceholder": "Juan Perez",
       "emailPlaceholder": "juan@empresa.com",
       "companyPlaceholder": "Nombre de tu empresa",
-      "message": "Cuéntanos sobre tu proyecto",
+      "message": "Cuentanos sobre tu proyecto",
       "messagePlaceholder": "Describe tu proyecto, objetivos y plazos...",
       "privacy": "Acepto la",
-      "privacyLink": "Política de Privacidad",
+      "privacyLink": "Politica de Privacidad",
       "submit": "Enviar Mensaje",
       "sending": "Enviando...",
-      "success": "¡Mensaje enviado con éxito! Te responderemos en menos de 24 horas.",
-      "successFallback": "También puedes escribirnos directamente a",
-      "error": "Algo salió mal. Inténtalo de nuevo o escríbenos directamente."
+      "success": "Mensaje enviado con exito! Te responderemos en menos de 24 horas.",
+      "successFallback": "Tambien puedes escribirnos directamente a",
+      "error": "Algo salio mal. Intentalo de nuevo o escribenos directamente."
     },
     "info": {
       "email": "neurobulls@gmail.com",
       "instagram": "@neurobulls",
-      "location": "Ubicación",
-      "locationValue": "España"
+      "location": "Ubicacion",
+      "locationValue": "Espana"
     },
     "cta": {
-      "text": "¿Prefieres email? Escríbenos directamente a"
+      "text": "Prefieres email? Escribenos directamente a"
     }
   },
   "footer": {
@@ -367,9 +382,9 @@
     "serviceAgent": "Agente IA",
     "legal": "Legal",
     "legalNotice": "Aviso Legal",
-    "privacy": "Política de Privacidad",
-    "cookies": "Política de Cookies",
-    "terms": "Términos y Condiciones",
+    "privacy": "Politica de Privacidad",
+    "cookies": "Politica de Cookies",
+    "terms": "Terminos y Condiciones",
     "contactTitle": "Contacto",
     "rights": "Todos los derechos reservados.",
     "poweredBy": "Impulsado por IA"
@@ -382,8 +397,8 @@
     "save": "Guardar Preferencias",
     "necessary": "Necesarias",
     "necessaryDesc": "Esenciales para el funcionamiento del sitio web.",
-    "analytics": "Analíticas",
-    "analyticsDesc": "Nos ayudan a entender cómo los visitantes usan nuestro sitio.",
+    "analytics": "Analiticas",
+    "analyticsDesc": "Nos ayudan a entender como los visitantes usan nuestro sitio.",
     "marketing": "Marketing",
     "marketingDesc": "Se utilizan para mostrar anuncios relevantes."
   }
