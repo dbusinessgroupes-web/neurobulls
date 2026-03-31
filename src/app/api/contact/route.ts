@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { name, email, company, service, budget, message } = body;
+    const { name, email, phone, company, service, budget, message } = body;
 
     if (!name || !email || !message) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
@@ -52,6 +52,7 @@ export async function POST(request: Request) {
 
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
+    const safePhone = phone ? escapeHtml(String(phone)) : '';
     const safeCompany = company ? escapeHtml(company) : '';
     const safeService = service ? escapeHtml(String(service)) : '';
     const safeBudget = budget ? escapeHtml(String(budget)) : '';
@@ -62,7 +63,7 @@ export async function POST(request: Request) {
       level: 'info',
       type: 'contact_form',
       timestamp: new Date().toISOString(),
-      name, email, company: company || '', service: service || '', budget: budget || '', message,
+      name, email, phone: phone || '', company: company || '', service: service || '', budget: budget || '', message,
     }));
 
     // Send via Resend to the account owner email (only verified recipient on free plan)
@@ -84,6 +85,7 @@ export async function POST(request: Request) {
                 <table style="width:100%;border-collapse:collapse;">
                   <tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;width:100px;">Nombre</td><td style="padding:8px 0;">${safeName}</td></tr>
                   <tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Email</td><td style="padding:8px 0;"><a href="mailto:${safeEmail}" style="color:#E31837;">${safeEmail}</a></td></tr>
+                  ${safePhone ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Teléfono</td><td style="padding:8px 0;"><a href="tel:${safePhone}" style="color:#E31837;">${safePhone}</a></td></tr>` : ''}
                   ${safeCompany ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Empresa</td><td style="padding:8px 0;">${safeCompany}</td></tr>` : ''}
                   ${safeService ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Servicio</td><td style="padding:8px 0;">${safeService}</td></tr>` : ''}
                   ${safeBudget ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Presupuesto</td><td style="padding:8px 0;">${safeBudget}</td></tr>` : ''}

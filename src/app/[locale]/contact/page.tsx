@@ -56,6 +56,7 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     company: "",
     service: "",
     budget: "",
@@ -92,6 +93,7 @@ export default function ContactPage() {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
+          phone: formData.phone,
           company: formData.company,
           service: formData.service,
           budget: formData.budget,
@@ -234,18 +236,33 @@ export default function ContactPage() {
                         />
                       </div>
 
-                      {/* Company */}
-                      <div className="space-y-2">
-                        <Label htmlFor="company">
-                          {t("contact.form.company")}
-                        </Label>
-                        <Input
-                          id="company"
-                          name="company"
-                          value={formData.company}
-                          onChange={handleChange}
-                          placeholder={t("contact.form.companyPlaceholder")}
-                        />
+                      {/* Company + Phone row */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="company">
+                            {t("contact.form.company")}
+                          </Label>
+                          <Input
+                            id="company"
+                            name="company"
+                            value={formData.company}
+                            onChange={handleChange}
+                            placeholder={t("contact.form.companyPlaceholder")}
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="phone">
+                            {locale === "es" ? "Teléfono" : "Phone"}
+                          </Label>
+                          <Input
+                            id="phone"
+                            name="phone"
+                            type="tel"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            placeholder={locale === "es" ? "+34 600 000 000" : "+1 (555) 000-0000"}
+                          />
+                        </div>
                       </div>
 
                       {/* Service */}
