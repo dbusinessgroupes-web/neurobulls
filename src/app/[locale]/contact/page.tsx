@@ -106,6 +106,7 @@ export default function ContactPage() {
         setFormData({
           name: "",
           email: "",
+          phone: "",
           company: "",
           service: "",
           budget: "",
