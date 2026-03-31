@@ -5,20 +5,17 @@ import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Camera,
-  Video,
   Target,
-  User,
-  Building2,
-  Shirt,
   Sparkles,
-  UtensilsCrossed,
-  Rocket,
   Check,
   ShieldCheck,
   Gift,
   Unlock,
   ChevronDown,
-  ArrowRight,
+  MessageSquare,
+  Phone,
+  Bot,
+  Package,
 } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/header";
@@ -48,279 +45,250 @@ const fadeUp = {
   },
 };
 
-const projectServices = [
+/* ─── Visual Production Tiers ─── */
+const visualTiers = [
   {
-    key: "photography",
-    slug: "fotografia-ia",
+    key: "starter",
     icon: Camera,
-    image: "/services/ai-photography.jpg",
-    priceEN: "€397",
-    priceES: "€397",
-    traditionalEN: "€3,000-8,000",
-    traditionalES: "€3.000-8.000",
-    titleEN: "Photography Pack (10 photos 4K)",
-    titleES: "Pack Fotografía (10 fotos 4K)",
-    descEN: "Complete editorial photo session. Hyperrealistic AI models indistinguishable from reality.",
-    descES: "Sesión fotográfica editorial completa. Modelos IA hiperrealistas indistinguibles de la realidad.",
+    priceES: "300",
+    priceEN: "300",
+    badge: null,
+    traditionalES: "800-2.000€",
+    traditionalEN: "€800-2,000",
+    featuresES: [
+      "5 fotos profesionales de tu negocio",
+      "Calidad editorial indistinguible de fotografía real",
+      "Entrega en 48 horas",
+      "Formatos para web, redes sociales y apps",
+      "Derechos comerciales ilimitados",
+      "Garantía de satisfacción total",
+    ],
+    featuresEN: [
+      "5 professional photos of your business",
+      "Editorial quality indistinguishable from real photography",
+      "48-hour delivery",
+      "Formats for web, social media and apps",
+      "Unlimited commercial rights",
+      "Full satisfaction guarantee",
+    ],
+    titleES: "Starter",
+    titleEN: "Starter",
+    buttonES: "Contratar",
+    buttonEN: "Get Started",
   },
   {
-    key: "reel",
-    slug: "video-ia",
-    icon: Video,
-    image: "/services/ai-video.jpg",
-    priceEN: "€597",
-    priceES: "€597",
-    traditionalEN: "€2,000-5,000",
-    traditionalES: "€2.000-5.000",
-    titleEN: "Video Reel (15-30s edited)",
-    titleES: "Vídeo Reel (15-30s editado)",
-    descEN: "Cinematic reel with AI actors, professional editing, color grading, music.",
-    descES: "Reel cinematográfico con actores IA, edición profesional, color grading, música.",
-  },
-  {
-    key: "spot",
-    slug: "video-ia",
-    icon: Video,
-    image: "/services/ai-video.jpg",
-    priceEN: "€997",
-    priceES: "€997",
-    traditionalEN: "€5,000-15,000",
-    traditionalES: "€5.000-15.000",
-    titleEN: "Video Spot (30-60s edited)",
-    titleES: "Vídeo Spot (30-60s editado)",
-    descEN: "Advertising spot with storyboard, multiple takes, voiceover and music.",
-    descES: "Spot publicitario con storyboard, múltiples tomas, voiceover y música.",
-  },
-  {
-    key: "model",
-    slug: "modelos-ia",
-    icon: User,
-    image: "/services/ai-models.jpg",
-    priceEN: "€797",
-    priceES: "€797",
-    traditionalEN: "€2,000-10,000/campaign",
-    traditionalES: "€2.000-10.000/campaña",
-    titleEN: "Exclusive AI Model",
-    titleES: "Modelo IA Exclusivo",
-    descEN: "Unique virtual person for your brand. Trained for perfect consistency. Unlimited use.",
-    descES: "Persona virtual única para tu marca. Entrenada para consistencia perfecta. Uso ilimitado.",
-  },
-  {
-    key: "campaign",
-    slug: "estrategia-campana-ia",
+    key: "pro",
     icon: Target,
-    image: "/services/ai-strategy.jpg",
-    priceEN: "€2,497",
-    priceES: "€2.497",
-    traditionalEN: "€15,000-50,000",
-    traditionalES: "€15.000-50.000",
-    titleEN: "Complete Campaign",
-    titleES: "Campaña Completa",
-    descEN: "Photos + video + strategy + art direction. Everything your brand needs in one package.",
-    descES: "Fotos + vídeo + estrategia + dirección de arte. Todo lo que tu marca necesita en un pack.",
-  },
-  {
-    key: "videoLong",
-    slug: "video-ia",
-    icon: Video,
-    image: "/services/ai-video.jpg",
-    priceEN: "€1,997",
-    priceES: "€1.997",
-    traditionalEN: "€10,000-30,000",
-    traditionalES: "€10.000-30.000",
-    titleEN: "Long Video (2-5 min)",
-    titleES: "Vídeo Largo (2-5 min)",
-    descEN: "Corporate video or YouTube content with multiple scenes, voiceover and editing.",
-    descES: "Vídeo corporativo o contenido YouTube con múltiples escenas, voiceover y edición.",
-  },
-];
-
-const sectorPacks = [
-  {
-    icon: Building2,
-    priceEN: "€697/property",
-    priceES: "€697/propiedad",
-    titleEN: "Real Estate Pack",
-    titleES: "Pack Inmobiliaria",
-    badgeEN: "Save 90% vs traditional staging",
-    badgeES: "Ahorra 90% vs staging tradicional",
-    featuresEN: [
-      "Virtual home staging (5 rooms)",
-      "10 photos with people",
-      "1 virtual renovation",
-      "30s video tour",
-      "Golden hour conversion",
-    ],
+    priceES: "900",
+    priceEN: "900",
+    badge: { es: "Mas Popular", en: "Most Popular" },
+    traditionalES: "2.000-5.000€",
+    traditionalEN: "€2,000-5,000",
     featuresES: [
-      "Home staging virtual (5 estancias)",
-      "10 fotos con personas",
-      "1 reforma virtual",
-      "Vídeo tour 30s",
-      "Cambio a golden hour",
+      "15 fotos profesionales",
+      "1 video reel de 15 segundos editado",
+      "Modelo IA exclusivo si se necesita",
+      "Entrega en 5 dias laborables",
+      "Formatos para TODAS las plataformas",
+      "3 revisiones incluidas",
     ],
-  },
-  {
-    icon: Shirt,
-    priceEN: "€1,497/collection",
-    priceES: "€1.497/colección",
-    titleEN: "Fashion/Retail Pack",
-    titleES: "Pack Moda/Retail",
-    badgeEN: "Fashion shoot costs €5,000-15,000",
-    badgeES: "Una sesión de moda cuesta €5.000-15.000",
     featuresEN: [
-      "2 exclusive AI models",
-      "20 lookbook photos",
-      "3 reels (15s)",
-      "E-commerce + social formats",
+      "15 professional photos",
+      "1 edited 15-second video reel",
+      "Exclusive AI model if needed",
+      "5 business day delivery",
+      "Formats for ALL platforms",
+      "3 revisions included",
     ],
-    featuresES: [
-      "2 modelos IA exclusivos",
-      "20 fotos lookbook",
-      "3 reels (15s)",
-      "Formatos ecommerce + redes",
-    ],
+    titleES: "Pro",
+    titleEN: "Pro",
+    buttonES: "Contratar",
+    buttonEN: "Get Started",
   },
   {
+    key: "premium",
     icon: Sparkles,
-    priceEN: "€997/launch",
-    priceES: "€997/lanzamiento",
-    titleEN: "Beauty/Cosmetics Pack",
-    titleES: "Pack Belleza/Cosmética",
-    badgeEN: "Hiring an influencer: €3,000-10,000",
-    badgeES: "Contratar influencer: €3.000-10.000",
-    featuresEN: [
-      "1 AI model (virtual influencer)",
-      "15 beauty shots with product",
-      "2 product reels",
-      "UGC-style content",
-    ],
+    priceES: "1.800",
+    priceEN: "1,800",
+    badge: null,
+    traditionalES: "5.000-15.000€",
+    traditionalEN: "€5,000-15,000",
     featuresES: [
-      "1 modelo IA (influencer virtual)",
-      "15 beauty shots con producto",
-      "2 reels de producto",
-      "Contenido estilo UGC",
-    ],
-  },
-  {
-    icon: UtensilsCrossed,
-    priceEN: "€797",
-    priceES: "€797",
-    titleEN: "Restaurant/Food Pack",
-    titleES: "Pack Restaurante/Food",
-    badgeEN: "Food photography: €2,000-4,000",
-    badgeES: "Food photography: €2.000-4.000",
-    featuresEN: [
-      "15 premium food photos",
-      "Delivery app photos",
-      "Complete visual menu",
-      "1 reel (15s)",
-    ],
-    featuresES: [
-      "15 fotos food premium",
-      "Fotos para apps de delivery",
-      "Menú visual completo",
-      "1 reel (15s)",
-    ],
-  },
-  {
-    icon: Rocket,
-    priceEN: "€1,297",
-    priceES: "€1.297",
-    titleEN: "Tech/Startup Pack",
-    titleES: "Pack Tech/Startup",
-    badgeEN: "Launch production: €8,000-20,000",
-    badgeES: "Producción lanzamiento: €8.000-20.000",
-    featuresEN: [
-      "15 product + lifestyle photos",
-      "2 product videos (15-30s)",
-      "Corporate avatar",
-      "Visual branding",
-    ],
-    featuresES: [
-      "15 fotos producto + lifestyle",
-      "2 vídeos de producto (15-30s)",
-      "Avatar corporativo",
-      "Branding visual",
-    ],
-  },
-];
-
-const monthlyPlans = [
-  {
-    key: "growth",
-    badge: true,
-    priceEN: "€1,497",
-    priceES: "€1.497",
-    titleEN: "Growth",
-    titleES: "Growth",
-    featuresEN: [
-      "30 editorial images/month",
-      "4 reels/month",
-      "2 social channels (20 posts/month)",
-      "1 AI model included",
-      "Monthly content strategy",
-      "Monthly reporting",
-      "3 revisions per delivery",
-      "3-5 day delivery",
-    ],
-    featuresES: [
-      "30 imágenes editoriales/mes",
-      "4 reels/mes",
-      "Gestión de 2 redes (20 posts/mes)",
-      "1 modelo IA incluido",
-      "Estrategia de contenido mensual",
-      "Reporting mensual",
-      "3 revisiones por entrega",
-      "Entrega en 3-5 días",
-    ],
-  },
-  {
-    key: "scale",
-    badge: false,
-    priceEN: "€2,997",
-    priceES: "€2.997",
-    titleEN: "Scale",
-    titleES: "Scale",
-    featuresEN: [
-      "80 editorial images/month",
-      "8 reels + 2 long videos",
-      "4 social channels (40 posts/month)",
-      "3 AI models included",
-      "Strategy with KPIs",
-      "Unlimited revisions",
-      "48h delivery",
-      "Dedicated manager",
-    ],
-    featuresES: [
-      "80 imágenes editoriales/mes",
-      "8 reels + 2 vídeos largos",
-      "Gestión de 4 redes (40 posts/mes)",
-      "3 modelos IA incluidos",
-      "Estrategia con KPIs",
+      "30 fotos profesionales",
+      "3 reels editados",
+      "Modelo IA exclusivo para tu marca",
+      "Estrategia de contenido personalizada",
+      "Entrega en 7 dias laborables",
       "Revisiones ilimitadas",
-      "Entrega en 48h",
       "Manager dedicado",
     ],
+    featuresEN: [
+      "30 professional photos",
+      "3 edited reels",
+      "Exclusive AI model for your brand",
+      "Personalized content strategy",
+      "7 business day delivery",
+      "Unlimited revisions",
+      "Dedicated manager",
+    ],
+    titleES: "Premium",
+    titleEN: "Premium",
+    buttonES: "Contratar",
+    buttonEN: "Get Started",
   },
 ];
 
+/* ─── Automation & AI Services ─── */
+const automationServices = [
+  {
+    key: "whatsapp",
+    icon: MessageSquare,
+    priceES: "500€ + 100€/mes",
+    priceEN: "€500 + €100/mo",
+    featuresES: [
+      "Chatbot que responde a tus clientes 24/7",
+      "Responde preguntas frecuentes automaticamente",
+      "Toma pedidos y reservas",
+      "Integrado con WhatsApp Business o tu web",
+      "Entrenado con la informacion de tu negocio",
+      "Setup en 5 dias",
+    ],
+    featuresEN: [
+      "Chatbot that responds to your clients 24/7",
+      "Answers frequently asked questions automatically",
+      "Takes orders and reservations",
+      "Integrated with WhatsApp Business or your website",
+      "Trained with your business information",
+      "Setup in 5 days",
+    ],
+    titleES: "Asistente WhatsApp/Web",
+    titleEN: "WhatsApp/Web Assistant",
+    buttonES: "Solicitar",
+    buttonEN: "Request",
+  },
+  {
+    key: "voice",
+    icon: Phone,
+    priceES: "750€ + 150€/mes",
+    priceEN: "€750 + €150/mo",
+    featuresES: [
+      "Atiende llamadas telefonicas automaticamente",
+      "Voz natural indistinguible de una persona",
+      "Gestiona reservas, citas y consultas",
+      "Disponible 24/7, nunca se cansa",
+      "Multiidioma (espanol, ingles, frances...)",
+      "Setup en 7 dias",
+    ],
+    featuresEN: [
+      "Answers phone calls automatically",
+      "Natural voice indistinguishable from a real person",
+      "Manages reservations, appointments and inquiries",
+      "Available 24/7, never gets tired",
+      "Multilingual (Spanish, English, French...)",
+      "Setup in 7 days",
+    ],
+    titleES: "Asistente de Voz IA",
+    titleEN: "AI Voice Assistant",
+    buttonES: "Solicitar",
+    buttonEN: "Request",
+  },
+  {
+    key: "agent",
+    icon: Bot,
+    priceES: "Desde 1.500€",
+    priceEN: "From €1,500",
+    featuresES: [
+      "Agente de IA entrenado para tu negocio",
+      "Conectado a tus herramientas (CRM, email, calendario)",
+      "Automatiza tareas repetitivas",
+      "Genera informes y analisis",
+      "Escala sin contratar personal",
+      "Solucion a medida",
+    ],
+    featuresEN: [
+      "AI agent trained for your business",
+      "Connected to your tools (CRM, email, calendar)",
+      "Automates repetitive tasks",
+      "Generates reports and analytics",
+      "Scale without hiring staff",
+      "Custom solution",
+    ],
+    titleES: "Agente IA Personalizado",
+    titleEN: "Custom AI Agent",
+    buttonES: "Contactar",
+    buttonEN: "Contact Us",
+  },
+];
+
+/* ─── Combined Packs ─── */
+const combinedPacks = [
+  {
+    key: "negocio",
+    priceES: "1.200€ + 100€/mes",
+    priceEN: "€1,200 + €100/mo",
+    badgeES: "Ahorra 20%",
+    badgeEN: "Save 20%",
+    titleES: "Pack Negocio",
+    titleEN: "Business Pack",
+    separatelyES: "1.400€",
+    separatelyEN: "€1,400",
+    includesES: [
+      "Pro Visual (15 fotos + 1 reel)",
+      "Asistente WhatsApp/Web",
+      "Setup completo en 7 dias",
+    ],
+    includesEN: [
+      "Pro Visual (15 photos + 1 reel)",
+      "WhatsApp/Web Assistant",
+      "Full setup in 7 days",
+    ],
+  },
+  {
+    key: "total",
+    priceES: "2.500€ + 200€/mes",
+    priceEN: "€2,500 + €200/mo",
+    badgeES: "Maximo Valor",
+    badgeEN: "Best Value",
+    titleES: "Pack Total",
+    titleEN: "Total Pack",
+    separatelyES: "3.050€",
+    separatelyEN: "€3,050",
+    includesES: [
+      "Premium Visual (30 fotos + 3 reels + modelo IA)",
+      "Asistente WhatsApp/Web",
+      "Asistente de Voz IA",
+      "Setup completo en 10 dias",
+    ],
+    includesEN: [
+      "Premium Visual (30 photos + 3 reels + AI model)",
+      "WhatsApp/Web Assistant",
+      "AI Voice Assistant",
+      "Full setup in 10 days",
+    ],
+  },
+];
+
+/* ─── Comparison Data ─── */
 const comparisonData = {
   en: [
-    { service: "Photo session (10 photos)", traditional: "€3,000-8,000", neurobulls: "€397", savings: "Up to 95%" },
-    { service: "Ad video (30-60s)", traditional: "€5,000-15,000", neurobulls: "€597-997", savings: "Up to 93%" },
-    { service: "Campaign model", traditional: "€2,000-10,000", neurobulls: "€797 (unlimited use)", savings: "Up to 92%" },
-    { service: "Real estate staging", traditional: "€3,000-8,000", neurobulls: "€697", savings: "Up to 91%" },
-    { service: "Complete campaign", traditional: "€15,000-50,000", neurobulls: "€2,497", savings: "Up to 95%" },
+    { service: "5 professional photos", traditional: "€800-2,000", neurobulls: "€300", savings: "Up to 85%" },
+    { service: "15 photos + video", traditional: "€2,000-5,000", neurobulls: "€900", savings: "Up to 82%" },
+    { service: "Full visual campaign", traditional: "€5,000-15,000", neurobulls: "€1,800", savings: "Up to 88%" },
+    { service: "WhatsApp chatbot 24/7", traditional: "€3,000-8,000", neurobulls: "€500 + €100/mo", savings: "Up to 85%" },
+    { service: "AI voice assistant", traditional: "€5,000-15,000", neurobulls: "€750 + €150/mo", savings: "Up to 85%" },
+    { service: "Custom AI agent", traditional: "€10,000-30,000", neurobulls: "From €1,500", savings: "Up to 85%" },
   ],
   es: [
-    { service: "Sesión fotográfica (10 fotos)", traditional: "€3.000-8.000", neurobulls: "€397", savings: "Hasta 95%" },
-    { service: "Vídeo publicitario (30-60s)", traditional: "€5.000-15.000", neurobulls: "€597-997", savings: "Hasta 93%" },
-    { service: "Modelo para campaña", traditional: "€2.000-10.000", neurobulls: "€797 (uso ilimitado)", savings: "Hasta 92%" },
-    { service: "Staging inmobiliario", traditional: "€3.000-8.000", neurobulls: "€697", savings: "Hasta 91%" },
-    { service: "Campaña completa", traditional: "€15.000-50.000", neurobulls: "€2.497", savings: "Hasta 95%" },
+    { service: "5 fotos profesionales", traditional: "800-2.000€", neurobulls: "300€", savings: "Hasta 85%" },
+    { service: "15 fotos + video", traditional: "2.000-5.000€", neurobulls: "900€", savings: "Hasta 82%" },
+    { service: "Campana visual completa", traditional: "5.000-15.000€", neurobulls: "1.800€", savings: "Hasta 88%" },
+    { service: "Chatbot WhatsApp 24/7", traditional: "3.000-8.000€", neurobulls: "500€ + 100€/mes", savings: "Hasta 85%" },
+    { service: "Asistente de voz IA", traditional: "5.000-15.000€", neurobulls: "750€ + 150€/mes", savings: "Hasta 85%" },
+    { service: "Agente IA personalizado", traditional: "10.000-30.000€", neurobulls: "Desde 1.500€", savings: "Hasta 85%" },
   ],
 };
 
+/* ─── Guarantees ─── */
 const guarantees = {
   en: [
     {
@@ -336,14 +304,14 @@ const guarantees = {
     {
       icon: Unlock,
       title: "No lock-in",
-      desc: "Project services: pay per project. Monthly plans: 3-month minimum.",
+      desc: "Project services: pay per project. Monthly plans: cancel anytime.",
     },
   ],
   es: [
     {
       icon: ShieldCheck,
-      title: "Satisfacción garantizada",
-      desc: "¿No estás satisfecho? Lo rehacemos sin coste adicional.",
+      title: "Satisfaccion garantizada",
+      desc: "No estas satisfecho? Lo rehacemos sin coste adicional.",
     },
     {
       icon: Gift,
@@ -353,11 +321,12 @@ const guarantees = {
     {
       icon: Unlock,
       title: "Sin permanencia",
-      desc: "Servicios por proyecto: pago por proyecto. Planes mensuales: 3 meses mínimo.",
+      desc: "Servicios por proyecto: pago por proyecto. Planes mensuales: cancela cuando quieras.",
     },
   ],
 };
 
+/* ─── FAQ ─── */
 const faqItems = {
   en: [
     {
@@ -366,7 +335,7 @@ const faqItems = {
     },
     {
       q: "How long does delivery take?",
-      a: "48h for Scale plans, 3-5 days for Growth. Individual services: 3-5 business days.",
+      a: "Starter: 48 hours. Pro: 5 business days. Premium: 7 business days. Automation services: 5-7 days for setup.",
     },
     {
       q: "Can I use the images commercially?",
@@ -378,37 +347,61 @@ const faqItems = {
     },
     {
       q: "What if I don't like the result?",
-      a: "Each delivery includes revisions (3 to unlimited depending on plan). Every image passes our automated quality control before delivery.",
+      a: "Each delivery includes revisions (3 for Pro, unlimited for Premium). Every image passes our automated quality control before delivery.",
     },
     {
       q: "Can I cancel my plan?",
-      a: "Monthly plans have a 3-month minimum commitment. After that, cancel anytime. Individual services are per-project with no commitment.",
+      a: "Yes, you can cancel at any time. No lock-in. Individual services are paid per project.",
+    },
+    {
+      q: "What can the WhatsApp assistant do?",
+      a: "It answers frequently asked questions, takes orders and reservations, sends information about your services and products, and manages inquiries. All automatically, 24 hours a day. We train it with your specific business information.",
+    },
+    {
+      q: "Does the voice assistant sound real?",
+      a: "Yes. We use cutting-edge voice technology that produces natural speech indistinguishable from a real person. Your clients won't notice the difference.",
+    },
+    {
+      q: "Can I combine visual and automation services?",
+      a: "Yes. In fact, our combined packs offer a 20% discount over individual prices. It's the most efficient way to fully digitize your business.",
     },
   ],
   es: [
     {
-      q: "¿Las imágenes parecen reales?",
-      a: "Nuestras imágenes pasan por un pipeline de refinamiento de 4 pasos que incluye textura de piel a nivel de poro, restauración facial y escalado profesional. El resultado es indistinguible de una fotografía real. Nuestra regla de oro: si parece IA, no sale de nuestro estudio.",
+      q: "Las imagenes parecen reales?",
+      a: "Nuestras imagenes pasan por un pipeline de refinamiento de 4 pasos que incluye textura de piel a nivel de poro, restauracion facial y escalado profesional. El resultado es indistinguible de una fotografia real. Nuestra regla de oro: si parece IA, no sale de nuestro estudio.",
     },
     {
-      q: "¿Cuánto tarda la entrega?",
-      a: "48h para el plan Scale, 3-5 días para Growth. Servicios individuales: 3-5 días laborables.",
+      q: "Cuanto tarda la entrega?",
+      a: "Starter: 48 horas. Pro: 5 dias laborables. Premium: 7 dias laborables. Servicios de automatizacion: 5-7 dias para el setup.",
     },
     {
-      q: "¿Puedo usar las imágenes comercialmente?",
-      a: "Sí, todo el contenido es de tu propiedad exclusiva con licencia comercial completa.",
+      q: "Puedo usar las imagenes comercialmente?",
+      a: "Si, todo el contenido es de tu propiedad exclusiva con licencia comercial completa.",
     },
     {
-      q: "¿Cómo funciona un modelo de IA personalizado?",
-      a: "Creamos una persona virtual única para tu marca, entrenada con IA para una consistencia perfecta. La misma cara en cualquier escenario, pose o atuendo. Como tener una modelo exclusiva que trabaja 24/7.",
+      q: "Como funciona un modelo de IA personalizado?",
+      a: "Creamos una persona virtual unica para tu marca, entrenada con IA para una consistencia perfecta. La misma cara en cualquier escenario, pose o atuendo. Como tener una modelo exclusiva que trabaja 24/7.",
     },
     {
-      q: "¿Y si no me gusta el resultado?",
-      a: "Cada entrega incluye revisiones (de 3 a ilimitadas según el plan). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega.",
+      q: "Y si no me gusta el resultado?",
+      a: "Cada entrega incluye revisiones (3 en Pro, ilimitadas en Premium). Cada imagen pasa nuestro control de calidad automatizado antes de la entrega.",
     },
     {
-      q: "¿Puedo cancelar mi plan?",
-      a: "Los planes mensuales tienen un compromiso mínimo de 3 meses. Después, cancela cuando quieras. Los servicios individuales son por proyecto sin compromiso.",
+      q: "Puedo cancelar mi plan?",
+      a: "Si, puedes cancelar en cualquier momento. Sin permanencia. Los servicios individuales se pagan por proyecto.",
+    },
+    {
+      q: "Que puede hacer el asistente de WhatsApp?",
+      a: "Responde preguntas frecuentes, toma pedidos y reservas, envia informacion sobre tus servicios y productos, y gestiona consultas. Todo automaticamente, 24 horas al dia. Lo entrenamos con la informacion especifica de tu negocio.",
+    },
+    {
+      q: "El asistente de voz suena real?",
+      a: "Si. Utilizamos tecnologia de voz de ultima generacion que produce un habla natural e indistinguible de una persona real. Tus clientes no notaran la diferencia.",
+    },
+    {
+      q: "Puedo combinar servicios visuales con automatizacion?",
+      a: "Si. De hecho, nuestros packs combinados ofrecen un 20% de descuento sobre el precio individual. Es la forma mas eficiente de digitalizar tu negocio completo.",
     },
   ],
 };
@@ -451,64 +444,80 @@ export default function ServicesPage() {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
             >
               {isES
-                ? "Producción Visual Premium con IA"
-                : "Premium Visual Production with AI"}
+                ? "Todo lo que tu negocio necesita. En un solo sitio."
+                : "Everything your business needs. In one place."}
             </motion.h1>
             <motion.p
               variants={fadeUp}
               className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto"
             >
               {isES
-                ? "La calidad de una agencia de millones, accesible para cualquier marca."
-                : "The quality of a million-dollar agency, accessible for any brand."}
+                ? "Produccion visual premium y automatizacion inteligente. La tecnologia de las grandes empresas, accesible para ti."
+                : "Premium visual production and intelligent automation. Enterprise technology, accessible to you."}
             </motion.p>
           </motion.div>
         </section>
 
-        {/* ─── Section 2: Individual Services (By Project) ─── */}
+        {/* ─── Section 2: Visual Production ─── */}
         <section className="py-24 lg:py-32 px-6">
           <div className="mx-auto max-w-6xl">
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {isES ? "Servicios por Proyecto" : "Services by Project"}
+                  {isES ? "Produccion Visual" : "Visual Production"}
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                   {isES
-                    ? "Contrátanos para lo que necesites. Sin suscripciones. Sin compromisos."
-                    : "Hire us for what you need. No subscriptions. No commitments."}
+                    ? "Fotos y videos con IA indistinguibles de la realidad."
+                    : "AI photos and videos indistinguishable from reality."}
                 </p>
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projectServices.map((service, i) => (
-                <ScrollReveal key={service.key} delay={i * 0.08}>
-                  <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 h-full overflow-hidden flex flex-col">
-                    <div className="relative w-full aspect-[16/9] overflow-hidden">
-                      <Image
-                        src={service.image}
-                        alt={isES ? service.titleES : service.titleEN}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
-                    </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {visualTiers.map((tier, i) => (
+                <ScrollReveal key={tier.key} delay={i * 0.1}>
+                  <Card
+                    className={`relative rounded-xl h-full flex flex-col transition-all duration-300 hover:-translate-y-1 ${
+                      tier.badge
+                        ? "border-nb-red border-2 shadow-[0_0_30px_rgba(227,24,55,0.15)] bg-gradient-to-b from-nb-red/5 via-card to-card"
+                        : "border-border bg-card hover:border-nb-red"
+                    }`}
+                  >
                     <CardContent className="p-6 flex flex-col flex-1">
-                      <p className="text-3xl font-bold text-nb-gold">
-                        {isES ? service.priceES : service.priceEN}
-                      </p>
-                      <h3 className="text-lg font-bold mt-3">
-                        {isES ? service.titleES : service.titleEN}
+                      {tier.badge && (
+                        <Badge className="bg-nb-red text-white border-0 px-3 py-0.5 text-xs font-semibold mb-3 w-fit">
+                          {isES ? tier.badge.es : tier.badge.en}
+                        </Badge>
+                      )}
+                      <tier.icon className="h-10 w-10 text-nb-gold mb-4" />
+                      <h3 className="text-xl font-bold">
+                        {isES ? tier.titleES : tier.titleEN}
                       </h3>
-                      <p className="text-sm text-muted-foreground mt-2 flex-1">
-                        {isES ? service.descES : service.descEN}
+                      <div className="mt-3 mb-1">
+                        <span className="text-4xl font-bold text-nb-gold">
+                          &euro;{isES ? tier.priceES : tier.priceEN}
+                        </span>
+                      </div>
+                      <p className="text-xs text-muted-foreground/60 line-through mb-4">
+                        {isES ? `Tradicional: ${tier.traditionalES}` : `Traditional: ${tier.traditionalEN}`}
                       </p>
+                      <ul className="space-y-2 flex-1">
+                        {(isES ? tier.featuresES : tier.featuresEN).map(
+                          (feature, j) => (
+                            <li key={j} className="flex items-start gap-2">
+                              <Check className="h-4 w-4 text-nb-gold shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">
+                                {feature}
+                              </span>
+                            </li>
+                          )
+                        )}
+                      </ul>
                       <div className="mt-6">
                         <Link href="/contact">
                           <Button className="w-full bg-nb-red hover:bg-nb-red-hover text-white">
-                            {isES ? "Solicitar Presupuesto" : "Request Quote"}
+                            {isES ? tier.buttonES : tier.buttonEN}
                           </Button>
                         </Link>
                       </div>
@@ -520,49 +529,110 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* ─── Section 3: Sector Packs ─── */}
+        {/* ─── Section 3: Automation & AI ─── */}
         <section className="py-24 lg:py-32 px-6 bg-muted/30">
           <div className="mx-auto max-w-6xl">
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
                   {isES
-                    ? "Soluciones a Medida para tu Sector"
-                    : "Solutions for Your Industry"}
+                    ? "Automatizacion e Inteligencia Artificial"
+                    : "Automation & Artificial Intelligence"}
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                   {isES
-                    ? "Packs diseñados específicamente para las necesidades de tu industria."
-                    : "Packs designed specifically for your industry's needs."}
+                    ? "Tu negocio funcionando en piloto automatico. 24 horas, 7 dias."
+                    : "Your business on autopilot. 24/7."}
                 </p>
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {sectorPacks.map((pack, i) => (
-                <ScrollReveal key={pack.titleEN} delay={i * 0.08}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {automationServices.map((service, i) => (
+                <ScrollReveal key={service.key} delay={i * 0.1}>
                   <Card className="border-border bg-card h-full flex flex-col transition-all duration-300 hover:border-nb-red hover:-translate-y-1">
                     <CardContent className="p-6 flex flex-col flex-1">
-                      <pack.icon className="h-10 w-10 text-nb-gold mb-4" />
+                      <service.icon className="h-10 w-10 text-nb-gold mb-4" />
                       <h3 className="text-xl font-bold">
-                        {isES ? pack.titleES : pack.titleEN}
+                        {isES ? service.titleES : service.titleEN}
                       </h3>
-                      <p className="text-3xl font-bold text-nb-gold mt-2">
-                        {isES ? pack.priceES : pack.priceEN}
-                      </p>
-                      <Badge
-                        variant="secondary"
-                        className="mt-3 w-fit text-xs"
-                      >
-                        {isES ? pack.badgeES : pack.badgeEN}
-                      </Badge>
-                      <ul className="space-y-2 mt-5 flex-1">
-                        {(isES ? pack.featuresES : pack.featuresEN).map(
+                      <div className="mt-3 mb-4">
+                        <span className="text-2xl font-bold text-nb-gold">
+                          {isES ? service.priceES : service.priceEN}
+                        </span>
+                      </div>
+                      <ul className="space-y-2 flex-1">
+                        {(isES ? service.featuresES : service.featuresEN).map(
                           (feature, j) => (
                             <li key={j} className="flex items-start gap-2">
                               <Check className="h-4 w-4 text-nb-gold shrink-0 mt-0.5" />
                               <span className="text-sm text-muted-foreground">
                                 {feature}
+                              </span>
+                            </li>
+                          )
+                        )}
+                      </ul>
+                      <div className="mt-6">
+                        <Link href="/contact">
+                          <Button className="w-full bg-nb-red hover:bg-nb-red-hover text-white">
+                            {isES ? service.buttonES : service.buttonEN}
+                          </Button>
+                        </Link>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ─── Section 4: Combined Packs ─── */}
+        <section className="py-24 lg:py-32 px-6">
+          <div className="mx-auto max-w-4xl">
+            <ScrollReveal>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+                  {isES ? "Packs Combinados" : "Combined Packs"}
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                  {isES
+                    ? "Visual + Automatizacion al mejor precio."
+                    : "Visual + Automation at the best price."}
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {combinedPacks.map((pack, i) => (
+                <ScrollReveal key={pack.key} delay={i * 0.1}>
+                  <Card className="border-nb-gold/30 bg-gradient-to-b from-nb-gold/5 via-card to-card h-full flex flex-col transition-all duration-300 hover:-translate-y-1">
+                    <CardContent className="p-6 flex flex-col flex-1">
+                      <Badge className="bg-nb-gold text-black border-0 px-3 py-0.5 text-xs font-semibold mb-3 w-fit">
+                        {isES ? pack.badgeES : pack.badgeEN}
+                      </Badge>
+                      <Package className="h-10 w-10 text-nb-gold mb-4" />
+                      <h3 className="text-xl font-bold">
+                        {isES ? pack.titleES : pack.titleEN}
+                      </h3>
+                      <div className="mt-3 mb-1">
+                        <span className="text-2xl font-bold text-nb-gold">
+                          {isES ? pack.priceES : pack.priceEN}
+                        </span>
+                      </div>
+                      <p className="text-xs text-muted-foreground/60 mb-4">
+                        {isES
+                          ? `Por separado: ${pack.separatelyES}`
+                          : `Separately: ${pack.separatelyEN}`}
+                      </p>
+                      <ul className="space-y-2 flex-1">
+                        {(isES ? pack.includesES : pack.includesEN).map(
+                          (item, j) => (
+                            <li key={j} className="flex items-start gap-2">
+                              <Check className="h-4 w-4 text-nb-gold shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">
+                                {item}
                               </span>
                             </li>
                           )
@@ -583,95 +653,6 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* ─── Section 4: Monthly Plans ─── */}
-        <section className="py-24 lg:py-32 px-6">
-          <div className="mx-auto max-w-4xl">
-            <ScrollReveal>
-              <div className="text-center mb-16">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {isES ? "Planes Mensuales" : "Monthly Plans"}
-                </h2>
-                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                  {isES
-                    ? "Para marcas que necesitan contenido visual constante. Compromiso mínimo 3 meses."
-                    : "For brands that need constant visual content. Minimum 3 months."}
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {monthlyPlans.map((plan, i) => (
-                <ScrollReveal key={plan.key} delay={i * 0.1}>
-                  <Card
-                    className={`relative rounded-xl h-full flex flex-col ${
-                      plan.badge
-                        ? "border-nb-red border-2 shadow-[0_0_30px_rgba(227,24,55,0.15)] bg-gradient-to-b from-nb-red/5 via-card to-card"
-                        : "border-border bg-card"
-                    }`}
-                  >
-                    <CardContent className="p-6 flex flex-col flex-1">
-                      {plan.badge && (
-                        <Badge className="bg-nb-red text-white border-0 px-3 py-0.5 text-xs font-semibold mb-3 w-fit">
-                          {isES ? "Más Popular" : "Most Popular"}
-                        </Badge>
-                      )}
-                      <h3 className="text-xl font-bold">
-                        {isES ? plan.titleES : plan.titleEN}
-                      </h3>
-                      <div className="mt-4 mb-6">
-                        <span className="text-5xl font-bold text-nb-gold">
-                          {isES ? plan.priceES : plan.priceEN}
-                        </span>
-                        <span className="text-sm text-muted-foreground ml-1">
-                          /{isES ? "mes" : "month"}
-                        </span>
-                      </div>
-                      <ul className="space-y-3 flex-1">
-                        {(isES ? plan.featuresES : plan.featuresEN).map(
-                          (feature, j) => (
-                            <li key={j} className="flex items-start gap-3">
-                              <Check className="h-4 w-4 text-nb-gold shrink-0 mt-0.5" />
-                              <span className="text-sm text-muted-foreground">
-                                {feature}
-                              </span>
-                            </li>
-                          )
-                        )}
-                      </ul>
-                      <div className="mt-8">
-                        <Link href="/contact">
-                          <Button className="w-full bg-nb-red hover:bg-nb-red-hover text-white">
-                            {isES ? "Empezar" : "Get Started"}
-                          </Button>
-                        </Link>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </ScrollReveal>
-              ))}
-            </div>
-
-            <ScrollReveal>
-              <div className="text-center mt-10">
-                <p className="text-muted-foreground mb-4">
-                  {isES
-                    ? "¿Necesitas más? Contacta con nosotros para un plan personalizado."
-                    : "Need more? Contact us for a custom plan."}
-                </p>
-                <Link href="/contact">
-                  <Button
-                    variant="outline"
-                    className="border-nb-gold text-nb-gold hover:bg-nb-gold/10"
-                  >
-                    {isES ? "Contactar" : "Contact Us"}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-
         {/* ─── Section 5: Savings Comparison Table ─── */}
         <section className="py-24 lg:py-32 px-6 bg-muted/30">
           <div className="mx-auto max-w-4xl">
@@ -679,7 +660,7 @@ export default function ServicesPage() {
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
                   {isES
-                    ? "Cuánto Ahorras con NeuroBulls"
+                    ? "Cuanto Ahorras con NeuroBulls"
                     : "How Much You Save with NeuroBulls"}
                 </h2>
               </div>
@@ -744,7 +725,7 @@ export default function ServicesPage() {
             <ScrollReveal>
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  {isES ? "Nuestra Garantía" : "Our Guarantee"}
+                  {isES ? "Nuestra Garantia" : "Our Guarantee"}
                 </h2>
               </div>
             </ScrollReveal>

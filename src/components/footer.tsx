@@ -51,12 +51,12 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-sm font-semibold text-foreground">{t("servicesTitle")}</h4>
             <nav className="flex flex-col gap-2">
-              <Link href="/services#services-by-project" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("servicePhotography")}</Link>
-              <Link href="/services#services-by-project" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVideo")}</Link>
-              <Link href="/services#services-by-project" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceStrategy")}</Link>
-              <Link href="/services#services-by-project" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceModels")}</Link>
-              <Link href="/services#sector-packs" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceSocial")}</Link>
-              <Link href="/services#monthly-plans" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceBranding")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualStarter")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualPro")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualPremium")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceWhatsapp")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVoice")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceAgent")}</Link>
             </nav>
           </div>
 

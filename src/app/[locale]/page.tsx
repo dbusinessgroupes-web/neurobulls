@@ -5,11 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Camera,
-  Video,
   Target,
-  User,
-  Building2,
-  Shirt,
   Gift,
   FileText,
   Sparkles,
@@ -22,6 +18,9 @@ import {
   DollarSign,
   Clock,
   Shield,
+  MessageSquare,
+  Phone,
+  Bot,
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -52,12 +51,12 @@ const fadeUp = {
 };
 
 const serviceCards = [
-  { icon: Camera, titleKey: "photography", price: "397" },
-  { icon: Video, titleKey: "video", price: "597" },
-  { icon: Target, titleKey: "strategy", price: "2.497" },
-  { icon: User, titleKey: "models", price: "797" },
-  { icon: Building2, titleKey: "social", price: "697" },
-  { icon: Shirt, titleKey: "branding", price: "1.497" },
+  { icon: Camera, titleKey: "visualStarter", price: "300" },
+  { icon: Target, titleKey: "visualPro", price: "900", popular: true },
+  { icon: Sparkles, titleKey: "visualPremium", price: "1.800" },
+  { icon: MessageSquare, titleKey: "whatsapp", price: "500" },
+  { icon: Phone, titleKey: "voice", price: "750" },
+  { icon: Bot, titleKey: "agent", price: "1.500", from: true },
 ];
 
 const processSteps = [
@@ -256,14 +255,23 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {serviceCards.map((service, i) => (
                 <ScrollReveal key={service.titleKey} delay={i * 0.08}>
-                  <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1">
+                  <Card className={`group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 ${(service as { popular?: boolean }).popular ? "border-nb-red border-2" : ""}`}>
                     <CardContent className="p-6">
+                      {(service as { popular?: boolean }).popular && (
+                        <Badge className="bg-nb-red text-white border-0 px-2 py-0.5 text-xs font-semibold mb-3">
+                          {t("services.popular")}
+                        </Badge>
+                      )}
                       <service.icon className="h-8 w-8 text-nb-gold mb-4" />
                       <h3 className="text-lg font-semibold mb-2">
                         {t(`services.${service.titleKey}.title`)}
                       </h3>
                       <p className="text-xl font-bold text-nb-gold mb-1">
+                        {(service as { from?: boolean }).from && <span className="text-sm font-normal text-muted-foreground mr-1">{t("services.from")}</span>}
                         &euro;{service.price}
+                      </p>
+                      <p className="text-xs text-muted-foreground/60 line-through mb-1">
+                        {t(`services.${service.titleKey}.traditional`)}
                       </p>
                       <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                         {t(`services.${service.titleKey}.description`)}

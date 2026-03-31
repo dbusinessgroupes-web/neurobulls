@@ -20,41 +20,40 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Everything you need to launch AI-powered campaigns that outperform traditional production.",
-    "photography": {
-      "title": "Photography Pack",
-      "description": "10 editorial 4K photos with hyperrealistic AI models. Indistinguishable from reality. Vogue, Harper's Bazaar or GQ quality."
+    "subtitle": "Everything your business needs. Visual production and intelligent automation.",
+    "popular": "Most Popular",
+    "from": "From",
+    "visualStarter": {
+      "title": "Visual Starter",
+      "description": "5 professional photos with editorial quality indistinguishable from real photography.",
+      "traditional": "€800-2,000"
     },
-    "video": {
-      "title": "Video Reel",
-      "description": "Cinematic 15-30s reel with AI actors, professional editing, color grading, music. Ready for social media."
+    "visualPro": {
+      "title": "Visual Pro",
+      "description": "15 professional photos + 1 edited reel. Everything you need for your social media.",
+      "traditional": "€2,000-5,000"
     },
-    "strategy": {
-      "title": "Complete Campaign",
-      "description": "Photos + video + strategy + art direction. Everything your brand needs in one pack. From concept to launch."
+    "visualPremium": {
+      "title": "Visual Premium",
+      "description": "30 photos + 3 reels + exclusive AI model + personalized content strategy.",
+      "traditional": "€5,000-15,000"
     },
-    "models": {
-      "title": "Exclusive AI Model",
-      "description": "Unique virtual person for your brand. Trained for perfect consistency across any scenario, pose or outfit. Unlimited use, works 24/7."
+    "whatsapp": {
+      "title": "WhatsApp Assistant",
+      "description": "Chatbot that responds to your clients 24/7, takes orders and manages reservations.",
+      "traditional": "€3,000-8,000"
     },
-    "social": {
-      "title": "Real Estate Pack",
-      "description": "Virtual home staging, photos with people, virtual renovation, video tour and golden hour conversion. Everything your property needs."
+    "voice": {
+      "title": "Voice Assistant",
+      "description": "Answers calls automatically with natural voice indistinguishable from a real person.",
+      "traditional": "€5,000-15,000"
     },
-    "branding": {
-      "title": "Fashion Pack",
-      "description": "2 exclusive AI models, 20 lookbook photos, 3 reels and ecommerce + social formats. Your collection ready to sell."
+    "agent": {
+      "title": "AI Agent",
+      "description": "AI agent trained for your business, connected to your tools.",
+      "traditional": "€10,000-30,000"
     },
-    "exploreAll": "Explore All Services",
-    "individualTitle": "Individual Services",
-    "individualSubtitle": "Need something specific? Choose exactly what you need.",
-    "learnMore": "Learn More",
-    "modelsPrice": "€797",
-    "photographyPrice": "€397",
-    "videoPrice": "€597",
-    "socialPrice": "€697",
-    "brandingPrice": "€1,497",
-    "strategyPrice": "€2,497"
+    "exploreAll": "Explore All Services"
   },
   "pricing": {
     "title": "Pricing",
@@ -134,7 +133,7 @@
       },
       {
         "q": "How long does delivery take?",
-        "a": "Depending on the plan: 48h for Scale, 3-5 days for Growth. Individual services are delivered in 3-5 business days."
+        "a": "Starter: 48 hours. Pro: 5 business days. Premium: 7 business days. Automation services: 5-7 days for setup."
       },
       {
         "q": "Can I use the images commercially?",
@@ -146,11 +145,23 @@
       },
       {
         "q": "What if I don't like the result?",
-        "a": "Each delivery includes revisions (2 to unlimited depending on the plan). Plus, every image goes through our automated quality control system that evaluates photorealism, anatomy, lighting and texture before sending it to you."
+        "a": "Each delivery includes revisions (3 for Pro, unlimited for Premium). Every image passes our automated quality control before delivery."
       },
       {
-        "q": "Can I cancel my monthly plan?",
+        "q": "Can I cancel?",
         "a": "Yes, you can cancel at any time. No lock-in. Individual services are paid per project."
+      },
+      {
+        "q": "What can the WhatsApp assistant do?",
+        "a": "It answers frequently asked questions, takes orders and reservations, sends information about your services and products, and manages inquiries. All automatically, 24 hours a day. We train it with your specific business information."
+      },
+      {
+        "q": "Does the voice assistant sound real?",
+        "a": "Yes. We use cutting-edge voice technology that produces natural speech indistinguishable from a real person. Your clients won't notice the difference."
+      },
+      {
+        "q": "Can I combine visual and automation services?",
+        "a": "Yes. In fact, our combined packs offer a 20% discount over individual prices. It's the most efficient way to fully digitize your business."
       }
     ]
   },
@@ -300,29 +311,24 @@
       "service": "Service Interested In",
       "serviceOptions": {
         "default": "Select a service",
-        "photopack": "Photography Pack (€397)",
-        "videoreel": "Video Reel (€597)",
-        "videospot": "Video Spot (€997)",
-        "videolong": "Long Video (€1,997)",
-        "model": "Exclusive AI Model (€797)",
-        "campaign": "Complete Campaign (€2,497)",
-        "packRealestate": "Real Estate Pack (€697)",
-        "packFashion": "Fashion Pack (€1,497)",
-        "packBeauty": "Beauty Pack (€997)",
-        "packFood": "Restaurant Pack (€797)",
-        "packTech": "Tech Pack (€1,297)",
-        "monthlyGrowth": "Growth Plan (€1,497/mo)",
-        "monthlyScale": "Scale Plan (€2,997/mo)",
+        "visualStarter": "Visual Starter (€300)",
+        "visualPro": "Visual Pro (€900)",
+        "visualPremium": "Visual Premium (€1,800)",
+        "whatsapp": "WhatsApp Assistant (€500 + €100/mo)",
+        "voice": "Voice Assistant (€750 + €150/mo)",
+        "agent": "Custom AI Agent (from €1,500)",
+        "packNegocio": "Business Pack (€1,200 + €100/mo)",
+        "packTotal": "Total Pack (€2,500 + €200/mo)",
         "freeSample": "Free sample image",
-        "other": "Other / Custom"
+        "other": "Other / Custom budget"
       },
       "budget": "Budget Range",
       "budgetOptions": {
         "default": "Select a budget range",
         "under500": "Under €500",
         "500to1000": "€500 - €1,000",
-        "1000to2500": "€1,000 - €2,500",
-        "2500to5000": "€2,500 - €5,000",
+        "1000to2000": "€1,000 - €2,000",
+        "2000to5000": "€2,000 - €5,000",
         "over5000": "More than €5,000"
       },
       "namePlaceholder": "John Doe",
@@ -353,12 +359,12 @@
     "aboutLink": "About",
     "workLink": "Work",
     "servicesTitle": "Services",
-    "servicePhotography": "Photography Pack",
-    "serviceVideo": "Video Reel / Spot",
-    "serviceStrategy": "Exclusive AI Model",
-    "serviceModels": "Complete Campaign",
-    "serviceSocial": "Sector Packs",
-    "serviceBranding": "Monthly Plans",
+    "serviceVisualStarter": "Visual Starter",
+    "serviceVisualPro": "Visual Pro",
+    "serviceVisualPremium": "Visual Premium",
+    "serviceWhatsapp": "WhatsApp Assistant",
+    "serviceVoice": "Voice Assistant",
+    "serviceAgent": "AI Agent",
     "legal": "Legal",
     "legalNotice": "Legal Notice",
     "privacy": "Privacy Policy",
