@@ -13,6 +13,10 @@ const pages = [
   '/politica-privacidad',
   '/politica-cookies',
   '/terminos',
+  '/shop',
+  '/blog/mejores-prompts-ia-fotografia',
+  '/blog/como-crear-imagenes-ia-realistas',
+  '/blog/prompts-midjourney-flux-gratis',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
