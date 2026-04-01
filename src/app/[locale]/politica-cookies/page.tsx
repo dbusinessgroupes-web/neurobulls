@@ -1,14 +1,12 @@
 "use client";
 
-import { useLocale } from "next-intl";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { CookieBanner } from "@/components/cookie-banner";
 import { Link } from "@/i18n/navigation";
 
 export default function PoliticaCookies() {
-  const locale = useLocale();
-  const isES = locale === "es";
+  const isES = false;
 
   return (
     <>

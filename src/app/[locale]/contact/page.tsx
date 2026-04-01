@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Mail,
@@ -52,7 +52,6 @@ const stagger = {
 
 export default function ContactPage() {
   const t = useTranslations();
-  const locale = useLocale();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -242,7 +241,7 @@ export default function ContactPage() {
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="phone">
-                            {locale === "es" ? "Teléfono" : "Phone"}
+                            Phone
                           </Label>
                           <Input
                             id="phone"
@@ -250,7 +249,7 @@ export default function ContactPage() {
                             type="tel"
                             value={formData.phone}
                             onChange={handleChange}
-                            placeholder={locale === "es" ? "+34 600 000 000" : "+1 (555) 000-0000"}
+                            placeholder="+1 (555) 000-0000"
                           />
                         </div>
                       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Camera,
@@ -93,7 +93,6 @@ const comparisonRowKeys = ["timeline", "cost", "quality", "availability", "revis
 
 export default function Home() {
   const t = useTranslations();
-  const locale = useLocale();
 
   return (
     <>
@@ -409,16 +408,14 @@ export default function Home() {
               <div className="rounded-2xl border border-nb-gold/20 bg-gradient-to-b from-card to-background p-10 md:p-16">
                 <Gift className="h-12 w-12 text-nb-gold mx-auto mb-6" />
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                  {locale === "es" ? "Prueba nuestra calidad gratis" : "Try our quality for free"}
+                  Try our quality for free
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  {locale === "es"
-                    ? "Solicita una imagen de prueba gratuita y sin compromiso. Verás con tus propios ojos la calidad de nuestro trabajo antes de contratar."
-                    : "Request a free sample image with no commitment. See our quality with your own eyes before hiring us."}
+                  Request a free sample image with no commitment. See our quality with your own eyes before hiring us.
                 </p>
                 <Link href="/contact">
                   <Button className="bg-nb-red hover:bg-nb-red-hover text-white px-8 py-3 text-lg">
-                    {locale === "es" ? "Solicitar Imagen Gratuita" : "Request Free Image"}
+                    Request Free Image
                   </Button>
                 </Link>
               </div>
@@ -442,16 +439,14 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-nb-gold mb-2">
-                    {locale === "es" ? "Nuestro Fundador" : "Our Founder"}
+                    Our Founder
                   </p>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-1">
                     Diego Rodríguez Molino
                   </h2>
                   <p className="text-sm text-muted-foreground mb-4">CEO & Founder</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    {locale === "es"
-                      ? "Emprendedor y visionario en la intersección de marketing e inteligencia artificial. Fundé NeuroBulls con una misión clara: democratizar la producción visual de alta calidad y la automatización inteligente para negocios de todos los tamaños. Nuestra tecnología genera contenido indistinguible de la realidad y automatiza procesos para que tu negocio funcione 24/7."
-                      : "Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production and intelligent automation for businesses of all sizes. Our technology generates content indistinguishable from reality and automates processes so your business runs 24/7."}
+                    Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production and intelligent automation for businesses of all sizes. Our technology generates content indistinguishable from reality and automates processes so your business runs 24/7.
                   </p>
                 </div>
               </div>

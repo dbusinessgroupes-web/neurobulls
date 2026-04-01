@@ -1,8 +1,8 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Check, Lock, Download, Camera, UtensilsCrossed, Building2, ArrowRight } from "lucide-react";
+import { Check, Lock, ArrowRight } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -22,45 +22,11 @@ const fadeUp = {
   },
 };
 
-const stagger = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.12,
-    },
-  },
-};
-
 export default function ShopPage() {
   const t = useTranslations("shop");
-  const locale = useLocale();
 
-  const features = [
-    t("features.prompts"),
-    t("features.negativePrompts"),
-    t("features.characterGuide"),
-    t("features.videoTemplates"),
-    t("features.updates"),
-  ];
-
-  const categories = [
-    {
-      icon: Camera,
-      titleKey: "portraits" as const,
-      descKey: "portraitsDesc" as const,
-    },
-    {
-      icon: UtensilsCrossed,
-      titleKey: "food" as const,
-      descKey: "foodDesc" as const,
-    },
-    {
-      icon: Building2,
-      titleKey: "realEstate" as const,
-      descKey: "realEstateDesc" as const,
-    },
-  ];
-
+  const promptsFeatures = t.raw("prompts.features") as string[];
+  const masterclassFeatures = t.raw("masterclass.features") as string[];
 
   return (
     <>
@@ -69,13 +35,6 @@ export default function ShopPage() {
         {/* Hero */}
         <section className="pt-40 pb-20 px-6">
           <div className="mx-auto max-w-4xl text-center">
-            <ScrollReveal>
-              <motion.div variants={fadeUp} initial="hidden" animate="visible">
-                <Badge className="mb-6 bg-nb-gold/10 text-nb-gold border-nb-gold/20">
-                  {t("badge")}
-                </Badge>
-              </motion.div>
-            </ScrollReveal>
             <ScrollReveal>
               <motion.h1
                 variants={fadeUp}
@@ -99,23 +58,30 @@ export default function ShopPage() {
           </div>
         </section>
 
-        {/* Product Card */}
+        {/* Products */}
         <section className="px-6 pb-20">
-          <div className="mx-auto max-w-xl">
+          <div className="mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Product 1: Prompts Pack */}
             <ScrollReveal>
-              <Card className="border-border bg-card rounded-xl overflow-hidden">
-                <CardContent className="p-8 space-y-6">
+              <Card className="border-border bg-card rounded-xl overflow-hidden h-full">
+                <CardContent className="p-8 space-y-6 flex flex-col h-full">
+                  <div>
+                    <Badge className="mb-4 bg-nb-gold/10 text-nb-gold border-nb-gold/20">
+                      {t("prompts.badge")}
+                    </Badge>
+                  </div>
+                  <h2 className="text-2xl font-bold">{t("prompts.title")}</h2>
                   <div className="text-center">
                     <p className="text-5xl font-bold text-nb-gold">
-                      {t("price")}
+                      {t("prompts.price")}
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
-                      {t("oneTime")}
+                      {t("prompts.oneTime")}
                     </p>
                   </div>
 
-                  <div className="space-y-3">
-                    {features.map((feature) => (
+                  <div className="space-y-3 flex-1">
+                    {promptsFeatures.map((feature: string) => (
                       <div key={feature} className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-nb-gold shrink-0 mt-0.5" />
                         <span className="text-sm text-foreground">{feature}</span>
@@ -123,7 +89,7 @@ export default function ShopPage() {
                     ))}
                   </div>
 
-                  <BuyButton locale={locale} label={t("buyButton")} />
+                  <BuyButton product="prompts" label={t("prompts.buyButton")} />
 
                   <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
                     <Lock className="h-3.5 w-3.5" />
@@ -132,69 +98,44 @@ export default function ShopPage() {
                 </CardContent>
               </Card>
             </ScrollReveal>
-          </div>
-        </section>
 
-        {/* Free Sample */}
-        <section className="px-6 pb-20">
-          <div className="mx-auto max-w-xl text-center">
+            {/* Product 2: Masterclass */}
             <ScrollReveal>
-              <Card className="border-border bg-card rounded-xl">
-                <CardContent className="p-8 space-y-4">
-                  <h2 className="text-2xl font-bold">{t("sampleTitle")}</h2>
-                  <p className="text-muted-foreground">
-                    {t("sampleDescription")}
-                  </p>
-                  <a href="/shop/sample.pdf" download>
-                    <Button
-                      variant="outline"
-                      className="border-nb-gold/30 text-nb-gold hover:bg-nb-gold/10 mt-2"
-                    >
-                      <Download className="mr-2 h-4 w-4" />
-                      {t("downloadSample")}
-                    </Button>
-                  </a>
+              <Card className="border-nb-gold border-2 bg-card rounded-xl overflow-hidden h-full relative">
+                <CardContent className="p-8 space-y-6 flex flex-col h-full">
+                  <div>
+                    <Badge className="mb-4 bg-nb-red text-white border-0">
+                      {t("masterclass.badge")}
+                    </Badge>
+                  </div>
+                  <h2 className="text-2xl font-bold">{t("masterclass.title")}</h2>
+                  <div className="text-center">
+                    <p className="text-5xl font-bold text-nb-gold">
+                      {t("masterclass.price")}
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {t("masterclass.oneTime")}
+                    </p>
+                  </div>
+
+                  <div className="space-y-3 flex-1">
+                    {masterclassFeatures.map((feature: string) => (
+                      <div key={feature} className="flex items-start gap-3">
+                        <Check className="h-5 w-5 text-nb-gold shrink-0 mt-0.5" />
+                        <span className="text-sm text-foreground">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <BuyButton product="masterclass" label={t("masterclass.buyButton")} />
+
+                  <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
+                    <Lock className="h-3.5 w-3.5" />
+                    <span>{t("securePayment")}</span>
+                  </div>
                 </CardContent>
               </Card>
             </ScrollReveal>
-          </div>
-        </section>
-
-        {/* What's Inside */}
-        <section className="px-6 pb-20">
-          <div className="mx-auto max-w-4xl">
-            <ScrollReveal>
-              <h2 className="text-3xl font-bold text-center mb-12">
-                {t("insideTitle")}
-              </h2>
-            </ScrollReveal>
-            <motion.div
-              variants={stagger}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="grid grid-cols-1 md:grid-cols-3 gap-6"
-            >
-              {categories.map((cat) => (
-                <motion.div key={cat.titleKey} variants={fadeUp}>
-                  <ScrollReveal>
-                    <Card className="border-border bg-card rounded-xl h-full">
-                      <CardContent className="p-6 text-center space-y-3">
-                        <div className="mx-auto w-12 h-12 rounded-full bg-nb-gold/10 flex items-center justify-center">
-                          <cat.icon className="h-6 w-6 text-nb-gold" />
-                        </div>
-                        <h3 className="font-semibold text-lg">
-                          {t(`categories.${cat.titleKey}`)}
-                        </h3>
-                        <p className="text-sm text-muted-foreground">
-                          {t(`categories.${cat.descKey}`)}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </ScrollReveal>
-                </motion.div>
-              ))}
-            </motion.div>
           </div>
         </section>
 

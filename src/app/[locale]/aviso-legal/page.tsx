@@ -1,13 +1,11 @@
 "use client";
 
-import { useLocale } from "next-intl";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { CookieBanner } from "@/components/cookie-banner";
 
 export default function AvisoLegal() {
-  const locale = useLocale();
-  const isES = locale === "es";
+  const isES = false;
 
   return (
     <>

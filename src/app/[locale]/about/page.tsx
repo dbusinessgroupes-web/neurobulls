@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -39,7 +39,6 @@ const techTools = ["FLUX.2 Pro", "Kling AI", "ElevenLabs", "Topaz AI", "n8n", "O
 export default function AboutPage() {
   const t = useTranslations("about");
   const tCta = useTranslations("cta");
-  const locale = useLocale();
 
   return (
     <>
@@ -168,7 +167,7 @@ export default function AboutPage() {
             <ScrollReveal>
               <div className="text-center mb-10">
                 <h2 className="text-2xl sm:text-3xl font-bold">
-                  {locale === "es" ? "Nuestra Tecnología" : "Our Technology"}
+                  Our Technology
                 </h2>
               </div>
             </ScrollReveal>
@@ -243,21 +242,17 @@ export default function AboutPage() {
                 {/* Info */}
                 <div className="md:w-[60%] text-center md:text-left">
                   <p className="text-sm font-medium text-nb-gold mb-3 uppercase tracking-wider">
-                    {locale === "es" ? "Nuestro Fundador" : "Our Founder"}
+                    Our Founder
                   </p>
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
                     Diego Rodríguez Molino
                   </h2>
                   <p className="text-base font-medium text-nb-gold mb-6">CEO & Founder</p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    {locale === "es"
-                      ? "Emprendedor y visionario en la intersección de marketing e inteligencia artificial. Fundé NeuroBulls con una misión clara: democratizar la producción visual de alta calidad y la automatización inteligente para negocios de todos los tamaños. Nuestra tecnología genera contenido indistinguible de la realidad y automatiza procesos para que tu negocio funcione 24/7."
-                      : "Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production and intelligent automation for businesses of all sizes. Our technology generates content indistinguishable from reality and automates processes so your business runs 24/7."}
+                    Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production and intelligent automation for businesses of all sizes. Our technology generates content indistinguishable from reality and automates processes so your business runs 24/7.
                   </p>
                   <blockquote className="text-lg italic text-foreground/80 border-l-2 border-nb-gold/40 pl-4 mb-6">
-                    {locale === "es"
-                      ? "\"Si parece IA, no sale de nuestro estudio.\""
-                      : "\"If it looks AI, it doesn't leave our studio.\""}
+                    &quot;If it looks AI, it doesn&apos;t leave our studio.&quot;
                   </blockquote>
                   <div className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground">
                     <MapPin className="h-4 w-4" />

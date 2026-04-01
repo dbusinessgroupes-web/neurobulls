@@ -23,10 +23,6 @@ const metadataByLocale: Record<string, { title: string; description: string }> =
     title: "NeuroBulls — AI Marketing Agency",
     description: "AI marketing, hyperrealistic photography and video. Virtual models, social media and branding. Results in 48h.",
   },
-  es: {
-    title: "NeuroBulls — Agencia de Marketing con IA",
-    description: "Marketing IA, fotografía y vídeo hiperrealista. Modelos virtuales, redes sociales y branding. Resultados en 48h.",
-  },
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {

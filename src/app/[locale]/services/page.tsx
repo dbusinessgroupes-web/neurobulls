@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Camera,
@@ -491,8 +490,7 @@ const faqItems = {
 };
 
 export default function ServicesPage() {
-  const locale = useLocale();
-  const isES = locale === "es";
+  const isES = false;
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const faqs = isES ? faqItems.es : faqItems.en;
   const guarantee = isES ? guarantees.es : guarantees.en;

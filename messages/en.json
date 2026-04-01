@@ -5,8 +5,6 @@
     "about": "About",
     "contact": "Contact",
     "shop": "Shop",
-    "blog": "Blog",
-    "tools": "Tools",
     "startProject": "Start a Project"
   },
   "hero": {
@@ -392,63 +390,41 @@
     "poweredBy": "Powered by AI"
   },
   "shop": {
-    "badge": "Digital Product",
-    "title": "500 AI Photography Prompts",
-    "subtitle": "The complete framework for creating hyper-realistic AI images. Works with Midjourney, FLUX, Stable Diffusion and more.",
-    "price": "$9",
-    "oneTime": "One-time payment",
-    "features": {
-      "prompts": "500 prompts across 20 categories",
-      "negativePrompts": "Negative prompts included",
-      "characterGuide": "Character consistency guide",
-      "videoTemplates": "Video prompt templates (Kling, Runway, Sora)",
-      "updates": "Free monthly updates"
-    },
-    "buyButton": "Buy for $9",
+    "title": "Premium AI Resources",
+    "subtitle": "Professional tools and guides to master AI visual production. Created by the NeuroBulls team.",
     "securePayment": "Secure payment via Stripe",
-    "sampleTitle": "Download a free sample",
-    "sampleDescription": "45 sample prompts to see the quality before buying.",
-    "downloadSample": "Download sample",
-    "insideTitle": "What's inside",
-    "categories": {
-      "portraits": "Portraits",
-      "portraitsDesc": "Selfies, macros, editorial, candid",
-      "food": "Food",
-      "foodDesc": "Dishes, drinks, bakery, flatlay",
-      "realEstate": "Real Estate",
-      "realEstateDesc": "Staging, interiors, architecture"
+    "prompts": {
+      "badge": "Prompts Pack",
+      "title": "500 AI Photography Prompts Pack",
+      "price": "$29",
+      "oneTime": "One-time payment",
+      "features": [
+        "500 copy-paste prompts across 20 categories",
+        "AVB 8-layer framework guide included",
+        "Negative prompts for each",
+        "Video prompt templates",
+        "Monthly updates"
+      ],
+      "buyButton": "Buy for $29"
+    },
+    "masterclass": {
+      "badge": "Best Value",
+      "title": "AI Visual Production Masterclass",
+      "price": "$49",
+      "oneTime": "One-time payment",
+      "features": [
+        "Complete 50-page course",
+        "The 8-layer AVB framework explained in depth",
+        "100+ prompts with detailed explanations",
+        "Character consistency guide",
+        "Video production pipeline",
+        "Business building guide",
+        "All updates included"
+      ],
+      "buyButton": "Buy for $49"
     },
     "ctaTitle": "Want us to create content for your brand?",
     "ctaButton": "Contact Us"
-  },
-  "tools": {
-    "title": "Free AI Prompt Generator",
-    "subtitle": "Generate ultra-realistic photography prompts. Copy, paste, create.",
-    "categoryLabel": "Category",
-    "styleLabel": "Style",
-    "cameraLabel": "Camera",
-    "categories": {
-      "portrait": "Portrait",
-      "food": "Food",
-      "realEstate": "Real Estate",
-      "fashion": "Fashion",
-      "product": "Product",
-      "lifestyle": "Lifestyle"
-    },
-    "styles": {
-      "natural": "Natural / Candid",
-      "studio": "Studio / Editorial",
-      "macro": "Macro / Detail",
-      "dramatic": "Dramatic / Moody"
-    },
-    "generateButton": "Generate Prompt",
-    "copyButton": "Copy",
-    "counter": "{count} prompts generated",
-    "upsell": {
-      "title": "Want 500 more prompts like this?",
-      "description": "Get the full pack for $9. Includes negative prompts, video templates, and monthly updates.",
-      "button": "Get 500 Prompts"
-    }
   },
   "cookies": {
     "message": "We use cookies to improve your experience. You can accept all cookies or customize your preferences.",

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Loader2 } from "lucide-react";
 
-export function BuyButton({ locale, label }: { locale: string; label: string }) {
+export function BuyButton({ product, label }: { product: string; label: string }) {
   const [loading, setLoading] = useState(false);
 
   const handleBuy = async () => {
@@ -13,7 +13,7 @@ export function BuyButton({ locale, label }: { locale: string; label: string }) 
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ locale }),
+        body: JSON.stringify({ product }),
       });
       const data = await res.json();
       if (data.url) {

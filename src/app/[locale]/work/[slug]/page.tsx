@@ -1,6 +1,5 @@
 "use client";
 
-import { useLocale } from "next-intl";
 import { useParams, notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -247,10 +246,9 @@ const fadeUp = {
 };
 
 export default function WorkDetailPage() {
-  const locale = useLocale();
   const params = useParams();
   const slug = params.slug as string;
-  const isEN = locale === "en";
+  const isEN = true;
 
   const project = projects[slug];
   if (!project) {

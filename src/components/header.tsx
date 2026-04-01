@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Logo } from "./logo";
-import { LanguageSwitcher } from "./language-switcher";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -26,8 +25,6 @@ export function Header() {
     { href: "/about", label: t("about") },
     { href: "/contact", label: t("contact") },
     { href: "/shop", label: t("shop") },
-    { href: "/tools/prompt-generator", label: t("tools") },
-    { href: "/blog/mejores-prompts-ia-fotografia", label: t("blog") },
   ];
 
   return (
@@ -57,7 +54,6 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <LanguageSwitcher />
           <Link href="/contact">
             <Button className="bg-nb-red hover:bg-nb-red-hover text-white font-semibold px-6">
               {t("startProject")}
@@ -67,7 +63,6 @@ export function Header() {
 
         {/* Mobile menu */}
         <div className="md:hidden flex items-center gap-3">
-          <LanguageSwitcher />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger aria-label="Open menu">
               <Menu className="h-5 w-5" />
