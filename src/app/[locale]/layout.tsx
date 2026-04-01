@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
       template: "%s | NeuroBulls",
     },
     description: "NeuroBulls helps businesses create stunning AI visual content, automate operations, and scale with intelligent agents. Photography, video, voice AI, and automation services.",
-    keywords: "AI agency, AI visual production, AI automation, AI photography, AI video, AI agents, prompt engineering, business AI",
+    keywords: "AI agency, AI visual production, AI automation, AI photography, AI video production, AI agents, prompt engineering, business AI, AI content creation, AI headshots, AI food photography, AI real estate staging, virtual staging, AI voice assistant, chatbot for business, workflow automation, AI consulting, Dublin AI agency, Europe AI agency, hyper-realistic AI images, AI prompts, midjourney prompts, FLUX prompts",
     metadataBase: new URL('https://neurobulls.com'),
     openGraph: {
       type: 'website',
