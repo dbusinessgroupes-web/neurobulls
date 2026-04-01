@@ -327,6 +327,56 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ─── What We've Built ─── */}
+        <section className="py-20 px-6 bg-card/50">
+          <div className="mx-auto max-w-6xl">
+            <ScrollReveal>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                  <div className="text-5xl font-bold text-nb-gold">
+                    <AnimatedCounter target={10000} />+
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">AI images generated</p>
+                </div>
+                <div>
+                  <div className="text-5xl font-bold text-nb-gold">
+                    <AnimatedCounter target={500} />+
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">Prompts in our library</p>
+                </div>
+                <div>
+                  <div className="text-5xl font-bold text-nb-gold">
+                    <AnimatedCounter target={50} />+
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">Projects delivered</p>
+                </div>
+                <div>
+                  <div className="text-5xl font-bold text-nb-gold">
+                    <AnimatedCounter target={20} />+
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">Industries covered</p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ─── Industries We Serve ─── */}
+        <section className="py-16 px-6">
+          <div className="mx-auto max-w-4xl text-center">
+            <ScrollReveal>
+              <h2 className="text-2xl font-bold mb-8">Trusted across industries</h2>
+              <div className="flex flex-wrap justify-center gap-3">
+                {["Fashion", "Hospitality", "Real Estate", "Food & Beverage", "Technology", "E-commerce", "Healthcare", "Finance"].map((industry) => (
+                  <Badge key={industry} variant="outline" className="px-4 py-2 text-sm border-border text-muted-foreground">
+                    {industry}
+                  </Badge>
+                ))}
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* ─── Portfolio Showcase ─── */}
         <section className="py-24 lg:py-32 px-6">
           <div className="mx-auto max-w-6xl">
