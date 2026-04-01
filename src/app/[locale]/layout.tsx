@@ -18,30 +18,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const metadataByLocale: Record<string, { title: string; description: string }> = {
-  en: {
-    title: "NeuroBulls — AI Marketing Agency",
-    description: "AI marketing, hyperrealistic photography and video. Virtual models, social media and branding. Results in 48h.",
-  },
-};
-
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const localeData = metadataByLocale[locale] ?? metadataByLocale.en;
-
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: {
-      default: localeData.title,
+      default: "NeuroBulls — AI Agency | Visual Production, Automation & Intelligence",
       template: "%s | NeuroBulls",
     },
-    description: localeData.description,
+    description: "NeuroBulls helps businesses create stunning AI visual content, automate operations, and scale with intelligent agents. Photography, video, voice AI, and automation services.",
+    keywords: "AI agency, AI visual production, AI automation, AI photography, AI video, AI agents, prompt engineering, business AI",
     metadataBase: new URL('https://neurobulls.com'),
     openGraph: {
       type: 'website',
       siteName: 'NeuroBulls',
+      title: 'NeuroBulls — AI Agency | Visual Production, Automation & Intelligence',
+      description: 'NeuroBulls helps businesses create stunning AI visual content, automate operations, and scale with intelligent agents.',
+      url: 'https://neurobulls.com',
     },
     twitter: {
       card: 'summary_large_image',
+      title: 'NeuroBulls — AI Agency | Visual Production, Automation & Intelligence',
+      description: 'NeuroBulls helps businesses create stunning AI visual content, automate operations, and scale with intelligent agents.',
     },
     robots: {
       index: true,
@@ -57,12 +53,8 @@ const jsonLd = {
   "name": "NeuroBulls",
   "url": "https://neurobulls.com",
   "logo": "https://neurobulls.com/favicon.svg",
-  "description": "AI Marketing Agency",
+  "description": "AI agency specializing in visual production, automation, and intelligent agents for businesses.",
   "email": "neurobulls@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "ES",
-  },
   "sameAs": ["https://instagram.com/neurobulls"],
 };
 

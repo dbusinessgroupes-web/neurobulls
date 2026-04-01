@@ -79,22 +79,22 @@ export async function POST(request: Request) {
           html: `
             <div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;">
               <div style="background:#E31837;padding:16px 24px;border-radius:12px 12px 0 0;">
-                <h2 style="color:white;margin:0;font-size:18px;">Nueva solicitud de contacto</h2>
+                <h2 style="color:white;margin:0;font-size:18px;">New contact request</h2>
               </div>
               <div style="background:#141414;padding:24px;border-radius:0 0 12px 12px;color:#FAFAFA;">
                 <table style="width:100%;border-collapse:collapse;">
-                  <tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;width:100px;">Nombre</td><td style="padding:8px 0;">${safeName}</td></tr>
+                  <tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;width:100px;">Name</td><td style="padding:8px 0;">${safeName}</td></tr>
                   <tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Email</td><td style="padding:8px 0;"><a href="mailto:${safeEmail}" style="color:#E31837;">${safeEmail}</a></td></tr>
-                  ${safePhone ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Teléfono</td><td style="padding:8px 0;"><a href="tel:${safePhone}" style="color:#E31837;">${safePhone}</a></td></tr>` : ''}
-                  ${safeCompany ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Empresa</td><td style="padding:8px 0;">${safeCompany}</td></tr>` : ''}
-                  ${safeService ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Servicio</td><td style="padding:8px 0;">${safeService}</td></tr>` : ''}
-                  ${safeBudget ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Presupuesto</td><td style="padding:8px 0;">${safeBudget}</td></tr>` : ''}
+                  ${safePhone ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Phone</td><td style="padding:8px 0;"><a href="tel:${safePhone}" style="color:#E31837;">${safePhone}</a></td></tr>` : ''}
+                  ${safeCompany ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Company</td><td style="padding:8px 0;">${safeCompany}</td></tr>` : ''}
+                  ${safeService ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Service</td><td style="padding:8px 0;">${safeService}</td></tr>` : ''}
+                  ${safeBudget ? `<tr><td style="padding:8px 0;color:#C9A84C;font-weight:600;">Budget</td><td style="padding:8px 0;">${safeBudget}</td></tr>` : ''}
                 </table>
                 <hr style="border:none;border-top:1px solid #333;margin:16px 0;">
-                <p style="color:#C9A84C;font-weight:600;margin-bottom:8px;">Mensaje:</p>
+                <p style="color:#C9A84C;font-weight:600;margin-bottom:8px;">Message:</p>
                 <p style="line-height:1.6;">${safeMessage.replace(/\n/g, '<br>')}</p>
                 <hr style="border:none;border-top:1px solid #333;margin:16px 0;">
-                <p style="font-size:12px;color:#666;">Enviado desde neurobulls.com · Responder directamente a ${safeEmail}</p>
+                <p style="font-size:12px;color:#666;">Sent from neurobulls.com · Reply directly to ${safeEmail}</p>
               </div>
             </div>
           `,

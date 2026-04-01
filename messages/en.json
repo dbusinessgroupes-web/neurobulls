@@ -4,165 +4,152 @@
     "work": "Work",
     "about": "About",
     "contact": "Contact",
-    "shop": "Shop",
-    "startProject": "Start a Project"
+    "shop": "Products",
+    "startProject": "Get a Proposal"
   },
   "hero": {
-    "title": "YOUR BUSINESS, POWERED BY AI",
-    "subtitle": "Elite visual production and intelligent automation. Everything you need to scale your business, in one place.",
-    "cta": "Discover Services",
-    "ctaSecondary": "View Portfolio"
+    "title": "THE AI AGENCY THAT DELIVERS RESULTS",
+    "subtitle": "We help businesses create stunning visual content, automate operations, and scale with AI. From strategy to execution.",
+    "cta": "See What We Do",
+    "ctaSecondary": "View Our Work"
   },
   "stats": {
-    "cost": "Average savings vs traditional production",
-    "delivery": "Minimum delivery time",
-    "availability": "Availability of our automations",
+    "cost": "Average cost savings",
+    "delivery": "Fastest delivery",
+    "availability": "AI availability",
     "satisfaction": "Satisfaction guaranteed"
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Everything your business needs. Visual production and intelligent automation.",
+    "title": "What We Do",
+    "subtitle": "Two pillars. One agency. Everything your business needs to compete with AI.",
     "popular": "Most Popular",
-    "from": "From",
     "viewMore": "Learn more",
-    "visualStarter": {
-      "title": "Visual Essential",
-      "description": "5 professional photos in 48h"
+    "visualTitle": "AI Visual Production",
+    "automationTitle": "AI Automation & Intelligence",
+    "photography": {
+      "title": "Photography",
+      "description": "Studio-quality photos without a studio"
     },
-    "visualPro": {
-      "title": "Visual Professional",
-      "description": "15 photos + reel + AI model"
+    "video": {
+      "title": "Video",
+      "description": "Cinematic content in days, not weeks"
     },
-    "visualPremium": {
-      "title": "Visual Premium",
-      "description": "Complete campaign with strategy"
+    "aiModels": {
+      "title": "AI Models",
+      "description": "Your exclusive brand ambassador that never cancels"
     },
     "voice": {
-      "title": "AI Voice",
-      "description": "Answers your calls like a real person"
+      "title": "Voice AI",
+      "description": "Answer every call, 24/7"
     },
     "agent": {
-      "title": "AI Agent",
-      "description": "Your digital employee that knows your entire business"
+      "title": "AI Agents",
+      "description": "A digital employee trained on your business"
     },
     "automation": {
-      "title": "Automation",
-      "description": "Your processes on autopilot"
+      "title": "Process Automation",
+      "description": "Eliminate repetitive tasks forever"
     },
     "exploreAll": "Explore All Services"
   },
-  "pricing": {
-    "title": "Pricing",
-    "subtitle": "Transparent pricing. No hidden fees. Premium results.",
-    "monthly": "/month",
-    "from": "From",
-    "popular": "Most Popular",
-    "getStarted": "Get Started",
-    "contactUs": "Contact Us",
-    "growth": {
-      "name": "Growth",
-      "description": "For growing brands ready to scale their content production with AI.",
-      "price": "€1,497",
-      "features": [
-        "3 custom AI models",
-        "40 editorial images/month",
-        "3 short + 1 long video (up to 2 min)",
-        "Monthly content strategy",
-        "2 social media channels (15 posts/month)",
-        "Monthly reporting",
-        "3 revisions per delivery",
-        "3-5 business day delivery"
-      ]
+  "promptPacks": {
+    "title": "AI Prompt Packs",
+    "subtitle": "Professional-grade prompts that produce results. Tailored to your industry.",
+    "photography": {
+      "title": "Photography Prompts",
+      "description": "500 prompts for hyper-realistic images. Fashion, food, real estate, product."
     },
-    "scale": {
-      "name": "Scale",
-      "description": "Full-service AI marketing for mid-size companies demanding excellence.",
-      "price": "€2,997",
-      "features": [
-        "6 custom AI models",
-        "100 editorial images/month",
-        "6 short + 3 long videos (up to 5 min)",
-        "Strategy with KPIs and reporting",
-        "4 social media channels (30 posts/month)",
-        "5 revisions included",
-        "48h delivery"
-      ]
+    "video": {
+      "title": "Video Prompts",
+      "description": "Templates for Kling, Runway, and Sora. Cinematic results every time."
     },
-    "enterprise": {
-      "name": "Enterprise",
-      "description": "Enterprise-grade. Unlimited production, custom SLAs, priority support.",
-      "price": "€4,997",
-      "features": [
-        "Unlimited AI models",
-        "Unlimited production",
-        "Unlimited video (up to 10 min)",
-        "Omnichannel strategy with A/B testing",
-        "Personalized creative direction",
-        "12h response SLA",
-        "Quarterly brand workshops",
-        "Custom integrations"
-      ]
+    "custom": {
+      "title": "Custom Prompt Sets",
+      "description": "We build prompt libraries tailored to your specific business needs."
     },
-    "enterpriseBadge": "Enterprise",
-    "comparisonTitle": "What You Save With NeuroBulls",
-    "comparisonTraditional": "Traditional Cost",
-    "comparisonNeurobulls": "NeuroBulls Cost",
-    "comparisonPhotoTraditional": "€3,000 - €8,000",
-    "comparisonPhotoNeurobulls": "From €297",
-    "comparisonPhotoLabel": "Photo Shoot",
-    "comparisonVideoTraditional": "€5,000 - €20,000",
-    "comparisonVideoNeurobulls": "From €497",
-    "comparisonVideoLabel": "Video Production",
-    "comparisonCampaignTraditional": "€15,000+",
-    "comparisonCampaignNeurobulls": "From €797/mo",
-    "comparisonCampaignLabel": "Full Campaign",
-    "ctaTitle": "Ready to transform your marketing?",
-    "ctaButton": "Get in Touch"
+    "cta": "Browse Products"
   },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "items": [
-      {
-        "q": "Do the images look real?",
-        "a": "Our images go through a 4-step refinement pipeline including pore-level skin texture, facial restoration, and professional upscaling. The result is indistinguishable from a real photograph. Our golden rule: if it looks AI, it doesn't leave our studio."
+  "comparison": {
+    "title": "Why businesses choose NeuroBulls",
+    "diy": {
+      "label": "Do it yourself",
+      "timeline": "Weeks",
+      "cost": "Your time",
+      "quality": "Amateur",
+      "availability": "Your schedule",
+      "revisions": "None",
+      "scalability": "Impossible",
+      "automation": "No",
+      "agents": "No",
+      "aiExpertise": "None"
+    },
+    "traditional": {
+      "label": "Traditional agency",
+      "timeline": "2-4 weeks",
+      "cost": "Thousands of $",
+      "quality": "Professional",
+      "availability": "Their schedule",
+      "revisions": "Limited & expensive",
+      "scalability": "Slow & expensive",
+      "automation": "No",
+      "agents": "No",
+      "aiExpertise": "Outsourced"
+    },
+    "neurobulls": {
+      "label": "NeuroBulls",
+      "timeline": "48h - 7 days",
+      "cost": "Custom quote",
+      "quality": "Professional",
+      "availability": "24/7",
+      "revisions": "Included",
+      "scalability": "Instant",
+      "automation": "Included",
+      "agents": "With memory (RAG)",
+      "aiExpertise": "In-house specialists"
+    },
+    "rows": {
+      "timeline": "Timeline",
+      "cost": "Investment",
+      "quality": "Quality",
+      "availability": "Availability",
+      "revisions": "Revisions",
+      "scalability": "Scalability",
+      "automation": "Automation",
+      "agents": "AI Agents",
+      "aiExpertise": "AI Expertise"
+    }
+  },
+  "trusted": {
+    "title": "Trusted by forward-thinking businesses",
+    "subtitle": "We help companies across fashion, hospitality, real estate, food, and technology create world-class content with AI."
+  },
+  "cta": {
+    "title": "Ready to see what AI can do for your business?",
+    "subtitle": "Get a custom proposal tailored to your needs. No commitment.",
+    "button": "Get a Proposal",
+    "buttonSecondary": "View Our Work"
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "From brief to launch in days, not weeks.",
+    "steps": {
+      "brief": {
+        "title": "Brief",
+        "description": "Share your vision, target audience, and campaign goals."
       },
-      {
-        "q": "How long does delivery take?",
-        "a": "Essential: 48 hours. Professional: 5 business days. Premium: 7 business days. Automation services: 5-7 days for setup."
+      "creation": {
+        "title": "AI Creation",
+        "description": "Our AI generates hyperrealistic models and content tailored to your brand."
       },
-      {
-        "q": "Can I use the images commercially?",
-        "a": "Yes, all images and videos we create are your exclusive property with full commercial license. Use them in advertising, social media, web, print and any other medium."
+      "review": {
+        "title": "Review & Refine",
+        "description": "Iterate with variations until every detail is perfect."
       },
-      {
-        "q": "How does a custom AI model work?",
-        "a": "We create a unique virtual person for your brand, AI-trained to always have exactly the same face, complexion and features in any scenario, pose or outfit. It's like having an exclusive model that works 24/7."
-      },
-      {
-        "q": "What if I don't like the result?",
-        "a": "Each delivery includes revisions (1 for Essential, 3 for Professional, 5 for Premium). Every image passes our automated quality control before delivery."
-      },
-      {
-        "q": "Can I cancel?",
-        "a": "Visual services are paid per project with no lock-in. Automation services have a minimum 3-month commitment to ensure proper setup and optimization."
-      },
-      {
-        "q": "What is an AI agent with memory (RAG)?",
-        "a": "It's an artificial intelligence assistant specifically trained with your business information: catalogs, prices, policies, FAQs. When a client contacts you, the agent responds with accurate and up-to-date information, just like your best employee would. RAG means the agent queries your real documents with every response — it doesn't make things up."
-      },
-      {
-        "q": "Does the voice assistant really sound human?",
-        "a": "Yes. We use cutting-edge voice technology that produces natural speech indistinguishable from a real person. Your clients won't notice the difference. Plus, the assistant can transfer the call to a human at any time if the situation requires it."
-      },
-      {
-        "q": "What additional costs are there?",
-        "a": "Setup and monthly maintenance include all our work: design, programming, agent training, technical support and ongoing optimization. External API costs (like OpenAI or ElevenLabs) are on the client's own account. This is typically €15-50/month depending on usage volume. We help you set everything up."
-      },
-      {
-        "q": "Can I combine visual and automation services?",
-        "a": "Yes. Our combined packs are the most efficient way to fully digitize your business. Contact us for a custom quote."
+      "launch": {
+        "title": "Deliver & Launch",
+        "description": "Receive production-ready assets optimized for every platform."
       }
-    ]
+    }
   },
   "work": {
     "title": "Our Work",
@@ -210,81 +197,6 @@
       "food": "Food & Beverage"
     }
   },
-  "process": {
-    "title": "How It Works",
-    "subtitle": "From brief to launch in days, not weeks.",
-    "steps": {
-      "brief": {
-        "title": "Brief",
-        "description": "Share your vision, target audience, and campaign goals."
-      },
-      "creation": {
-        "title": "AI Creation",
-        "description": "Our AI generates hyperrealistic models and content tailored to your brand."
-      },
-      "review": {
-        "title": "Review & Refine",
-        "description": "Iterate with variations until every detail is perfect."
-      },
-      "launch": {
-        "title": "Deliver & Launch",
-        "description": "Receive production-ready assets optimized for every platform."
-      }
-    }
-  },
-  "comparison": {
-    "title": "Why NeuroBulls?",
-    "diy": {
-      "label": "Do it yourself",
-      "timeline": "Weeks",
-      "cost": "Your time",
-      "quality": "Amateur",
-      "availability": "Your schedule",
-      "revisions": "—",
-      "scalability": "Impossible",
-      "automation": "No",
-      "agents": "No"
-    },
-    "traditional": {
-      "label": "Traditional agency",
-      "timeline": "2-4 weeks",
-      "cost": "Thousands of €",
-      "quality": "Professional",
-      "availability": "Their schedule",
-      "revisions": "Limited & expensive",
-      "scalability": "Slow & expensive",
-      "automation": "No",
-      "agents": "No"
-    },
-    "neurobulls": {
-      "label": "NeuroBulls",
-      "timeline": "48h - 7 days",
-      "cost": "Custom quote",
-      "quality": "Professional",
-      "availability": "24/7",
-      "revisions": "Included",
-      "scalability": "Instant",
-      "automation": "Included",
-      "agents": "With memory (RAG)"
-    },
-    "rows": {
-      "timeline": "Timeline",
-      "cost": "Investment",
-      "quality": "Quality",
-      "availability": "Availability",
-      "revisions": "Revisions",
-      "scalability": "Scalability",
-      "automation": "Automation",
-      "agents": "AI Agents"
-    }
-  },
-  "cta": {
-    "title": "Ready to transform your business?",
-    "titleHighlight": "Let's talk.",
-    "subtitle": "Tell us what you need and we'll prepare a custom quote.",
-    "button": "Request Quote",
-    "buttonSecondary": "View Portfolio"
-  },
   "about": {
     "title": "About NeuroBulls",
     "pipeline": {
@@ -295,7 +207,7 @@
     "founder": {
       "title": "Founded by D Business Group ES",
       "description": "We believe AI is not just the future of marketing — it is the present. Our mission is to make hyperrealistic AI content and intelligent automation accessible to every business, eliminating the barriers of traditional production and operations.",
-      "location": "Spain"
+      "location": "Serving clients worldwide"
     },
     "mission": {
       "title": "Our Mission",
@@ -326,7 +238,7 @@
     }
   },
   "contact": {
-    "title": "Let's Create Together",
+    "title": "Let's Build Something Great",
     "subtitle": "Tell us about your project and we'll craft a tailored solution.",
     "form": {
       "name": "Full Name",
@@ -335,15 +247,15 @@
       "service": "Service Interested In",
       "serviceOptions": {
         "default": "Select a service",
-        "visualStarter": "Visual Essential",
-        "visualPro": "Visual Professional",
-        "visualPremium": "Visual Premium",
-        "voice": "AI Voice Assistant",
-        "agent": "AI Agent with Memory",
+        "photography": "AI Photography",
+        "video": "AI Video Production",
+        "aiModels": "AI Models",
+        "voice": "Voice AI Assistant",
+        "agent": "AI Agent (RAG)",
         "automation": "Process Automation",
-        "packNegocio": "Business Pack (Visual + AI Voice)",
-        "packTotal": "Total Pack (Visual + Voice + AI Agent)",
-        "freeSample": "General inquiry",
+        "promptPacks": "Prompt Packs",
+        "businessStarter": "Business Starter (Visual + Voice AI)",
+        "growthPackage": "Growth Package (Visual + AI Agent + Automation)",
         "other": "Other / Custom quote"
       },
       "namePlaceholder": "John Doe",
@@ -363,7 +275,7 @@
       "email": "neurobulls@gmail.com",
       "instagram": "@neurobulls",
       "location": "Location",
-      "locationValue": "Spain"
+      "locationValue": "Serving clients worldwide"
     },
     "cta": {
       "text": "Prefer email? Write us directly at"
@@ -374,12 +286,17 @@
     "aboutLink": "About",
     "workLink": "Work",
     "servicesTitle": "Services",
-    "serviceVisualStarter": "Visual Essential",
-    "serviceVisualPro": "Visual Professional",
-    "serviceVisualPremium": "Visual Premium",
-    "serviceVoice": "AI Voice",
-    "serviceAgent": "AI Agent (RAG)",
+    "servicePhotography": "AI Photography",
+    "serviceVideo": "AI Video",
+    "serviceModels": "AI Models",
+    "serviceVoice": "Voice AI",
+    "serviceAgent": "AI Agents",
     "serviceAutomation": "Automation",
+    "servicePromptPacks": "Prompt Packs",
+    "productsTitle": "Products",
+    "productPrompts": "500 AI Photography Prompts",
+    "productMasterclass": "AI Visual Masterclass",
+    "productCustom": "Custom Prompt Pack",
     "legal": "Legal",
     "legalNotice": "Legal Notice",
     "privacy": "Privacy Policy",
@@ -387,41 +304,50 @@
     "terms": "Terms & Conditions",
     "contactTitle": "Contact",
     "rights": "All rights reserved.",
-    "poweredBy": "Powered by AI"
+    "poweredBy": "Powered by AI",
+    "location": "Serving clients worldwide"
   },
   "shop": {
-    "title": "Premium AI Resources",
-    "subtitle": "Professional tools and guides to master AI visual production. Created by the NeuroBulls team.",
+    "title": "Digital Products",
+    "subtitle": "Professional AI resources for creators and businesses.",
     "securePayment": "Secure payment via Stripe",
     "prompts": {
       "badge": "Prompts Pack",
-      "title": "500 AI Photography Prompts Pack",
+      "title": "500 AI Photography Prompts",
       "price": "$29",
       "oneTime": "One-time payment",
+      "description": "The complete prompt library for hyper-realistic AI photography. 20 categories including portraits, food, real estate, fashion, product, and lifestyle. Copy, paste, create.",
       "features": [
         "500 copy-paste prompts across 20 categories",
-        "AVB 8-layer framework guide included",
         "Negative prompts for each",
-        "Video prompt templates",
+        "Camera settings included",
+        "AVB 8-layer framework guide",
         "Monthly updates"
       ],
       "buyButton": "Buy for $29"
     },
     "masterclass": {
-      "badge": "Best Value",
+      "badge": "Best Seller",
       "title": "AI Visual Production Masterclass",
       "price": "$49",
       "oneTime": "One-time payment",
+      "description": "The complete course on creating professional AI content. From the 8-layer framework to building an AI content business. 50+ pages of actionable knowledge.",
       "features": [
-        "Complete 50-page course",
-        "The 8-layer AVB framework explained in depth",
+        "10 chapters of actionable content",
         "100+ prompts with detailed explanations",
+        "Video production templates",
         "Character consistency guide",
-        "Video production pipeline",
-        "Business building guide",
-        "All updates included"
+        "Business strategy guide",
+        "All future updates included"
       ],
       "buyButton": "Buy for $49"
+    },
+    "custom": {
+      "badge": "Custom",
+      "title": "Custom Prompt Pack",
+      "price": "From $99",
+      "description": "We build a custom prompt library tailored to your industry and brand. Includes brand-specific settings, style guides, and optimization.",
+      "buttonLabel": "Request Custom Pack"
     },
     "ctaTitle": "Want us to create content for your brand?",
     "ctaButton": "Contact Us"
@@ -438,5 +364,30 @@
     "analyticsDesc": "Help us understand how visitors use our site.",
     "marketing": "Marketing",
     "marketingDesc": "Used to deliver relevant ads."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What industries do you work with?",
+        "a": "We work with businesses across fashion, hospitality, real estate, food, technology, and e-commerce. Our AI tools adapt to any industry that needs visual content or automation."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Starter: 48 hours. Growth: 5 business days. Scale: 7 business days. Automation services: 5-10 days depending on complexity."
+      },
+      {
+        "q": "Do you work with international clients?",
+        "a": "Yes, we serve clients worldwide. Our team operates remotely and our AI tools work across time zones and languages."
+      },
+      {
+        "q": "What's included in your AI automation services?",
+        "a": "Full setup, training, ongoing support, and maintenance. We design, build, and optimize your automations so they run flawlessly. External API costs are on the client's account (typically $15-50/month)."
+      },
+      {
+        "q": "Can you create content in multiple languages?",
+        "a": "Yes, our AI tools support 50+ languages. We can produce visual content, voice assistants, and AI agents in any language your business needs."
+      }
+    ]
   }
 }

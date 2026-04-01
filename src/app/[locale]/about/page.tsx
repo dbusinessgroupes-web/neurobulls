@@ -18,7 +18,7 @@ import {
   Cpu,
   ImageIcon,
   Sparkles,
-  MapPin,
+  Globe,
 } from "lucide-react";
 
 const advantageCards = [
@@ -230,7 +230,7 @@ export default function AboutPage() {
                   <div className="relative aspect-[3/4] rounded-2xl overflow-hidden ring-2 ring-nb-gold/30 ring-offset-4 ring-offset-background">
                     <Image
                       src="/team/diego-ceo.jpg"
-                      alt="Diego Rodríguez Molino"
+                      alt="Diego Rodriguez Molino"
                       fill
                       className="object-cover object-top"
                       sizes="(max-width: 768px) 80vw, 320px"
@@ -245,17 +245,17 @@ export default function AboutPage() {
                     Our Founder
                   </p>
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-                    Diego Rodríguez Molino
+                    Diego Rodriguez Molino
                   </h2>
                   <p className="text-base font-medium text-nb-gold mb-6">CEO & Founder</p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production and intelligent automation for businesses of all sizes. Our technology generates content indistinguishable from reality and automates processes so your business runs 24/7.
+                    Founder and CEO of NeuroBulls. Building the bridge between AI technology and real business results. Based in Europe, serving clients worldwide.
                   </p>
                   <blockquote className="text-lg italic text-foreground/80 border-l-2 border-nb-gold/40 pl-4 mb-6">
                     &quot;If it looks AI, it doesn&apos;t leave our studio.&quot;
                   </blockquote>
                   <div className="flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground">
-                    <MapPin className="h-4 w-4" />
+                    <Globe className="h-4 w-4" />
                     <span>{t("founder.location")}</span>
                   </div>
                 </div>

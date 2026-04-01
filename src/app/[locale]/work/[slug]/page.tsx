@@ -12,7 +12,7 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-const categoryLabelsEN: Record<string, string> = {
+const categoryLabels: Record<string, string> = {
   fashion: "Fashion",
   beauty: "Beauty",
   tech: "Tech",
@@ -20,33 +20,20 @@ const categoryLabelsEN: Record<string, string> = {
   food: "Food & Beverage",
 };
 
-const categoryLabelsES: Record<string, string> = {
-  fashion: "Moda",
-  beauty: "Belleza",
-  tech: "Tecnología",
-  realestate: "Inmobiliaria",
-  food: "Alimentación",
-};
-
 const projects: Record<
   string,
   {
-    titleEN: string;
-    titleES: string;
+    title: string;
     category: string;
     image: string;
     gallery: string[];
-    briefEN: string;
-    briefES: string;
-    servicesEN: string[];
-    servicesES: string[];
-    statsEN: string[];
-    statsES: string[];
+    brief: string;
+    services: string[];
+    stats: string[];
   }
 > = {
   "vanguard-fashion": {
-    titleEN: "Vanguard Fashion",
-    titleES: "Vanguard Fashion",
+    title: "Vanguard Fashion",
     category: "fashion",
     image: "/portfolio/vanguard-fashion.jpg",
     gallery: [
@@ -55,38 +42,23 @@ const projects: Record<
       "/portfolio/moda-3.jpg",
       "/portfolio/moda-4.jpg",
     ],
-    briefEN:
+    brief:
       "Example of a complete editorial campaign for a fashion collection. 3 exclusive AI models, 120 editorial images and 8 cinematic videos produced in 5 days. Vogue-quality content without photo shoots, studios or real models.",
-    briefES:
-      "Ejemplo de campaña editorial completa para una colección de moda. 3 modelos IA exclusivos, 120 imágenes editoriales y 8 vídeos cinematográficos producidos en 5 días. Contenido de calidad Vogue sin sesiones fotográficas, estudios ni modelos reales.",
-    servicesEN: [
+    services: [
       "AI Photography",
       "AI Video",
       "AI Models",
       "Creative Direction",
     ],
-    servicesES: [
-      "Fotografía IA",
-      "Vídeo IA",
-      "Modelos IA",
-      "Dirección Creativa",
-    ],
-    statsEN: [
+    stats: [
       "+340% social media engagement",
       "120 editorial images",
       "8 cinematic videos",
       "5-day delivery",
     ],
-    statsES: [
-      "+340% engagement en RRSS",
-      "120 imágenes editoriales",
-      "8 vídeos cinematográficos",
-      "Entrega en 5 días",
-    ],
   },
   "lumiere-beauty": {
-    titleEN: "Lumière Beauty",
-    titleES: "Lumière Beauty",
+    title: "Lumiere Beauty",
     category: "beauty",
     image: "/portfolio/lumiere-beauty.jpg",
     gallery: [
@@ -94,28 +66,18 @@ const projects: Record<
       "/portfolio/belleza-2.jpg",
       "/portfolio/belleza-3.jpg",
     ],
-    briefEN:
+    brief:
       "Example of a premium skincare launch campaign. 2 AI models as the faces of the brand, 80 product and beauty editorial images, and 4 Instagram videos. All produced in 3 days.",
-    briefES:
-      "Ejemplo de campaña de lanzamiento de skincare premium. 2 modelos IA como imagen de marca, 80 imágenes de producto y beauty editorial, y 4 vídeos para Instagram. Todo producido en 3 días.",
-    servicesEN: ["AI Photography", "AI Video", "AI Models"],
-    servicesES: ["Fotografía IA", "Vídeo IA", "Modelos IA"],
-    statsEN: [
+    services: ["AI Photography", "AI Video", "AI Models"],
+    stats: [
       "80 editorial images",
       "4 campaign videos",
       "3-day delivery",
       "90% cost reduction",
     ],
-    statsES: [
-      "80 imágenes editoriales",
-      "4 vídeos de campaña",
-      "Entrega en 3 días",
-      "90% reducción de costes",
-    ],
   },
   "techvision-pro": {
-    titleEN: "TechVision Pro",
-    titleES: "TechVision Pro",
+    title: "TechVision Pro",
     category: "tech",
     image: "/portfolio/techvision-pro.jpg",
     gallery: [
@@ -123,38 +85,23 @@ const projects: Record<
       "/portfolio/tech-2.jpg",
       "/portfolio/tech-3.jpg",
     ],
-    briefEN:
+    brief:
       "Example of complete visual production for a tech product launch. 60 product images, 4 AI models for the ad campaign, and 6 short social media videos. Every image scored 8.0+ on our quality pipeline.",
-    briefES:
-      "Ejemplo de producción visual completa para lanzamiento de producto tech. 60 imágenes de producto, 4 modelos IA para campaña publicitaria, y 6 vídeos cortos para redes. Cada imagen con score mínimo 8.0/10 en nuestro pipeline de calidad.",
-    servicesEN: [
+    services: [
       "AI Photography",
       "AI Video",
       "AI Models",
       "Campaign Strategy",
     ],
-    servicesES: [
-      "Fotografía IA",
-      "Vídeo IA",
-      "Modelos IA",
-      "Estrategia de Campaña",
-    ],
-    statsEN: [
+    stats: [
       "60 product images",
       "6 campaign videos",
       "4 AI models",
       "Quality score 8.0+/10",
     ],
-    statsES: [
-      "60 imágenes de producto",
-      "6 vídeos de campaña",
-      "4 modelos IA",
-      "Score de calidad 8.0+/10",
-    ],
   },
   "maison-elegance": {
-    titleEN: "Maison Élégance",
-    titleES: "Maison Élégance",
+    title: "Maison Elegance",
     category: "realestate",
     image: "/portfolio/maison-elegance.jpg",
     gallery: [
@@ -162,73 +109,44 @@ const projects: Record<
       "/portfolio/inmobiliaria-2.jpg",
       "/portfolio/inmobiliaria-3.jpg",
     ],
-    briefEN:
+    brief:
       "Example of a luxury real estate campaign. 5 AI models (agents and buyers), 90 property images with people in spaces, and 3 virtual tour videos. 95% less cost than traditional photo production.",
-    briefES:
-      "Ejemplo de campaña inmobiliaria de lujo. 5 modelos IA (agentes y compradores), 90 imágenes de propiedades con personas en espacios, y 3 vídeos tour virtual. 95% menos coste que una producción fotográfica tradicional.",
-    servicesEN: ["AI Photography", "AI Video", "AI Models"],
-    servicesES: ["Fotografía IA", "Vídeo IA", "Modelos IA"],
-    statsEN: [
+    services: ["AI Photography", "AI Video", "AI Models"],
+    stats: [
       "90 property images",
       "5 AI models",
       "3 virtual tours",
       "95% cost savings",
     ],
-    statsES: [
-      "90 imágenes de propiedades",
-      "5 modelos IA",
-      "3 tours virtuales",
-      "95% ahorro en costes",
-    ],
   },
   "glow-cosmetics": {
-    titleEN: "Glow Cosmetics",
-    titleES: "Glow Cosmetics",
+    title: "Glow Cosmetics",
     category: "beauty",
     image: "/portfolio/glow-cosmetics.jpg",
     gallery: ["/portfolio/glow-cosmetics.jpg", "/portfolio/glow-2.jpg", "/portfolio/glow-3.jpg"],
-    briefEN:
+    brief:
       "Example of a virtual beauty influencer for social media. An AI influencer with her own identity, generating 30 posts per month with beauty content indistinguishable from real photography.",
-    briefES:
-      "Ejemplo de influencer virtual de belleza para redes sociales. Una influencer IA con identidad propia, generando 30 posts al mes con contenido beauty indistinguible de fotografía real.",
-    servicesEN: ["AI Models", "AI Social Media", "AI Photography"],
-    servicesES: ["Modelos IA", "Redes Sociales IA", "Fotografía IA"],
-    statsEN: [
+    services: ["AI Models", "AI Social Media", "AI Photography"],
+    stats: [
       "150 images created",
       "12 monthly reels",
       "1 AI influencer",
       "+280% engagement",
     ],
-    statsES: [
-      "150 imágenes creadas",
-      "12 reels mensuales",
-      "1 influencer IA",
-      "+280% engagement",
-    ],
   },
   "urban-taste": {
-    titleEN: "Urban Taste",
-    titleES: "Urban Taste",
+    title: "Urban Taste",
     category: "food",
     image: "/portfolio/urban-taste.jpg",
     gallery: ["/portfolio/urban-taste.jpg"],
-    briefEN:
+    brief:
       "Example of restaurant rebranding with AI food photography and lifestyle content. 200 images and 5 videos showing dishes and ambiance with AI-generated diners.",
-    briefES:
-      "Ejemplo de rebranding de restaurante con fotografía gastronómica IA y contenido lifestyle. 200 imágenes y 5 vídeos mostrando platos y ambiente con comensales generados por IA.",
-    servicesEN: ["AI Photography", "AI Video", "AI Brand Identity"],
-    servicesES: ["Fotografía IA", "Vídeo IA", "Identidad de Marca IA"],
-    statsEN: [
+    services: ["AI Photography", "AI Video", "AI Brand Identity"],
+    stats: [
       "200 food images",
       "5 campaign videos",
       "6 AI models",
       "Complete rebranding",
-    ],
-    statsES: [
-      "200 imágenes gastronómicas",
-      "5 vídeos de campaña",
-      "6 modelos IA",
-      "Rebranding completo",
     ],
   },
 };
@@ -248,20 +166,13 @@ const fadeUp = {
 export default function WorkDetailPage() {
   const params = useParams();
   const slug = params.slug as string;
-  const isEN = true;
 
   const project = projects[slug];
   if (!project) {
     notFound();
   }
 
-  const title = isEN ? project.titleEN : project.titleES;
-  const brief = isEN ? project.briefEN : project.briefES;
-  const services = isEN ? project.servicesEN : project.servicesES;
-  const stats = isEN ? project.statsEN : project.statsES;
-  const categoryLabel = isEN
-    ? categoryLabelsEN[project.category]
-    : categoryLabelsES[project.category];
+  const categoryLabel = categoryLabels[project.category];
 
   return (
     <>
@@ -272,7 +183,7 @@ export default function WorkDetailPage() {
           <div className="absolute inset-0 -z-10">
             <Image
               src={project.image}
-              alt={title}
+              alt={project.title}
               fill
               className="object-cover"
               priority
@@ -302,7 +213,7 @@ export default function WorkDetailPage() {
               variants={fadeUp}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
             >
-              {title}
+              {project.title}
             </motion.h1>
           </motion.div>
         </section>
@@ -312,10 +223,10 @@ export default function WorkDetailPage() {
           <div className="mx-auto max-w-3xl">
             <ScrollReveal>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-6">
-                {isEN ? "About the Project" : "Sobre el proyecto"}
+                About the Project
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                {brief}
+                {project.brief}
               </p>
             </ScrollReveal>
           </div>
@@ -326,10 +237,10 @@ export default function WorkDetailPage() {
           <div className="mx-auto max-w-3xl">
             <ScrollReveal>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-6">
-                {isEN ? "Services Used" : "Servicios utilizados"}
+                Services Used
               </h2>
               <div className="flex flex-wrap gap-3">
-                {services.map((service, i) => (
+                {project.services.map((service, i) => (
                   <Badge
                     key={i}
                     variant="secondary"
@@ -348,11 +259,11 @@ export default function WorkDetailPage() {
           <div className="mx-auto max-w-4xl">
             <ScrollReveal>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-10 text-center">
-                {isEN ? "Results" : "Resultados"}
+                Results
               </h2>
             </ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {stats.map((stat, i) => (
+              {project.stats.map((stat, i) => (
                 <ScrollReveal key={i} delay={i * 0.1}>
                   <div className="rounded-xl border border-border bg-card p-6 text-center">
                     <p className="text-sm font-bold text-nb-gold">{stat}</p>
@@ -369,7 +280,7 @@ export default function WorkDetailPage() {
             <div className="mx-auto max-w-6xl">
               <ScrollReveal>
                 <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-10 text-center">
-                  {isEN ? "Gallery" : "Galería"}
+                  Gallery
                 </h2>
               </ScrollReveal>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -378,7 +289,7 @@ export default function WorkDetailPage() {
                     <div className="group relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/30 hover:border-nb-red/30 transition-colors duration-300">
                       <Image
                         src={img}
-                        alt={`${title} — ${isEN ? "example" : "ejemplo"} ${i + 1}`}
+                        alt={`${project.title} — example ${i + 1}`}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -398,16 +309,14 @@ export default function WorkDetailPage() {
           <div className="mx-auto max-w-4xl text-center">
             <ScrollReveal>
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8">
-                {isEN
-                  ? "Want similar results?"
-                  : "¿Quieres resultados similares?"}
+                Want similar results?
               </h2>
               <Link href="/contact">
                 <Button
                   size="lg"
                   className="bg-nb-red hover:bg-nb-red-hover text-white px-10 py-6 text-lg gap-2"
                 >
-                  {isEN ? "Start Your Project" : "Iniciar Tu Proyecto"}
+                  Start Your Project
                   <ArrowRight className="h-5 w-5" />
                 </Button>
               </Link>

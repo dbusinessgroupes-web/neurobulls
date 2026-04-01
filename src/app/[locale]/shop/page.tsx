@@ -60,7 +60,7 @@ export default function ShopPage() {
 
         {/* Products */}
         <section className="px-6 pb-20">
-          <div className="mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Product 1: Prompts Pack */}
             <ScrollReveal>
               <Card className="border-border bg-card rounded-xl overflow-hidden h-full">
@@ -71,6 +71,9 @@ export default function ShopPage() {
                     </Badge>
                   </div>
                   <h2 className="text-2xl font-bold">{t("prompts.title")}</h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t("prompts.description")}
+                  </p>
                   <div className="text-center">
                     <p className="text-5xl font-bold text-nb-gold">
                       {t("prompts.price")}
@@ -109,6 +112,9 @@ export default function ShopPage() {
                     </Badge>
                   </div>
                   <h2 className="text-2xl font-bold">{t("masterclass.title")}</h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t("masterclass.description")}
+                  </p>
                   <div className="text-center">
                     <p className="text-5xl font-bold text-nb-gold">
                       {t("masterclass.price")}
@@ -133,6 +139,37 @@ export default function ShopPage() {
                     <Lock className="h-3.5 w-3.5" />
                     <span>{t("securePayment")}</span>
                   </div>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
+
+            {/* Product 3: Custom Prompt Pack */}
+            <ScrollReveal>
+              <Card className="border-border bg-card rounded-xl overflow-hidden h-full">
+                <CardContent className="p-8 space-y-6 flex flex-col h-full">
+                  <div>
+                    <Badge className="mb-4 bg-nb-gold/10 text-nb-gold border-nb-gold/20">
+                      {t("custom.badge")}
+                    </Badge>
+                  </div>
+                  <h2 className="text-2xl font-bold">{t("custom.title")}</h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t("custom.description")}
+                  </p>
+                  <div className="text-center">
+                    <p className="text-5xl font-bold text-nb-gold">
+                      {t("custom.price")}
+                    </p>
+                  </div>
+
+                  <div className="flex-1" />
+
+                  <Link href="/contact" className="block">
+                    <Button className="w-full bg-nb-red hover:bg-nb-red-hover text-white font-semibold py-6 text-base">
+                      {t("custom.buttonLabel")}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </ScrollReveal>

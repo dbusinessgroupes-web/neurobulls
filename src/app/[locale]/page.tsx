@@ -5,18 +5,20 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Camera,
-  Target,
-  Gift,
+  Video,
+  Users,
+  Phone,
+  Brain,
+  Workflow,
   FileText,
   Sparkles,
   RefreshCw,
   Rocket,
   ChevronDown,
-  Check,
   ArrowRight,
-  Phone,
-  Brain,
-  Workflow,
+  BookOpen,
+  Film,
+  Wrench,
 } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -46,13 +48,22 @@ const fadeUp = {
   },
 };
 
-const serviceCards = [
-  { icon: Camera, titleKey: "visualStarter" },
-  { icon: Target, titleKey: "visualPro", popular: true },
-  { icon: Sparkles, titleKey: "visualPremium" },
+const visualCards = [
+  { icon: Camera, titleKey: "photography" },
+  { icon: Video, titleKey: "video" },
+  { icon: Users, titleKey: "aiModels" },
+];
+
+const automationCards = [
   { icon: Phone, titleKey: "voice" },
   { icon: Brain, titleKey: "agent" },
   { icon: Workflow, titleKey: "automation" },
+];
+
+const promptPackCards = [
+  { icon: BookOpen, titleKey: "photography" },
+  { icon: Film, titleKey: "video" },
+  { icon: Wrench, titleKey: "custom" },
 ];
 
 const processSteps = [
@@ -89,7 +100,7 @@ const portfolioItems = [
   },
 ];
 
-const comparisonRowKeys = ["timeline", "cost", "quality", "availability", "revisions", "scalability", "automation", "agents"] as const;
+const comparisonRowKeys = ["timeline", "cost", "quality", "availability", "revisions", "scalability", "automation", "agents", "aiExpertise"] as const;
 
 export default function Home() {
   const t = useTranslations();
@@ -100,23 +111,19 @@ export default function Home() {
       <main className="overflow-hidden">
         {/* ─── Hero Section ─── */}
         <section className="relative min-h-screen flex items-center justify-center px-6">
-          {/* Hero background image */}
           <div className="absolute inset-0 -z-10">
             <Image
               src="/hero/hero-models.jpg"
-              alt="NeuroBulls — AI Marketing Agency visual"
+              alt="NeuroBulls — AI Agency"
               fill
               priority
               quality={90}
               className="object-cover"
               sizes="100vw"
             />
-            {/* Dark overlay for text readability */}
             <div className="absolute inset-0 bg-black/50" />
-            {/* Gradient fade to page background at bottom */}
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
           </div>
-          {/* Gradient orbs */}
           <div className="absolute top-1/4 left-1/4 -z-10 h-[500px] w-[500px] rounded-full bg-nb-red/10 blur-[128px]" />
           <div className="absolute bottom-1/4 right-1/4 -z-10 h-[400px] w-[400px] rounded-full bg-nb-gold/10 blur-[128px]" />
 
@@ -147,7 +154,6 @@ export default function Home() {
             </motion.div>
           </motion.div>
 
-          {/* Scroll indicator */}
           <motion.div
             className="absolute bottom-10 left-1/2 -translate-x-1/2"
             animate={{ y: [0, 12, 0] }}
@@ -162,28 +168,24 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-6">
             <Card className="border-border bg-card">
               <CardContent className="grid grid-cols-2 lg:grid-cols-4 gap-8 p-8 lg:p-12">
-                {/* Stat 1: 85% */}
                 <div className="text-center">
                   <div className="text-4xl font-bold text-nb-gold">
                     <AnimatedCounter target={85} suffix="%" />
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{t("stats.cost")}</p>
                 </div>
-                {/* Stat 2: 48h */}
                 <div className="text-center">
                   <div className="text-4xl font-bold text-nb-gold">
                     <AnimatedCounter target={48} suffix="h" />
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{t("stats.delivery")}</p>
                 </div>
-                {/* Stat 3: 24/7 — plain text, not AnimatedCounter */}
                 <div className="text-center">
                   <div className="text-4xl font-bold text-nb-gold">
                     <span>24/7</span>
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{t("stats.availability")}</p>
                 </div>
-                {/* Stat 4: 100% */}
                 <div className="text-center">
                   <div className="text-4xl font-bold text-nb-gold">
                     <AnimatedCounter target={100} suffix="%" />
@@ -195,7 +197,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ─── Services Preview ─── */}
+        {/* ─── Services Preview: AI Visual Production ─── */}
         <section className="py-24 lg:py-32 px-6">
           <div className="mx-auto max-w-6xl">
             <ScrollReveal>
@@ -209,16 +211,49 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {serviceCards.map((service, i) => (
+            {/* Category 1: AI Visual Production */}
+            <ScrollReveal>
+              <h3 className="text-2xl font-bold mb-6 text-nb-gold">
+                {t("services.visualTitle")}
+              </h3>
+            </ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+              {visualCards.map((service, i) => (
                 <ScrollReveal key={service.titleKey} delay={i * 0.08}>
-                  <Card className={`group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 ${(service as { popular?: boolean }).popular ? "border-nb-red border-2" : ""}`}>
+                  <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 h-full">
                     <CardContent className="p-6">
-                      {(service as { popular?: boolean }).popular && (
-                        <Badge className="bg-nb-red text-white border-0 px-2 py-0.5 text-xs font-semibold mb-3">
-                          {t("services.popular")}
-                        </Badge>
-                      )}
+                      <service.icon className="h-8 w-8 text-nb-gold mb-4" />
+                      <h3 className="text-lg font-semibold mb-2">
+                        {t(`services.${service.titleKey}.title`)}
+                      </h3>
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                        {t(`services.${service.titleKey}.description`)}
+                      </p>
+                      <div className="mt-4">
+                        <Link href="/services">
+                          <Button variant="outline" size="sm" className="group/btn">
+                            {t("services.viewMore")}
+                            <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
+                          </Button>
+                        </Link>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
+
+            {/* Category 2: AI Automation & Intelligence */}
+            <ScrollReveal>
+              <h3 className="text-2xl font-bold mb-6 text-nb-gold">
+                {t("services.automationTitle")}
+              </h3>
+            </ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {automationCards.map((service, i) => (
+                <ScrollReveal key={service.titleKey} delay={i * 0.08}>
+                  <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-red hover:-translate-y-1 h-full">
+                    <CardContent className="p-6">
                       <service.icon className="h-8 w-8 text-nb-gold mb-4" />
                       <h3 className="text-lg font-semibold mb-2">
                         {t(`services.${service.titleKey}.title`)}
@@ -245,6 +280,49 @@ export default function Home() {
                 {t("services.exploreAll")}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button></Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ─── AI Prompt Packs ─── */}
+        <section className="py-24 lg:py-32 px-6 bg-muted/30">
+          <div className="mx-auto max-w-6xl">
+            <ScrollReveal>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+                  {t("promptPacks.title")}
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                  {t("promptPacks.subtitle")}
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {promptPackCards.map((pack, i) => (
+                <ScrollReveal key={pack.titleKey} delay={i * 0.08}>
+                  <Card className="group border-border bg-card transition-all duration-300 hover:border-nb-gold hover:-translate-y-1 h-full">
+                    <CardContent className="p-6">
+                      <pack.icon className="h-8 w-8 text-nb-gold mb-4" />
+                      <h3 className="text-lg font-semibold mb-2">
+                        {t(`promptPacks.${pack.titleKey}.title`)}
+                      </h3>
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                        {t(`promptPacks.${pack.titleKey}.description`)}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <Link href="/shop">
+                <Button className="bg-nb-gold text-black hover:bg-nb-gold/90 px-8">
+                  {t("promptPacks.cta")}
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -315,17 +393,14 @@ export default function Home() {
             </ScrollReveal>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-              {/* Connecting line (desktop) */}
               <div className="hidden md:block absolute top-12 left-[12.5%] right-[12.5%] h-px border-t-2 border-dashed border-border" />
 
               {processSteps.map((step, i) => (
                 <ScrollReveal key={step.number} delay={i * 0.15}>
                   <div className="relative text-center">
-                    {/* Vertical connecting line (mobile) */}
                     {i < processSteps.length - 1 && (
                       <div className="md:hidden absolute left-1/2 top-24 h-[calc(100%+2rem)] w-px border-l-2 border-dashed border-border" />
                     )}
-                    {/* Step number */}
                     <div className="relative z-10 mx-auto mb-4 flex h-24 w-24 flex-col items-center justify-center rounded-2xl bg-card border border-border">
                       <span className="text-xs font-bold text-nb-red mb-1">{step.number}</span>
                       <step.icon className="h-6 w-6 text-nb-gold" />
@@ -343,7 +418,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ─── Comparison Table — "Why NeuroBulls?" ─── */}
+        {/* ─── Comparison Table ─── */}
         <section className="py-24 lg:py-32 px-6">
           <div className="mx-auto max-w-5xl">
             <ScrollReveal>
@@ -357,7 +432,6 @@ export default function Home() {
             <ScrollReveal>
               <Card className="border-border bg-card overflow-hidden">
                 <CardContent className="p-0">
-                  {/* Table header */}
                   <div className="grid grid-cols-4 gap-4 px-6 py-4 border-b border-border bg-muted/30">
                     <div className="text-sm font-semibold text-muted-foreground" />
                     <div className="text-sm font-semibold text-muted-foreground text-center">
@@ -371,7 +445,6 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Rows */}
                   {comparisonRowKeys.map((key, i) => (
                     <div
                       key={key}
@@ -401,23 +474,17 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ─── Free Trial CTA ─── */}
+        {/* ─── Trusted By Section ─── */}
         <section className="py-24 lg:py-32 px-6">
           <div className="mx-auto max-w-4xl text-center">
             <ScrollReveal>
               <div className="rounded-2xl border border-nb-gold/20 bg-gradient-to-b from-card to-background p-10 md:p-16">
-                <Gift className="h-12 w-12 text-nb-gold mx-auto mb-6" />
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                  Try our quality for free
+                  {t("trusted.title")}
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                  Request a free sample image with no commitment. See our quality with your own eyes before hiring us.
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  {t("trusted.subtitle")}
                 </p>
-                <Link href="/contact">
-                  <Button className="bg-nb-red hover:bg-nb-red-hover text-white px-8 py-3 text-lg">
-                    Request Free Image
-                  </Button>
-                </Link>
               </div>
             </ScrollReveal>
           </div>
@@ -431,7 +498,7 @@ export default function Home() {
                 <div className="shrink-0">
                   <Image
                     src="/team/diego-ceo.jpg"
-                    alt="Diego Rodríguez Molino — CEO & Founder"
+                    alt="Diego Rodriguez Molino — CEO & Founder"
                     width={180}
                     height={180}
                     className="rounded-2xl object-cover object-top ring-2 ring-nb-gold/30"
@@ -442,11 +509,11 @@ export default function Home() {
                     Our Founder
                   </p>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-1">
-                    Diego Rodríguez Molino
+                    Diego Rodriguez Molino
                   </h2>
                   <p className="text-sm text-muted-foreground mb-4">CEO & Founder</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Entrepreneur and visionary at the intersection of marketing and artificial intelligence. I founded NeuroBulls with a clear mission: to democratize high-quality visual production and intelligent automation for businesses of all sizes. Our technology generates content indistinguishable from reality and automates processes so your business runs 24/7.
+                    Founder and CEO of NeuroBulls. Building the bridge between AI technology and real business results. Based in Europe, serving clients worldwide.
                   </p>
                 </div>
               </div>
@@ -456,9 +523,7 @@ export default function Home() {
 
         {/* ─── Final CTA ─── */}
         <section className="relative py-32 lg:py-40 px-6">
-          {/* Background gradient */}
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-nb-red/10 via-transparent to-transparent" />
-          {/* Decorative orbs */}
           <div className="absolute bottom-0 left-1/3 -z-10 h-[600px] w-[600px] rounded-full bg-nb-red/5 blur-[160px]" />
           <div className="absolute top-1/4 right-1/4 -z-10 h-[300px] w-[300px] rounded-full bg-nb-gold/5 blur-[100px]" />
 

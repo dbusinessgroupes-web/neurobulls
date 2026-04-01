@@ -122,15 +122,15 @@ export default function ContactPage() {
 
   const serviceOptions = [
     { value: "", label: t("contact.form.serviceOptions.default") },
-    { value: "visualStarter", label: t("contact.form.serviceOptions.visualStarter") },
-    { value: "visualPro", label: t("contact.form.serviceOptions.visualPro") },
-    { value: "visualPremium", label: t("contact.form.serviceOptions.visualPremium") },
+    { value: "photography", label: t("contact.form.serviceOptions.photography") },
+    { value: "video", label: t("contact.form.serviceOptions.video") },
+    { value: "aiModels", label: t("contact.form.serviceOptions.aiModels") },
     { value: "voice", label: t("contact.form.serviceOptions.voice") },
     { value: "agent", label: t("contact.form.serviceOptions.agent") },
     { value: "automation", label: t("contact.form.serviceOptions.automation") },
-    { value: "packNegocio", label: t("contact.form.serviceOptions.packNegocio") },
-    { value: "packTotal", label: t("contact.form.serviceOptions.packTotal") },
-    { value: "freeSample", label: t("contact.form.serviceOptions.freeSample") },
+    { value: "promptPacks", label: t("contact.form.serviceOptions.promptPacks") },
+    { value: "businessStarter", label: t("contact.form.serviceOptions.businessStarter") },
+    { value: "growthPackage", label: t("contact.form.serviceOptions.growthPackage") },
     { value: "other", label: t("contact.form.serviceOptions.other") },
   ];
 

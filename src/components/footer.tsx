@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Logo } from "./logo";
 import { Link } from "@/i18n/navigation";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, Globe } from "lucide-react";
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -15,12 +15,11 @@ function InstagramIcon({ className }: { className?: string }) {
 
 export function Footer() {
   const t = useTranslations("footer");
-  const tc = useTranslations("contact");
 
   return (
     <footer className="border-t border-border bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="space-y-4">
             <Logo />
@@ -37,26 +36,37 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Services */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold text-foreground">{t("servicesTitle")}</h4>
+            <nav className="flex flex-col gap-2">
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("servicePhotography")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVideo")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceModels")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVoice")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceAgent")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceAutomation")}</Link>
+              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("servicePromptPacks")}</Link>
+            </nav>
+          </div>
+
+          {/* Products */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold text-foreground">{t("productsTitle")}</h4>
+            <nav className="flex flex-col gap-2">
+              <Link href="/shop" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("productPrompts")}</Link>
+              <Link href="/shop" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("productMasterclass")}</Link>
+              <Link href="/shop" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("productCustom")}</Link>
+            </nav>
+          </div>
+
           {/* Company */}
           <div className="space-y-4">
             <h4 className="text-sm font-semibold text-foreground">{t("company")}</h4>
             <nav className="flex flex-col gap-2">
               <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("aboutLink")}</Link>
               <Link href="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("workLink")}</Link>
-              <a href="mailto:neurobulls@gmail.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{tc("info.email")}</a>
-            </nav>
-          </div>
-
-          {/* Services */}
-          <div className="space-y-4">
-            <h4 className="text-sm font-semibold text-foreground">{t("servicesTitle")}</h4>
-            <nav className="flex flex-col gap-2">
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualStarter")}</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualPro")}</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVisualPremium")}</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceVoice")}</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceAgent")}</Link>
-              <Link href="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">{t("serviceAutomation")}</Link>
+              <a href="mailto:neurobulls@gmail.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">neurobulls@gmail.com</a>
             </nav>
           </div>
 
@@ -77,8 +87,8 @@ export function Footer() {
             © 2026 NeuroBulls — D Business Group ES. {t("rights")}
           </p>
           <div className="flex items-center gap-1 text-xs text-muted-foreground">
-            <MapPin className="h-3 w-3" />
-            <span>{tc("info.locationValue")}</span>
+            <Globe className="h-3 w-3" />
+            <span>{t("location")}</span>
           </div>
         </div>
       </div>
