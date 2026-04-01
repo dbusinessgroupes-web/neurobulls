@@ -25,6 +25,7 @@ export function Header() {
     { href: "/work", label: t("work") },
     { href: "/about", label: t("about") },
     { href: "/contact", label: t("contact") },
+    { href: "/shop", label: t("shop") },
   ];
 
   return (

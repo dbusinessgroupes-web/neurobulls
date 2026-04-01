@@ -4,6 +4,7 @@
     "work": "Portfolio",
     "about": "Nosotros",
     "contact": "Contacto",
+    "shop": "Tienda",
     "startProject": "Iniciar Proyecto"
   },
   "hero": {
@@ -387,6 +388,36 @@
     "contactTitle": "Contacto",
     "rights": "Todos los derechos reservados.",
     "poweredBy": "Impulsado por IA"
+  },
+  "shop": {
+    "badge": "Producto Digital",
+    "title": "500 Prompts de Fotografía IA",
+    "subtitle": "El framework completo para crear imágenes hiperrealistas con IA. Funciona con Midjourney, FLUX, Stable Diffusion y más.",
+    "price": "9\u20ac",
+    "oneTime": "Pago único",
+    "features": {
+      "prompts": "500 prompts en 20 categorías",
+      "negativePrompts": "Negative prompts incluidos",
+      "characterGuide": "Guía de consistencia de personajes",
+      "videoTemplates": "Templates para vídeo (Kling, Runway, Sora)",
+      "updates": "Actualizaciones mensuales gratuitas"
+    },
+    "buyButton": "Comprar por 9\u20ac",
+    "securePayment": "Pago seguro con Stripe",
+    "sampleTitle": "Descarga una muestra gratis",
+    "sampleDescription": "45 prompts de muestra para que veas la calidad antes de comprar.",
+    "downloadSample": "Descargar muestra",
+    "insideTitle": "Qué incluye",
+    "categories": {
+      "portraits": "Retratos",
+      "portraitsDesc": "Selfies, macros, editorial, candid",
+      "food": "Gastronomía",
+      "foodDesc": "Platos, bebidas, bakery, flatlay",
+      "realEstate": "Inmobiliaria",
+      "realEstateDesc": "Staging, interiores, arquitectura"
+    },
+    "ctaTitle": "¿Quieres que creemos contenido para tu marca?",
+    "ctaButton": "Contactar"
   },
   "cookies": {
     "message": "Utilizamos cookies para mejorar tu experiencia. Puedes aceptar todas las cookies o personalizar tus preferencias.",
