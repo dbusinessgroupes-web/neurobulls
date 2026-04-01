@@ -228,7 +228,7 @@ const faqItems = [
   },
   {
     q: "What's included in your AI automation services?",
-    a: "Full setup, training, ongoing support, and maintenance. We design, build, and optimize your automations so they run flawlessly. External API costs are on the client's account (typically $15-50/month).",
+    a: "Full setup, training, ongoing support, and maintenance. We design, build, and optimize your automations so they run flawlessly. External API costs are on the client's account (typically €15-50/month).",
   },
   {
     q: "Can you create content in multiple languages?",

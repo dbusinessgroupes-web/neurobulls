@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
 
     const params = new URLSearchParams();
     params.append("mode", "payment");
-    params.append("line_items[0][price_data][currency]", "usd");
+    params.append("line_items[0][price_data][currency]", "eur");
     params.append("line_items[0][price_data][product_data][name]", product.name);
     params.append("line_items[0][price_data][product_data][description]", product.description);
     params.append("line_items[0][price_data][unit_amount]", product.amount);

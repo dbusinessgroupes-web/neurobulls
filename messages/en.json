@@ -86,7 +86,7 @@
     "traditional": {
       "label": "Traditional agency",
       "timeline": "2-4 weeks",
-      "cost": "Thousands of $",
+      "cost": "Thousands of €",
       "quality": "Professional",
       "availability": "Their schedule",
       "revisions": "Limited & expensive",
@@ -314,7 +314,7 @@
     "prompts": {
       "badge": "Prompts Pack",
       "title": "500 AI Photography Prompts",
-      "price": "$29",
+      "price": "€29",
       "oneTime": "One-time payment",
       "description": "The complete prompt library for hyper-realistic AI photography. 20 categories including portraits, food, real estate, fashion, product, and lifestyle. Copy, paste, create.",
       "features": [
@@ -329,7 +329,7 @@
     "masterclass": {
       "badge": "Best Seller",
       "title": "AI Visual Production Masterclass",
-      "price": "$49",
+      "price": "€49",
       "oneTime": "One-time payment",
       "description": "The complete course on creating professional AI content. From the 8-layer framework to building an AI content business. 50+ pages of actionable knowledge.",
       "features": [
@@ -345,7 +345,7 @@
     "custom": {
       "badge": "Custom",
       "title": "Custom Prompt Pack",
-      "price": "From $99",
+      "price": "From €99",
       "description": "We build a custom prompt library tailored to your industry and brand. Includes brand-specific settings, style guides, and optimization.",
       "buttonLabel": "Request Custom Pack"
     },
