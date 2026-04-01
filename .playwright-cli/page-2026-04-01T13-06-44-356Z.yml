@@ -1,0 +1,1851 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Freelancer Logo" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Freelancer Logo" [ref=e9]
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "How It Works" [ref=e13] [cursor=pointer]:
+                - /url: /info/how-it-works/
+            - listitem [ref=e14]:
+              - link "Browse Jobs" [ref=e15] [cursor=pointer]:
+                - /url: /jobs/
+      - generic [ref=e17]:
+        - link "Log In" [ref=e18] [cursor=pointer]:
+          - /url: /login
+        - link "Sign Up" [ref=e19] [cursor=pointer]:
+          - /url: /signup
+  - generic [ref=e26]:
+    - link "Find Jobs" [ref=e31] [cursor=pointer]:
+      - /url: /job
+      - paragraph [ref=e33]: Find Jobs
+    - link "Hire Freelancers" [ref=e38] [cursor=pointer]:
+      - /url: /freelancers
+      - paragraph [ref=e40]: Hire Freelancers
+    - link "Get Ideas" [ref=e45] [cursor=pointer]:
+      - /url: /discover
+      - paragraph [ref=e47]: Get Ideas
+    - link "About" [ref=e52] [cursor=pointer]:
+      - /url: /about
+      - paragraph [ref=e54]: About
+    - link "Resources" [ref=e59] [cursor=pointer]:
+      - /url: /articles
+      - paragraph [ref=e61]: Resources
+  - main [ref=e63]:
+    - generic [ref=e66]:
+      - heading "Top Jobs" [level=1] [ref=e68]
+      - generic [ref=e69]:
+        - link "Hire a Freelancer" [ref=e70] [cursor=pointer]:
+          - /url: /post-project
+        - link "Earn Money Freelancing" [ref=e71] [cursor=pointer]:
+          - /url: /signup
+    - generic [ref=e72]:
+      - navigation [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "Freelancer" [ref=e77] [cursor=pointer]:
+              - /url: https://www.freelancer.com
+            - text: ›
+          - listitem [ref=e78]:
+            - link "Jobs" [ref=e79] [cursor=pointer]:
+              - /url: https://www.freelancer.com/job/
+            - text: ›
+          - listitem [ref=e80]:
+            - link "Browse All Jobs" [ref=e81] [cursor=pointer]:
+              - /url: https://www.freelancer.com/jobs/
+            - text: ›
+          - listitem [ref=e82]: "1"
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - img [ref=e89]
+            - generic [ref=e91]: Search Keyword
+            - searchbox "Search Keyword" [ref=e92]
+          - generic [ref=e93]:
+            - img [ref=e95]
+            - generic [ref=e97]: Where ?
+            - searchbox "Where ?" [ref=e98]: Online Job
+        - button "search" [ref=e99] [cursor=pointer]: Search
+      - generic [ref=e101]:
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - heading "My recent searches" [level=5] [ref=e109]
+            - generic:
+              - list:
+                - listitem
+          - generic [ref=e110]:
+            - heading "Filter by:" [level=5] [ref=e111]
+            - heading "Budget" [level=5] [ref=e112]
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - checkbox "Fixed Price Projects" [ref=e115]
+                - generic [ref=e116] [cursor=pointer]: Fixed Price Projects
+              - generic [ref=e117]:
+                - textbox "min" [ref=e119]
+                - generic [ref=e120]: to
+                - textbox "max" [ref=e122]
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - checkbox "Hourly Projects" [ref=e125]
+                - generic [ref=e126] [cursor=pointer]: Hourly Projects
+              - generic [ref=e127]:
+                - generic [ref=e128]:
+                  - textbox "min" [ref=e130]
+                  - generic [ref=e131]: to
+                  - textbox "max" [ref=e133]
+                - generic [ref=e134]:
+                  - generic [ref=e135]: Duration
+                  - combobox "Duration" [ref=e137]:
+                    - option "All Durations" [selected]
+                    - option "Less than 1 week"
+                    - option "1 week to 4 weeks"
+                    - option "1 month to 3 months"
+                    - option "3 months to 6 months"
+                    - option "Over 6 months / Ongoing"
+                    - option "Unspecified"
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - checkbox "Contests" [ref=e140]
+                - generic [ref=e141] [cursor=pointer]: Contests
+              - generic [ref=e142]:
+                - textbox "min" [ref=e144]
+                - generic [ref=e145]: to
+                - textbox "max" [ref=e147]
+          - generic [ref=e148]:
+            - heading "Type" [level=5] [ref=e149]
+            - list [ref=e150]:
+              - listitem [ref=e151]:
+                - checkbox "Local Jobs" [ref=e152]
+                - generic [ref=e153] [cursor=pointer]: Local Jobs
+              - listitem [ref=e154]:
+                - checkbox "Featured Jobs" [ref=e155]
+                - generic [ref=e156] [cursor=pointer]: Featured Jobs
+              - listitem [ref=e157]:
+                - checkbox "Recruiter Jobs" [ref=e158]
+                - generic [ref=e159] [cursor=pointer]: Recruiter Jobs
+              - listitem [ref=e160]:
+                - checkbox "Full Time Jobs" [ref=e161]
+                - generic [ref=e162] [cursor=pointer]: Full Time Jobs
+          - generic [ref=e163]:
+            - heading "Skills" [level=5] [ref=e164]
+            - list [ref=e165]:
+              - listitem [ref=e166]:
+                - checkbox ".NET 5.0/6" [ref=e167]
+                - generic [ref=e168] [cursor=pointer]: .NET 5.0/6
+              - listitem [ref=e169]:
+                - checkbox ".NET" [ref=e170]
+                - generic [ref=e171] [cursor=pointer]: .NET
+              - listitem [ref=e172]:
+                - checkbox "PHP" [ref=e173]
+                - generic [ref=e174] [cursor=pointer]: PHP
+              - listitem [ref=e175]:
+                - checkbox "HTML" [ref=e176]
+                - generic [ref=e177] [cursor=pointer]: HTML
+              - listitem [ref=e178]:
+                - checkbox "CSS" [ref=e179]
+                - generic [ref=e180] [cursor=pointer]: CSS
+            - generic [ref=e182]:
+              - generic [ref=e183]: enter skills
+              - textbox "enter skills" [ref=e184]:
+                - /placeholder: Or enter skills
+              - link [ref=e185] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e187]
+          - generic [ref=e189]:
+            - heading "Languages" [level=5] [ref=e190]
+            - list [ref=e191]:
+              - listitem [ref=e192]:
+                - checkbox "English" [ref=e193]
+                - generic [ref=e194] [cursor=pointer]: English
+              - listitem [ref=e195]:
+                - checkbox "Spanish" [ref=e196]
+                - generic [ref=e197] [cursor=pointer]: Spanish
+              - listitem [ref=e198]:
+                - checkbox "German" [ref=e199]
+                - generic [ref=e200] [cursor=pointer]: German
+              - listitem [ref=e201]:
+                - checkbox "French" [ref=e202]
+                - generic [ref=e203] [cursor=pointer]: French
+              - listitem [ref=e204]:
+                - checkbox "Portuguese" [ref=e205]
+                - generic [ref=e206] [cursor=pointer]: Portuguese
+            - generic [ref=e208]:
+              - generic [ref=e209]: enter skills
+              - textbox "enter skills" [ref=e210]:
+                - /placeholder: Or enter languages
+              - link [ref=e211] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e213]
+          - generic [ref=e215]:
+            - heading "Job State" [level=5] [ref=e216]
+            - generic [ref=e218]:
+              - radio "All open jobs" [checked] [ref=e219]
+              - generic [ref=e220] [cursor=pointer]: All open jobs
+              - radio "All open and closed jobs" [ref=e221]
+              - generic [ref=e222] [cursor=pointer]: All open and closed jobs
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - generic [ref=e225]:
+              - combobox [ref=e227]:
+                - option "Newest first" [selected]
+                - option "Lowest budget first"
+                - option "Highest budget first"
+                - option "Lowest bids/entries"
+                - option "Highest bids/entries"
+              - generic [ref=e228]:
+                - text: 5,000
+                - text: jobs found
+              - list [ref=e230]:
+                - listitem [ref=e231]:
+                  - link "First page" [ref=e232] [cursor=pointer]:
+                    - /url: https://www.freelancer.com/jobs
+                    - generic [ref=e233]:
+                      - img
+                - listitem [ref=e234]:
+                  - link "Previous page" [ref=e235] [cursor=pointer]:
+                    - /url: https://www.freelancer.com/jobs
+                    - generic [ref=e236]:
+                      - img
+                - listitem [ref=e237]:
+                  - link "Page 1" [ref=e238] [cursor=pointer]:
+                    - /url: https://www.freelancer.com/jobs
+                    - text: "1"
+                - listitem [ref=e239]:
+                  - link "Page 2" [ref=e240] [cursor=pointer]:
+                    - /url: https://www.freelancer.com/jobs/2
+                    - text: "2"
+                - listitem [ref=e241]:
+                  - link "Page 3" [ref=e242] [cursor=pointer]:
+                    - /url: https://www.freelancer.com/jobs/3
+                    - text: "3"
+                - listitem [ref=e243]:
+                  - link "Next page" [ref=e244] [cursor=pointer]:
+                    - /url: https://www.freelancer.com/jobs/2
+                    - generic [ref=e245]:
+                      - img
+                - listitem [ref=e246]:
+                  - link "Last page" [ref=e247] [cursor=pointer]:
+                    - /url: https://www.freelancer.com/jobs/100
+                    - generic [ref=e248]:
+                      - img
+            - generic [ref=e250]:
+              - generic [ref=e252]:
+                - generic [ref=e253]:
+                  - generic [ref=e254]:
+                    - link "1xbet Affiliate Promotion" [ref=e255] [cursor=pointer]:
+                      - /url: /projects/internet-marketing/xbet-affiliate-promotion-40341367
+                    - generic [ref=e257]: 6 days left
+                  - paragraph [ref=e258]: "I'm an affiliate looking to promote my 1xbet affiliate link with the promo code Lib1xbet to gain more registrations. Please note: - The promotional content type was not specified, so I am open to suggestions. - The platforms for promotion were also not specified, but they could be social media, websites/blogs, or email marketing. - The target audience is the general audience. Ideal Skills and Experience: - Affiliate marketing - Content creation - Social media marketing - Email marketing - Understanding of gambling and sports betting is a plus."
+                  - generic [ref=e259]:
+                    - link "Bulk Marketing" [ref=e260] [cursor=pointer]:
+                      - /url: /jobs/bulk-marketing/
+                    - link "Facebook Marketing" [ref=e261] [cursor=pointer]:
+                      - /url: /jobs/facebook-marketing/
+                    - link "Internet Marketing" [ref=e262] [cursor=pointer]:
+                      - /url: /jobs/internet-marketing/
+                    - link "Marketing" [ref=e263] [cursor=pointer]:
+                      - /url: /jobs/marketing/
+                    - link "Social Media Marketing" [ref=e264] [cursor=pointer]:
+                      - /url: /jobs/social-media-marketing/
+                - generic [ref=e265]:
+                  - generic [ref=e266]: $8 - $13 / hr
+                  - generic [ref=e267]: 0 bids
+              - generic [ref=e269]:
+                - generic [ref=e270]:
+                  - generic [ref=e271]:
+                    - link "Valorant Ascendant-to-Immortal Boost" [ref=e272] [cursor=pointer]:
+                      - /url: /projects/game-development/valorant-ascendant-immortal-boost
+                    - generic [ref=e273]:
+                      - generic [ref=e274]: 6 days left
+                      - generic [ref=e275]:
+                        - img [ref=e277]
+                        - text: Verified
+                  - paragraph [ref=e281]: I’m sitting in Ascendant on the PC version of Valorant and want the account pushed to Immortal as quickly as possible. You’ll have full login access for the duration of the boost, so solid reputation, zero third-party software, and strict account security are non-negotiable. I’d like progress updates after each session and a short recap once the target rank is reached. Screenshots or clips of the promotion match will be enough proof on my end. Deliverable • Account reaches Immortal (any tier) within the agreed schedule. If you’re already boosting comfortably in high Immortal/Radiant lobbies, can start right away, and have no issues with two-factor logins, let’s get this moving today.
+                  - generic [ref=e282]:
+                    - link "Account Management" [ref=e283] [cursor=pointer]:
+                      - /url: /jobs/account-management/
+                    - link "Esports" [ref=e284] [cursor=pointer]:
+                      - /url: /jobs/esports/
+                    - link "Game Design" [ref=e285] [cursor=pointer]:
+                      - /url: /jobs/game-design/
+                    - link "Game Development" [ref=e286] [cursor=pointer]:
+                      - /url: /jobs/game-development/
+                    - link "Game Testing" [ref=e287] [cursor=pointer]:
+                      - /url: /jobs/game-testing/
+                - generic [ref=e288]:
+                  - generic [ref=e289]: $6 - $16
+                  - generic [ref=e290]: 0 bids
+              - generic [ref=e292]:
+                - generic [ref=e293]:
+                  - generic [ref=e294]:
+                    - img [ref=e296]:
+                      - generic "Trophy icon" [ref=e297]
+                    - link "Classic Val Ray Logo Design" [ref=e300] [cursor=pointer]:
+                      - /url: /contest/classic-val-ray-logo-design-2720855
+                    - generic [ref=e302]: 6 days left
+                  - paragraph [ref=e303]: "I need a fresh logo for Val Ray Limited, my lettings-management company. The look I’m after blends classic styling with a modern edge that instantly communicates credibility. Please split the words “Val” and “Ray”, give the name top billing, and weave a subtle yet unmistakable red rose into the composition. Colour palette is fixed: emerald green, black, white and touches of red for the rose. Feel free to experiment with tone and proportion, as long as the overall result feels premium and contemporary rather than old-fashioned. Final artwork should arrive as high-resolution vector files (AI/SVG), plus web-ready PNG and JPG, all in colour and in monochrome. Include the original, editable fonts or outline them if licensing is an issue. A short note on the c..."
+                  - generic [ref=e304]:
+                    - link "Adobe Illustrator" [ref=e305] [cursor=pointer]:
+                      - /url: /jobs/adobe-illustrator/
+                    - link "Branding" [ref=e306] [cursor=pointer]:
+                      - /url: /jobs/branding/
+                    - link "Graphic Design" [ref=e307] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Illustrator" [ref=e308] [cursor=pointer]:
+                      - /url: /jobs/illustrator/
+                    - link "Logo Design" [ref=e309] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "Photoshop" [ref=e310] [cursor=pointer]:
+                      - /url: /jobs/photoshop/
+                    - link "Vector Design" [ref=e311] [cursor=pointer]:
+                      - /url: /jobs/vector-design/
+                    - link "Visual Design" [ref=e312] [cursor=pointer]:
+                      - /url: /jobs/visual-design/
+                - generic [ref=e313]:
+                  - generic [ref=e314]: $13
+                  - generic [ref=e315]: 0 entries
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - generic [ref=e319]:
+                    - link "Create any unique logo" [ref=e320] [cursor=pointer]:
+                      - /url: /projects/branding/create-any-unique-logo
+                    - generic [ref=e321]:
+                      - generic [ref=e322]: 6 days left
+                      - generic [ref=e323]:
+                        - img [ref=e325]
+                        - text: Verified
+                  - paragraph [ref=e329]: "Looking for a talented logo designer for an open-ended branding project. There’s no existing brand — you create everything from scratch. What you’ll design: A complete logo for a brand of your own invention. The name, tagline (if desired), industry, and concept are entirely up to you. The only requirement is that the name must be 100% original and cannot be similar to any existing name, brand, product, or entity anywhere in the world. Made-up words and completely invented names are welcome and encouraged. Deliverables: • Finished logo files • A complete design brief written before work begins — covering the brand concept, target audience, tone and personality, color and typography direction, and the reasoning behind the name Requirements: • No stock g..."
+                  - generic [ref=e330]:
+                    - link "Branding" [ref=e331] [cursor=pointer]:
+                      - /url: /jobs/branding/
+                    - link "Creative Design" [ref=e332] [cursor=pointer]:
+                      - /url: /jobs/creative-design/
+                    - link "Graphic Design" [ref=e333] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Illustration" [ref=e334] [cursor=pointer]:
+                      - /url: /jobs/illustration/
+                    - link "Illustrator" [ref=e335] [cursor=pointer]:
+                      - /url: /jobs/illustrator/
+                    - link "Logo Design" [ref=e336] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "Photoshop" [ref=e337] [cursor=pointer]:
+                      - /url: /jobs/photoshop/
+                    - link "Visual Design" [ref=e338] [cursor=pointer]:
+                      - /url: /jobs/visual-design/
+                - generic [ref=e339]:
+                  - generic [ref=e340]: $29 Avg Bid
+                  - generic [ref=e341]: 72 bids
+              - generic [ref=e343]:
+                - generic [ref=e344]:
+                  - generic [ref=e345]:
+                    - link "Web-Based Dependency Identifier Tool" [ref=e346] [cursor=pointer]:
+                      - /url: /projects/ui-design/web-based-dependency-identifier-tool
+                    - generic [ref=e348]: 6 days left
+                  - paragraph [ref=e349]: "I need a web-based Dependency Identifier Tool developed using Python/Django, Java, Node.Js Key Requirements: - Identify software libraries and system packages - User-friendly interface - Secure and efficient backend Ideal Skills and Experience: - Proficiency in Python and Django - Experience with web application security - Strong UI/UX design skills - Knowledge in handling software libraries and system packages"
+                  - generic [ref=e350]:
+                    - link "Django" [ref=e351] [cursor=pointer]:
+                      - /url: /jobs/django/
+                    - link "Java" [ref=e352] [cursor=pointer]:
+                      - /url: /jobs/java/
+                    - link "JavaScript" [ref=e353] [cursor=pointer]:
+                      - /url: /jobs/javascript/
+                    - link "Node.js" [ref=e354] [cursor=pointer]:
+                      - /url: /jobs/nodejs/
+                    - link "Python" [ref=e355] [cursor=pointer]:
+                      - /url: /jobs/python/
+                    - link "Software Architecture" [ref=e356] [cursor=pointer]:
+                      - /url: /jobs/software-architecture/
+                    - link "Software Development" [ref=e357] [cursor=pointer]:
+                      - /url: /jobs/software-development/
+                    - link "UI / User Interface" [ref=e358] [cursor=pointer]:
+                      - /url: /jobs/ui-design/
+                    - link "User Experience Research" [ref=e359] [cursor=pointer]:
+                      - /url: /jobs/user-experience-research/
+                    - link "Web Development" [ref=e360] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                - generic [ref=e361]:
+                  - generic [ref=e362]: $77 Avg Bid
+                  - generic [ref=e363]: 9 bids
+              - generic [ref=e365]:
+                - generic [ref=e366]:
+                  - generic [ref=e367]:
+                    - link "WordPress Website fixes -- 2" [ref=e368] [cursor=pointer]:
+                      - /url: /projects/php/wordpress-website-fixes-40341364
+                    - generic [ref=e369]:
+                      - generic [ref=e370]: 6 days left
+                      - generic [ref=e371]:
+                        - img [ref=e373]
+                        - text: Verified
+                  - paragraph [ref=e377]: "I’m ready to launch a new WordPress site and need someone who can guide the entire process—from the first install on my host to a polished, fully-responsive website that’s easy for me to maintain. At this stage I’m open to either a well-chosen premium theme or a completely custom look; what matters most is a clean design, fast loading times, and a straightforward way for me to update content without touching code. Here’s what I’d like you to handle: • WordPress installation and security-minded setup • Theme selection or custom theme development, whichever best fits the project goals • Page build-out (at minimum Home, About, and Contact), with room to expand later • Basic on-page SEO and performance optimisation • Clear h..."
+                  - generic [ref=e378]:
+                    - link "HTML" [ref=e379] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "PHP" [ref=e380] [cursor=pointer]:
+                      - /url: /jobs/php/
+                    - link "SEO" [ref=e381] [cursor=pointer]:
+                      - /url: /jobs/seo/
+                    - link "Web Design" [ref=e382] [cursor=pointer]:
+                      - /url: /jobs/web-design/
+                    - link "Web Development" [ref=e383] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                    - link "Website Design" [ref=e384] [cursor=pointer]:
+                      - /url: /jobs/website-design/
+                    - link "Website Development" [ref=e385] [cursor=pointer]:
+                      - /url: /jobs/website-development/
+                    - link "WordPress" [ref=e386] [cursor=pointer]:
+                      - /url: /jobs/wordpress/
+                    - link "WordPress Design" [ref=e387] [cursor=pointer]:
+                      - /url: /jobs/wordpress-design/
+                    - link "WordPress Plugin" [ref=e388] [cursor=pointer]:
+                      - /url: /jobs/wordpress-plugin/
+                - generic [ref=e389]:
+                  - generic [ref=e390]: $74 Avg Bid
+                  - generic [ref=e391]: 46 bids
+              - generic [ref=e393]:
+                - generic [ref=e394]:
+                  - generic [ref=e395]:
+                    - link "Dual-Login Bookstore System" [ref=e396] [cursor=pointer]:
+                      - /url: /projects/web-development/dual-login-bookstore-system
+                    - generic [ref=e398]: 6 days left
+                  - paragraph [ref=e399]: "I want to build a web-based system for my combined book & stationery shop and tutoring center. The solution needs two separate back-office roles: 1. Store Admin – manages products for the retail side. 2. Tutoring Center Staff – registers students and assigns the textbooks each class requires. Front-end shoppers will browse a standard e-commerce site, but for now the only visitor feature I need is a fast product search. Search results must clearly display the product name, price, description, and current availability. Parents will have a dedicated lookup page. When they enter their child’s tutoring-center ID number, they should instantly see the student’s profile plus the pre-selected textbook list so they know exactly what to purchase. The administration a..."
+                  - generic [ref=e400]:
+                    - link "Database Design" [ref=e401] [cursor=pointer]:
+                      - /url: /jobs/database-design/
+                    - link "Frontend Development" [ref=e402] [cursor=pointer]:
+                      - /url: /jobs/frontend-development/
+                    - link "HTML" [ref=e403] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "JavaScript" [ref=e404] [cursor=pointer]:
+                      - /url: /jobs/javascript/
+                    - link "MySQL" [ref=e405] [cursor=pointer]:
+                      - /url: /jobs/mysql/
+                    - link "PHP" [ref=e406] [cursor=pointer]:
+                      - /url: /jobs/php/
+                    - link "User Interface / IA" [ref=e407] [cursor=pointer]:
+                      - /url: /jobs/user-interface-ia/
+                    - link "Web Development" [ref=e408] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                - generic [ref=e409]:
+                  - generic [ref=e410]: $21 Avg Bid
+                  - generic [ref=e411]: 29 bids
+              - generic [ref=e413]:
+                - generic [ref=e414]:
+                  - generic [ref=e415]:
+                    - img [ref=e417]:
+                      - generic "Trophy icon" [ref=e418]
+                    - 'link "\"Un Giorno Divino\": Logo Design - 01/04/2026 08:51 EDT" [ref=e421] [cursor=pointer]':
+                      - /url: /contest/quotun-giorno-divinoquot-logo-design-edt-2720853
+                    - generic [ref=e423]: 2 days left
+                  - paragraph [ref=e424]: "I’m celebrating the 25-year anniversary of my Italian wine shop and beverage distribution company with a tasting day we’ve called “Un Giorno Divino”. For the occasion I need a clean, modern logo that can stand proudly on invitations, banners, tasting booklets and social media. Here’s what I’m after: • A minimalist look. • A clear reference to wine, ideally by shaping the number 25 into, or alongside, a wine glass silhouette or a wine bottle silhouette. • Core palette in black and white with the freedom to add a discreet splash of red for emphasis. Deliverables I’d like to receive: 1. Primary vector artwork (AI or SVG) plus high-resolution PNG on transparent background. 2. One-colour and full-colour variations. 3. Short note on the ..."
+                  - generic [ref=e425]:
+                    - link "Adobe Illustrator" [ref=e426] [cursor=pointer]:
+                      - /url: /jobs/adobe-illustrator/
+                    - link "Adobe Photoshop" [ref=e427] [cursor=pointer]:
+                      - /url: /jobs/adobe-photoshop/
+                    - link "Branding" [ref=e428] [cursor=pointer]:
+                      - /url: /jobs/branding/
+                    - link "Graphic Design" [ref=e429] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Illustrator" [ref=e430] [cursor=pointer]:
+                      - /url: /jobs/illustrator/
+                    - link "Logo Design" [ref=e431] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "Photoshop" [ref=e432] [cursor=pointer]:
+                      - /url: /jobs/photoshop/
+                    - link "Vector Design" [ref=e433] [cursor=pointer]:
+                      - /url: /jobs/vector-design/
+                - generic [ref=e434]:
+                  - generic [ref=e435]: $23
+                  - generic [ref=e436]: 12 entries
+              - generic [ref=e438]:
+                - generic [ref=e439]:
+                  - generic [ref=e440]:
+                    - link "Women's Health Clinic Influencer Campaign" [ref=e441] [cursor=pointer]:
+                      - /url: /projects/influencer-marketing/women-health-clinic-influencer-campaign
+                    - generic [ref=e443]: 6 days left
+                  - paragraph [ref=e444]: "I'm seeking a female micro-influencer aged 40-55 to drive traffic to our women's functional health clinic across Instagram, Facebook, and YouTube. The focus will be on creating engaging videos and reels. Key Requirements: - Proven experience as a micro-influencer in the health and wellness niche - Strong presence and engagement on Instagram, Facebook, and YouTube - Ability to create high-quality, engaging videos and reels - Skills in storytelling and content creation - Access to a relevant audience interested in women's health Ideal Skills and Experience: - Background in health, wellness, or fitness - Experience with influencer marketing campaigns - Strong communication and collaboration skills - Ability to analyze and report on engagement metrics Please include samples o..."
+                  - generic [ref=e445]:
+                    - link "Content Creation" [ref=e446] [cursor=pointer]:
+                      - /url: /jobs/content-creation/
+                    - link "Facebook Marketing" [ref=e447] [cursor=pointer]:
+                      - /url: /jobs/facebook-marketing/
+                    - link "Health" [ref=e448] [cursor=pointer]:
+                      - /url: /jobs/health/
+                    - link "Influencer Marketing" [ref=e449] [cursor=pointer]:
+                      - /url: /jobs/influencer-marketing/
+                    - link "Instagram Marketing" [ref=e450] [cursor=pointer]:
+                      - /url: /jobs/instagram-marketing/
+                    - link "Internet Marketing" [ref=e451] [cursor=pointer]:
+                      - /url: /jobs/internet-marketing/
+                    - link "Social Media Marketing" [ref=e452] [cursor=pointer]:
+                      - /url: /jobs/social-media-marketing/
+                    - link "Video Editing" [ref=e453] [cursor=pointer]:
+                      - /url: /jobs/video-editing/
+                    - link "Video Production" [ref=e454] [cursor=pointer]:
+                      - /url: /jobs/video-production/
+                - generic [ref=e455]:
+                  - generic [ref=e456]: $380 Avg Bid
+                  - generic [ref=e457]: 15 bids
+              - generic [ref=e459]:
+                - generic [ref=e460]:
+                  - generic [ref=e461]:
+                    - link "Gearbox Simulation" [ref=e462] [cursor=pointer]:
+                      - /url: /projects/simulation/gearbox-simulation-development
+                    - generic [ref=e464]: 6 days left
+                  - paragraph [ref=e465]: I need a detailed performance analysis simulation of a planetary gearbox in Amesim Simcenter, focusing on efficiency. The project it is like an planetary gearbox with an input motor and an output load. On each of the planetary gear there is a eccentric weight. The input motor is connected to the planet carrier and the sun gear is connected to the load. When the planet carrier will rotate and there is some load on the sun output shaft, the planetary gears will start to rotate and due to the eccentricity will create a centrifugal force which will make the sun shaft to oscillate. I want to calculate the rotation displacement and the power of the output shaft according to the applied load. The project must be parametrized to be able to change the parameters value and compute the data for the n...
+                  - generic [ref=e466]:
+                    - link "Data Analysis" [ref=e467] [cursor=pointer]:
+                      - /url: /jobs/data-analysis/
+                    - link "Electrical Engineering" [ref=e468] [cursor=pointer]:
+                      - /url: /jobs/electrical-engineering/
+                    - link "Engineering" [ref=e469] [cursor=pointer]:
+                      - /url: /jobs/engineering/
+                    - link "Finite Element Analysis" [ref=e470] [cursor=pointer]:
+                      - /url: /jobs/finite-element-analysis/
+                    - link "MATLAB" [ref=e471] [cursor=pointer]:
+                      - /url: /jobs/matlab/
+                    - link "Matlab and Mathematica" [ref=e472] [cursor=pointer]:
+                      - /url: /jobs/matlab-mathematica/
+                    - link "Mechanical Engineering" [ref=e473] [cursor=pointer]:
+                      - /url: /jobs/mechanical-engineering/
+                    - link "Simulation" [ref=e474] [cursor=pointer]:
+                      - /url: /jobs/simulation/
+                - generic [ref=e475]:
+                  - generic [ref=e476]: $8 - $17
+                  - generic [ref=e477]: 0 bids
+              - generic [ref=e479]:
+                - generic [ref=e480]:
+                  - generic [ref=e481]:
+                    - link "Boost Audio Software Sales" [ref=e482] [cursor=pointer]:
+                      - /url: /projects/advertising/boost-audio-software-sales
+                    - generic [ref=e484]: 6 days left
+                  - paragraph [ref=e485]: I need to rapidly lift sales of my new audio production software. The product serves three distinct yet overlapping groups—musicians and producers, podcasters and other voice-centric creators, plus general hobbyists—so the messaging must resonate with each segment while keeping a unified brand voice. The assignment calls for an end-to-end marketing push that can start generating revenue immediately. That means auditing the current funnel, crafting a clear positioning strategy, building compelling creative, and deploying data-driven campaigns across high-impact channels such as Meta Ads, Google Ads, YouTube, Reddit, influencer partnerships, or similar platforms you can justify. Deliverables • Launch strategy outlining hooks for all three target personas, recommended c...
+                  - generic [ref=e486]:
+                    - link "Advertising" [ref=e487] [cursor=pointer]:
+                      - /url: /jobs/advertising/
+                    - link "Digital Marketing" [ref=e488] [cursor=pointer]:
+                      - /url: /jobs/digital-marketing/
+                    - link "Google Adwords" [ref=e489] [cursor=pointer]:
+                      - /url: /jobs/google-adwords/
+                    - link "Internet Marketing" [ref=e490] [cursor=pointer]:
+                      - /url: /jobs/internet-marketing/
+                - generic [ref=e491]:
+                  - generic [ref=e492]: $16 / hr Avg Bid
+                  - generic [ref=e493]: 4 bids
+              - generic [ref=e495]:
+                - generic [ref=e496]:
+                  - generic [ref=e497]:
+                    - link "Carbon Credit Website Development" [ref=e498] [cursor=pointer]:
+                      - /url: /projects/web-development/carbon-credit-website-development
+                    - generic [ref=e500]: 6 days left
+                  - paragraph [ref=e501]: "I'm looking for a skilled web developer to create a comprehensive platform for my carbon credit company. The website should serve dual purposes: selling carbon credits and facilitating partnerships with farmers. Essential Sections: - Carbon Credits Marketplace: This section will feature a credit purchasing system and incorporate user reviews and ratings to build trust and transparency. - Farmer Partnership Portal: A dedicated space for farmers to join forces with us. - About Us: Share our mission and vision. Ideal Skills and Experience: - Proven experience in developing e-commerce platforms - Familiarity with user review systems - Strong UI/UX design skills to ensure a seamless user experience - Experience in building partnership or collaboration portals I look forward to your prop..."
+                  - generic [ref=e502]:
+                    - link "Graphic Design" [ref=e503] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "HTML" [ref=e504] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "UI / User Interface" [ref=e505] [cursor=pointer]:
+                      - /url: /jobs/ui-design/
+                    - link "User Experience Research" [ref=e506] [cursor=pointer]:
+                      - /url: /jobs/user-experience-research/
+                    - link "User Interface / IA" [ref=e507] [cursor=pointer]:
+                      - /url: /jobs/user-interface-ia/
+                    - link "Web Design" [ref=e508] [cursor=pointer]:
+                      - /url: /jobs/web-design/
+                    - link "Web Development" [ref=e509] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                    - link "Website Design" [ref=e510] [cursor=pointer]:
+                      - /url: /jobs/website-design/
+                - generic [ref=e511]:
+                  - generic [ref=e512]: $80 Avg Bid
+                  - generic [ref=e513]: 26 bids
+              - generic [ref=e515]:
+                - generic [ref=e516]:
+                  - generic [ref=e517]:
+                    - link "Task Management Developer" [ref=e518] [cursor=pointer]:
+                      - /url: /projects/market-research/task-management-developer
+                    - generic [ref=e519]:
+                      - generic [ref=e520]: 6 days left
+                      - generic [ref=e521]:
+                        - img [ref=e523]
+                        - text: Verified
+                  - paragraph [ref=e527]: "Need to develop a program for an administrator to easily assign tasks to staff and monitor that they are finished on time. Key Tasks: - Program must be simple and user-friendly."
+                  - generic [ref=e528]:
+                    - link "Internet Research" [ref=e529] [cursor=pointer]:
+                      - /url: /jobs/internet-research/
+                    - link "Market Research" [ref=e530] [cursor=pointer]:
+                      - /url: /jobs/market-research/
+                    - link "Marketing" [ref=e531] [cursor=pointer]:
+                      - /url: /jobs/marketing/
+                    - link "Research" [ref=e532] [cursor=pointer]:
+                      - /url: /jobs/research/
+                    - link "Web Search" [ref=e533] [cursor=pointer]:
+                      - /url: /jobs/web-search/
+                - generic [ref=e534]:
+                  - generic [ref=e535]: $15 Avg Bid
+                  - generic [ref=e536]: 2 bids
+              - generic [ref=e538]:
+                - generic [ref=e539]:
+                  - generic [ref=e540]:
+                    - link "Hiring BDE for Web & Mobile Development Projects" [ref=e541] [cursor=pointer]:
+                      - /url: /projects/business-development/hiring-bde-for-web-mobile
+                    - generic [ref=e542]:
+                      - generic [ref=e543]: 6 days left
+                      - generic [ref=e544]:
+                        - img [ref=e546]
+                        - text: Verified
+                  - paragraph [ref=e550]: "We are hiring an experienced Business Development Executive (BDE) / Freelancer Bidder to help us win projects in web and mobile app development. Our tech stack: React.js, , React Native, Node.js Role: - Find and bid on relevant projects (Upwork, Freelancer, etc.) - Write personalized, high-converting proposals - Communicate with clients and handle initial discussions - Build a consistent pipeline of quality leads Requirements: - Proven experience in bidding for web/mobile projects - Strong communication skills - Understanding of modern development technologies - Result-driven approach Compensation: Fixed + commission or performance-based (flexible) Please share your past experience, platforms worked on, and success rate."
+                  - generic [ref=e551]:
+                    - link "Business Development" [ref=e552] [cursor=pointer]:
+                      - /url: /jobs/business-development/
+                    - link "Mobile App Development" [ref=e553] [cursor=pointer]:
+                      - /url: /jobs/mobile-app-development/
+                    - link "Web Development" [ref=e554] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                - generic [ref=e555]:
+                  - generic [ref=e556]: $13 Avg Bid
+                  - generic [ref=e557]: 2 bids
+              - generic [ref=e559]:
+                - generic [ref=e560]:
+                  - generic [ref=e561]:
+                    - link "Mobile App Beta Testing Needed" [ref=e562] [cursor=pointer]:
+                      - /url: /projects/mobile-app-testing/mobile-app-beta-testing-needed
+                    - generic [ref=e563]:
+                      - generic [ref=e564]: 6 days left
+                      - generic [ref=e565]:
+                        - img [ref=e567]
+                        - text: Verified
+                  - paragraph [ref=e571]: "I’m preparing to release a new cross-platform mobile app and want a diverse pool of 51-100 testers to put it through its paces on both Android and iOS. A balanced mix of everyday users and technical specialists will help me see the product from every angle. Please install the app from either the App Store for iPhone or Google Play Store for Android, use the app naturally for several days, then deliver the following: • User experience feedback – what feels great, confusing, or frustrating, with a focus on engagement and ease of use. • Bug reports – device model, OS version, steps to reproduce, screenshots or screen-recordings. • Feature suggestions – ideas that could make the app more engaging and delightful. Applicants must have access to 50&ndas..."
+                  - generic [ref=e572]:
+                    - link "Mobile App Testing" [ref=e573] [cursor=pointer]:
+                      - /url: /jobs/mobile-app-testing/
+                    - link "Testing / QA" [ref=e574] [cursor=pointer]:
+                      - /url: /jobs/testing-qa/
+                  - generic [ref=e576]: Featured
+                - generic [ref=e577]:
+                  - generic [ref=e578]: $1015 Avg Bid
+                  - generic [ref=e579]: 64 bids
+              - generic [ref=e581]:
+                - generic [ref=e582]:
+                  - generic [ref=e583]:
+                    - link "Commission-Only Sales Closer - AI Automation Agency (Australian Plumbers)" [ref=e584] [cursor=pointer]:
+                      - /url: /projects/saas/commission-only-sales-closer-automation
+                    - generic [ref=e586]: 6 days left
+                  - paragraph [ref=e587]: I run TradeFlow AI, an AI automation agency built for Australian plumbing businesses. This is a long term ongoing role - not a short project. As the business grows your call volume and earning potential grow with it. The way it works is simple. Warm prospects book calls automatically through our system. You show up, walk them through the solution, and close the deal. No cold calling, no chasing leads, no admin work. The product you’ll be selling is an AI automation system priced at A$7,150 upfront plus A$2,150 per month. Your cut is 15% of the setup fee which works out to A$1,072.50 every time you close a deal. That gets paid to your bank account within 48 hours of each payment clearing. No commission on the monthly retainer. I give every closer a full briefing pack including a wo...
+                  - generic [ref=e588]:
+                    - link "Business Development" [ref=e589] [cursor=pointer]:
+                      - /url: /jobs/business-development/
+                    - link "Customer Service" [ref=e590] [cursor=pointer]:
+                      - /url: /jobs/customer-service/
+                    - link "Lead Generation" [ref=e591] [cursor=pointer]:
+                      - /url: /jobs/lead-generation/
+                    - link "SaaS" [ref=e592] [cursor=pointer]:
+                      - /url: /jobs/saas/
+                    - link "Sales" [ref=e593] [cursor=pointer]:
+                      - /url: /jobs/sales/
+                    - link "Sales Management" [ref=e594] [cursor=pointer]:
+                      - /url: /jobs/sales-management/
+                    - link "Telemarketing" [ref=e595] [cursor=pointer]:
+                      - /url: /jobs/telemarketing/
+                - generic [ref=e596]:
+                  - generic [ref=e597]: $6 Avg Bid
+                  - generic [ref=e598]: 1 bids
+              - generic [ref=e600]:
+                - generic [ref=e601]:
+                  - generic [ref=e602]:
+                    - link "WordPress Info/Blog Site Rebuild" [ref=e603] [cursor=pointer]:
+                      - /url: /projects/wordpress-design/wordpress-info-blog-site-rebuild
+                    - generic [ref=e604]:
+                      - generic [ref=e605]: 6 days left
+                      - generic [ref=e606]:
+                        - img [ref=e608]
+                        - text: Verified
+                  - paragraph [ref=e612]: "I'm looking for an experienced WordPress developer to rebuild my informational/blog website. Website can be the same and/or very similar to the existing with the main goal of moving away from an inhouse linux webserver to Godaddy using maybe Word Press. Key requirements: - Migrate existing content to the new site. - Follow my existing design and branding guidelines closely. - Integrate a contact form for user inquiries. Ideal skills and experience: - Proficiency in WordPress development. - Strong design implementation skills. - Experience with content migration and site setup. Please provide examples of previous work."
+                  - generic [ref=e613]:
+                    - link "HTML" [ref=e614] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "PHP" [ref=e615] [cursor=pointer]:
+                      - /url: /jobs/php/
+                    - link "Web Design" [ref=e616] [cursor=pointer]:
+                      - /url: /jobs/web-design/
+                    - link "Web Development" [ref=e617] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                    - link "Web Hosting" [ref=e618] [cursor=pointer]:
+                      - /url: /jobs/web-hosting/
+                    - link "Website Design" [ref=e619] [cursor=pointer]:
+                      - /url: /jobs/website-design/
+                    - link "Website Development" [ref=e620] [cursor=pointer]:
+                      - /url: /jobs/website-development/
+                    - link "Website Optimization" [ref=e621] [cursor=pointer]:
+                      - /url: /jobs/google-website-optimizer/
+                    - link "WordPress" [ref=e622] [cursor=pointer]:
+                      - /url: /jobs/wordpress/
+                    - link "WordPress Design" [ref=e623] [cursor=pointer]:
+                      - /url: /jobs/wordpress-design/
+                - generic [ref=e624]:
+                  - generic [ref=e625]: $981 Avg Bid
+                  - generic [ref=e626]: 202 bids
+              - generic [ref=e628]:
+                - generic [ref=e629]:
+                  - generic [ref=e630]:
+                    - link "Full-Time WooCommerce & SEO Development" [ref=e631] [cursor=pointer]:
+                      - /url: /projects/woocommerce/full-time-woocommerce-seo-development
+                    - generic [ref=e632]:
+                      - generic [ref=e633]: 6 days left
+                      - generic [ref=e634]:
+                        - img [ref=e636]
+                        - text: Verified
+                  - paragraph [ref=e640]: You must be available daily to report back to me and do jobs each day. Fullstack developement and deploying on render and vercel is good to know
+                  - generic [ref=e641]:
+                    - link "Full Stack Development" [ref=e642] [cursor=pointer]:
+                      - /url: /jobs/full-stack-development/
+                    - link "HTML" [ref=e643] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "PHP" [ref=e644] [cursor=pointer]:
+                      - /url: /jobs/php/
+                    - link "SEO" [ref=e645] [cursor=pointer]:
+                      - /url: /jobs/seo/
+                    - link "Web Development" [ref=e646] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                    - link "Website Design" [ref=e647] [cursor=pointer]:
+                      - /url: /jobs/website-design/
+                    - link "WooCommerce" [ref=e648] [cursor=pointer]:
+                      - /url: /jobs/woocommerce/
+                    - link "WordPress" [ref=e649] [cursor=pointer]:
+                      - /url: /jobs/wordpress/
+                - generic [ref=e650]:
+                  - generic [ref=e651]: $7 / hr Avg Bid
+                  - generic [ref=e652]: 61 bids
+              - generic [ref=e654]:
+                - generic [ref=e655]:
+                  - generic [ref=e656]:
+                    - link "Instagram Thumbnail & Poster Design - 01/04/2026 07:54 EDT" [ref=e657] [cursor=pointer]:
+                      - /url: /projects/creative-design/instagram-thumbnail-poster-design-edt
+                    - generic [ref=e659]: 6 days left
+                  - paragraph [ref=e660]: "I’m refreshing my Instagram feed and need a creative partner who can turn ideas into eye-catching thumbnails and share-worthy posters tailored for social media. The job centres on Instagram, so every visual must be optimised for its formats, ratios, and algorithm-friendly aesthetics. Here’s what I’d like from you: • Conceptualise and design striking thumbnails and promotional posters that feel cohesive with my existing brand palette and tone. • Handle any light image or text editing needed to polish the final artwork before delivery. • (Nice to have) enter captions, hashtags, and scheduling details into the simple spreadsheet I use, so everything stays organised for posting. Final assets should arrive in layered PSD or AI files plus ready-to-upl..."
+                  - generic [ref=e661]:
+                    - link "Creative Design" [ref=e662] [cursor=pointer]:
+                      - /url: /jobs/creative-design/
+                    - link "Graphic Design" [ref=e663] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Illustrator" [ref=e664] [cursor=pointer]:
+                      - /url: /jobs/illustrator/
+                    - link "Instagram" [ref=e665] [cursor=pointer]:
+                      - /url: /jobs/instagram/
+                    - link "Instagram Marketing" [ref=e666] [cursor=pointer]:
+                      - /url: /jobs/instagram-marketing/
+                    - link "Logo Design" [ref=e667] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "Photoshop" [ref=e668] [cursor=pointer]:
+                      - /url: /jobs/photoshop/
+                    - link "Poster Design" [ref=e669] [cursor=pointer]:
+                      - /url: /jobs/poster-design/
+                    - link "Social Media Marketing" [ref=e670] [cursor=pointer]:
+                      - /url: /jobs/social-media-marketing/
+                    - link "Visual Design" [ref=e671] [cursor=pointer]:
+                      - /url: /jobs/visual-design/
+                - generic [ref=e672]:
+                  - generic [ref=e673]: $5 / hr Avg Bid
+                  - generic [ref=e674]: 7 bids
+              - generic [ref=e676]:
+                - generic [ref=e677]:
+                  - generic [ref=e678]:
+                    - link "Animated Social Media Promo Video" [ref=e679] [cursor=pointer]:
+                      - /url: /projects/video-editing/animated-social-media-promo-video
+                    - generic [ref=e681]: 6 days left
+                  - paragraph [ref=e682]: "I need a short, punchy promotional video designed specifically for social-media feeds. Because the piece will be 100 % animated, I’m after bold motion-graphics, eye-catching transitions, and typography that stops the scroll within the first seconds. I will supply the core messaging and brand assets; you handle script polishing, storyboarding, animation, royalty-free music, basic SFX, and final mastering for Instagram, TikTok, and Facebook. Preferred tools are After Effects or similar—whatever lets you deliver smooth animation and easy revisions. Deliverables should include: • A 15- to 30-second MP4 ready for upload • Square (1:1) and vertical (9:16) crops • SRT captions and the working project files Once I approve the storyboard, I’d like the..."
+                  - generic [ref=e683]:
+                    - link "After Effects" [ref=e684] [cursor=pointer]:
+                      - /url: /jobs/after-effects/
+                    - link "Animation" [ref=e685] [cursor=pointer]:
+                      - /url: /jobs/animation/
+                    - link "Commercials" [ref=e686] [cursor=pointer]:
+                      - /url: /jobs/commercials/
+                    - link "Social Media Marketing" [ref=e687] [cursor=pointer]:
+                      - /url: /jobs/social-media-marketing/
+                    - link "Typography" [ref=e688] [cursor=pointer]:
+                      - /url: /jobs/typography/
+                    - link "Video Editing" [ref=e689] [cursor=pointer]:
+                      - /url: /jobs/video-editing/
+                    - link "Video Production" [ref=e690] [cursor=pointer]:
+                      - /url: /jobs/video-production/
+                    - link "Video Services" [ref=e691] [cursor=pointer]:
+                      - /url: /jobs/video-services/
+                - generic [ref=e692]:
+                  - generic [ref=e693]: $208 Avg Bid
+                  - generic [ref=e694]: 8 bids
+              - generic [ref=e696]:
+                - generic [ref=e697]:
+                  - generic [ref=e698]:
+                    - link "Fix MongoDB 4.x Database" [ref=e699] [cursor=pointer]:
+                      - /url: /projects/mongodb/fix-mongodb-database
+                    - generic [ref=e700]:
+                      - generic [ref=e701]: 6 days left
+                      - generic [ref=e702]:
+                        - img [ref=e704]
+                        - text: Verified
+                  - paragraph [ref=e708]: We have a issue on our IOS app which developed in Flutter. We are facing problem suddenly our app showing error when opened . See attached screenshot. The developer who works before on app using email address on Mongo cloud account which we lost ...we need someone how to retriev email address name which associated on database ... so we can check database access. Only apply if you soirtout issue quickly. Budget 1000 Rs
+                  - generic [ref=e709]:
+                    - link "Amazon Web Services" [ref=e710] [cursor=pointer]:
+                      - /url: /jobs/amazon-web-services/
+                    - link "Database Management" [ref=e711] [cursor=pointer]:
+                      - /url: /jobs/database-management/
+                    - link "Flutter" [ref=e712] [cursor=pointer]:
+                      - /url: /jobs/flutter/
+                    - link "iOS Development" [ref=e713] [cursor=pointer]:
+                      - /url: /jobs/ios-development/
+                    - link "iPhone" [ref=e714] [cursor=pointer]:
+                      - /url: /jobs/iphone-app-development/
+                    - link "MongoDB" [ref=e715] [cursor=pointer]:
+                      - /url: /jobs/mongodb/
+                    - link "Node.js" [ref=e716] [cursor=pointer]:
+                      - /url: /jobs/nodejs/
+                    - link "NoSQL Couch & Mongo" [ref=e717] [cursor=pointer]:
+                      - /url: /jobs/nosql-couch-mongo/
+                - generic [ref=e718]:
+                  - generic [ref=e719]: $8 Avg Bid
+                  - generic [ref=e720]: 5 bids
+              - generic [ref=e722]:
+                - generic [ref=e723]:
+                  - generic [ref=e724]:
+                    - link "Property Management Virtual Assistant Needed" [ref=e725] [cursor=pointer]:
+                      - /url: /projects/social-media-management/property-management-virtual-assistant
+                    - generic [ref=e727]: 6 days left
+                  - paragraph [ref=e728]: Virtual Assistant for Rental Property Listings & Advertising (Remote, Part-Time to Full-Time) We are seeking a reliable, detail-oriented Virtual Assistant to support our rental property business with advertising, listing maintenance, and general remote property management tasks. This role will start at 20 hours per week, approximately 4 hours per day for 5 days a week, with the opportunity to gradually increase hours based on performance and business needs. Schedule 20 hours per week, approximately 4 hours per day for 5 days a week Workdays generally follow US East Coast daytime hours Potential for increased hours over time Starting Pay $5.50 per hour Pay increase available if performance is strong and the position is a good fit Key Responsibilities Post and update rental listing...
+                  - generic [ref=e729]:
+                    - link "Administrative Support" [ref=e730] [cursor=pointer]:
+                      - /url: /jobs/administrative-support/
+                    - link "Content Creation" [ref=e731] [cursor=pointer]:
+                      - /url: /jobs/content-creation/
+                    - link "Customer Service" [ref=e732] [cursor=pointer]:
+                      - /url: /jobs/customer-service/
+                    - link "Data Entry" [ref=e733] [cursor=pointer]:
+                      - /url: /jobs/data-entry/
+                    - link "Excel" [ref=e734] [cursor=pointer]:
+                      - /url: /jobs/excel/
+                    - link "Property Management" [ref=e735] [cursor=pointer]:
+                      - /url: /jobs/property-management/
+                    - link "Social Media Management" [ref=e736] [cursor=pointer]:
+                      - /url: /jobs/social-media-management/
+                    - link "Virtual Assistant" [ref=e737] [cursor=pointer]:
+                      - /url: /jobs/virtual-assistant/
+                - generic [ref=e738]:
+                  - generic [ref=e739]: $5 / hr Avg Bid
+                  - generic [ref=e740]: 11 bids
+              - generic [ref=e742]:
+                - generic [ref=e743]:
+                  - generic [ref=e744]:
+                    - link "Cross-Platform Property Management App" [ref=e745] [cursor=pointer]:
+                      - /url: /projects/ios-development/cross-platform-property-management-app-40341341
+                    - generic [ref=e747]: 6 days left
+                  - paragraph [ref=e748]: "I’m building a full-featured Property Management System that runs smoothly on both iOS and Android. The core of the app is simple: owners or managers should be able to list a unit, open the calendar, accept a booking, take payment, and chat with the guest or tenant—all from one place and in real time. Key functions I must see working: • Property listing and live availability/booking calendar • Secure in-app payments with receipts • Built-in messaging and push notifications for guest or tenant communication A clean, modern UI is essential and the code needs to be future-proof (I’m open to Swift/Kotlin or a robust cross-platform stack such as Flutter or React Native, so pitch what you do best). You’ll connect the mobile front-end to a scalable..."
+                  - generic [ref=e749]:
+                    - link "Android" [ref=e750] [cursor=pointer]:
+                      - /url: /jobs/android/
+                    - link "Android App Development" [ref=e751] [cursor=pointer]:
+                      - /url: /jobs/android-app-development/
+                    - link "Flutter" [ref=e752] [cursor=pointer]:
+                      - /url: /jobs/flutter/
+                    - link "iOS Development" [ref=e753] [cursor=pointer]:
+                      - /url: /jobs/ios-development/
+                    - link "iPad" [ref=e754] [cursor=pointer]:
+                      - /url: /jobs/ipad/
+                    - link "iPhone" [ref=e755] [cursor=pointer]:
+                      - /url: /jobs/iphone-app-development/
+                    - link "Mobile App Development" [ref=e756] [cursor=pointer]:
+                      - /url: /jobs/mobile-app-development/
+                    - link "React Native" [ref=e757] [cursor=pointer]:
+                      - /url: /jobs/react-native/
+                - generic [ref=e758]:
+                  - generic [ref=e759]: $383 Avg Bid
+                  - generic [ref=e760]: 154 bids
+              - generic [ref=e762]:
+                - generic [ref=e763]:
+                  - generic [ref=e764]:
+                    - img [ref=e766]:
+                      - generic "Trophy icon" [ref=e767]
+                    - link "Logo Refinement and Brand Guidelines Creation" [ref=e770] [cursor=pointer]:
+                      - /url: /contest/logo-refinement-and-brand-guidelines-creation-2720845
+                    - generic [ref=e772]: 2 days left
+                  - paragraph [ref=e773]: "I'm looking for a professional designer to refine my existing logo by correcting its spacing, sizing, and overall visual balance. Additionally, I need a detailed brand guide that includes: - Font guidelines (typography) - Logo color palette and usage rules - Instructions on how to apply the logo on packaging (e.g., boxes), staff uniforms, and related products The final deliverables should include: 1. Refined logo files in multiple formats (vector and high-resolution). 2. A PDF brand guide covering all aspects mentioned above. Please ensure the design is modern, clean, and aligns with professional branding standards."
+                  - generic [ref=e774]:
+                    - link "Adobe Illustrator" [ref=e775] [cursor=pointer]:
+                      - /url: /jobs/adobe-illustrator/
+                    - link "Adobe Photoshop" [ref=e776] [cursor=pointer]:
+                      - /url: /jobs/adobe-photoshop/
+                    - link "Branding" [ref=e777] [cursor=pointer]:
+                      - /url: /jobs/branding/
+                    - link "Corporate Identity" [ref=e778] [cursor=pointer]:
+                      - /url: /jobs/corporate-identity/
+                    - link "Graphic Design" [ref=e779] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Logo Design" [ref=e780] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "Photoshop" [ref=e781] [cursor=pointer]:
+                      - /url: /jobs/photoshop/
+                    - link "Typography" [ref=e782] [cursor=pointer]:
+                      - /url: /jobs/typography/
+                  - generic [ref=e784]: Guaranteed
+                - generic [ref=e785]:
+                  - generic [ref=e786]: $150
+                  - generic [ref=e787]: 121 entries
+              - generic [ref=e789]:
+                - generic [ref=e790]:
+                  - generic [ref=e791]:
+                    - link "Boost YouTube Gamer Engagement Campaign" [ref=e792] [cursor=pointer]:
+                      - /url: /projects/youtube/boost-youtube-gamer-engagement-campaign
+                    - generic [ref=e794]: 6 days left
+                  - paragraph [ref=e795]: "Hello, I am a YouTube gaming/live streamer with around 1.28K subscribers. I get 20–30 live viewers on normal days and 100+ viewers on weekends. I am offering paid promotion on my live streams. I can promote: - YouTube channels - Instagram pages - Gaming profiles My audience is mainly gaming (BGMI / Free Fire / Minecraft). If you are interested in promoting your channel/page during my live stream, feel free to contact me. Price: We can discuss and decide. Thank you!"
+                  - generic [ref=e796]:
+                    - link "Advertising" [ref=e797] [cursor=pointer]:
+                      - /url: /jobs/advertising/
+                    - link "Content Marketing" [ref=e798] [cursor=pointer]:
+                      - /url: /jobs/content-marketing/
+                    - link "Digital Marketing" [ref=e799] [cursor=pointer]:
+                      - /url: /jobs/digital-marketing/
+                    - link "Influencer Marketing" [ref=e800] [cursor=pointer]:
+                      - /url: /jobs/influencer-marketing/
+                    - link "Internet Marketing" [ref=e801] [cursor=pointer]:
+                      - /url: /jobs/internet-marketing/
+                    - link "SEO" [ref=e802] [cursor=pointer]:
+                      - /url: /jobs/seo/
+                    - link "Social Media Management" [ref=e803] [cursor=pointer]:
+                      - /url: /jobs/social-media-management/
+                    - link "Social Media Marketing" [ref=e804] [cursor=pointer]:
+                      - /url: /jobs/social-media-marketing/
+                    - link "YouTube" [ref=e805] [cursor=pointer]:
+                      - /url: /jobs/youtube/
+                - generic [ref=e806]:
+                  - generic [ref=e807]: $25 Avg Bid
+                  - generic [ref=e808]: 3 bids
+              - generic [ref=e810]:
+                - generic [ref=e811]:
+                  - generic [ref=e812]:
+                    - link "Social Media Manager" [ref=e813] [cursor=pointer]:
+                      - /url: /projects/social-media-management/social-media-manager-40341339
+                    - generic [ref=e815]: 6 days left
+                  - paragraph [ref=e816]: "I'm looking for a skilled social media manager to promote my podcast across Instagram, LinkedIn, TikTok, and YouTube. Your work will be crucial in helping us drive podcast listens. Key Responsibilities: - Content Creation: Design captivating posts, stories, and videos that reflect our podcast's theme and engage our audience. - Posting and Scheduling: Strategically schedule and post content to maintain a consistent online presence. - Engagement and Community Management: Interact with followers, respond to comments/messages, and cultivate a community around our podcast. Ideal Skills and Experience: - Proven track record in growing podcast or similar content engagement. - Expertise in social media platforms, especially Instagram, LinkedIn, TikTok, and YouTube. - Strong content cre..."
+                  - generic [ref=e817]:
+                    - link "Content Creation" [ref=e818] [cursor=pointer]:
+                      - /url: /jobs/content-creation/
+                    - link "Content Strategy" [ref=e819] [cursor=pointer]:
+                      - /url: /jobs/content-strategy/
+                    - link "Instagram Marketing" [ref=e820] [cursor=pointer]:
+                      - /url: /jobs/instagram-marketing/
+                    - link "Linkedin" [ref=e821] [cursor=pointer]:
+                      - /url: /jobs/linkedin/
+                    - link "Social Media Management" [ref=e822] [cursor=pointer]:
+                      - /url: /jobs/social-media-management/
+                    - link "Social Media Marketing" [ref=e823] [cursor=pointer]:
+                      - /url: /jobs/social-media-marketing/
+                    - link "TikTok" [ref=e824] [cursor=pointer]:
+                      - /url: /jobs/tiktok/
+                    - link "YouTube" [ref=e825] [cursor=pointer]:
+                      - /url: /jobs/youtube/
+                - generic [ref=e826]:
+                  - generic [ref=e827]: $8 / hr Avg Bid
+                  - generic [ref=e828]: 28 bids
+              - generic [ref=e830]:
+                - generic [ref=e831]:
+                  - generic [ref=e832]:
+                    - link "Membership Credential Verification, Duhok" [ref=e833] [cursor=pointer]:
+                      - /url: /projects/report-writing/membership-credential-verification-duhok
+                    - generic [ref=e834]:
+                      - generic [ref=e835]: 6 days left
+                      - generic [ref=e836]:
+                        - img [ref=e838]
+                        - text: Verified
+                  - paragraph [ref=e842]: "I’m putting together a pre-employment vetting file for a candidate based in Duhok and need independent confirmation of their claimed memberships. The task is strictly credential verification: you will contact the stated bodies, confirm the individual’s standing, and document the results. Please outline how you normally approach membership checks in Kurdistan, how quickly you can turn the report around, and any language capabilities that will help when communicating with local associations. Deliverables • Written verification report (PDF) showing: – Date, method, and contact person for each confirmation – Exact status of the candidate’s membership (active, lapsed, honorary, etc.) – Any discrepancies or red flags discover..."
+                  - generic [ref=e843]:
+                    - link "Data Collection" [ref=e844] [cursor=pointer]:
+                      - /url: /jobs/data-collection/
+                    - link "Documentation" [ref=e845] [cursor=pointer]:
+                      - /url: /jobs/documentation/
+                    - link "Report Writing" [ref=e846] [cursor=pointer]:
+                      - /url: /jobs/report-writing/
+                    - link "Research" [ref=e847] [cursor=pointer]:
+                      - /url: /jobs/research/
+                - generic [ref=e848]:
+                  - generic [ref=e849]: $30 Avg Bid
+                  - generic [ref=e850]: 3 bids
+              - generic [ref=e852]:
+                - generic [ref=e853]:
+                  - generic [ref=e854]:
+                    - link "Multi-Channel Product Launch Promotion" [ref=e855] [cursor=pointer]:
+                      - /url: /projects/content-marketing/multi-channel-product-launch-promotion
+                    - generic [ref=e857]: 6 days left
+                  - paragraph [ref=e858]: "I run a series of new-product launches and now need a dedicated promotions partner to take them further. Your day-to-day focus will be building and executing campaigns that live simultaneously on social media, in carefully segmented email flows, and on targeted blogs or niche websites. The mission is simple and measurable: drive sign-ups, amplify brand awareness, and spark real engagement around each launch. I’ll supply product details, brand assets, and access to existing channels; you bring the strategy, copy, creative tweaks, and the hands-on execution that turns attention into results. Key deliverables • Channel-specific content plans (social, email, blogs/websites) • Launch-ready copy and visuals adapted to each platform • Email sequences with clear CTA logi..."
+                  - generic [ref=e859]:
+                    - link "Content Marketing" [ref=e860] [cursor=pointer]:
+                      - /url: /jobs/content-marketing/
+                    - link "Digital Marketing" [ref=e861] [cursor=pointer]:
+                      - /url: /jobs/digital-marketing/
+                    - link "Email Marketing" [ref=e862] [cursor=pointer]:
+                      - /url: /jobs/email-marketing/
+                    - link "Internet Marketing" [ref=e863] [cursor=pointer]:
+                      - /url: /jobs/internet-marketing/
+                    - link "Link Building" [ref=e864] [cursor=pointer]:
+                      - /url: /jobs/link-building/
+                    - link "Marketing" [ref=e865] [cursor=pointer]:
+                      - /url: /jobs/marketing/
+                    - link "SEO" [ref=e866] [cursor=pointer]:
+                      - /url: /jobs/seo/
+                    - link "Social Media Marketing" [ref=e867] [cursor=pointer]:
+                      - /url: /jobs/social-media-marketing/
+                - generic [ref=e868]:
+                  - generic [ref=e869]: $18 / hr Avg Bid
+                  - generic [ref=e870]: 9 bids
+              - generic [ref=e872]:
+                - generic [ref=e873]:
+                  - generic [ref=e874]:
+                    - link "Birthday Video Montage Editing" [ref=e875] [cursor=pointer]:
+                      - /url: /projects/audio-editing/birthday-video-montage-editing
+                    - generic [ref=e877]: 6 days left
+                  - paragraph [ref=e878]: I’m putting together a birthday montage video using about 30 clips. The idea is to have each person sing a short part of “Happy Birthday” (for example, one person sings “Happy birthday to…” and the next finishes “…you”), creating a continuous, stitched version of the song. After each person’s short singing clip, their individual birthday message will play. I’m aiming for it to feel seamless, upbeat, and meaningful. I can explain more details if needed!
+                  - generic [ref=e879]:
+                    - link "Audio Editing" [ref=e880] [cursor=pointer]:
+                      - /url: /jobs/audio-editing/
+                    - link "Creative Design" [ref=e881] [cursor=pointer]:
+                      - /url: /jobs/creative-design/
+                    - link "Video Editing" [ref=e882] [cursor=pointer]:
+                      - /url: /jobs/video-editing/
+                    - link "Video Post-editing" [ref=e883] [cursor=pointer]:
+                      - /url: /jobs/video-post-editing/
+                    - link "Video Processing" [ref=e884] [cursor=pointer]:
+                      - /url: /jobs/video-processing/
+                    - link "Video Production" [ref=e885] [cursor=pointer]:
+                      - /url: /jobs/video-production/
+                    - link "Video Services" [ref=e886] [cursor=pointer]:
+                      - /url: /jobs/video-services/
+                    - link "Video Upload" [ref=e887] [cursor=pointer]:
+                      - /url: /jobs/video-upload/
+                    - link "Videography" [ref=e888] [cursor=pointer]:
+                      - /url: /jobs/videography/
+                - generic [ref=e889]:
+                  - generic [ref=e890]: $95 Avg Bid
+                  - generic [ref=e891]: 60 bids
+              - generic [ref=e893]:
+                - generic [ref=e894]:
+                  - generic [ref=e895]:
+                    - link "Modern Responsive Business Website" [ref=e896] [cursor=pointer]:
+                      - /url: /projects/web-design/modern-responsive-business-website-40341333
+                    - generic [ref=e898]: 6 days left
+                  - paragraph [ref=e899]: The project is to design and build a modern, fully responsive website that helps my business attract new customers online through a clean, professional look and seamless user experience. The site must load quickly, display flawlessly on all devices, and present information in a way that encourages visitors to engage and convert. Core scope • Custom layout with a clear, minimal aesthetic • Mobile-first responsiveness using HTML5, CSS3, and lightweight JavaScript • Intuitive navigation and well-structured pages (Home, About, Services, Contact; a blog section would be a plus) • Easy-to-update content, preferably through a user-friendly CMS such as WordPress or a comparable solution • Basic on-page SEO setup and performance optimisation so pages score well o...
+                  - generic [ref=e900]:
+                    - link "CSS3" [ref=e901] [cursor=pointer]:
+                      - /url: /jobs/css3/
+                    - link "HTML" [ref=e902] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "HTML5" [ref=e903] [cursor=pointer]:
+                      - /url: /jobs/html5/
+                    - link "PHP" [ref=e904] [cursor=pointer]:
+                      - /url: /jobs/php/
+                    - link "Web Design" [ref=e905] [cursor=pointer]:
+                      - /url: /jobs/web-design/
+                    - link "Web Development" [ref=e906] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                    - link "Website Design" [ref=e907] [cursor=pointer]:
+                      - /url: /jobs/website-design/
+                    - link "WordPress" [ref=e908] [cursor=pointer]:
+                      - /url: /jobs/wordpress/
+                - generic [ref=e909]:
+                  - generic [ref=e910]: $33 Avg Bid
+                  - generic [ref=e911]: 73 bids
+              - generic [ref=e913]:
+                - generic [ref=e914]:
+                  - generic [ref=e915]:
+                    - img [ref=e917]:
+                      - generic "Trophy icon" [ref=e918]
+                    - link "Apex Worldwide Bold Logo Design" [ref=e921] [cursor=pointer]:
+                      - /url: /contest/apex-worldwide-bold-logo-design-2720844
+                    - generic [ref=e923]: 6 days left
+                  - paragraph [ref=e924]: Apex Worldwide is a forward-thinking holding company based in Pittsburgh, Pennsylvania. We focus on building, acquiring, and growing businesses across multiple industries with a strong emphasis on innovation, scalability, and long-term success. Our brand represents leadership, elevation, and global vision. ⸻ Design Objective We are seeking a modern, hip, and impactful logo that reflects the strength and ambition of Apex Worldwide. The design should feel clean, bold, and versatile, with a professional edge that can scale across multiple industries and platforms. ⸻ Style & Direction • Modern and minimalist • Sleek and professional with a trendy/hip feel • Strong, confident, and forward-looking • Should convey growth, leadership, and global reach ⸻ Design El...
+                  - generic [ref=e925]:
+                    - link "Adobe Illustrator" [ref=e926] [cursor=pointer]:
+                      - /url: /jobs/adobe-illustrator/
+                    - link "Adobe Photoshop" [ref=e927] [cursor=pointer]:
+                      - /url: /jobs/adobe-photoshop/
+                    - link "Branding" [ref=e928] [cursor=pointer]:
+                      - /url: /jobs/branding/
+                    - link "Graphic Design" [ref=e929] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Illustration" [ref=e930] [cursor=pointer]:
+                      - /url: /jobs/illustration/
+                    - link "Illustrator" [ref=e931] [cursor=pointer]:
+                      - /url: /jobs/illustrator/
+                    - link "Logo Design" [ref=e932] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "Typography" [ref=e933] [cursor=pointer]:
+                      - /url: /jobs/typography/
+                  - generic [ref=e935]: Guaranteed
+                - generic [ref=e936]:
+                  - generic [ref=e937]: $150
+                  - generic [ref=e938]: 139 entries
+              - generic [ref=e940]:
+                - generic [ref=e941]:
+                  - generic [ref=e942]:
+                    - link "WordPress Car Configurator Plugin Development – Mercedes-Benz W 107 SL with images all angles" [ref=e943] [cursor=pointer]:
+                      - /url: /projects/php/wordpress-car-configurator-plugin
+                    - generic [ref=e945]: 6 days left
+                  - paragraph [ref=e946]: "We are looking for an experienced developer to build a custom car configurator for a WordPress website similar to the reference configurator below. Please find attached file Developer has to manage himself with his team mate designer Preferred – PNG structure): You create high-quality PNG cutouts of: Full car (front, rear, side) Rims Soft-top / Hard-top Interior parts IMPORTANT: Cutting must be 100% clean and perfect (no rough edges) Each part should be separate layer or separate PNG So that colors can be changed easily later using code/design If PNG cutting is perfect, I will handle all color variations myself. Please confirm which option you can deliver. Quality and clean cutting is very important. Please read this carefully. I mainly prefer(PNG structure). I need the s..."
+                  - generic [ref=e947]:
+                    - link "Backend Development" [ref=e948] [cursor=pointer]:
+                      - /url: /jobs/backend-development/
+                    - link "CSS" [ref=e949] [cursor=pointer]:
+                      - /url: /jobs/css/
+                    - link "Frontend Development" [ref=e950] [cursor=pointer]:
+                      - /url: /jobs/frontend-development/
+                    - link "HTML" [ref=e951] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "Image Processing" [ref=e952] [cursor=pointer]:
+                      - /url: /jobs/image-processing/
+                    - link "JavaScript" [ref=e953] [cursor=pointer]:
+                      - /url: /jobs/javascript/
+                    - link "PHP" [ref=e954] [cursor=pointer]:
+                      - /url: /jobs/php/
+                    - link "Web Development" [ref=e955] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                    - link "WordPress" [ref=e956] [cursor=pointer]:
+                      - /url: /jobs/wordpress/
+                    - link "WordPress Plugin" [ref=e957] [cursor=pointer]:
+                      - /url: /jobs/wordpress-plugin/
+                - generic [ref=e958]:
+                  - generic [ref=e959]: $91 Avg Bid
+                  - generic [ref=e960]: 45 bids
+              - generic [ref=e962]:
+                - generic [ref=e963]:
+                  - generic [ref=e964]:
+                    - link "AI Data Research Specialist – Find Emails and Contacts for U.S. Libraries" [ref=e965] [cursor=pointer]:
+                      - /url: /projects/ai-hw-sw/data-research-specialist-find-emails
+                    - generic [ref=e966]:
+                      - generic [ref=e967]: 6 days left
+                      - generic [ref=e968]:
+                        - img [ref=e970]
+                        - text: Verified
+                  - paragraph [ref=e974]: "Job Description: I have a spreadsheet of public libraries across the United States (~15,000 rows). Each row already includes: • Library Name • State • Phone Number The spreadsheet is organized with a separate tab for each state. I need a freelancer to research and fill in the missing fields: • Director/Administrator Name (if available) • Email Address (priority) ________________________________________ What You’ll Do: • Use AI-driven search methods to locate library websites and state library directories • Find a relevant staff contact email (director, administrator, programming/events coordinator, or similar role) • Add the information into the spreadsheet • If no appropriate staff email is found, leave it blank and move o..."
+                  - generic [ref=e975]:
+                    - link "AI (Artificial Intelligence) HW/SW" [ref=e976] [cursor=pointer]:
+                      - /url: /jobs/ai-hw-sw/
+                    - link "AI Development" [ref=e977] [cursor=pointer]:
+                      - /url: /jobs/ai-development/
+                    - link "AI Research" [ref=e978] [cursor=pointer]:
+                      - /url: /jobs/ai-research/
+                    - link "Data Analysis" [ref=e979] [cursor=pointer]:
+                      - /url: /jobs/data-analysis/
+                    - link "Data Entry" [ref=e980] [cursor=pointer]:
+                      - /url: /jobs/data-entry/
+                    - link "Excel" [ref=e981] [cursor=pointer]:
+                      - /url: /jobs/excel/
+                    - link "Web Scraping" [ref=e982] [cursor=pointer]:
+                      - /url: /jobs/web-scraping/
+                    - link "Web Search" [ref=e983] [cursor=pointer]:
+                      - /url: /jobs/web-search/
+                - generic [ref=e984]:
+                  - generic [ref=e985]: $190 Avg Bid
+                  - generic [ref=e986]: 24 bids
+              - generic [ref=e988]:
+                - generic [ref=e989]:
+                  - generic [ref=e990]:
+                    - link "NHS Fast-Track Job Application Coordinator" [ref=e991] [cursor=pointer]:
+                      - /url: /projects/administrative-support/nhs-fast-track-job-application
+                    - generic [ref=e992]:
+                      - generic [ref=e993]: 6 days left
+                      - generic [ref=e994]:
+                        - img [ref=e996]
+                        - text: Verified
+                  - paragraph [ref=e1000]: Role Overview Your responsibility is to identify and apply to NHS jobs as early as possible, ideally on the same day of posting, ensuring applications fall within the first 50 candidates whenever possible. You must work fast, consistently, and aggressively to maximise interview chances. Core Expectations (CRITICAL) Apply to jobs as soon as they are posted (same day priority) Aim to be within the first 50 applicants Maintain high daily application volume (10–20+ applications/day) No delays timing is key to success in NHS applications Monitor job portals multiple times per day *Key Responsibilities* :Aggressively search NHS Jobs / Trac for relevant roles (FY2 / SHO / Clinical Fellow / Trust Grade), Submit applications immediately upon job release, Complete application forms quick...
+                  - generic [ref=e1001]:
+                    - link "Administrative Support" [ref=e1002] [cursor=pointer]:
+                      - /url: /jobs/administrative-support/
+                    - link "Data Entry" [ref=e1003] [cursor=pointer]:
+                      - /url: /jobs/data-entry/
+                    - link "Electronic Forms" [ref=e1004] [cursor=pointer]:
+                      - /url: /jobs/electronic-forms/
+                    - link "Project Management" [ref=e1005] [cursor=pointer]:
+                      - /url: /jobs/project-management/
+                    - link "Time Management" [ref=e1006] [cursor=pointer]:
+                      - /url: /jobs/time-management/
+                    - link "Virtual Assistant" [ref=e1007] [cursor=pointer]:
+                      - /url: /jobs/virtual-assistant/
+                - generic [ref=e1008]:
+                  - generic [ref=e1009]: $148 Avg Bid
+                  - generic [ref=e1010]: 8 bids
+              - generic [ref=e1012]:
+                - generic [ref=e1013]:
+                  - generic [ref=e1014]:
+                    - link "Racehorse Syndication Expert Required" [ref=e1015] [cursor=pointer]:
+                      - /url: /projects/compliance/racehorse-syndication-expert-required
+                    - generic [ref=e1016]:
+                      - generic [ref=e1017]: 6 days left
+                      - generic [ref=e1018]:
+                        - img [ref=e1020]
+                        - text: Verified
+                  - paragraph [ref=e1024]: "We are a South Australian thoroughbred racing stable looking for one experienced Australian specialist to handle an end-to-end racehorse syndication setup. This is a one-and-done project. We want someone to get us properly set up so we can legally offer and sell micro shares in racehorses. We need help with: • advising on the best structure • recommending whether we should operate as an Authorised Representative under an existing promoter or pursue our own AFSL/promoter pathway • preparing and guiding the Racing SA application/setup process • helping with the PDS and compliance process • setting up a practical micro-share framework • creating the key documents, templates, checklists, and workflow needed for future horse offers By the end of the projec..."
+                  - generic [ref=e1025]:
+                    - link "Business Consulting" [ref=e1026] [cursor=pointer]:
+                      - /url: /jobs/business-consultant/
+                    - link "Business Strategy" [ref=e1027] [cursor=pointer]:
+                      - /url: /jobs/business-strategy/
+                    - link "Compliance" [ref=e1028] [cursor=pointer]:
+                      - /url: /jobs/compliance/
+                    - link "Corporate Law" [ref=e1029] [cursor=pointer]:
+                      - /url: /jobs/corporate-law/
+                    - link "Investment Management" [ref=e1030] [cursor=pointer]:
+                      - /url: /jobs/investment-management/
+                    - link "Legal Consultation" [ref=e1031] [cursor=pointer]:
+                      - /url: /jobs/legal-consultation/
+                    - link "Project Management" [ref=e1032] [cursor=pointer]:
+                      - /url: /jobs/project-management/
+                    - link "Risk Management" [ref=e1033] [cursor=pointer]:
+                      - /url: /jobs/risk-management/
+                - generic [ref=e1034]:
+                  - generic [ref=e1035]: $1451 Avg Bid
+                  - generic [ref=e1036]: 11 bids
+              - generic [ref=e1038]:
+                - generic [ref=e1039]:
+                  - generic [ref=e1040]:
+                    - link "UGC Social Media Content Creation" [ref=e1041] [cursor=pointer]:
+                      - /url: /projects/content-creation/ugc-social-media-content-creation
+                    - generic [ref=e1042]:
+                      - generic [ref=e1043]: 6 days left
+                      - generic [ref=e1044]:
+                        - img [ref=e1046]
+                        - text: Verified
+                  - paragraph [ref=e1050]: "I'm looking for engaging user-generated content (UGC) to be shared on Instagram. Specifically, I need captivating images and photos. Ideal skills and experience include: - Proven experience in creating visually appealing and engaging Instagram content. - Strong understanding of Instagram's algorithms and trends. - Ability to produce high-quality images and photos. - Creativity and originality in content creation. - Good communication skills for collaboration and feedback. Please share your portfolio and relevant experience."
+                  - generic [ref=e1051]:
+                    - link "Content Creation" [ref=e1052] [cursor=pointer]:
+                      - /url: /jobs/content-creation/
+                    - link "Facebook Marketing" [ref=e1053] [cursor=pointer]:
+                      - /url: /jobs/facebook-marketing/
+                    - link "Instagram" [ref=e1054] [cursor=pointer]:
+                      - /url: /jobs/instagram/
+                    - link "Instagram Marketing" [ref=e1055] [cursor=pointer]:
+                      - /url: /jobs/instagram-marketing/
+                    - link "Local Job" [ref=e1056] [cursor=pointer]:
+                      - /url: /jobs/local-job/
+                    - link "Social Media Management" [ref=e1057] [cursor=pointer]:
+                      - /url: /jobs/social-media-management/
+                    - link "Social Media Marketing" [ref=e1058] [cursor=pointer]:
+                      - /url: /jobs/social-media-marketing/
+                    - link "Social Media Post Design" [ref=e1059] [cursor=pointer]:
+                      - /url: /jobs/social-media-post-design/
+                    - link "Visual Design" [ref=e1060] [cursor=pointer]:
+                      - /url: /jobs/visual-design/
+                  - generic [ref=e1062]: Local
+                - generic [ref=e1063]:
+                  - generic [ref=e1064]: $181 Avg Bid
+                  - generic [ref=e1065]: 16 bids
+              - generic [ref=e1067]:
+                - generic [ref=e1068]:
+                  - generic [ref=e1069]:
+                    - link "Microsoft Fabric / Power BI Expert for Advanced Analytics, RCA & Predictive Intelligence" [ref=e1070] [cursor=pointer]:
+                      - /url: /projects/power-bi/microsoft-fabric-power-expert-for
+                    - generic [ref=e1071]:
+                      - generic [ref=e1072]: 6 days left
+                      - generic [ref=e1073]:
+                        - img [ref=e1075]
+                        - text: Verified
+                  - paragraph [ref=e1079]: We are seeking a highly skilled Microsoft Fabric / Power BI expert to elevate an existing dashboard into a robust, enterprise-grade analytics solution. The goal is to integrate advanced data modeling, optimize performance, and embed AI-driven insights that enable proactive decision-making.
+                  - generic [ref=e1080]:
+                    - link "Data Analytics" [ref=e1081] [cursor=pointer]:
+                      - /url: /jobs/data-analytics/
+                    - link "Data Modeling" [ref=e1082] [cursor=pointer]:
+                      - /url: /jobs/data-modeling/
+                    - link "Data Warehousing" [ref=e1083] [cursor=pointer]:
+                      - /url: /jobs/data-warehousing/
+                    - link "ETL" [ref=e1084] [cursor=pointer]:
+                      - /url: /jobs/etl/
+                    - link "Microsoft PowerBI" [ref=e1085] [cursor=pointer]:
+                      - /url: /jobs/microsoft-powerbi/
+                    - link "Performance Tuning" [ref=e1086] [cursor=pointer]:
+                      - /url: /jobs/performance-tuning/
+                    - link "Power BI" [ref=e1087] [cursor=pointer]:
+                      - /url: /jobs/power-bi/
+                    - link "Predictive Analytics" [ref=e1088] [cursor=pointer]:
+                      - /url: /jobs/predictive-analytics/
+                    - link "SQL" [ref=e1089] [cursor=pointer]:
+                      - /url: /jobs/sql/
+                - generic [ref=e1090]:
+                  - generic [ref=e1091]: $60 Avg Bid
+                  - generic [ref=e1092]: 8 bids
+              - generic [ref=e1094]:
+                - generic [ref=e1095]:
+                  - generic [ref=e1096]:
+                    - link "Minimalist Logo Design Needed" [ref=e1097] [cursor=pointer]:
+                      - /url: /projects/graphic-design/minimalist-logo-design-needed-40341319
+                    - generic [ref=e1099]: 6 days left
+                  - paragraph [ref=e1100]: "I want a clean, uncluttered logo that captures my brand’s essence in the simplest possible form. Think balanced typography, plenty of breathing room, and a mark that still feels memorable when scaled down for a favicon or social-media avatar. Here’s what I’ll need from you: • Two to three initial concepts that explore different minimalist directions. • One chosen concept refined through a couple of feedback rounds until it feels just right. • Final deliverables in vector (AI / SVG / EPS) and web-ready PNG formats, along with the fonts or font links you use. If you work in tools like Adobe Illustrator, Figma, or similar modern vector suites, that’s perfect—just keep the file structure tidy so I can revisit it later. Please also include ..."
+                  - generic [ref=e1101]:
+                    - link "Adobe Illustrator" [ref=e1102] [cursor=pointer]:
+                      - /url: /jobs/adobe-illustrator/
+                    - link "Copywriting" [ref=e1103] [cursor=pointer]:
+                      - /url: /jobs/copywriting/
+                    - link "Figma" [ref=e1104] [cursor=pointer]:
+                      - /url: /jobs/figma/
+                    - link "Graphic Design" [ref=e1105] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Illustrator" [ref=e1106] [cursor=pointer]:
+                      - /url: /jobs/illustrator/
+                    - link "Logo Design" [ref=e1107] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "Photoshop" [ref=e1108] [cursor=pointer]:
+                      - /url: /jobs/photoshop/
+                    - link "Vector Design" [ref=e1109] [cursor=pointer]:
+                      - /url: /jobs/vector-design/
+                    - link "Visual Design" [ref=e1110] [cursor=pointer]:
+                      - /url: /jobs/visual-design/
+                    - link "Website Design" [ref=e1111] [cursor=pointer]:
+                      - /url: /jobs/website-design/
+                - generic [ref=e1112]:
+                  - generic [ref=e1113]: $338 Avg Bid
+                  - generic [ref=e1114]: 104 bids
+              - generic [ref=e1116]:
+                - generic [ref=e1117]:
+                  - generic [ref=e1118]:
+                    - link "Apache .htaccess Clean URL Rewrite" [ref=e1119] [cursor=pointer]:
+                      - /url: /projects/html/apache-htaccess-clean-url-rewrite
+                    - generic [ref=e1120]:
+                      - generic [ref=e1121]: 6 days left
+                      - generic [ref=e1122]:
+                        - img [ref=e1124]
+                        - text: Verified
+                  - paragraph [ref=e1128]: "I have built a small portfolio site in PHP, HTML & CSS that runs on an Apache server and stores its content in a MySQL database. Right now, every public link still carries query-strings—e.g. mydomain/ I want this turned into true, SEO-friendly paths–e.g. mydomain/image/6/My-Image-Title I've created a database field to store the [slug] value that will be used as My-Image-Title In addition, I’d like all remaining .php and .html extensions stripped cleanly, so visitors (and search engines) never see a file suffix. What I need from you is a set of RewriteRule and RewriteCond directives—regular-expression based, ready to drop into my .htaccess file—that: 1. Translate the current query-string format to the clean structures shown above. 2...."
+                  - generic [ref=e1129]:
+                    - link "Apache" [ref=e1130] [cursor=pointer]:
+                      - /url: /jobs/apache/
+                    - link "CSS" [ref=e1131] [cursor=pointer]:
+                      - /url: /jobs/css/
+                    - link "HTML" [ref=e1132] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "Linux" [ref=e1133] [cursor=pointer]:
+                      - /url: /jobs/linux/
+                    - link "MySQL" [ref=e1134] [cursor=pointer]:
+                      - /url: /jobs/mysql/
+                    - link "PHP" [ref=e1135] [cursor=pointer]:
+                      - /url: /jobs/php/
+                    - link "SEO" [ref=e1136] [cursor=pointer]:
+                      - /url: /jobs/seo/
+                    - link "Web Development" [ref=e1137] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                - generic [ref=e1138]:
+                  - generic [ref=e1139]: $158 Avg Bid
+                  - generic [ref=e1140]: 132 bids
+              - generic [ref=e1142]:
+                - generic [ref=e1143]:
+                  - generic [ref=e1144]:
+                    - link "Complete Shopify Store Setup & Design" [ref=e1145] [cursor=pointer]:
+                      - /url: /projects/css/complete-shopify-store-setup-design
+                    - generic [ref=e1146]:
+                      - generic [ref=e1147]: 6 days left
+                      - generic [ref=e1148]:
+                        - img [ref=e1150]
+                        - text: Verified
+                  - paragraph [ref=e1154]: "I’m launching a brand-new Shopify store to sell physical products and I need an expert who can take me from a blank account to a fully operational, customer-ready storefront. Here’s what I have in mind: the catalogue will require reliable inventory tracking with low-stock alerts, integrated shipping labels that calculate costs at checkout, and streamlined order-fulfilment tools so I can process, pick and pack efficiently as sales grow. Beyond the functional setup, I also want a visually engaging, conversion-focused theme that matches my brand aesthetic—everything from layout and colour palette to typography and imagery. To keep things clear, I’ll consider the job complete when these key deliverables are in place: • Shopify account configured, payment gatewa..."
+                  - generic [ref=e1155]:
+                    - link "CSS" [ref=e1156] [cursor=pointer]:
+                      - /url: /jobs/css/
+                    - link "HTML" [ref=e1157] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "Inventory Management" [ref=e1158] [cursor=pointer]:
+                      - /url: /jobs/inventory-management/
+                    - link "Shopify" [ref=e1159] [cursor=pointer]:
+                      - /url: /jobs/shopify-site/
+                    - link "Shopify Development" [ref=e1160] [cursor=pointer]:
+                      - /url: /jobs/shopify-development/
+                    - link "Shopify Templates" [ref=e1161] [cursor=pointer]:
+                      - /url: /jobs/shopify/
+                    - link "Web Design" [ref=e1162] [cursor=pointer]:
+                      - /url: /jobs/web-design/
+                    - link "Website Design" [ref=e1163] [cursor=pointer]:
+                      - /url: /jobs/website-design/
+                - generic [ref=e1164]:
+                  - generic [ref=e1165]: $232 Avg Bid
+                  - generic [ref=e1166]: 56 bids
+              - generic [ref=e1168]:
+                - generic [ref=e1169]:
+                  - generic [ref=e1170]:
+                    - link "Comprehensive Network Security Audit" [ref=e1171] [cursor=pointer]:
+                      - /url: /projects/network-security/comprehensive-network-security-audit
+                    - generic [ref=e1172]:
+                      - generic [ref=e1173]: 6 days left
+                      - generic [ref=e1174]:
+                        - img [ref=e1176]
+                        - text: Verified
+                  - paragraph [ref=e1180]: "Job Title: Cybersecurity & Network Specialist – Residential Digital Safety Project Project Overview: I am seeking a highly skilled Cybersecurity Specialist or Network Engineer to design and implement a comprehensive \"lockdown\" system for a home network and multiple mobile devices (iOS/Android). The primary goal is to prevent access to all gambling-related content and provide robust monitoring and alerting for new gambling-site activity. Key Responsibilities: Network-Level Blocking: Configure a hardware firewall (e.g., Ubiquiti, Firewalla, or pfSense) or DNS-level filtering (NextDNS/Pi-hole) to block gambling domains across all connected devices. Device-Level Hardening: Implement Mobile Device Management (MDM) or advanced \"Screen Time/Digital Wellbeing\" configu..."
+                  - generic [ref=e1181]:
+                    - link "Cisco" [ref=e1182] [cursor=pointer]:
+                      - /url: /jobs/cisco/
+                    - link "Computer Security" [ref=e1183] [cursor=pointer]:
+                      - /url: /jobs/computer-security/
+                    - link "Internet Security" [ref=e1184] [cursor=pointer]:
+                      - /url: /jobs/internet-security/
+                    - link "Network Administration" [ref=e1185] [cursor=pointer]:
+                      - /url: /jobs/network-administration/
+                    - link "Network Engineering" [ref=e1186] [cursor=pointer]:
+                      - /url: /jobs/network-engineer/
+                    - link "Network Monitoring" [ref=e1187] [cursor=pointer]:
+                      - /url: /jobs/network-monitoring/
+                    - link "Network Security" [ref=e1188] [cursor=pointer]:
+                      - /url: /jobs/network-security/
+                    - link "Splunk" [ref=e1189] [cursor=pointer]:
+                      - /url: /jobs/splunk/
+                    - link "Ubiquiti" [ref=e1190] [cursor=pointer]:
+                      - /url: /jobs/ubiquiti/
+                    - link "VPN" [ref=e1191] [cursor=pointer]:
+                      - /url: /jobs/vpn/
+                - generic [ref=e1192]:
+                  - generic [ref=e1193]: $104 Avg Bid
+                  - generic [ref=e1194]: 2 bids
+              - generic [ref=e1196]:
+                - generic [ref=e1197]:
+                  - generic [ref=e1198]:
+                    - link "Wikipedia page for influencer" [ref=e1199] [cursor=pointer]:
+                      - /url: /projects/wikipedia/wikipedia-page-for-influencer
+                    - generic [ref=e1200]:
+                      - generic [ref=e1201]: 6 days left
+                      - generic [ref=e1202]:
+                        - img [ref=e1204]
+                        - text: Verified
+                  - paragraph [ref=e1208]: I am looking for a freelancer who can create a Wikipedia page for an influencer with a significant online presence. The page should focus on their career achievements and must include reliable sources to verify the provided information. The ideal candidate should have experience in creating Wikipedia pages and must have the necessary skills to ensure that the page is compliant with Wikipedia guidelines.
+                  - generic [ref=e1209]:
+                    - link "Article Writing" [ref=e1210] [cursor=pointer]:
+                      - /url: /jobs/articles/
+                    - link "Research" [ref=e1211] [cursor=pointer]:
+                      - /url: /jobs/research/
+                    - link "Research Writing" [ref=e1212] [cursor=pointer]:
+                      - /url: /jobs/research-writing/
+                    - link "WIKI" [ref=e1213] [cursor=pointer]:
+                      - /url: /jobs/wiki/
+                    - link "Wikipedia" [ref=e1214] [cursor=pointer]:
+                      - /url: /jobs/wikipedia/
+                - generic [ref=e1215]:
+                  - generic [ref=e1216]: $12 Avg Bid
+                  - generic [ref=e1217]: 4 bids
+              - generic [ref=e1219]:
+                - generic [ref=e1220]:
+                  - generic [ref=e1221]:
+                    - link "CodeIgniter 4 Designer Dashboard" [ref=e1222] [cursor=pointer]:
+                      - /url: /projects/twitter-bootstrap/codeigniter-designer-dashboard
+                    - generic [ref=e1223]:
+                      - generic [ref=e1224]: 6 days left
+                      - generic [ref=e1225]:
+                        - img [ref=e1227]
+                        - text: Verified
+                  - paragraph [ref=e1231]: "Project Overview I need a clean, modern, fully functional Designer Dashboard built in CodeIgniter 4, based on an existing design specification. The dashboard will display performance metrics for a designer profile. Unlike a purely static frontend, this version must be implemented so that the dashboard loads and displays the data from a database. The final result should closely match the provided layout reference, be responsive across devices, and follow clean coding standards. Requirements Build a responsive dashboard in CodeIgniter 4 with the following components: 1. Designer Profile Card Profile photo Start Date: 2015-02-12 Experience Level: should be calculated automatically based on the join date use 3 experience levels logic should be derived from the date joined 2. Project Over..."
+                  - generic [ref=e1232]:
+                    - link "Bootstrap" [ref=e1233] [cursor=pointer]:
+                      - /url: /jobs/twitter-bootstrap/
+                    - link "Chart.js" [ref=e1234] [cursor=pointer]:
+                      - /url: /jobs/chart-js/
+                    - link "Codeigniter" [ref=e1235] [cursor=pointer]:
+                      - /url: /jobs/codeigniter/
+                    - link "CSS" [ref=e1236] [cursor=pointer]:
+                      - /url: /jobs/css/
+                    - link "HTML" [ref=e1237] [cursor=pointer]:
+                      - /url: /jobs/html/
+                    - link "JavaScript" [ref=e1238] [cursor=pointer]:
+                      - /url: /jobs/javascript/
+                    - link "MVC" [ref=e1239] [cursor=pointer]:
+                      - /url: /jobs/mvc/
+                    - link "MySQL" [ref=e1240] [cursor=pointer]:
+                      - /url: /jobs/mysql/
+                    - link "PHP" [ref=e1241] [cursor=pointer]:
+                      - /url: /jobs/php/
+                    - link "Web Development" [ref=e1242] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                - generic [ref=e1243]:
+                  - generic [ref=e1244]: $180 Avg Bid
+                  - generic [ref=e1245]: 117 bids
+              - generic [ref=e1247]:
+                - generic [ref=e1248]:
+                  - generic [ref=e1249]:
+                    - link "Need Forbes article" [ref=e1250] [cursor=pointer]:
+                      - /url: /projects/publishing/need-forbes-article
+                    - generic [ref=e1251]:
+                      - generic [ref=e1252]: 6 days left
+                      - generic [ref=e1253]:
+                        - img [ref=e1255]
+                        - text: Verified
+                  - paragraph [ref=e1259]: i need you to publish at Forbes article about my Digital Agency
+                  - link "Publishing" [ref=e1261] [cursor=pointer]:
+                    - /url: /jobs/publishing/
+                - generic [ref=e1262]:
+                  - generic [ref=e1263]: $41 Avg Bid
+                  - generic [ref=e1264]: 8 bids
+              - generic [ref=e1266]:
+                - generic [ref=e1267]:
+                  - generic [ref=e1268]:
+                    - link "Premium Single-Page Squarespace Website Redesign" [ref=e1269] [cursor=pointer]:
+                      - /url: /projects/squarespace/premium-single-page-squarespace-website
+                    - generic [ref=e1270]:
+                      - generic [ref=e1271]: 6 days left
+                      - generic [ref=e1272]:
+                        - img [ref=e1274]
+                        - text: Verified
+                  - paragraph [ref=e1278]: "Squarespace Website Redesign – Premium Single-Page Website I am looking for an advanced Squarespace designer with strong experience creating premium, high-converting, modern single-page websites. This is NOT a generic agency website. I already have all of the website copy written. Your role is NOT to write the copy. Your role is to create the design, structure, layout, image direction, typography, and overall premium experience. I need someone who can take the existing content and transform it into a polished, highly immersive, premium-looking Squarespace website that feels expensive and trustworthy. Requirements: - Must be highly experienced with Squarespace - Must be able to create a premium single-page layout - Must have strong desktop, tablet and mobile design skills - Mu..."
+                  - generic [ref=e1279]:
+                    - link "Squarespace" [ref=e1280] [cursor=pointer]:
+                      - /url: /jobs/squarespace/
+                    - link "UI / User Interface" [ref=e1281] [cursor=pointer]:
+                      - /url: /jobs/ui-design/
+                    - link "UX / User Experience" [ref=e1282] [cursor=pointer]:
+                      - /url: /jobs/user-experience-design/
+                    - link "Web Design" [ref=e1283] [cursor=pointer]:
+                      - /url: /jobs/web-design/
+                    - link "Web Development" [ref=e1284] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                    - link "Website Optimization" [ref=e1285] [cursor=pointer]:
+                      - /url: /jobs/google-website-optimizer/
+                - generic [ref=e1286]:
+                  - generic [ref=e1287]: $51 Avg Bid
+                  - generic [ref=e1288]: 35 bids
+              - generic [ref=e1290]:
+                - generic [ref=e1291]:
+                  - generic [ref=e1292]:
+                    - link "Native French Content Strategist" [ref=e1293] [cursor=pointer]:
+                      - /url: /projects/content-audit/native-french-content-strategist-40341285
+                    - generic [ref=e1295]: 6 days left
+                  - paragraph [ref=e1296]: We're working with one of our major Enterprise client and they are looking for a native French Content Strategist for a 2 month project. You will need to evaluate LLM generated contents and provide feedback related to an e-commerce website. To ensure task distribution, you will need to have a 2hrs overlap with China time, we can have this finalized based on mutual availability. It is estimated that you will work 40hrs per week and we're looking to have the project start as soon as possible. Pay rate for this will be $18/hr. Once you place your bid, there will be an assessment from the client which we will provide to you.
+                  - generic [ref=e1297]:
+                    - link "Content Audit" [ref=e1298] [cursor=pointer]:
+                      - /url: /jobs/content-audit/
+                    - link "Content Creation" [ref=e1299] [cursor=pointer]:
+                      - /url: /jobs/content-creation/
+                    - link "Content Development" [ref=e1300] [cursor=pointer]:
+                      - /url: /jobs/content-development/
+                    - link "Content Management System (CMS)" [ref=e1301] [cursor=pointer]:
+                      - /url: /jobs/content-management-system/
+                    - link "Content Strategy" [ref=e1302] [cursor=pointer]:
+                      - /url: /jobs/content-strategy/
+                    - link "Content Writing" [ref=e1303] [cursor=pointer]:
+                      - /url: /jobs/content-writing/
+                    - link "LLM Integration" [ref=e1304] [cursor=pointer]:
+                      - /url: /jobs/llm-integration/
+                - generic [ref=e1305]:
+                  - generic [ref=e1306]: $22 / hr Avg Bid
+                  - generic [ref=e1307]: 3 bids
+              - generic [ref=e1309]:
+                - generic [ref=e1310]:
+                  - generic [ref=e1311]:
+                    - img [ref=e1313]:
+                      - generic "Trophy icon" [ref=e1314]
+                    - link "Take 1 Marketing Is Hiring a Graphic Designer for Laundry Advertising Flags (Sacramento, CA)" [ref=e1317] [cursor=pointer]:
+                      - /url: /contest/take-marketing-is-hiring-a-graphic-designer-for-laundry-advertising-flags-sacramento-ca-2720838
+                    - generic [ref=e1319]: 6 days left
+                  - paragraph [ref=e1320]: "Take 1 Marketing is hiring an experienced graphic designer to create two high-impact, print-ready feather flags for a local laundry marketing campaign in Sacramento, California. This is a real-world outdoor advertising project. The objective is simple: grab attention quickly and drive walk-in traffic. IMPORTANT – TEMPLATE REQUIRED You must use the attached feather flag template. Do not change dimensions, shape, or layout structure Design must fit within the safe/visible area Keep all critical text inside safe margins FLAG DESIGNS (2 REQUIRED) Flag #1 – Offer Focus Text (DO NOT CHANGE): Wash with Free Dry Everyday! Design Direction: Bold and readable from a distance High contrast colors (yellow/black, red/white, blue/white, etc.) Minimal wording Clean layout Optional: sub..."
+                  - generic [ref=e1321]:
+                    - link "Adobe Illustrator" [ref=e1322] [cursor=pointer]:
+                      - /url: /jobs/adobe-illustrator/
+                    - link "Adobe Photoshop" [ref=e1323] [cursor=pointer]:
+                      - /url: /jobs/adobe-photoshop/
+                    - link "Advertising" [ref=e1324] [cursor=pointer]:
+                      - /url: /jobs/advertising/
+                    - link "Banner Design" [ref=e1325] [cursor=pointer]:
+                      - /url: /jobs/banner-design/
+                    - link "Branding" [ref=e1326] [cursor=pointer]:
+                      - /url: /jobs/branding/
+                    - link "Graphic Design" [ref=e1327] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Logo Design" [ref=e1328] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "Photoshop" [ref=e1329] [cursor=pointer]:
+                      - /url: /jobs/photoshop/
+                    - link "Print Design" [ref=e1330] [cursor=pointer]:
+                      - /url: /jobs/print-design/
+                    - link "Visual Design" [ref=e1331] [cursor=pointer]:
+                      - /url: /jobs/visual-design/
+                  - generic [ref=e1333]: Guaranteed
+                - generic [ref=e1334]:
+                  - generic [ref=e1335]: $30
+                  - generic [ref=e1336]: 37 entries
+              - generic [ref=e1338]:
+                - generic [ref=e1339]:
+                  - generic [ref=e1340]:
+                    - link "Chinese Web3 Wallet UI Designer" [ref=e1341] [cursor=pointer]:
+                      - /url: /projects/ui-design/chinese-web-wallet-designer
+                    - generic [ref=e1343]: 6 days left
+                  - paragraph [ref=e1344]: I’m building a new web3 wallet and need a Malaysia-based UI/UX designer who can communicate comfortably in Chinese. My immediate priority is clear, appealing user interface design that feels native to blockchain users. A solid grasp of usability testing is important too, because I rely on real feedback to refine every release. If this sounds like your strength, send me your resume and a link to your portfolio. After I review your work we can arrange an online meeting to discuss scope, timelines, and salary in more detail. Experience with prototyping or broader UX research is a welcome bonus, but the core of the role will be shaping the visual layer of the product from initial concepts through final hand-off to developers. I look forward to seeing how your design approach can help o...
+                  - generic [ref=e1345]:
+                    - link "Design Thinking" [ref=e1346] [cursor=pointer]:
+                      - /url: /jobs/design-thinking/
+                    - link "Graphic Design" [ref=e1347] [cursor=pointer]:
+                      - /url: /jobs/graphic-design/
+                    - link "Interaction Design" [ref=e1348] [cursor=pointer]:
+                      - /url: /jobs/interaction-design/
+                    - link "Logo Design" [ref=e1349] [cursor=pointer]:
+                      - /url: /jobs/logo-design/
+                    - link "UI / User Interface" [ref=e1350] [cursor=pointer]:
+                      - /url: /jobs/ui-design/
+                    - link "Usability Testing" [ref=e1351] [cursor=pointer]:
+                      - /url: /jobs/usability-testing/
+                    - link "User Interface / IA" [ref=e1352] [cursor=pointer]:
+                      - /url: /jobs/user-interface-ia/
+                    - link "UX / User Experience" [ref=e1353] [cursor=pointer]:
+                      - /url: /jobs/user-experience-design/
+                    - link "Web Design" [ref=e1354] [cursor=pointer]:
+                      - /url: /jobs/web-design/
+                    - link "Web Development" [ref=e1355] [cursor=pointer]:
+                      - /url: /jobs/web-development/
+                - generic [ref=e1356]:
+                  - generic [ref=e1357]: $453 Avg Bid
+                  - generic [ref=e1358]: 96 bids
+              - generic [ref=e1360]:
+                - generic [ref=e1361]:
+                  - generic [ref=e1362]:
+                    - link "7-Storey Mixed-Use Axonometric Diagram" [ref=e1363] [cursor=pointer]:
+                      - /url: /projects/illustrator/storey-mixed-use-axonometric-diagram
+                    - generic [ref=e1365]: 6 days left
+                  - paragraph [ref=e1366]: I have a seven-storey mixed-use building that needs to be presented in a single, clear colour axonometric. The goal is to let viewers grasp each level’s floor layout at a glance, so every storey should be pulled out or colour-coded in a way that makes the programme legible without clutter. Scope • Model or clean up the existing massing (I can supply basic plans in DWG/PDF). • Generate a crisp axonometric view, then apply a coherent colour palette that differentiates the seven floor layouts—commercial at ground and residential above. • Label or lightly annotate where it adds clarity, but keep the emphasis on the coloured layouts rather than structural or façade details. Deliverables 1. High-resolution PNG/JPEG ready for print and slide decks (minimum 4000...
+                  - generic [ref=e1367]:
+                    - link "Illustrator" [ref=e1368] [cursor=pointer]:
+                      - /url: /jobs/illustrator/
+                    - link "PDF" [ref=e1369] [cursor=pointer]:
+                      - /url: /jobs/pdf/
+                    - link "Vectorworks" [ref=e1370] [cursor=pointer]:
+                      - /url: /jobs/vectorworks/
+                - generic [ref=e1371]:
+                  - generic [ref=e1372]: $164 Avg Bid
+                  - generic [ref=e1373]: 3 bids
+              - generic [ref=e1375]:
+                - generic [ref=e1376]:
+                  - generic [ref=e1377]:
+                    - link "Vinyl Bulkhead Wall Construction -- 2" [ref=e1378] [cursor=pointer]:
+                      - /url: /projects/construction/vinyl-bulkhead-wall-construction
+                    - generic [ref=e1380]: 6 days left
+                  - paragraph [ref=e1381]: "I need a skilled contractor to build a vinyl bulkhead wall primarily for soil retention. The project requires meeting specific height specifications. Key Requirements: - Use of vinyl materials - Adherence to specific height requirements Ideal Skills and Experience: - Experience with vinyl construction - Knowledge of soil retention structures - Ability to follow precise height specifications"
+                  - generic [ref=e1382]:
+                    - link "AutoCAD" [ref=e1383] [cursor=pointer]:
+                      - /url: /jobs/autocad/
+                    - link "Building Architecture" [ref=e1384] [cursor=pointer]:
+                      - /url: /jobs/building-architecture/
+                    - link "Building Design" [ref=e1385] [cursor=pointer]:
+                      - /url: /jobs/building-designer/
+                    - link "Building Engineering" [ref=e1386] [cursor=pointer]:
+                      - /url: /jobs/building-engineering/
+                    - link "Building Regulations" [ref=e1387] [cursor=pointer]:
+                      - /url: /jobs/building-regulations/
+                    - link "Civil Engineering" [ref=e1388] [cursor=pointer]:
+                      - /url: /jobs/civil-engineering/
+                    - link "Construction" [ref=e1389] [cursor=pointer]:
+                      - /url: /jobs/construction/
+                    - link "Project Management" [ref=e1390] [cursor=pointer]:
+                      - /url: /jobs/project-management/
+                    - link "Structural Engineering" [ref=e1391] [cursor=pointer]:
+                      - /url: /jobs/structural-engineering/
+                  - generic [ref=e1393]: Local
+                - generic [ref=e1394]:
+                  - generic [ref=e1395]: $20000 - $50000
+                  - generic [ref=e1396]: 0 bids
+          - generic [ref=e1397]:
+            - generic [ref=e1398]: Showing 1 to 50 of 5,000 entries
+            - generic [ref=e1399]: Prices shown in USD
+            - generic [ref=e1400]: Results per page
+            - combobox [ref=e1402]:
+              - option "20"
+              - option "50" [selected]
+              - option "75"
+              - option "100"
+            - list [ref=e1404]:
+              - listitem [ref=e1405]:
+                - link "First page" [ref=e1406] [cursor=pointer]:
+                  - /url: https://www.freelancer.com/jobs
+                  - generic [ref=e1407]:
+                    - img
+              - listitem [ref=e1408]:
+                - link "Previous page" [ref=e1409] [cursor=pointer]:
+                  - /url: https://www.freelancer.com/jobs
+                  - generic [ref=e1410]:
+                    - img
+              - listitem [ref=e1411]:
+                - link "Page 1" [ref=e1412] [cursor=pointer]:
+                  - /url: https://www.freelancer.com/jobs
+                  - text: "1"
+              - listitem [ref=e1413]:
+                - link "Page 2" [ref=e1414] [cursor=pointer]:
+                  - /url: https://www.freelancer.com/jobs/2
+                  - text: "2"
+              - listitem [ref=e1415]:
+                - link "Page 3" [ref=e1416] [cursor=pointer]:
+                  - /url: https://www.freelancer.com/jobs/3
+                  - text: "3"
+              - listitem [ref=e1417]:
+                - link "Next page" [ref=e1418] [cursor=pointer]:
+                  - /url: https://www.freelancer.com/jobs/2
+                  - generic [ref=e1419]:
+                    - img
+              - listitem [ref=e1420]:
+                - link "Last page" [ref=e1421] [cursor=pointer]:
+                  - /url: https://www.freelancer.com/jobs/100
+                  - generic [ref=e1422]:
+                    - img
+    - complementary [ref=e1423]:
+      - generic [ref=e1425]:
+        - generic [ref=e1426]:
+          - heading "Need to hire a freelancer for a job?" [level=2] [ref=e1427]
+          - paragraph [ref=e1428]: It's free to sign up, type in what you need & receive free quotes in seconds
+        - generic [ref=e1431]:
+          - generic [ref=e1432]:
+            - generic [ref=e1433]: Enter your project description here
+            - textbox "Enter your project description here" [ref=e1434]:
+              - /placeholder: What do you need done?
+          - button "Post a Project" [ref=e1435] [cursor=pointer]
+      - button [ref=e1436] [cursor=pointer]:
+        - img [ref=e1438]
+  - contentinfo [ref=e1441]:
+    - generic [ref=e1443]:
+      - generic [ref=e1446]:
+        - generic [ref=e1447]:
+          - link "Freelancer Logo" [ref=e1449] [cursor=pointer]:
+            - /url: /
+            - img "Freelancer Logo" [ref=e1450]
+          - button "English - US (International)" [ref=e1452] [cursor=pointer]:
+            - img [ref=e1454]
+            - text: English - US (International)
+          - link "Help & Support" [ref=e1458] [cursor=pointer]:
+            - /url: /support/
+            - img [ref=e1460]
+            - text: Help & Support
+          - generic [ref=e1463]:
+            - img [ref=e1465]
+            - text: Accessibility
+        - generic [ref=e1468]:
+          - heading "Freelancer" [level=5] [ref=e1469]
+          - list [ref=e1471]:
+            - listitem [ref=e1472]:
+              - link "Categories" [ref=e1473] [cursor=pointer]:
+                - /url: /job/
+            - listitem [ref=e1474]:
+              - link "Projects" [ref=e1475] [cursor=pointer]:
+                - /url: /jobs/
+            - listitem [ref=e1476]:
+              - link "Contests" [ref=e1477] [cursor=pointer]:
+                - /url: /contest/
+            - listitem [ref=e1478]:
+              - link "Freelancers" [ref=e1479] [cursor=pointer]:
+                - /url: /freelancers/
+            - listitem [ref=e1480]:
+              - link "Enterprise" [ref=e1481] [cursor=pointer]:
+                - /url: /enterprise/
+            - listitem [ref=e1482]:
+              - link "Membership" [ref=e1483] [cursor=pointer]:
+                - /url: /membership
+            - listitem [ref=e1484]:
+              - link "Preferred Freelancer Program" [ref=e1485] [cursor=pointer]:
+                - /url: /preferred-freelancer-program
+            - listitem [ref=e1486]:
+              - link "Project Management" [ref=e1487] [cursor=pointer]:
+                - /url: /project-management
+            - listitem [ref=e1488]:
+              - link "Local Jobs" [ref=e1489] [cursor=pointer]:
+                - /url: /local
+            - listitem [ref=e1490]:
+              - link "Photo Anywhere" [ref=e1491] [cursor=pointer]:
+                - /url: https://www.photoanywhere.com
+            - listitem [ref=e1492]:
+              - link "Showcase" [ref=e1493] [cursor=pointer]:
+                - /url: /showcase
+            - listitem [ref=e1494]:
+              - link "API for Developers" [ref=e1495] [cursor=pointer]:
+                - /url: https://developers.freelancer.com
+        - generic [ref=e1496]:
+          - heading "About" [level=5] [ref=e1497]
+          - list [ref=e1499]:
+            - listitem [ref=e1500]:
+              - link "About us" [ref=e1501] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e1502]:
+              - link "How it Works" [ref=e1503] [cursor=pointer]:
+                - /url: /info/how-it-works/
+            - listitem [ref=e1504]:
+              - link "Security" [ref=e1505] [cursor=pointer]:
+                - /url: /about/security
+            - listitem [ref=e1506]:
+              - link "Investor" [ref=e1507] [cursor=pointer]:
+                - /url: /investor
+            - listitem [ref=e1508]:
+              - link "Sitemap" [ref=e1509] [cursor=pointer]:
+                - /url: /sitemap
+            - listitem [ref=e1510]:
+              - link "Stories" [ref=e1511] [cursor=pointer]:
+                - /url: /about/stories
+            - listitem [ref=e1512]:
+              - link "News" [ref=e1513] [cursor=pointer]:
+                - /url: /about/media
+            - listitem [ref=e1514]:
+              - link "Team" [ref=e1515] [cursor=pointer]:
+                - /url: /about/management
+            - listitem [ref=e1516]:
+              - link "Awards" [ref=e1517] [cursor=pointer]:
+                - /url: /about/awards
+            - listitem [ref=e1518]:
+              - link "Press Releases" [ref=e1519] [cursor=pointer]:
+                - /url: /about/press
+            - listitem [ref=e1520]:
+              - link "Careers" [ref=e1521] [cursor=pointer]:
+                - /url: /careers
+        - generic [ref=e1522]:
+          - heading "Terms" [level=5] [ref=e1523]
+          - list [ref=e1525]:
+            - listitem [ref=e1526]:
+              - link "Privacy Policy" [ref=e1527] [cursor=pointer]:
+                - /url: /about/privacy
+            - listitem [ref=e1528]:
+              - link "Terms and Conditions" [ref=e1529] [cursor=pointer]:
+                - /url: /about/terms
+            - listitem [ref=e1530]:
+              - link "Copyright Policy" [ref=e1531] [cursor=pointer]:
+                - /url: /dmca
+            - listitem [ref=e1532]:
+              - link "Code of Conduct" [ref=e1533] [cursor=pointer]:
+                - /url: /info/codeofconduct
+            - listitem [ref=e1534]:
+              - link "Fees and Charges" [ref=e1535] [cursor=pointer]:
+                - /url: /feesandcharges
+        - generic [ref=e1536]:
+          - heading "Apps" [level=5] [ref=e1537]
+          - generic [ref=e1538]:
+            - link "Apple App Store Badge" [ref=e1539] [cursor=pointer]:
+              - /url: https://cdn3.f-cdn.com/download
+              - img "Apple App Store Badge" [ref=e1540]
+            - link "Google Play Store Badge" [ref=e1541] [cursor=pointer]:
+              - /url: https://cdn3.f-cdn.com/download
+              - img "Google Play Store Badge" [ref=e1542]
+          - generic [ref=e1543]:
+            - link "Freelancer on Facebook" [ref=e1544] [cursor=pointer]:
+              - /url: https://www.facebook.com/fansoffreelancer
+              - img [ref=e1545]
+            - link "Freelancer on Twitter" [ref=e1549] [cursor=pointer]:
+              - /url: https://www.twitter.com/freelancer
+              - img [ref=e1550]
+            - link "Freelancer on Youtube" [ref=e1552] [cursor=pointer]:
+              - /url: https://www.youtube.com/freelancerchannel
+              - img [ref=e1553]
+            - link "Freelancer on Instagram" [ref=e1556] [cursor=pointer]:
+              - /url: https://instagram.com/freelancerofficial
+              - img [ref=e1557]
+            - link "Latest Projects" [ref=e1559] [cursor=pointer]:
+              - /url: /rss.xml
+              - img [ref=e1560]
+      - generic [ref=e1564]:
+        - generic [ref=e1566]:
+          - generic [ref=e1567]: 87,371,507
+          - generic [ref=e1569]: Registered Users
+        - generic [ref=e1571]:
+          - generic [ref=e1572]: 25,509,964
+          - generic [ref=e1573]:
+            - generic [ref=e1574]: Total Jobs Posted
+            - img [ref=e1577] [cursor=pointer]
+        - generic [ref=e1579]:
+          - paragraph [ref=e1580]: Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)
+          - paragraph [ref=e1581]: Copyright © 2026 Freelancer Technology Pty Limited (ACN 142 189 759)
+  - generic [ref=e1582]:
+    - link [ref=e1583] [cursor=pointer]:
+      - /url: "#"
+      - img [ref=e1585]
+    - paragraph [ref=e1587]:
+      - text: We use technologies, such as cookies, to customise content, to provide features through third parties and to analyse traffic to the site. We also share information about your use of our site with our trusted social media, advertising and analytics partners.
+      - link "See details." [ref=e1588] [cursor=pointer]:
+        - /url: /about/privacy

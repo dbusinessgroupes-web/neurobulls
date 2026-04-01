@@ -26,6 +26,7 @@ export function Header() {
     { href: "/about", label: t("about") },
     { href: "/contact", label: t("contact") },
     { href: "/shop", label: t("shop") },
+    { href: "/tools/prompt-generator", label: t("tools") },
     { href: "/blog/mejores-prompts-ia-fotografia", label: t("blog") },
   ];
 

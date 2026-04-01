@@ -6,6 +6,7 @@
     "contact": "Contact",
     "shop": "Shop",
     "blog": "Blog",
+    "tools": "Tools",
     "startProject": "Start a Project"
   },
   "hero": {
@@ -419,6 +420,35 @@
     },
     "ctaTitle": "Want us to create content for your brand?",
     "ctaButton": "Contact Us"
+  },
+  "tools": {
+    "title": "Free AI Prompt Generator",
+    "subtitle": "Generate ultra-realistic photography prompts. Copy, paste, create.",
+    "categoryLabel": "Category",
+    "styleLabel": "Style",
+    "cameraLabel": "Camera",
+    "categories": {
+      "portrait": "Portrait",
+      "food": "Food",
+      "realEstate": "Real Estate",
+      "fashion": "Fashion",
+      "product": "Product",
+      "lifestyle": "Lifestyle"
+    },
+    "styles": {
+      "natural": "Natural / Candid",
+      "studio": "Studio / Editorial",
+      "macro": "Macro / Detail",
+      "dramatic": "Dramatic / Moody"
+    },
+    "generateButton": "Generate Prompt",
+    "copyButton": "Copy",
+    "counter": "{count} prompts generated",
+    "upsell": {
+      "title": "Want 500 more prompts like this?",
+      "description": "Get the full pack for $9. Includes negative prompts, video templates, and monthly updates.",
+      "button": "Get 500 Prompts"
+    }
   },
   "cookies": {
     "message": "We use cookies to improve your experience. You can accept all cookies or customize your preferences.",

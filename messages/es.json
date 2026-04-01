@@ -6,6 +6,7 @@
     "contact": "Contacto",
     "shop": "Tienda",
     "blog": "Blog",
+    "tools": "Herramientas",
     "startProject": "Iniciar Proyecto"
   },
   "hero": {
@@ -419,6 +420,35 @@
     },
     "ctaTitle": "¿Quieres que creemos contenido para tu marca?",
     "ctaButton": "Contactar"
+  },
+  "tools": {
+    "title": "Generador de Prompts IA Gratis",
+    "subtitle": "Genera prompts de fotografía ultrarrealista. Copia, pega, crea.",
+    "categoryLabel": "Categoría",
+    "styleLabel": "Estilo",
+    "cameraLabel": "Cámara",
+    "categories": {
+      "portrait": "Retrato",
+      "food": "Gastronomía",
+      "realEstate": "Inmobiliaria",
+      "fashion": "Moda",
+      "product": "Producto",
+      "lifestyle": "Lifestyle"
+    },
+    "styles": {
+      "natural": "Natural / Candid",
+      "studio": "Estudio / Editorial",
+      "macro": "Macro / Detalle",
+      "dramatic": "Dramático / Moody"
+    },
+    "generateButton": "Generar Prompt",
+    "copyButton": "Copiar",
+    "counter": "{count} prompts generados",
+    "upsell": {
+      "title": "¿Quieres 500 prompts más como este?",
+      "description": "Consigue el pack completo por 9$. Incluye negative prompts, templates de vídeo y actualizaciones mensuales.",
+      "button": "Conseguir 500 Prompts"
+    }
   },
   "cookies": {
     "message": "Utilizamos cookies para mejorar tu experiencia. Puedes aceptar todas las cookies o personalizar tus preferencias.",
