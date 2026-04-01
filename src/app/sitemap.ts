@@ -17,6 +17,7 @@ const pages = [
   '/blog/mejores-prompts-ia-fotografia',
   '/blog/como-crear-imagenes-ia-realistas',
   '/blog/prompts-midjourney-flux-gratis',
+  '/tools/prompt-generator',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
